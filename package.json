@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-		"start": "http-server .",
-		"scss": "scss --watch styles/main.scss:css/main.css",
-		"release": "tar zcvf news-website-$(date +%Y%m%dT%H%M).tar.gz ./*.html ./css/*.css ./js ./img",
+    "start": "http-server .",
+    "scss": "scss --watch styles/main.scss:css/main.css styles/sign.scss:css/sign.css",
+    "release": "tar zcvf news-website-$(date +%Y%m%dT%H%M).tar.gz ./*.html ./css/*.css ./js ./img ./fonts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "directories": {

@@ -2,3 +2,4 @@ css/main.css
 css/break-points.css
 css/*.css.map
 node_modules
+.sass-cache

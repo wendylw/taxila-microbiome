@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'heebolight';
+  src: url('heebo-light-webfont.eot');
+  src: url('heebo-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('heebo-light-webfont.woff2') format('woff2'),
+       url('heebo-light-webfont.woff') format('woff'),
+       url('heebo-light-webfont.svg#heebolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

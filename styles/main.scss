@@ -1,0 +1,51 @@
+@import '../fonts/font.css';
+@import './var';
+
+html {
+  font-family: heebolight, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: $main-font;
+}
+
+h1 {
+  font-size: $title-font;
+}
+
+h2 {
+  font-size: $bigest-font;
+}
+
+h3 {
+  font-size: $bigger-font;
+}
+
+h4 {
+  font-size: $main-font;
+}
+
+h5 {
+  font-size: $small-font;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
+}
