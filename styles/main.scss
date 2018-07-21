@@ -1,9 +1,14 @@
 @import '../fonts/font.css';
 @import './var';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: heebolight, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: $main-font;
+  color: $main-color;
 }
 
 h1 {
@@ -37,6 +42,47 @@ a {
 
 .text-right {
   text-align: right;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $theme-color-1;
+  border-radius: 4px;
+
+  input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    content: url(../img/login-check.png);
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.active:before {
+    display: block;
+  }
+
+  &__text {
+    padding-left: 6px;
+    font-size: $small-font;
+  }
 }
 
 .row:after {
