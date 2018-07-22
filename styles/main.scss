@@ -95,3 +95,33 @@ a {
   float: left;
   width: 50%;
 }
+
+.header {
+  padding: 0 15px;
+  background: -webkit-linear-gradient(left, $login-button-color-1, $login-button-color-2);
+  background: -moz-linear-gradient(left, $login-button-color-1, $login-button-color-2);
+  background: -ms-linear-gradient(left, $login-button-color-1, $login-button-color-2);
+  background: linear-gradient(to right, $login-button-color-1, $login-button-color-2);
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  &__logo {
+    margin: 10px 15px;
+    max-width: 100px;
+  }
+
+  &__navs {
+    font-family: 'heebobold';
+    color: $white;
+    float: right;
+  }
+
+  &__nav-item {
+    font-size: $small-font;
+    display: inline-block;
+  }
+}
