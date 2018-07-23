@@ -47,10 +47,15 @@ body {
   .news-content__comments {
     padding: 10px 0; }
     .news-content__comments h4 {
+      display: inline;
       margin: 0;
       font-weight: normal;
       color: #8a8a8a; }
+    .news-content__comments img {
+      margin: 0 2px;
+      max-width: 8px; }
   .news-content__comments-button {
+    padding: 0;
     border: 0;
     background-color: transparent; }
 

@@ -70,14 +70,22 @@ body {
 
   &__comments {
     padding: 10px 0;
+
     h4 {
+      display: inline;
       margin: 0;
       font-weight: normal;
       color: $lightter-gray;
     }
+
+    img {
+      margin: 0 2px;
+      max-width: 8px;
+    }
   }
 
   &__comments-button {
+    padding: 0;
     border: 0;
     background-color: transparent;
   }
