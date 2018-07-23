@@ -46,7 +46,7 @@ function resetGridLayout() {
 
       getGridLayout();
 
-      $('.news-topics__container').delay(400).fadeIn(400);
+      $('.news-topics__container').delay(200).fadeIn(400);
     } else {
       $('body').removeClass('classic');
       $('.header__mode-text').data('value', MODES.MASONRY);
