@@ -32,6 +32,12 @@ body {
   .news-content__time {
     font-size: 12px;
     color: #58595b; }
+  .news-content__operation-list {
+    display: inline-block; }
+    .news-content__operation-list li {
+      display: inline-block; }
+    .news-content__operation-list img {
+      max-height: 18px; }
 
 .grid {
   max-width: 1440px;

@@ -47,6 +47,18 @@ body {
     font-size: $small-font;
     color: $light-gray;
   }
+
+  &__operation-list {
+    display: inline-block;
+
+    li {
+      display: inline-block;
+    }
+
+    img {
+      max-height: 18px;
+    }
+  }
 }
 
 .grid {
