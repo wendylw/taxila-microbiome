@@ -49,9 +49,12 @@ body {
   }
 
   &__operation-list {
+    float: right;
     display: inline-block;
+    font-size: 0;
 
     li {
+      vertical-align: middle;
       display: inline-block;
     }
 

@@ -33,8 +33,11 @@ body {
     font-size: 12px;
     color: #58595b; }
   .news-content__operation-list {
-    display: inline-block; }
+    float: right;
+    display: inline-block;
+    font-size: 0; }
     .news-content__operation-list li {
+      vertical-align: middle;
       display: inline-block; }
     .news-content__operation-list img {
       max-height: 18px; }
