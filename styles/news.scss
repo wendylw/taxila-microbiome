@@ -1,7 +1,9 @@
+@import '../fonts/font.css';
 @import './var';
 
 body {
   min-width: 1024px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .news-content {
@@ -13,6 +15,38 @@ body {
   background-color: $lightest-gray;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+
+  &__title {
+    margin: 15px 0;
+    font-size: $big-font;
+    color: $theme-color-2;
+    font-weight: bold;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__detail {
+    padding: 10px 0;
+    font-size: $small-font;
+    color: $light-gray;
+
+    p {
+      line-height: 1.5em;
+    }
+  }
+
+  &__type {
+    font-size: $main-font;
+    color: $theme-color-1;
+  }
+
+  &__time {
+    font-size: $small-font;
+    color: $light-gray;
+  }
 }
 
 .grid {
