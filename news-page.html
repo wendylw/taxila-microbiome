@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="header">
+    <img class="header__logo" src="./img/logo-white.png" alt="">
+    <ul class="header__navs">
+      <li class="header__mode header__nav-item text-middle">
+        <span class="header__mode-text text-middle" data-value="masonry">Masonry Layout</span>
+        <div class="header__switch-button text-middle">
+          <i class="header__switch-button-icon"></i>
+        </div>
+      </li>
+      <li class="header__channel header__nav-item text-middle">
+        <a href="#"><span>CHANNEL</span></a>
+      </li>
+      <li class="header__time header__nav-item text-middle">
+        <a class="header__nav-link" href="#"><span>TIME LINE</span></a>
+      </li>
+      <li class="header__trends header__nav-item text-middle">
+        <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
+      </li>
+      <li class="header__catalog header__nav-item text-middle">
+        <a class="header__nav-link" href="#"><span>CATALOG</span></a>
+      </li>
+      <li class="header__welcome header__nav-item text-middle">
+        <a class="header__nav-link" href="#"><span>WELCOME</span></a>
+      </li>
+      <li class="header__search header__nav-item text-middle">
+        <input type="text" placeholder="Type your search item here and explore"/>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Add your site or application content here -->
+  <div class="news-content">
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 360 }'>
+      <div class="grid-item">
+        <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
+        <img class="news-content__image" src="http://via.placeholder.com/350x200" alt="">
+        <div class="news-content__detail">
+          <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
+        </div>
+        <div class="news-content__operations">
+          <label class="news-content__type">MIT NEWS. </label>
+          <span class="news-content__time">Apr 18, 2018</span>
+          <ul class="news-content__operation-list">
+            <li>
+              <img src="./img/news-item-like.png" alt="">
+            </li>
+            <li>
+              <img src="./img/news-item-save.png" alt="">
+            </li>
+            <li>
+              <img src="./img/news-item-download.png" alt="">
+            </li>
+            <li>
+              <img src="./img/news-item-email.png" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="news-content__comments text-right">
+          <button class="news-content__comments-button">
+            <h4 class="text-middle">3 Comments</h4>
+            <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of Add your site or application content here -->
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="./js/vendor/masonry.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

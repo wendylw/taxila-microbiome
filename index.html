@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sign.css">
 </head>
 
 <body>
@@ -22,7 +23,67 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="login__container">
+    <div class="login row">
+      <div class="col-6">
+        <div class="login__content">
+          <div class="login__logo">
+            <img src="./img/logo.png" alt="taxila-logo">
+          </div>
+
+          <div class="login__sign-links text-right">
+            <ul class="login__sign-list">
+              <li>
+                <a class="text-middle" href="">Register</a>
+              </li>
+              <li>
+                <a class="text-middle" href="">Take a tour</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div>
+            <h4 class="login__welcome">Welcome to Taxila,</h4>
+            <form class="sign-form" action="">
+              <div class="sign-form__group">
+                <input type="text" placeholder="Username"/>
+              </div>
+              <div class="sign-form__group">
+                <input type="password" placeholder="Password"/>
+              </div>
+              <div class="sign-form__group">
+                <div class="checkbox text-middle">
+                  <input type="checkbox" />
+                </div>
+                <span class="checkbox__text text-middle">Remember me</span>
+              </div>
+              <div class="sign-form__button-group text-right">
+                <button class="sign-form__login-button">Login</button>
+              </div>
+            </form>
+            <div class="sign-form__button-group text-right">
+              <a href="">Forgot your password?</a>
+            </div>
+
+            <div class="sign-social__container text-right">
+              <label class="text-middle">Sign in with : </label>
+              <ul class="sign-social text-middle">
+                <li>
+                  <a href=""><img src="./img/login-facebook.png" alt=""></a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/login-twitter.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of Add your site or application content here -->
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
