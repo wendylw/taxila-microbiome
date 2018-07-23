@@ -7,6 +7,14 @@ function getGridLayout(options) {
   $('.grid').masonry(options);
 }
 
+function resetGridLayout() {
+  getGridLayout({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    resizeable: true
+  });
+}
+
 (function(){
   $('input[type="checkbox"]').on('click', function(e){
     var isChecked = $(this).is(':checked');
@@ -35,25 +43,24 @@ function getGridLayout(options) {
       $('body').addClass('classic');
       $('.header__mode-text').data('value', MODES.CLASSIC);
       $('.header__logo').attr('src', './img/logo.png');
+
       getGridLayout();
+
+      $('.news-topics__container').delay(400).fadeIn(400);
     } else {
       $('body').removeClass('classic');
       $('.header__mode-text').data('value', MODES.MASONRY);
       $('.header__logo').attr('src', './img/logo-white.png');
 
-      getGridLayout({
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        resizeable: true
-      });
+      resetGridLayout();
+
+      $('.news-topics__container').hide();
     }
   });
 
-  getGridLayout({
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    resizeable: true
-  });
+  resetGridLayout();
 })();
 
-window.onload = function(){};
+window.onload = function(){
+  resetGridLayout();
+};

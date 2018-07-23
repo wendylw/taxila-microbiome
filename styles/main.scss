@@ -40,12 +40,21 @@ a {color: inherit;
   text-decoration: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-right {
   text-align: right;
 }
 
 .text-middle {
   vertical-align: middle;
+}
+
+.media-top {
+  display: table-cell;
+  vertical-align: top;
 }
 
 .checkbox {
@@ -96,9 +105,19 @@ a {color: inherit;
   width: 25%;
 }
 
+.col-4 {
+  float: left;
+  width: 33.333333%;
+}
+
 .col-6 {
   float: left;
   width: 50%;
+}
+
+.col-8 {
+  float: left;
+  width: 66.666666%;
 }
 
 .header {
