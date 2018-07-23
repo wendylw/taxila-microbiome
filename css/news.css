@@ -1,3 +1,24 @@
+body {
+  min-width: 1024px; }
 
+.news-content {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e9eaea;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.grid {
+  max-width: 1440px;
+  margin: auto; }
+
+.grid-item {
+  width: 25%; }
+
+.classic .news-content {
+  background-color: transparent; }
 
 /*# sourceMappingURL=news.css.map */

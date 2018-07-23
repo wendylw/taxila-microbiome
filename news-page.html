@@ -25,44 +25,72 @@
     <img class="header__logo" src="./img/logo-white.png" alt="">
     <ul class="header__navs">
       <li class="header__mode header__nav-item text-middle">
-        <span class="text-middle">Masonry Layout</span>
+        <span class="header__mode-text text-middle" data-value="masonry">Masonry Layout</span>
         <div class="header__switch-button text-middle">
           <i class="header__switch-button-icon"></i>
         </div>
       </li>
-      <li class="header__channel header__nav-item text-midlle">
-        <span>CHANNEL</span>
+      <li class="header__channel header__nav-item text-middle">
+        <a href="#"><span>CHANNEL</span></a>
       </li>
-      <li class="header__time header__nav-item text-midlle">
-        <span>TIME LINE</span>
+      <li class="header__time header__nav-item text-middle">
+        <a class="header__nav-link" href="#"><span>TIME LINE</span></a>
       </li>
-      <li class="header__trends header__nav-item text-midlle">
-        <span>GEO TRENDS</span>
+      <li class="header__trends header__nav-item text-middle">
+        <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
       </li>
-      <li class="header__catalog header__nav-item text-midlle">
-        <span>CATALOG</span>
+      <li class="header__catalog header__nav-item text-middle">
+        <a class="header__nav-link" href="#"><span>CATALOG</span></a>
       </li>
-      <li class="header__welcome header__nav-item text-midlle">
-        <span>WELCOME</span>
+      <li class="header__welcome header__nav-item text-middle">
+        <a class="header__nav-link" href="#"><span>WELCOME</span></a>
       </li>
-      <li class="header__search header__nav-item text-midlle">
+      <li class="header__search header__nav-item text-middle">
+        <input type="text" placeholder="Type your search item here and explore"/>
       </li>
     </ul>
   </header>
 
   <!-- Add your site or application content here -->
-  <div>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+  <div class="news-content">
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+      <div class="grid-item">
+        <h3>Big data architecture: Navigating the complexity</h3>
+        <img src="" alt="">
+        <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
+        <div>
+          <label>MIT NEWS. </label>
+          <span>Apr 18, 2018</span>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <h4>3 Comments</h4>
+        </div>
+      </div>
+      <div class="grid-item">
+        <h3>Big data architecture: Navigating the complexity</h3>
+        <img src="" alt="">
+        <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
+        <div>
+          <label>MIT NEWS. </label>
+          <span>Apr 18, 2018</span>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <h4>3 Comments</h4>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- end of Add your site or application content here -->
 
@@ -70,6 +98,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="./js/vendor/masonry.pkgd.min.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
