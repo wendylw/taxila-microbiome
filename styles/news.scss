@@ -45,7 +45,12 @@ body {
 
   &__time {
     font-size: $small-font;
-    color: $light-gray;
+    color: $lightter-gray;
+  }
+
+  &__operations {
+    padding: 10px 0;
+    border-bottom: 1px solid $theme-color-1;
   }
 
   &__operation-list {
@@ -61,6 +66,20 @@ body {
     img {
       max-height: 18px;
     }
+  }
+
+  &__comments {
+    padding: 10px 0;
+    h4 {
+      margin: 0;
+      font-weight: normal;
+      color: $lightter-gray;
+    }
+  }
+
+  &__comments-button {
+    border: 0;
+    background-color: transparent;
   }
 }
 
