@@ -3,6 +3,10 @@ var MODES = {
   CLASSIC: 'classic'
 };
 
+function getGridLayout(options) {
+  $('.grid').masonry(options);
+}
+
 (function(){
   $('input[type="checkbox"]').on('click', function(e){
     var isChecked = $(this).is(':checked');
@@ -31,14 +35,21 @@ var MODES = {
       $('body').addClass('classic');
       $('.header__mode-text').data('value', MODES.CLASSIC);
       $('.header__logo').attr('src', './img/logo.png');
+      getGridLayout();
     } else {
       $('body').removeClass('classic');
       $('.header__mode-text').data('value', MODES.MASONRY);
       $('.header__logo').attr('src', './img/logo-white.png');
+
+      getGridLayout({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        resizeable: true
+      });
     }
   });
 
-  $('.grid').masonry({
+  getGridLayout({
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     resizeable: true

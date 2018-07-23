@@ -5,6 +5,9 @@ body {
   body.classic {
     background-color: transparent; }
 
+.classic-block {
+  display: none !important; }
+
 .news-content {
   position: absolute;
   top: 51px;
@@ -77,5 +80,11 @@ body {
 @media (max-width: 767px) {
   .grid-item {
     width: 100%; } }
+.classic .classic-none {
+  display: none !important; }
+.classic .classic-block {
+  display: block !important; }
+.classic .grid-item {
+  width: 100%; }
 
 /*# sourceMappingURL=news.css.map */

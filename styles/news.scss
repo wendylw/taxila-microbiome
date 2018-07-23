@@ -10,6 +10,10 @@ body {
   }
 }
 
+.classic-block {
+  display: none !important;
+}
+
 .news-content {
   position: absolute;
   top: 51px;
@@ -123,4 +127,15 @@ body {
 }
 
 .classic {
+  .classic-none {
+    display: none !important;
+  }
+
+  .classic-block {
+    display: block !important;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
 }
