@@ -135,6 +135,11 @@ body {
     display: block !important;
   }
 
+  .grid {
+    max-width: 260px;
+    margin: 0;
+  }
+
   .grid-item {
     width: 100%;
   }

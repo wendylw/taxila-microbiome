@@ -84,6 +84,9 @@ body {
   display: none !important; }
 .classic .classic-block {
   display: block !important; }
+.classic .grid {
+  max-width: 260px;
+  margin: 0; }
 .classic .grid-item {
   width: 100%; }
 
