@@ -40,7 +40,8 @@ var MODES = {
 
   $('.grid').masonry({
     itemSelector: '.grid-item',
-    columnWidth: 360
+    columnWidth: 360,
+    gutter: 20
   });
 })();
 
