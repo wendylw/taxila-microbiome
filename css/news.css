@@ -1,7 +1,8 @@
 @import url(../fonts/font.css);
 body {
   min-width: 1024px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #e9eaea; }
 
 .news-content {
   position: absolute;
@@ -9,7 +10,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e9eaea;
+  padding: 0 15px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
   .news-content__title {
@@ -60,13 +61,26 @@ body {
     background-color: transparent; }
 
 .grid {
-  max-width: 1440px;
-  margin: auto; }
+  margin: auto;
+  max-width: 1440px; }
 
 .grid-item {
-  width: 25%; }
+  padding: 15px; }
 
 .classic .news-content {
   background-color: transparent; }
+
+@media (max-width: 1199px) {
+  .grid-item {
+    width: 33.333333%; } }
+@media (max-width: 1024px) {
+  .news-content {
+    position: static; }
+
+  .grid-item {
+    width: 50%; } }
+@media (max-width: 767px) {
+  .grid-item {
+    width: 100%; } }
 
 /*# sourceMappingURL=news.css.map */

@@ -4,6 +4,7 @@
 body {
   min-width: 1024px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  background-color: $lightest-gray;
 }
 
 .news-content {
@@ -12,7 +13,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $lightest-gray;
+  padding: 0 15px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
@@ -92,16 +93,38 @@ body {
 }
 
 .grid {
-  max-width: 1440px;
   margin: auto;
+  max-width: 1440px;
 }
 
 .grid-item {
-  width: 25%;
+  padding: 15px;
 }
 
 .classic {
   .news-content {
     background-color: transparent;
+  }
+}
+
+@media (max-width: 1199px) {
+  .grid-item {
+    width: 33.333333%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .news-content {
+    position: static;
+  }
+
+  .grid-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-item {
+    width: 100%;
   }
 }
