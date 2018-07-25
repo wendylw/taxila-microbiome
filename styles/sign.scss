@@ -8,12 +8,14 @@ body,
 }
 
 .login {
+  position: absolute;
   width: 100%;
-  min-height: 100%;
-  background-image: url(../img/login-bg.jpg);
+  height: 100%;
+  background-image: url(../img/login-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  overflow: hidden;
 
   &__content {
     margin-top: 15%;

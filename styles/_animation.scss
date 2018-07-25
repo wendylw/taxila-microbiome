@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@-webkit-keyframes rotate {
+  to{
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  };
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+
+.rotate {
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+}
+
+@-webkit-keyframes rotate-reverse{
+	from{
+		-webkit-transform:rotate(1turn);
+		transform:rotate(1turn);
+	}
+}
+
+@keyframes rotate-reverse {
+	from{
+		-webkit-transform:rotate(1turn);
+		transform:rotate(1turn);
+	}
+}
+
+.rotate-reverse {
+  -webkit-animation-name: rotate-reverse;
+  animation-name: rotate-reverse;
+}
+
+@-webkit-keyframes down-up {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(400%);
+    transform: translateY(400%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes down-up {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(400%);
+    transform: translateY(400%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.down-up {
+  -webkit-animation-name: down-up;
+  animation-name: down-up;
+}
+
+@-webkit-keyframes up-down {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes up-down {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-00%);
+    transform: translateY(-400%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.up-down {
+  -webkit-animation-name: up-down;
+  animation-name: up-down;
+}
+
+.animated {
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 120s;
+  animation-duration: 120s;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+.circle-1 {
+  position: absolute;
+  top: 82%;
+  right: 10%;
+  width: 50%;
+  z-index: 1;
+  animation-timing-function: linear;
+
+  &::before {
+    content: "";
+    padding: 50% 0;
+    display: block;
+    width: 100%;
+    border: 1px dashed #a0a2a5;
+    border-radius: 50%;
+  }
+}
+
+.circle-2 {
+  position: absolute;
+  bottom: -1%;
+  right: -1%;
+  width: 25%;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    padding: 50% 0;
+    display: block;
+    width: 100%;
+    border: 1px dashed #a0a2a5;
+    border-radius: 50%;
+  }
+}
+
+.gear {
+  position: absolute;
+  background-image: url(../img/login-gear.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+
+  &::before {
+    content: "";
+    width: 100%;
+    padding: 50% 0;
+    display: block;
+  }
+}
+
+.gear-1,
+.gear-2,
+.gear-3,
+.gear-4,
+.gear-5 {
+  left: 5%;
+  width: 24px;
+}
+
+.gear-6,
+.gear-7 {
+  width: 14px;
+}
+
+.gear-1 {
+  bottom: 30%;
+}
+
+.gear-2 {
+  bottom: -1%;
+}
+
+.gear-3 {
+  bottom: 20%;
+  left: 10%;
+}
+
+.gear-4 {
+  bottom: 4%;
+  left: 17%;
+}
+
+.gear-5 {
+  bottom: 1%;
+  left: 30%;
+}
+
+.gear-6 {
+  bottom: 20%;
+  left: 45%;
+}
+
+.gear-7 {
+  bottom: 19%;
+  left: 47%;
+}
