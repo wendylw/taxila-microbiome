@@ -120,12 +120,89 @@ a {color: inherit;
   width: 66.666666%;
 }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  font-weight: normal;
+  font-family: heebolight;
+  min-width: 240px;
+
+  span {
+    vertical-align: middle;
+  }
+
+  &__list {
+    border-left: 6px solid $theme-color-1;
+    color: $lightter-gray;
+    background-color: $white;
+  }
+
+  &__item a {
+    display: block;
+    padding: 12px 20px;
+    border-bottom: 1px solid $lightest-gray;
+    cursor: pointer;
+  }
+
+  &__item.arrow a:after {
+    content: "";
+    vertical-align: middle;
+    float: right;
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-image: url(../img/news-down.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+  }
+
+  &__item a:hover {
+    color: $white;
+    background-color: $theme-color-1;
+  }
+
+  &.has-title &__item a:hover {
+    color: $theme-color-1;
+    background-color: transparent;
+  }
+
+  &__item.arrow a:hover:after {
+    background-image: url(../img/news-down-white.png);
+  }
+
+  &__title {
+    padding: 15px 20px;
+    color: $white;
+    background-color: $theme-color-1;
+
+    h4 {
+      display: inline-block;
+      margin: 0;
+      font-size: $main-font;
+      font-family: heebobold;
+    }
+
+    span.dropdown-menu__hint {
+      display: inline-block;
+      float: right;
+      padding: 3px 0;
+      font-size: $smaller-font;
+    }
+  }
+}
+
 .header {
   padding: 0 15px;
   background: -webkit-linear-gradient(left, $login-button-color-1, $login-button-color-2);
   background: -moz-linear-gradient(left, $login-button-color-1, $login-button-color-2);
   background: -ms-linear-gradient(left, $login-button-color-1, $login-button-color-2);
   background: linear-gradient(to right, $login-button-color-1, $login-button-color-2);
+
+  .dropdown-menu {
+    padding-top: 3px;
+  }
 
   &:after {
     content: "";
@@ -140,12 +217,34 @@ a {color: inherit;
 
   &__navs {
     float: right;
-    margin: 15px 0;
+    margin: 0;
     font-family: 'heebobold';
     color: $white;
   }
 
+  &__nav-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+
+    > a {
+      padding: 15px 0;
+    }
+
+    span {
+      vertical-align: middle;
+      display: inline-block;
+      font-size: $main-font;
+      line-height: 1em;
+    }
+  }
+
+  &__nav-item:hover .dropdown-menu {
+    display:  block;
+  }
+
   &__mode {
+    margin: 15px 20px;
     color: $theme-color-2;
     font-family: heebolight;
 
@@ -154,29 +253,10 @@ a {color: inherit;
     }
   }
 
-  &__switch-button {
-    display: inline-block;
-    width: 50px;
-    height: 20px;
-    border: 2px solid $theme-color-1;
-    border-radius: 9px;
-  }
-
-  &__nav-item {
-    display: inline-block;
-    margin: 0 10px;
-
-    span {
-      vertical-align: middle;
-      display: inline-block;
-      font-size: $small-font;
-      line-height: 1em;
-    }
-  }
-
   &__nav-link {
     font-size: 0;
     display: block;
+    cursor: pointer;
 
     &:before {
       content: "";
@@ -191,6 +271,20 @@ a {color: inherit;
     }
   }
 
+  &__channel > a:before,
+  &__article > a:before {
+    margin-left: 0;
+    width: 0;
+  }
+
+  &__switch-button {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border: 2px solid $theme-color-1;
+    border-radius: 9px;
+  }
+
   &__switch-button-icon {
     display: block;
     margin: 3px;
@@ -199,9 +293,15 @@ a {color: inherit;
     height: 10px;
     background-color: $theme-color-2;
     border-radius: 50%;
+
+    transition: margin-left 0.4s;
+    -webkit-transition: margin-left 0.4s;
+    -moz-transition: margin-left 0.4s;
+    -ms-transition: margin-left 0.4s;
   }
 
-  &__channel a:after {
+  &__article > a:after,
+  &__channel > a:after {
     @extend .header__nav-link:before;
 
     margin-left: 5px;
@@ -211,19 +311,19 @@ a {color: inherit;
     background-size: auto 10px;
   }
 
-  &__time a:before {
+  &__time > a:before {
     background-image: url(../img/header-timeline.png);
   }
 
-  &__trends a:before {
+  &__trends > a:before {
     background-image: url(../img/header-geo-trend.png);
   }
 
-  &__catalog a:before {
+  &__catalog > a:before {
     background-image: url(../img/header-catalogue.png);
   }
 
-  &__welcome a:before {
+  &__welcome > a:before {
     background-image: url(../img/header-welcome.png);
   }
 
