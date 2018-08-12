@@ -13,6 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/news.css">
 </head>
@@ -94,7 +95,7 @@
               </div>
             </li>
             <li class="dropdown-menu__item">
-              <a><span>Patents & Publications</span></a>
+              <a href="#patents-modal" rel="modal:open"><span>Patents & Publications</span></a>
             </li>
             <li class="dropdown-menu__item">
               <a><span> Local File Browser</span></a>
@@ -510,11 +511,100 @@
   </div>
   <!-- end of Add your site or application content here -->
 
+   <!-- Side Menu -->
+   <div class="add-article__container side-menu">
+    <div class="add-article">
+      <div class="add-article__header">
+        <h3 class="add-article__title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
+        <div class="text-center">
+          <button class="button-fill">Upload Batch</button>
+        </div>
+      </div>
+      <div class="add-article__divider text-center">
+        <strong>Or</strong>
+      </div>
+      <div class="add-article__form-container">
+        <h3 class="add-article__title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
+        <form class="form" action="">
+          <div class="form__group">
+            <label class="form__label" for="">Name:</label>
+            <input class="form__input" type="text">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="">Description:</label>
+            <textarea class="form__input"></textarea>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="">URL:</label>
+            <input class="form__input" type="text">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="">Tags:</label>
+            <input class="form__input" type="text">
+          </div>
+          <div>
+            <label class="form__label" for="">Channels:</label>
+            <div></div>
+            <ul></ul>
+          </div>
+          <div class="add-article__form-buttons row">
+            <div class="col-4">
+              <button class="button-outline">Cancel</button>
+            </div>
+            <div class="col-4">
+              <button class="button-outline">Reset</button>
+            </div>
+            <div class="col-4">
+              <button class="button-fill">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="add-article__info">
+        <div class="add-article__info-total">
+          <label>Total uploaded: </label>
+          <span>0</span>
+        </div>
+        <div class="add-article__info-uploads">
+          <label>Remaining Uploads: </label>
+          <span>Unlimited</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- end of Side Menu -->
+
+  <!-- Patents Modal -->
+  <div id="patents-modal" class="patents-modal modal__container modal">
+    <div class="modal__header">
+      <h4 class="modal__header-title text-middle">Associated Sources For Catalog 'Patents & Publications'</h4>
+      <img class="text-middle" src="./img/news-down-white.png" alt="">
+    </div>
+    <div class="modal__list-container">
+      <ul class="modal__list">
+        <li class="modal__item">Car Body Painting</li>
+        <li class="modal__item active">Auto Process Finishing</li>
+        <li class="modal__item">Analytics for AutoInergy Channel</li>
+        <li class="modal__item">Progress in Polymer Science</li>
+        <li class="modal__item">Car Body Painting</li>
+        <li class="modal__item">Auto Process Finishing</li>
+        <li class="modal__item">Analytics for AutoInergy Channel</li>
+        <li class="modal__item">Progress in Polymer Science</li>
+        <li class="modal__item">Plastic Fuel Tanks</li>
+        <li class="modal__item">Analytics for Plastic Industry Channel</li>
+        <li class="modal__item">Plastics News Europe</li>
+      </ul>
+    </div>
+  </div>
+  <!-- end of Patents Modal -->
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="./js/vendor/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/news-masonry.js"></script>
 

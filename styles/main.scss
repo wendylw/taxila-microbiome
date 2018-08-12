@@ -94,6 +94,54 @@ a {color: inherit;
   }
 }
 
+.button-fill {
+  padding: 10px 12px;
+  min-height: 30px;
+  color: $white;
+  background-color: $theme-color-2;
+  border-radius: 4px;
+}
+
+.button-outline {
+  padding: 10px 12px;
+  min-height: 30px;
+  border: 1px solid $theme-color-1;
+  color: $theme-color-1;
+  border-radius: 4px;
+}
+
+.form {
+  &__group {
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: block;
+    font-size: $big-font;
+    color: $theme-color-2;
+  }
+
+  &__input {
+    padding: 6px 12px;
+    border: 1px solid $form-input-border;
+    width: 100%;
+    min-height: 34px;
+    background-color: $form-input-bg;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  &__label ~ &__input {
+    margin-top: 10px;
+  }
+}
+
 .row:after {
   content: "";
   display: block;
@@ -189,6 +237,53 @@ a {color: inherit;
       float: right;
       padding: 3px 0;
       font-size: $smaller-font;
+    }
+  }
+}
+
+.alert {
+  background: -webkit-linear-gradient(left, $login-button-color-1, $login-button-color-2);
+  background: -moz-linear-gradient(left, $login-button-color-1, $login-button-color-2);
+  background: -ms-linear-gradient(left, $login-button-color-1, $login-button-color-2);
+  background: linear-gradient(to right, $login-button-color-1, $login-button-color-2);
+
+  &__container {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid $theme-color-1;
+    width: 540px;
+    background-color: $white;
+    z-index: 2;
+  }
+
+  &__content {
+    padding: 50px 0 80px;
+    color: $white;
+    background-image: url(../img/alert-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+    font-weight: normal;
+  }
+
+  &__text {
+    margin: auto;
+    max-width: 320px;
+    line-height: 1.5em;
+    font-weight: 300;
+  }
+
+  &__status-icon {
+    padding: 20px;
+
+    img {
+      max-width: 36px;
     }
   }
 }
@@ -431,4 +526,6 @@ a {color: inherit;
   }
 }
 
+@import './side-menu';
+@import './modal';
 @import './animation';

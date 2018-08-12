@@ -1,0 +1,53 @@
+.modal {
+  &__container {
+    padding: 0;
+    border: 1px solid $theme-color-1;
+    border-radius: 0;
+    max-width: 95%;
+
+    &.patents-modal {
+      width: 700px;
+    }
+  }
+
+  &__header {
+    position: relative;
+    padding: 12px 20px;
+    color: $white;
+    background-color: $theme-color-1;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto 20px;
+      width: 14px;
+    }
+  }
+
+  &__header-title {
+    display: inline-block;
+    margin: 0;
+  }
+
+  &__list {
+    margin: 0;
+  }
+
+  &__item {
+    padding: 12px 20px;
+    border-bottom: 1px solid $lightest-gray;
+
+    &.active {
+      color: $theme-color-1;
+    }
+  }
+}
+
+.patents-modal {
+  .modal__list-container {
+    max-height: 390px;
+    overflow-y: auto;
+  }
+}

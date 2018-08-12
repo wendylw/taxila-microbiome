@@ -123,152 +123,68 @@
   </header>
 
   <!-- Side Menu -->
-  <div class="news-info side-menu">
-    <h4 class="news-info__title text-right">Sucheendra</h4>
-    <div class="news-info__content">
-      <ul class="news-info__myself-list">
-        <li class="news-info__myself-item">
-          <a href="#">
-            <img class="text-middle" src="./img/news-info-favorite.png" alt="">
-            <span class="text-middle">My favorite articles</span>
-          </a>
-        </li>
-        <li class="news-info__myself-item">
-          <a href="#">
-            <img class="text-middle" src="./img/news-info-archive.png" alt="">
-            <span class="text-middle">My archive</span>
-          </a>
-        </li>
-      </ul>
-      <div class="news-info__list-container">
-        <h4 class="news-info__list-title">
-          <img class="text-middle" src="./img/news-info-download-white.png" alt="">
-          <span class="text-middle">Download</span>
-        </h4>
-        <ul class="news-info__list">
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-trash.png" alt="">
-              <span class="text-middle">Clear Select Articles</span>
-            </button>
-          </li>
-          <li>
-            <button class="news-info__dropdown-button">
-              <img class="text-middle" src="./img/news-info-download.png" alt="">
-              <span class="text-middle">Download Today's Articles </span>
-              <img class="news-info__down-icon text-middle" src="./img/news-down.png" alt="">
-            </button>
-            <ul class="news-info__sub-list">
-              <li>
-                <a href="">With Annotation</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <button class="news-info__dropdown-button">
-              <img class="text-middle" src="./img/news-info-download.png" alt="">
-              <span class="text-middle">Download Selected Articles</span>
-              <img class="news-info__down-icon text-middle" src="./img/news-down.png" alt="">
-            </button>
-            <ul class="news-info__sub-list">
-              <li>
-                <a href="">With Annotation</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-show.png" alt="">
-              <span class="text-middle">Show Selected Articles</span>
-            </button>
-          </li>
-        </ul>
+  <div class="add-article__container side-menu">
+    <div class="add-article">
+      <div class="add-article__header">
+        <h3 class="add-article__title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
+        <div class="text-center">
+          <button class="button-fill">Upload Batch</button>
+        </div>
       </div>
-      <div class="news-info__list-container">
-        <h4 class="news-info__list-title">
-          <img class="text-middle" src="./img/news-info-mail-white.png" alt="">
-          <span class="text-middle">Mail</span>
-        </h4>
-        <ul class="news-info__list">
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-trash.png" alt="">
-              <span class="text-middle">Clear Select Articles</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-send.png" alt="">
-              <span class="text-middle">Send Today's Articles </span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-send.png" alt="">
-              <span class="text-middle">Send Selected Articles</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-show.png" alt="">
-              <span class="text-middle">Show Selected Articles</span>
-            </button>
-          </li>
-        </ul>
+      <div class="add-article__divider text-center">
+        <strong>Or</strong>
       </div>
-      <ul class="news-info__link-list">
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-plus.png" alt="">
-            <span class="text-middle">Add new resource</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-video.png" alt="">
-            <span class="text-middle">Tour</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-term.png" alt="">
-            <span class="text-middle">Term of Use</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-setting.png" alt="">
-            <span class="text-middle">Change your password</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-feedback.png" alt="">
-            <span class="text-middle">Write feedback</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="news-info__sign text-right">
-      <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
-      <span class="text-middle">Sign off</span>
+      <div class="add-article__form-container">
+        <h3 class="add-article__title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
+        <form class="form" action="">
+          <div class="form__group">
+            <label class="form__label" for="">Name:</label>
+            <input class="form__input" type="text">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="">Description:</label>
+            <textarea class="form__input"></textarea>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="">URL:</label>
+            <input class="form__input" type="text">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="">Tags:</label>
+            <input class="form__input" type="text">
+          </div>
+          <div>
+            <label class="form__label" for="">Channels:</label>
+            <div></div>
+            <ul></ul>
+          </div>
+          <div class="add-article__form-buttons row">
+            <div class="col-4">
+              <button class="button-outline">Cancel</button>
+            </div>
+            <div class="col-4">
+              <button class="button-outline">Reset</button>
+            </div>
+            <div class="col-4">
+              <button class="button-fill">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="add-article__info">
+        <div class="add-article__info-total">
+          <label>Total uploaded: </label>
+          <span>0</span>
+        </div>
+        <div class="add-article__info-uploads">
+          <label>Remaining Uploads: </label>
+          <span>Unlimited</span>
+        </div>
+      </div>
     </div>
   </div>
   <!-- end of Side Menu -->
-
-  <!-- Alert -->
-  <div class="alert__container text-center">
-    <div class="alert">
-      <div class="alert__content">
-        <h3 class="alert__title">TAXILA ALERT</h3>
-        <p class="alert__text">No articles have been shortlisted for download. Please select the articles before using this feature.</p>
-      </div>
-    </div>
-    <div class="alert__status-icon">
-      <img src="./img/ok.png" alt="">
-    </div>
-  </div>
-  <!-- end of Alert -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

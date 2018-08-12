@@ -173,7 +173,8 @@ body {
   max-width: 1440px; }
 
 .grid-item {
-  padding: 15px; }
+  padding: 15px;
+  cursor: pointer; }
 
 @media (max-width: 1199px) {
   .grid-item {
