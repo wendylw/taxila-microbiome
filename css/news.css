@@ -78,6 +78,23 @@ body {
     margin: 15px 0 0;
     max-width: 260px;
     color: #093553; }
+  .news-content__popular-bg {
+    display: none;
+    margin: -16px -15px 0; }
+    .news-content__popular-bg img {
+      max-width: 100%; }
+  .news-content__popular-operation {
+    display: none;
+    padding: 14px 10px; }
+  .news-content__popular-today, .news-content__popular-total {
+    float: right;
+    margin: 10px 20px; }
+    .news-content__popular-today label, .news-content__popular-total label {
+      color: #84c0ca; }
+    .news-content__popular-today span, .news-content__popular-total span {
+      color: #093553; }
+  .news-content.popular .news-content__popular-bg, .news-content.popular .news-content__popular-operation {
+    display: block; }
 
 .news-topics {
   padding-left: 10px; }

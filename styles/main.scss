@@ -168,6 +168,26 @@ a {color: inherit;
   width: 66.666666%;
 }
 
+.dropdown {
+  display: inline-block;
+  width: 50%;
+  max-width: 420px;
+
+  &__button {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid $theme-color-2;
+    width: 100%;
+    border-radius: 4px;
+
+    img {
+      float: right;
+      margin: 4px 0;
+      max-width: 14px;
+    }
+  }
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -284,6 +304,25 @@ a {color: inherit;
 
     img {
       max-width: 36px;
+    }
+  }
+}
+
+.tag {
+  &__list {
+    margin: 5px -5px;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 5px;
+    font-size: $small-font;
+    color: $white;
+    background-color: $theme-color-2;
+
+    img {
+      max-height: 8px;
     }
   }
 }

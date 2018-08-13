@@ -73,10 +73,10 @@
         <div class="dropdown-menu">
           <ul class="dropdown-menu__list">
             <li class="dropdown-menu__item">
-              <a><span>Filter by TIME LINE</span></a>
+              <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
             </li>
             <li class="dropdown-menu__item">
-              <a><span>Filter by POPULAR</span></a>
+              <a class="filter-popular"><span>Filter by POPULAR</span></a>
             </li>
           </ul>
         </div>
@@ -125,6 +125,35 @@
 
   <!-- Add your site or application content here -->
   <div class="news-content">
+    <div class="news-content__popular-bg">
+      <img src="./img/popular-bg.jpg" alt="">
+    </div>
+    <div class="news-content__popular-operation">
+      <div class="dropdown">
+        <div class="dropdown__button">
+          <span>Filtered by the country or continent</span>
+          <img src="./img/news-down.png" alt="">
+        </div>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item">
+              <a><span>test</span></a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a><span>test</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="news-content__popular-today">
+        <label>Add today: </label><span>0</span>
+      </div>
+      <div class="news-content__popular-total">
+        <label>Total articles: </label><span>7</span>
+      </div>
+    </div>
+
     <h3 class="news-content__recent-update-title classic-block">Recent Update</h3>
     <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
       <div class="grid-sizer grid-item col-3">
@@ -512,6 +541,7 @@
   <!-- end of Add your site or application content here -->
 
   <!-- Side Menu -->
+  <div class="side-menu__backdrop"></div>
   <div class="article__container side-menu">
     <div class="article">
       <div>

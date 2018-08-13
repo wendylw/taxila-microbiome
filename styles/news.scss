@@ -120,6 +120,39 @@ body {
     max-width: 260px;
     color: $theme-color-2;
   }
+
+  &__popular-bg {
+    display: none;
+    margin: -16px -15px 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__popular-operation {
+    display: none;
+    padding: 14px 10px;
+  }
+
+  &__popular-today,
+  &__popular-total {
+    float: right;
+    margin: 10px 20px;
+
+    label {
+      color: $theme-color-1;
+    }
+
+    span {
+      color: $theme-color-2;
+    }
+  }
+
+  &.popular &__popular-bg,
+  &.popular &__popular-operation {
+    display: block;
+  }
 }
 
 .news-topics {
