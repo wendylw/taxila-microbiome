@@ -57,6 +57,11 @@ a {color: inherit;
   vertical-align: top;
 }
 
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
 .checkbox {
   position: relative;
   display: inline-block;
@@ -523,7 +528,11 @@ a {color: inherit;
       color: $theme-color-2;
     }
 
-    &__nav-item span:first-letter {
+    &__nav-link > span {
+      color: $theme-color-3;
+    }
+
+    &__nav-link:hover > span {
       color: $theme-color-1;
     }
 
@@ -567,4 +576,5 @@ a {color: inherit;
 
 @import './side-menu';
 @import './modal';
+@import './add-article';
 @import './animation';

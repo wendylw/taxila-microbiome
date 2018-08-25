@@ -122,21 +122,105 @@
     </ul>
   </header>
 
-  <!-- Side Menu -->
-  <div class="side-menu__backdrop"></div>
-  <div class="add-article__container side-menu">
-    <div class="add-article">
-      <div class="add-article__header">
-        <h3 class="add-article__title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
-        <div class="text-center">
-          <button class="button-fill">Upload Batch</button>
+  <!-- Add Article -->
+  <div class="add-article">
+    <div class="container">
+      <section class="add-article-person text-center">
+        <div class="add-article__avatar"></div>
+        <h3 class="add-article-person__name">Sucheendra</h3>
+        <span class="add-article-person__description">Say something about yourself</span>
+        <ul class="add-article-person__list">
+          <li class="add-article__item">
+            <a href="">My favorite articles</a>
+          </li>
+          <li class="add-article__item">
+            <a href="">My archive</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="add-article-operation text-center">
+        <div class="add-article-operation__item">
+          <h3 class="add-article-operation__title">Download</h3>
+          <div class="add-article-operation__item-form">
+            <div class="checkbox text-middle">
+              <input type="checkbox" />
+            </div>
+            <span class="checkbox__text text-middle">With Annotation</span>
+          </div>
+          <div class="add-article-operation__list row">
+            <div class="add-article-operation__selector col-6">
+              <div class="add-article-operation__card">
+                <label>Today’s Articles</label>
+
+                <div class="add-article-operation__card-list-container">
+                  <ul class="add-article-operation__card-list">
+                    <li>Download</li>
+                    <li>Clear</li>
+                    <li>Show all</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="add-article-operation__selector col-6">
+              <div class="add-article-operation__card">
+                <label>Selected Articles</label>
+
+                <div class="add-article-operation__card-list-container">
+                  <ul class="add-article-operation__card-list">
+                    <li>Download</li>
+                    <li>Clear</li>
+                    <li>Show all</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="add-article-operation__item">
+          <h3 class="add-article-operation__title">Mail</h3>
+          <div class="add-article-operation__list row">
+            <div class="add-article-operation__selector col-6">
+              <div class="add-article-operation__card">
+                <label>Today’s Articles</label>
+
+                <div class="add-article-operation__card-list-container">
+                  <ul class="add-article-operation__card-list">
+                    <li>Download</li>
+                    <li>Clear</li>
+                    <li>Show all</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="add-article-operation__selector col-6">
+              <div class="add-article-operation__card">
+                <label>Selected Articles</label>
+
+                <div class="add-article-operation__card-list-container">
+                  <ul class="add-article-operation__card-list">
+                    <li>Download</li>
+                    <li>Clear</li>
+                    <li>Show all</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="add-article-operation__item new-resource">
+          <h3 class="add-article-operation__title">Add new resource</h3>
+          <p class="add-article-operation__subtitle">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</p>
+          <button class="add-article-operation__button-fill">Upload Batch</button>
+        </div>
+      </section>
+
       <div class="add-article__divider text-center">
         <strong>Or</strong>
       </div>
-      <div class="add-article__form-container">
-        <h3 class="add-article__title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
+
+      <section class="add-article__form-container">
+        <h3 class="add-article-form__title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
         <form class="form" action="">
           <div class="form__group">
             <label class="form__label" for="">Name:</label>
@@ -200,20 +284,18 @@
             </ul>
           </div>
           <div class="add-article__form-buttons row">
-            <div class="col-4">
-              <button class="button-outline">Cancel</button>
+            <div class="col-6">
+              <button class="button-outline cnacel">Cancel</button>
             </div>
-            <div class="col-4">
+            <div class="col-6 text-right">
               <button class="button-outline">Reset</button>
-            </div>
-            <div class="col-4">
               <button class="button-fill">Add</button>
             </div>
           </div>
         </form>
-      </div>
+      </section>
 
-      <div class="add-article__info">
+      <section class="add-article__info">
         <div class="add-article__info-total">
           <label>Total uploaded: </label>
           <span>0</span>
@@ -222,10 +304,32 @@
           <label>Remaining Uploads: </label>
           <span>Unlimited</span>
         </div>
+      </section>
+
+      <section class="add-article__other-links text-center">
+        <ul>
+          <li class="add-article__item">
+            <a href="">Tour</a>
+          </li>
+          <li class="add-article__item">
+            <a href="">Term of Use</a>
+          </li>
+          <li class="add-article__item">
+            <a href="">Change your password</a>
+          </li>
+          <li class="add-article__item">
+            <a href="">Feedback</a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="add-article__sign-off text-center">
+        <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
+        <span class="text-middle">Sign off</span>
       </div>
     </div>
   </div>
-  <!-- end of Side Menu -->
+  <!-- end of Add Article -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
