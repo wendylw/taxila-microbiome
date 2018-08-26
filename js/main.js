@@ -15,11 +15,6 @@
     e.stopPropagation();
   });
 
-  $('.news-content .grid-item').on('click', function() {
-    $('.side-menu__backdrop').show();
-    $('.article__container').addClass('active');
-  });
-
   $('body').on('click', '.side-menu__backdrop', function() {
     $('.side-menu__backdrop').hide();
     $('.article__container').removeClass('active');

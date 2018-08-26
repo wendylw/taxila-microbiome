@@ -311,6 +311,10 @@ body {
 .grid-item {
   padding: 15px;
   cursor: pointer;
+
+  > a {
+    display: block;
+  }
 }
 
 @media (max-width: 1199px) {
