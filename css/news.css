@@ -79,13 +79,17 @@ body {
     max-width: 260px;
     color: #093553; }
   .news-content__popular-bg {
-    display: none;
-    margin: -16px -15px 0; }
+    display: none; }
     .news-content__popular-bg img {
       max-width: 100%; }
   .news-content__popular-operation {
-    display: none;
-    padding: 14px 10px; }
+    padding: 14px 10px;
+    margin: auto;
+    max-width: 1440px; }
+    .news-content__popular-operation .dropdown {
+      position: relative; }
+    .news-content__popular-operation .dropdown-menu {
+      width: 100%; }
   .news-content__popular-today, .news-content__popular-total {
     float: right;
     margin: 10px 20px; }
@@ -93,8 +97,12 @@ body {
       color: #84c0ca; }
     .news-content__popular-today span, .news-content__popular-total span {
       color: #093553; }
-  .news-content.popular .news-content__popular-bg, .news-content.popular .news-content__popular-operation {
-    display: block; }
+  .news-content.popular {
+    background-color: #fff;
+    top: 126px;
+    margin-top: 15%; }
+  .news-content__popular-bg {
+    background-color: #fff; }
 
 .news-topics {
   padding-left: 10px; }

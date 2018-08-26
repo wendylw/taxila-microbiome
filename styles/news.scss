@@ -123,7 +123,6 @@ body {
 
   &__popular-bg {
     display: none;
-    margin: -16px -15px 0;
 
     img {
       max-width: 100%;
@@ -131,8 +130,17 @@ body {
   }
 
   &__popular-operation {
-    display: none;
     padding: 14px 10px;
+    margin: auto;
+    max-width: 1440px;
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      width: 100%;
+    }
   }
 
   &__popular-today,
@@ -149,9 +157,14 @@ body {
     }
   }
 
-  &.popular &__popular-bg,
-  &.popular &__popular-operation {
-    display: block;
+  &.popular {
+    background-color: $white;
+    top: 126px;
+    margin-top: 15%
+  }
+
+  &__popular-bg {
+    background-color: $white;
   }
 }
 

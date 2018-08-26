@@ -39,11 +39,13 @@
     var popularHeight = $('.news-content__popular-bg').height() + 67;
 
     $('.news-content').addClass('popular');
+    $('.news-content__popular-bg').show();
     $('.news-topics__container').css('top', popularHeight + 'px');
   });
 
   $('.filter-timeline').on('click', function() {
     $('.news-content').removeClass('popular');
+    $('.news-content__popular-bg').hide();
     $('.news-topics__container').css('top', 0);
   });
 
