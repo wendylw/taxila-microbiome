@@ -123,209 +123,211 @@
   </header>
 
   <!-- Add Article -->
-  <div class="add-article">
-    <div class="container">
-      <section class="add-article-person text-center">
-        <div class="add-article__avatar"></div>
-        <h3 class="add-article-person__name">Sucheendra</h3>
-        <span class="add-article-person__description">Say something about yourself</span>
-        <ul class="add-article-person__list">
-          <li class="add-article__item">
-            <a href="">My favorite articles</a>
-          </li>
-          <li class="add-article__item">
-            <a href="">My archive</a>
-          </li>
-        </ul>
-      </section>
+  <div class="news-content">
+    <div class="add-article">
+      <div class="container">
+        <section class="add-article-person text-center">
+          <div class="add-article__avatar"></div>
+          <h3 class="add-article-person__name">Sucheendra</h3>
+          <span class="add-article-person__description">Say something about yourself</span>
+          <ul class="add-article-person__list">
+            <li class="add-article__item">
+              <a href="">My favorite articles</a>
+            </li>
+            <li class="add-article__item">
+              <a href="">My archive</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="add-article-operation text-center">
-        <div class="add-article-operation__item">
-          <h3 class="add-article-operation__title">Download</h3>
-          <div class="add-article-operation__item-form">
-            <div class="checkbox text-middle">
-              <input type="checkbox" />
+        <section class="add-article-operation text-center">
+          <div class="add-article-operation__item">
+            <h3 class="add-article-operation__title">Download</h3>
+            <div class="add-article-operation__item-form">
+              <div class="checkbox text-middle">
+                <input type="checkbox" />
+              </div>
+              <span class="checkbox__text text-middle">With Annotation</span>
             </div>
-            <span class="checkbox__text text-middle">With Annotation</span>
-          </div>
-          <div class="add-article-operation__list row">
-            <div class="add-article-operation__selector col-6">
-              <div class="add-article-operation__card">
-                <label>Today’s Articles</label>
+            <div class="add-article-operation__list row">
+              <div class="add-article-operation__selector col-6">
+                <div class="add-article-operation__card">
+                  <label>Today’s Articles</label>
 
-                <div class="add-article-operation__card-list-container">
-                  <ul class="add-article-operation__card-list">
-                    <li>Download</li>
-                    <li>Clear</li>
-                    <li>Show all</li>
-                  </ul>
+                  <div class="add-article-operation__card-list-container">
+                    <ul class="add-article-operation__card-list">
+                      <li>Download</li>
+                      <li>Clear</li>
+                      <li>Show all</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="add-article-operation__selector col-6">
+                <div class="add-article-operation__card">
+                  <label>Selected Articles</label>
+
+                  <div class="add-article-operation__card-list-container">
+                    <ul class="add-article-operation__card-list">
+                      <li>Download</li>
+                      <li>Clear</li>
+                      <li>Show all</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="add-article-operation__selector col-6">
-              <div class="add-article-operation__card">
-                <label>Selected Articles</label>
+          </div>
+          <div class="add-article-operation__item">
+            <h3 class="add-article-operation__title">Mail</h3>
+            <div class="add-article-operation__list row">
+              <div class="add-article-operation__selector col-6">
+                <div class="add-article-operation__card">
+                  <label>Today’s Articles</label>
 
-                <div class="add-article-operation__card-list-container">
-                  <ul class="add-article-operation__card-list">
-                    <li>Download</li>
-                    <li>Clear</li>
-                    <li>Show all</li>
-                  </ul>
+                  <div class="add-article-operation__card-list-container">
+                    <ul class="add-article-operation__card-list">
+                      <li>Download</li>
+                      <li>Clear</li>
+                      <li>Show all</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="add-article-operation__selector col-6">
+                <div class="add-article-operation__card">
+                  <label>Selected Articles</label>
+
+                  <div class="add-article-operation__card-list-container">
+                    <ul class="add-article-operation__card-list">
+                      <li>Download</li>
+                      <li>Clear</li>
+                      <li>Show all</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="add-article-operation__item new-resource">
+            <h3 class="add-article-operation__title">Add new resource</h3>
+            <p class="add-article-operation__subtitle">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</p>
+            <button class="add-article-operation__button-fill">Upload Batch</button>
+          </div>
+        </section>
+
+        <div class="add-article__divider text-center">
+          <strong>Or</strong>
         </div>
-        <div class="add-article-operation__item">
-          <h3 class="add-article-operation__title">Mail</h3>
-          <div class="add-article-operation__list row">
-            <div class="add-article-operation__selector col-6">
-              <div class="add-article-operation__card">
-                <label>Today’s Articles</label>
 
-                <div class="add-article-operation__card-list-container">
-                  <ul class="add-article-operation__card-list">
-                    <li>Download</li>
-                    <li>Clear</li>
-                    <li>Show all</li>
-                  </ul>
-                </div>
-              </div>
+        <section class="add-article__form-container">
+          <h3 class="add-article-form__title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
+          <form class="form" action="">
+            <div class="form__group">
+              <label class="form__label" for="">Name:</label>
+              <input class="form__input" type="text">
             </div>
-            <div class="add-article-operation__selector col-6">
-              <div class="add-article-operation__card">
-                <label>Selected Articles</label>
-
-                <div class="add-article-operation__card-list-container">
-                  <ul class="add-article-operation__card-list">
-                    <li>Download</li>
-                    <li>Clear</li>
-                    <li>Show all</li>
-                  </ul>
-                </div>
-              </div>
+            <div class="form__group">
+              <label class="form__label" for="">Description:</label>
+              <textarea class="form__input"></textarea>
             </div>
-          </div>
-        </div>
-        <div class="add-article-operation__item new-resource">
-          <h3 class="add-article-operation__title">Add new resource</h3>
-          <p class="add-article-operation__subtitle">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</p>
-          <button class="add-article-operation__button-fill">Upload Batch</button>
-        </div>
-      </section>
-
-      <div class="add-article__divider text-center">
-        <strong>Or</strong>
-      </div>
-
-      <section class="add-article__form-container">
-        <h3 class="add-article-form__title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
-        <form class="form" action="">
-          <div class="form__group">
-            <label class="form__label" for="">Name:</label>
-            <input class="form__input" type="text">
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="">Description:</label>
-            <textarea class="form__input"></textarea>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="">URL:</label>
-            <input class="form__input" type="text">
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="">Tags:</label>
-            <input class="form__input" type="text">
-          </div>
-          <div class="side-dropup">
-            <label class="form__label" for="">Channels:</label>
+            <div class="form__group">
+              <label class="form__label" for="">URL:</label>
+              <input class="form__input" type="text">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="">Tags:</label>
+              <input class="form__input" type="text">
+            </div>
             <div class="side-dropup">
-              <div class="side-dropup__menu">
-                <ul class="side-dropup__list">
-                  <li class="side-dropup__item">
-                    <span>Analytics</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Auto Exteriors</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Auto Inergy</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Competitor Landscape</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Local Data Store</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Plastic industry</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Plastic Omnium</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Scientific Publications</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Smart Mobility</span>
-                  </li>
-                  <li class="side-dropup__item">
-                    <span>Tech Trends</span>
-                  </li>
-                </ul>
+              <label class="form__label" for="">Channels:</label>
+              <div class="side-dropup">
+                <div class="side-dropup__menu">
+                  <ul class="side-dropup__list">
+                    <li class="side-dropup__item">
+                      <span>Analytics</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Auto Exteriors</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Auto Inergy</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Competitor Landscape</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Local Data Store</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Plastic industry</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Plastic Omnium</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Scientific Publications</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Smart Mobility</span>
+                    </li>
+                    <li class="side-dropup__item">
+                      <span>Tech Trends</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="side-dropup__button">
+                  <span class="text-middle">Analytics</span>
+                  <img class="text-middle" src="./img/side-plus-white.png" alt="">
+                </button>
               </div>
-              <button class="side-dropup__button">
-                <span class="text-middle">Analytics</span>
-                <img class="text-middle" src="./img/side-plus-white.png" alt="">
-              </button>
+              <ul class="tag__list">
+              </ul>
             </div>
-            <ul class="tag__list">
-            </ul>
+            <div class="add-article__form-buttons row">
+              <div class="col-6">
+                <button class="button-outline cnacel">Cancel</button>
+              </div>
+              <div class="col-6 text-right">
+                <button class="button-outline">Reset</button>
+                <button class="button-fill">Add</button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section class="add-article__info">
+          <div class="add-article__info-total">
+            <label>Total uploaded: </label>
+            <span>0</span>
           </div>
-          <div class="add-article__form-buttons row">
-            <div class="col-6">
-              <button class="button-outline cnacel">Cancel</button>
-            </div>
-            <div class="col-6 text-right">
-              <button class="button-outline">Reset</button>
-              <button class="button-fill">Add</button>
-            </div>
+          <div class="add-article__info-uploads">
+            <label>Remaining Uploads: </label>
+            <span>Unlimited</span>
           </div>
-        </form>
-      </section>
+        </section>
 
-      <section class="add-article__info">
-        <div class="add-article__info-total">
-          <label>Total uploaded: </label>
-          <span>0</span>
+        <section class="add-article__other-links text-center">
+          <ul>
+            <li class="add-article__item">
+              <a href="">Tour</a>
+            </li>
+            <li class="add-article__item">
+              <a href="">Term of Use</a>
+            </li>
+            <li class="add-article__item">
+              <a href="">Change your password</a>
+            </li>
+            <li class="add-article__item">
+              <a href="">Feedback</a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="add-article__sign-off text-center">
+          <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
+          <span class="text-middle">Sign off</span>
         </div>
-        <div class="add-article__info-uploads">
-          <label>Remaining Uploads: </label>
-          <span>Unlimited</span>
-        </div>
-      </section>
-
-      <section class="add-article__other-links text-center">
-        <ul>
-          <li class="add-article__item">
-            <a href="">Tour</a>
-          </li>
-          <li class="add-article__item">
-            <a href="">Term of Use</a>
-          </li>
-          <li class="add-article__item">
-            <a href="">Change your password</a>
-          </li>
-          <li class="add-article__item">
-            <a href="">Feedback</a>
-          </li>
-        </ul>
-      </section>
-
-      <div class="add-article__sign-off text-center">
-        <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
-        <span class="text-middle">Sign off</span>
       </div>
     </div>
   </div>
