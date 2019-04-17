@@ -447,7 +447,7 @@ a {color: inherit;
   &__article > a:before,
   &__channel > a:before,
   &__catalog > a:before {
-    background-image: url(../img/header-catalogue.png);
+    background-image: url(../img/menu-w.png);
   }
 
   &__search {
@@ -527,10 +527,6 @@ a {color: inherit;
       margin-left: 3px;
     }
 
-    &__channel a:after {
-      background-image: url(../img/header-right-arrow-blue.png);
-    }
-
     &__time a:before {
       background-image: url(../img/header-timeline-blue.png);
     }
@@ -539,12 +535,10 @@ a {color: inherit;
       background-image: url(../img/header-geo-trend-blue.png);
     }
 
+    &__article > a:before,
+    &__channel a:before,
     &__catalog a:before {
-      background-image: url(../img/header-catalogue-blue.png);
-    }
-
-    &__welcome a:before {
-      background-image: url(../img/header-welcome-blue.png);
+      background-image: url(../img/menu-g.png);
     }
 
     &__search {
