@@ -4,7 +4,7 @@ html,
 body,
 .login__container {
   height: 100%;
-  font-family: heebolight, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .login {
@@ -18,17 +18,22 @@ body,
   overflow: hidden;
 
   &__content {
-    margin-top: 15%;
-    margin-left: 40%;
-    width: 60%;
+    width: 100%;
   }
 
   &__logo {
+    padding: 60px;
     width: 70%;
+    max-width: 354px;
 
     img {
       width: 100%;
     }
+  }
+
+  &__form-container {
+    margin: 10% auto;
+    max-width: 270px;
   }
 
   &__sign-links {
@@ -67,8 +72,9 @@ body,
   }
 
   &__welcome {
-    margin: 20px 0 40px;
-    color: $lightter-gray;
+    margin: 0 0 40px;
+    color: $dark-gray-color;
+    font-weight: bold;
   }
 }
 
@@ -76,35 +82,38 @@ body,
   input[type="text"],
   input[type="password"] {
     padding: 6px 12px;
-    border: 1px solid $lightter-gray;
-    max-width: 270px;
     width: 100%;
     min-height: 30px;
-    line-height: 24px;
-    color: $theme-color-1;
-    background-color: $light-blue;
-    border-radius: 20px;
-    outline: none;
+    line-height: 20px;
+    font-size: $small-font;
+    color: $form-input-border;
+    border: 0;
   }
 
   ::-webkit-input-placeholder { /* WebKit browsers */
-    color: $theme-color-1;
+    color: $form-input-border;
   }
 
   :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $theme-color-1;
+    color: $form-input-border;
   }
 
   ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: $theme-color-1;
+    color: $form-input-border;
   }
 
   :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: $theme-color-1;
+    color: $form-input-border;
   }
 
   &__group {
-    margin-top: 15px;
+    margin-top: 30px;
+    border: 1px solid $form-input-border;
+    max-width: 270px;
+    background-color: $white;
+    border-radius: 20px;
+    outline: none;
+    overflow: hidden;
   }
 
   &__button-group {
@@ -112,26 +121,22 @@ body,
     margin: 30px 0;
 
     a {
-      font-size: $small-font;
-      color: $lightter-gray;
+      font-size: $smaller-font;
+      color: $light-gray;
     }
   }
 
   &__login-button {
     padding: 6px;
     border: 0;
-    min-height: 36px;
-    line-height: 30px;;
-    max-width: 120px;
-    width: 50%;
+    min-height: 34px;
+    line-height: 24px;
+    width: 100%;
     color: $white;
-    font-size: $big-font;
+    font-size: $main-font;
     border-radius: 20px;
-
-    background: -webkit-linear-gradient(left, $login-button-color-1, $login-button-color-2);
-    background: -moz-linear-gradient(left, $login-button-color-1, $login-button-color-2);
-    background: -ms-linear-gradient(left, $login-button-color-1, $login-button-color-2);
-    background: linear-gradient(to right, $login-button-color-1, $login-button-color-2);
+    background-color: $theme-color-2;
+    box-shadow: 0 6px 8px 0 rgba(9, 53, 83, 0.31);
   }
 }
 

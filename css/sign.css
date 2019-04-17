@@ -2,7 +2,7 @@ html,
 body,
 .login__container {
   height: 100%;
-  font-family: heebolight, 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .login {
   position: absolute;
@@ -14,13 +14,16 @@ body,
   background-size: cover;
   overflow: hidden; }
   .login__content {
-    margin-top: 15%;
-    margin-left: 40%;
-    width: 60%; }
+    width: 100%; }
   .login__logo {
-    width: 70%; }
+    padding: 60px;
+    width: 70%;
+    max-width: 354px; }
     .login__logo img {
       width: 100%; }
+  .login__form-container {
+    margin: 10% auto;
+    max-width: 270px; }
   .login__sign-links {
     width: 70%; }
   .login__sign-list {
@@ -47,55 +50,56 @@ body,
       height: 10px;
       border-left: 1px solid #84c0ca; }
   .login__welcome {
-    margin: 20px 0 40px;
-    color: #8a8a8a; }
+    margin: 0 0 40px;
+    color: #4a4a4a;
+    font-weight: bold; }
 
 .sign-form input[type="text"],
 .sign-form input[type="password"] {
   padding: 6px 12px;
-  border: 1px solid #8a8a8a;
-  max-width: 270px;
   width: 100%;
   min-height: 30px;
-  line-height: 24px;
-  color: #84c0ca;
-  background-color: #e7f2f5;
-  border-radius: 20px;
-  outline: none; }
+  line-height: 20px;
+  font-size: 12px;
+  color: #dadada;
+  border: 0; }
 .sign-form ::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: #84c0ca; }
+  color: #dadada; }
 .sign-form :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #84c0ca; }
+  color: #dadada; }
 .sign-form ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #84c0ca; }
+  color: #dadada; }
 .sign-form :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: #84c0ca; }
+  color: #dadada; }
 .sign-form__group {
-  margin-top: 15px; }
+  margin-top: 30px;
+  border: 1px solid #dadada;
+  max-width: 270px;
+  background-color: #fff;
+  border-radius: 20px;
+  outline: none;
+  overflow: hidden; }
 .sign-form__button-group {
   max-width: 270px;
   margin: 30px 0; }
   .sign-form__button-group a {
-    font-size: 12px;
-    color: #8a8a8a; }
+    font-size: 11px;
+    color: #58595b; }
 .sign-form__login-button {
   padding: 6px;
   border: 0;
-  min-height: 36px;
-  line-height: 30px;
-  max-width: 120px;
-  width: 50%;
+  min-height: 34px;
+  line-height: 24px;
+  width: 100%;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 20px;
-  background: -webkit-linear-gradient(left, #5c90a0, #13405c);
-  background: -moz-linear-gradient(left, #5c90a0, #13405c);
-  background: -ms-linear-gradient(left, #5c90a0, #13405c);
-  background: linear-gradient(to right, #5c90a0, #13405c); }
+  background-color: #093553;
+  box-shadow: 0 6px 8px 0 rgba(9, 53, 83, 0.31); }
 
 .sign-social {
   display: inline-block; }
