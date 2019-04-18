@@ -70,4 +70,8 @@
     $(this).toggleClass('active');
     $('#' + id).slideToggle();
   });
+
+  $('.back-to-top').on('click', function() {
+    $(".news-content").stop().animate({scrollTop: 0}, 500);
+  });
 })();

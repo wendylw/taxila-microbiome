@@ -488,6 +488,40 @@ body.open-toggle-side {
   }
 }
 
+.switch-button {
+  display: inline-block;
+  width: 40px;
+  height: 12px;
+  background-color: $form-input-border;
+  border-radius: 9px;
+
+  &__container {
+    margin: 15px;
+  }
+
+  &__icon {
+    display: block;
+    margin: -3px 0;
+    margin-left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 #B3B3B3;
+
+    transition: margin-left 0.4s;
+    -webkit-transition: margin-left 0.4s;
+    -moz-transition: margin-left 0.4s;
+    -ms-transition: margin-left 0.4s;
+  }
+
+  &__mode-text {
+    margin-left: 5px;
+    font-size: $main-font;
+    color: $add-article-divider;
+  }
+}
+
 .header {
   padding: 0 15px;
   background-color: $theme-color-2;
@@ -572,29 +606,6 @@ body.open-toggle-side {
     &:hover {
       color: $theme-color-1;
     }
-  }
-
-  &__switch-button {
-    display: inline-block;
-    width: 50px;
-    height: 20px;
-    border: 2px solid $theme-color-1;
-    border-radius: 9px;
-  }
-
-  &__switch-button-icon {
-    display: block;
-    margin: 3px;
-    margin-left: 70%;
-    width: 10px;
-    height: 10px;
-    background-color: $theme-color-2;
-    border-radius: 50%;
-
-    transition: margin-left 0.4s;
-    -webkit-transition: margin-left 0.4s;
-    -moz-transition: margin-left 0.4s;
-    -ms-transition: margin-left 0.4s;
   }
 
   &__time > a:before {
@@ -828,6 +839,10 @@ body.open-toggle-side {
 }
 
 .classic {
+  .switch-button__icon {
+    margin-left: 55%;
+  }
+
   .header {
     position: relative;
     background: transparent;
@@ -853,10 +868,6 @@ body.open-toggle-side {
 
     &__nav-link:hover > span {
       color: $theme-color-1;
-    }
-
-    &__switch-button-icon {
-      margin-left: 3px;
     }
 
     &__time a:before {

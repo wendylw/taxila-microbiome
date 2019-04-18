@@ -26,12 +26,6 @@
     <header class="header">
       <img class="header__logo" src="./img/logo-white.png" alt="">
       <ul class="header__navs">
-        <li class="header__mode header__nav-item text-middle">
-          <span class="header__mode-text text-middle" data-value="masonry">Masonry Layout</span>
-          <div class="header__switch-button text-middle">
-            <i class="header__switch-button-icon"></i>
-          </div>
-        </li>
         <li class="header__channel header__nav-item text-middle">
           <a class="header__nav-link"><span>CHANNEL</span></a>
         </li>
@@ -95,6 +89,12 @@
     </div>
 
     <div class="news-content">
+      <div class="switch-button__container">
+        <div class="switch-button text-middle">
+          <i class="switch-button__icon"></i>
+        </div>
+        <span class="switch-button__mode-text text-middle" data-value="masonry">Masonry Layout</span>
+      </div>
       <h3 class="news-content__recent-update-title classic-block">Recent Update</h3>
       <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
         <div class="grid-sizer grid-item col-3">

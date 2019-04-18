@@ -26,12 +26,12 @@ function resetGridLayout() {
     }
   });
 
-  $('.header__switch-button').on('click', function() {
-    var mode = $('.header__mode-text').data('value');
+  $('.switch-button').on('click', function() {
+    var mode = $('.switch-button__mode-text').data('value');
 
     if (mode === MODES.MASONRY) {
       $('body').addClass('classic');
-      $('.header__mode-text').data('value', MODES.CLASSIC);
+      $('.switch-button__mode-text').data('value', MODES.CLASSIC);
       $('.header__logo').attr('src', './img/logo.png');
 
       getGridLayout();
@@ -39,7 +39,7 @@ function resetGridLayout() {
       $('.news-topics__container').delay(200).fadeIn(400);
     } else {
       $('body').removeClass('classic');
-      $('.header__mode-text').data('value', MODES.MASONRY);
+      $('.switch-button__mode-text').data('value', MODES.MASONRY);
       $('.header__logo').attr('src', './img/logo-white.png');
 
       resetGridLayout();
