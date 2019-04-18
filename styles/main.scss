@@ -357,8 +357,8 @@ a {color: inherit;
 
   &__logo {
     vertical-align: middle;
-    margin: 10px 15px;
-    max-width: 100px;
+    margin: 0 15px;
+    max-width: 130px;
   }
 
   &__navs {
@@ -513,6 +513,12 @@ a {color: inherit;
   &__user {
     display: inline-block;
     margin: 0 30px;
+    width: 28px;
+    height: 30px;
+    background-image: url(../img/header-welcome.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
 
     img {
       max-height: 30px;
@@ -575,6 +581,10 @@ a {color: inherit;
         right: 0;
         background-image: url(../img/header-search-grey.png);
       }
+    }
+
+    &__user {
+      background-image: url(../img/header-welcome-blue.png);
     }
   }
 }

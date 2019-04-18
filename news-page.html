@@ -22,542 +22,543 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-  <header class="header">
-    <img class="header__logo" src="./img/logo-white.png" alt="">
-    <ul class="header__navs">
-      <li class="header__mode header__nav-item text-middle">
-        <span class="header__mode-text text-middle" data-value="masonry">Masonry Layout</span>
-        <div class="header__switch-button text-middle">
-          <i class="header__switch-button-icon"></i>
+  <div class="wrapper">
+    <header class="header">
+      <img class="header__logo" src="./img/logo-white.png" alt="">
+      <ul class="header__navs">
+        <li class="header__mode header__nav-item text-middle">
+          <span class="header__mode-text text-middle" data-value="masonry">Masonry Layout</span>
+          <div class="header__switch-button text-middle">
+            <i class="header__switch-button-icon"></i>
+          </div>
+        </li>
+        <li class="header__channel header__nav-item text-middle">
+          <a class="header__nav-link"><span>CHANNEL</span></a>
+        </li>
+        <li class="header__article header__nav-item text-middle">
+          <a class="header__nav-link"><span>ARTICLES</span></a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="filter-popular"><span>Filter by POPULARITY</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__catalog header__nav-item text-middle">
+          <a class="header__nav-link"><span>CATALOG</span></a>
+          <div class="dropdown-menu has-title">
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <div class="dropdown-menu__title">
+                  <h4>SUBSCRIBED</h4>
+                  <span class="dropdown-menu__hint">Unsubscribe</span>
+                </div>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="#patents-modal" rel="modal:open"><span>Patents & Publications</span></a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a><span> Local File Browser</span></a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a><span>E-Reputation</span></a>
+              </li>
+              <li class="dropdown-menu__item">
+                <div class="dropdown-menu__title">
+                  <h4>AVAILABLE</h4>
+                </div>
+              </li>
+              <li class="dropdown-menu__item">
+                <a><span>No Catalog available</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__trends header__nav-item text-middle">
+          <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
+        </li>
+      </ul>
+      <div class="header__operator">
+        <div class="header__search text-middle">
+          <input type="text" placeholder="Type your search item here and explore"/>
         </div>
-      </li>
-      <li class="header__channel header__nav-item text-middle">
-        <a class="header__nav-link"><span>CHANNEL</span></a>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Analytics</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Auto Exteriors</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Auto Inergy</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Competitor Landscape</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Local Data Store</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Plastic industry</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Plastic Omnium</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Scientific Publications</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Smart Mobility</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Tech Trends</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__article header__nav-item text-middle">
-        <a class="header__nav-link"><span>ARTICLES</span></a>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a class="filter-popular"><span>Filter by POPULARITY</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__catalog header__nav-item text-middle">
-        <a class="header__nav-link"><span>CATALOG</span></a>
-        <div class="dropdown-menu has-title">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <div class="dropdown-menu__title">
-                <h4>SUBSCRIBED</h4>
-                <span class="dropdown-menu__hint">Unsubscribe</span>
-              </div>
-            </li>
-            <li class="dropdown-menu__item">
-              <a href="#patents-modal" rel="modal:open"><span>Patents & Publications</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span> Local File Browser</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>E-Reputation</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <div class="dropdown-menu__title">
-                <h4>AVAILABLE</h4>
-              </div>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>No Catalog available</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__trends header__nav-item text-middle">
-        <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
-      </li>
-    </ul>
-    <div class="header__operator">
-      <div class="header__search text-middle">
-        <input type="text" placeholder="Type your search item here and explore"/>
+        <i class="header__user text-middle"></i>
       </div>
-      <div class="header__user text-middle">
-        <img src="./img/header-welcome.png" alt="">
+    </header>
+
+    <!-- Add your site or application content here -->
+    <div class="news-content__popular-bg">
+      <img src="./img/popular-bg.png" alt="">
+
+      <div class="news-content__popular-operation">
+        <div class="dropdown">
+          <div class="dropdown__button">
+            <span>Filtered by the country or continent</span>
+            <img src="./img/news-down.png" alt="">
+          </div>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <a><span>test</span></a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a><span>test</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="news-content__popular-today">
+          <label>Add today: </label><span>0</span>
+        </div>
+        <div class="news-content__popular-total">
+          <label>Total articles: </label><span>7</span>
+        </div>
       </div>
     </div>
-  </header>
 
-  <!-- Add your site or application content here -->
-  <div class="news-content__popular-bg">
-    <img src="./img/popular-bg.png" alt="">
-
-    <div class="news-content__popular-operation">
-      <div class="dropdown">
-        <div class="dropdown__button">
-          <span>Filtered by the country or continent</span>
-          <img src="./img/news-down.png" alt="">
+    <div class="news-content">
+      <h3 class="news-content__recent-update-title classic-block">Recent Update</h3>
+      <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
+        <div class="grid-sizer grid-item col-3">
+          <a href="./article.html">
+            <label class="news-content__type classic-block">MIT NEWS. </label>
+            <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
+            <div class="news-content__summary classic-block">
+              <span>4 Likes</span>
+              <span>3 Comments</span>
+            </div>
+            <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
+            <div class="news-content__detail classic-none">
+              <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
+            </div>
+            <div class="news-content__operations classic-none">
+              <label class="news-content__type">MIT NEWS. </label>
+              <span class="news-content__time">Apr 18, 2018</span>
+              <ul class="news-content__operation-list">
+                <li>
+                  <img src="./img/news-item-like.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-save.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-download.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-email.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="news-content__comments text-right classic-none">
+              <button class="news-content__comments-button">
+                <h4 class="text-middle">3 Comments</h4>
+                <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+              </button>
+            </div>
+          </a>
         </div>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <a><span>test</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>test</span></a>
-            </li>
-          </ul>
+        <div class="grid-sizer grid-item col-3">
+          <a href="./article.html">
+            <label class="news-content__type classic-block">MIT NEWS. </label>
+            <h3 class="news-content__title">9to5Mac Happy Hour 179: iOS 12 public beta, AirPlay 2 speakers, and MacBook keyboard repair program</h3>
+            <div class="news-content__summary classic-block">
+              <span>4 Likes</span>
+              <span>3 Comments</span>
+            </div>
+            <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
+            <div class="news-content__detail classic-none">
+              <p>This week Benjamin and Zac talk about the risks and benefits of iOS 12 and macOS Mojave public betas, 9to5Mac’s Sonos Beam smart soundbar review, AirPlay 2 speakers, Apple’s surprise MacBook and MacBook Pro keyboard repair program, rumors about new AirPods and over-ear headphones from Apple, a possible explanation for AirPower not launching yet, Ming-Chi Kuo’s latest predictions, and the end of the Apple Watch Modern Buckle.</p>
+              <p>9to5Mac Happy Hour is available on iTunes and Apple’s Podcasts app, Stitcher, TuneIn, Google Play Music, or through our dedicated RSS feed for Overcast and other podcast players.</p>
+            </div>
+            <div class="news-content__operations classic-none">
+              <label class="news-content__type">MIT NEWS. </label>
+              <span class="news-content__time">Apr 18, 2018</span>
+              <ul class="news-content__operation-list">
+                <li>
+                  <img src="./img/news-item-like.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-save.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-download.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-email.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="news-content__comments text-right classic-none">
+              <button class="news-content__comments-button">
+                <h4 class="text-middle">3 Comments</h4>
+                <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+              </button>
+            </div>
+          </a>
         </div>
-      </div>
-
-      <div class="news-content__popular-today">
-        <label>Add today: </label><span>0</span>
-      </div>
-      <div class="news-content__popular-total">
-        <label>Total articles: </label><span>7</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="news-content">
-    <h3 class="news-content__recent-update-title classic-block">Recent Update</h3>
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
-      <div class="grid-sizer grid-item col-3">
-        <a href="./article.html">
-          <label class="news-content__type classic-block">MIT NEWS. </label>
-          <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
-          <div class="news-content__summary classic-block">
-            <span>4 Likes</span>
-            <span>3 Comments</span>
-          </div>
-          <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
-          <div class="news-content__detail classic-none">
-            <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
-          </div>
-          <div class="news-content__operations classic-none">
-            <label class="news-content__type">MIT NEWS. </label>
-            <span class="news-content__time">Apr 18, 2018</span>
-            <ul class="news-content__operation-list">
-              <li>
-                <img src="./img/news-item-like.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-save.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-download.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-email.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="news-content__comments text-right classic-none">
-            <button class="news-content__comments-button">
-              <h4 class="text-middle">3 Comments</h4>
-              <img class="text-middle" src="./img/news-comment-expand.png" alt="">
-            </button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-sizer grid-item col-3">
-        <a href="./article.html">
-          <label class="news-content__type classic-block">MIT NEWS. </label>
-          <h3 class="news-content__title">9to5Mac Happy Hour 179: iOS 12 public beta, AirPlay 2 speakers, and MacBook keyboard repair program</h3>
-          <div class="news-content__summary classic-block">
-            <span>4 Likes</span>
-            <span>3 Comments</span>
-          </div>
-          <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
-          <div class="news-content__detail classic-none">
-            <p>This week Benjamin and Zac talk about the risks and benefits of iOS 12 and macOS Mojave public betas, 9to5Mac’s Sonos Beam smart soundbar review, AirPlay 2 speakers, Apple’s surprise MacBook and MacBook Pro keyboard repair program, rumors about new AirPods and over-ear headphones from Apple, a possible explanation for AirPower not launching yet, Ming-Chi Kuo’s latest predictions, and the end of the Apple Watch Modern Buckle.</p>
-            <p>9to5Mac Happy Hour is available on iTunes and Apple’s Podcasts app, Stitcher, TuneIn, Google Play Music, or through our dedicated RSS feed for Overcast and other podcast players.</p>
-          </div>
-          <div class="news-content__operations classic-none">
-            <label class="news-content__type">MIT NEWS. </label>
-            <span class="news-content__time">Apr 18, 2018</span>
-            <ul class="news-content__operation-list">
-              <li>
-                <img src="./img/news-item-like.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-save.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-download.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-email.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="news-content__comments text-right classic-none">
-            <button class="news-content__comments-button">
-              <h4 class="text-middle">3 Comments</h4>
-              <img class="text-middle" src="./img/news-comment-expand.png" alt="">
-            </button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-sizer grid-item col-3">
-        <a href="./article.html">
-          <label class="news-content__type classic-block">MIT NEWS. </label>
-          <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-          <div class="news-content__summary classic-block">
-            <span>4 Likes</span>
-            <span>3 Comments</span>
-          </div>
-          <img class="news-content__image classic-none" src="http://via.placeholder.com/350x160" alt="">
-          <div class="news-content__detail classic-none">
-            <p>In what amounted to little more than a toss-away line during Apple's WWDC keynote, Craig Federighi off handedly mentioned that in tvOS 12, Apple was working to bring more Apple TV functionality, including Siri, to third-party remote platforms. This is a big deal, and AppleInsider discusses why.</p>
-          </div>
-          <div class="news-content__operations classic-none">
-            <label class="news-content__type">MIT NEWS. </label>
-            <span class="news-content__time">Apr 18, 2018</span>
-            <ul class="news-content__operation-list">
-              <li>
-                <img src="./img/news-item-like.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-save.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-download.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-email.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="news-content__comments text-right classic-none">
-            <button class="news-content__comments-button">
-              <h4 class="text-middle">3 Comments</h4>
-              <img class="text-middle" src="./img/news-comment-expand.png" alt="">
-            </button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-sizer grid-item col-3">
-        <a href="./article.html">
-          <label class="news-content__type classic-block">MIT NEWS. </label>
-          <h3 class="news-content__title">Microsoft releases preview of its 'Gen2' Azure Data Lake Storage service</h3>
-          <div class="news-content__summary classic-block">
-            <span>4 Likes</span>
-            <span>3 Comments</span>
-          </div>
-          <img class="news-content__image classic-none" src="http://via.placeholder.com/350x150" alt="">
-          <div class="news-content__detail classic-none">
-            <p>Microsoft announced its initial plans for its Azure Data Lake Service in 2015. The first-generation Azure Data Lake was designed to work with HDInsight, Microsoft's Hadoop-onAzure service for Windows and Linux. The original underpinnings for Azure Data Lake came from Microsoft's internal "Cosmos" big-data storage and analytics service.</p>
-            <p>Microsoft also announced today general availability of several new features for Azure Data Factory V2. Among those new features are support for control-flow data pipeline constructs; code-free data movement and orchestration designing; and flexible scheduling.</p>
-          </div>
-          <div class="news-content__operations classic-none">
-            <label class="news-content__type">MIT NEWS. </label>
-            <span class="news-content__time">Apr 18, 2018</span>
-            <ul class="news-content__operation-list">
-              <li>
-                <img src="./img/news-item-like.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-save.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-download.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-email.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="news-content__comments text-right classic-none">
-            <button class="news-content__comments-button">
-              <h4 class="text-middle">3 Comments</h4>
-              <img class="text-middle" src="./img/news-comment-expand.png" alt="">
-            </button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-sizer grid-item col-3">
-        <a href="./article.html">
-          <label class="news-content__type classic-block">MIT NEWS. </label>
-          <h3 class="news-content__title">Microsoft releases preview of its 'Gen2' Azure Data Lake Storage service</h3>
-          <div class="news-content__summary classic-block">
-            <span>4 Likes</span>
-            <span>3 Comments</span>
-          </div>
-          <img class="news-content__image classic-none" src="http://via.placeholder.com/350x150" alt="">
-          <div class="news-content__detail classic-none">
+        <div class="grid-sizer grid-item col-3">
+          <a href="./article.html">
+            <label class="news-content__type classic-block">MIT NEWS. </label>
+            <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
+            <div class="news-content__summary classic-block">
+              <span>4 Likes</span>
+              <span>3 Comments</span>
+            </div>
+            <img class="news-content__image classic-none" src="http://via.placeholder.com/350x160" alt="">
+            <div class="news-content__detail classic-none">
+              <p>In what amounted to little more than a toss-away line during Apple's WWDC keynote, Craig Federighi off handedly mentioned that in tvOS 12, Apple was working to bring more Apple TV functionality, including Siri, to third-party remote platforms. This is a big deal, and AppleInsider discusses why.</p>
+            </div>
+            <div class="news-content__operations classic-none">
+              <label class="news-content__type">MIT NEWS. </label>
+              <span class="news-content__time">Apr 18, 2018</span>
+              <ul class="news-content__operation-list">
+                <li>
+                  <img src="./img/news-item-like.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-save.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-download.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-email.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="news-content__comments text-right classic-none">
+              <button class="news-content__comments-button">
+                <h4 class="text-middle">3 Comments</h4>
+                <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+              </button>
+            </div>
+          </a>
+        </div>
+        <div class="grid-sizer grid-item col-3">
+          <a href="./article.html">
+            <label class="news-content__type classic-block">MIT NEWS. </label>
+            <h3 class="news-content__title">Microsoft releases preview of its 'Gen2' Azure Data Lake Storage service</h3>
+            <div class="news-content__summary classic-block">
+              <span>4 Likes</span>
+              <span>3 Comments</span>
+            </div>
+            <img class="news-content__image classic-none" src="http://via.placeholder.com/350x150" alt="">
+            <div class="news-content__detail classic-none">
               <p>Microsoft announced its initial plans for its Azure Data Lake Service in 2015. The first-generation Azure Data Lake was designed to work with HDInsight, Microsoft's Hadoop-onAzure service for Windows and Linux. The original underpinnings for Azure Data Lake came from Microsoft's internal "Cosmos" big-data storage and analytics service.</p>
               <p>Microsoft also announced today general availability of several new features for Azure Data Factory V2. Among those new features are support for control-flow data pipeline constructs; code-free data movement and orchestration designing; and flexible scheduling.</p>
-          </div>
-          <div class="news-content__operations classic-none">
-            <label class="news-content__type">MIT NEWS. </label>
-            <span class="news-content__time">Apr 18, 2018</span>
-            <ul class="news-content__operation-list">
-              <li>
-                <img src="./img/news-item-like.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-save.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-download.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-email.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="news-content__comments text-right classic-none">
-            <button class="news-content__comments-button">
-              <h4 class="text-middle">3 Comments</h4>
-              <img class="text-middle" src="./img/news-comment-expand.png" alt="">
-            </button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-sizer grid-item col-3">
-        <a href="./article.html">
-          <label class="news-content__type classic-block">MIT NEWS. </label>
-          <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
-          <div class="news-content__summary classic-block">
-            <span>4 Likes</span>
-            <span>3 Comments</span>
-          </div>
-          <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
-          <div class="news-content__detail classic-none">
-            <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
-          </div>
-          <div class="news-content__operations classic-none">
-            <label class="news-content__type">MIT NEWS. </label>
-            <span class="news-content__time">Apr 18, 2018</span>
-            <ul class="news-content__operation-list">
-              <li>
-                <img src="./img/news-item-like.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-save.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-download.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-email.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="news-content__comments text-right classic-none">
-            <button class="news-content__comments-button">
-              <h4 class="text-middle">3 Comments</h4>
-              <img class="text-middle" src="./img/news-comment-expand.png" alt="">
-            </button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-sizer grid-item col-3">
-        <a href="./article.html">
-          <label class="news-content__type classic-block">MIT NEWS. </label>
-          <h3 class="news-content__title">9to5Mac Happy Hour 179: iOS 12 public beta, AirPlay 2 speakers, and MacBook keyboard repair program</h3>
-          <div class="news-content__summary classic-block">
-            <span>4 Likes</span>
-            <span>3 Comments</span>
-          </div>
-          <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
-          <div class="news-content__detail classic-none">
-            <p>This week Benjamin and Zac talk about the risks and benefits of iOS 12 and macOS Mojave public betas, 9to5Mac’s Sonos Beam smart soundbar review, AirPlay 2 speakers, Apple’s surprise MacBook and MacBook Pro keyboard repair program, rumors about new AirPods and over-ear headphones from Apple, a possible explanation for AirPower not launching yet, Ming-Chi Kuo’s latest predictions, and the end of the Apple Watch Modern Buckle.</p>
-            <p>9to5Mac Happy Hour is available on iTunes and Apple’s Podcasts app, Stitcher, TuneIn, Google Play Music, or through our dedicated RSS feed for Overcast and other podcast players.</p>
-          </div>
-          <div class="news-content__operations classic-none">
-            <label class="news-content__type">MIT NEWS. </label>
-            <span class="news-content__time">Apr 18, 2018</span>
-            <ul class="news-content__operation-list">
-              <li>
-                <img src="./img/news-item-like.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-save.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-download.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-email.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="news-content__comments text-right classic-none">
-            <button class="news-content__comments-button">
-              <h4 class="text-middle">3 Comments</h4>
-              <img class="text-middle" src="./img/news-comment-expand.png" alt="">
-            </button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-sizer grid-item col-3">
-        <a href="./article.html">
-          <label class="news-content__type classic-block">MIT NEWS. </label>
-          <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-          <div class="news-content__summary classic-block">
-            <span>4 Likes</span>
-            <span>3 Comments</span>
-          </div>
-          <img class="news-content__image classic-none" src="http://via.placeholder.com/350x160" alt="">
-          <div class="news-content__detail classic-none">
-            <p>In what amounted to little more than a toss-away line during Apple's WWDC keynote, Craig Federighi off handedly mentioned that in tvOS 12, Apple was working to bring more Apple TV functionality, including Siri, to third-party remote platforms. This is a big deal, and AppleInsider discusses why.</p>
-          </div>
-          <div class="news-content__operations classic-none">
-            <label class="news-content__type">MIT NEWS. </label>
-            <span class="news-content__time">Apr 18, 2018</span>
-            <ul class="news-content__operation-list">
-              <li>
-                <img src="./img/news-item-like.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-save.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-download.png" alt="">
-              </li>
-              <li>
-                <img src="./img/news-item-email.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="news-content__comments text-right classic-none">
-            <button class="news-content__comments-button">
-              <h4 class="text-middle">3 Comments</h4>
-              <img class="text-middle" src="./img/news-comment-expand.png" alt="">
-            </button>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="news-topics__container row">
-      <div class="news-topics col-8">
-        <div class="news-topics__topic row">
-          <div class="news-topics__topic-image col-6">
-            <img src="http://via.placeholder.com/350x200" alt="" />
-          </div>
-          <div class="news-topics__topic-detail col-6">
-            <h3 class="news-topics__topic-type">SILICON VALLEY</h3>
-            <h4 class="news-topics__title">Silicon Valley Community Foundation Chief Ousted Over Harassment Allegations</h4>
-            <span class="news-topics__source">BY <strong>BRITTANY SHOOT</strong> , June 27, 2018</span>
-
-            <p class="news-topics__topic-brief">The CEO of Silicon Valley Community Foundation, the world’s largest community foundation, has been pushed out following investigations into allegations of bullying and harassment in the workplace.  <a href="#">read more</a></p>
-          </div>
-        </div>
-        <section class="news-topics__storys">
-          <h3 class="news-topics__story-title">TOP STORY</h3>
-          <ul>
-            <li class="news-topics__story">
-              <div class="media-top">
-                <div class="news-topics__story-image"></div>
-              </div>
-              <div class="media-top">
-                <label class="news-content__type">MIT NEWS. </label>
-                <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                <div class="news-content__summary">
-                  <span>MacRumors</span>
-                  <span>1 like</span>
-                </div>
-              </div>
-            </li>
-            <li class="news-topics__story">
-              <div class="media-top">
-                <div class="news-topics__story-image"></div>
-              </div>
-              <div class="media-top">
-                <label class="news-content__type">MIT NEWS. </label>
-                <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                <div class="news-content__summary">
-                  <span>MacRumors</span>
-                  <span>1 like</span>
-                </div>
-              </div>
-            </li>
-            <li class="news-topics__story">
-              <div class="media-top">
-                <div class="news-topics__story-image"></div>
-              </div>
-              <div class="media-top">
-                <label class="news-content__type">MIT NEWS. </label>
-                <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                <div class="news-content__summary">
-                  <span>MacRumors</span>
-                  <span>1 like</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="news-ads col-4">
-        <h4 class="news-ads__title">SHARE ARTICLES WITH YOUR TEAM</h4>
-        <div class="news-ads__detail text-center">
-          <img src="http://via.placeholder.com/350x260" alt="" />
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-        </div>
-        <div class="news-ads__slider-container">
-          <h4>What i’m reading</h4>
-          <p class="news-ads__article">A collection of books that have been occupying my time.—Joshua Topolsky, Founder, The @Outline & Independent Media. Co-founder, Vox Media.</p>
-          <div class="news-ads__sliders">
-            <div>
-              <i class="prev-icon">
-                <img src="./img/news-prev-icon.png" alt="">
-              </i>
-              <i class="next-icon">
-                <img src="./img/news-next-icon.png" alt="">
-              </i>
             </div>
-            <ul class="news-ads__slider">
-              <li>
-                <img src="http://via.placeholder.com/350x200" alt="">
+            <div class="news-content__operations classic-none">
+              <label class="news-content__type">MIT NEWS. </label>
+              <span class="news-content__time">Apr 18, 2018</span>
+              <ul class="news-content__operation-list">
+                <li>
+                  <img src="./img/news-item-like.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-save.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-download.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-email.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="news-content__comments text-right classic-none">
+              <button class="news-content__comments-button">
+                <h4 class="text-middle">3 Comments</h4>
+                <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+              </button>
+            </div>
+          </a>
+        </div>
+        <div class="grid-sizer grid-item col-3">
+          <a href="./article.html">
+            <label class="news-content__type classic-block">MIT NEWS. </label>
+            <h3 class="news-content__title">Microsoft releases preview of its 'Gen2' Azure Data Lake Storage service</h3>
+            <div class="news-content__summary classic-block">
+              <span>4 Likes</span>
+              <span>3 Comments</span>
+            </div>
+            <img class="news-content__image classic-none" src="http://via.placeholder.com/350x150" alt="">
+            <div class="news-content__detail classic-none">
+                <p>Microsoft announced its initial plans for its Azure Data Lake Service in 2015. The first-generation Azure Data Lake was designed to work with HDInsight, Microsoft's Hadoop-onAzure service for Windows and Linux. The original underpinnings for Azure Data Lake came from Microsoft's internal "Cosmos" big-data storage and analytics service.</p>
+                <p>Microsoft also announced today general availability of several new features for Azure Data Factory V2. Among those new features are support for control-flow data pipeline constructs; code-free data movement and orchestration designing; and flexible scheduling.</p>
+            </div>
+            <div class="news-content__operations classic-none">
+              <label class="news-content__type">MIT NEWS. </label>
+              <span class="news-content__time">Apr 18, 2018</span>
+              <ul class="news-content__operation-list">
+                <li>
+                  <img src="./img/news-item-like.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-save.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-download.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-email.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="news-content__comments text-right classic-none">
+              <button class="news-content__comments-button">
+                <h4 class="text-middle">3 Comments</h4>
+                <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+              </button>
+            </div>
+          </a>
+        </div>
+        <div class="grid-sizer grid-item col-3">
+          <a href="./article.html">
+            <label class="news-content__type classic-block">MIT NEWS. </label>
+            <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
+            <div class="news-content__summary classic-block">
+              <span>4 Likes</span>
+              <span>3 Comments</span>
+            </div>
+            <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
+            <div class="news-content__detail classic-none">
+              <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
+            </div>
+            <div class="news-content__operations classic-none">
+              <label class="news-content__type">MIT NEWS. </label>
+              <span class="news-content__time">Apr 18, 2018</span>
+              <ul class="news-content__operation-list">
+                <li>
+                  <img src="./img/news-item-like.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-save.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-download.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-email.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="news-content__comments text-right classic-none">
+              <button class="news-content__comments-button">
+                <h4 class="text-middle">3 Comments</h4>
+                <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+              </button>
+            </div>
+          </a>
+        </div>
+        <div class="grid-sizer grid-item col-3">
+          <a href="./article.html">
+            <label class="news-content__type classic-block">MIT NEWS. </label>
+            <h3 class="news-content__title">9to5Mac Happy Hour 179: iOS 12 public beta, AirPlay 2 speakers, and MacBook keyboard repair program</h3>
+            <div class="news-content__summary classic-block">
+              <span>4 Likes</span>
+              <span>3 Comments</span>
+            </div>
+            <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
+            <div class="news-content__detail classic-none">
+              <p>This week Benjamin and Zac talk about the risks and benefits of iOS 12 and macOS Mojave public betas, 9to5Mac’s Sonos Beam smart soundbar review, AirPlay 2 speakers, Apple’s surprise MacBook and MacBook Pro keyboard repair program, rumors about new AirPods and over-ear headphones from Apple, a possible explanation for AirPower not launching yet, Ming-Chi Kuo’s latest predictions, and the end of the Apple Watch Modern Buckle.</p>
+              <p>9to5Mac Happy Hour is available on iTunes and Apple’s Podcasts app, Stitcher, TuneIn, Google Play Music, or through our dedicated RSS feed for Overcast and other podcast players.</p>
+            </div>
+            <div class="news-content__operations classic-none">
+              <label class="news-content__type">MIT NEWS. </label>
+              <span class="news-content__time">Apr 18, 2018</span>
+              <ul class="news-content__operation-list">
+                <li>
+                  <img src="./img/news-item-like.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-save.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-download.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-email.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="news-content__comments text-right classic-none">
+              <button class="news-content__comments-button">
+                <h4 class="text-middle">3 Comments</h4>
+                <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+              </button>
+            </div>
+          </a>
+        </div>
+        <div class="grid-sizer grid-item col-3">
+          <a href="./article.html">
+            <label class="news-content__type classic-block">MIT NEWS. </label>
+            <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
+            <div class="news-content__summary classic-block">
+              <span>4 Likes</span>
+              <span>3 Comments</span>
+            </div>
+            <img class="news-content__image classic-none" src="http://via.placeholder.com/350x160" alt="">
+            <div class="news-content__detail classic-none">
+              <p>In what amounted to little more than a toss-away line during Apple's WWDC keynote, Craig Federighi off handedly mentioned that in tvOS 12, Apple was working to bring more Apple TV functionality, including Siri, to third-party remote platforms. This is a big deal, and AppleInsider discusses why.</p>
+            </div>
+            <div class="news-content__operations classic-none">
+              <label class="news-content__type">MIT NEWS. </label>
+              <span class="news-content__time">Apr 18, 2018</span>
+              <ul class="news-content__operation-list">
+                <li>
+                  <img src="./img/news-item-like.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-save.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-download.png" alt="">
+                </li>
+                <li>
+                  <img src="./img/news-item-email.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="news-content__comments text-right classic-none">
+              <button class="news-content__comments-button">
+                <h4 class="text-middle">3 Comments</h4>
+                <img class="text-middle" src="./img/news-comment-expand.png" alt="">
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="news-topics__container row">
+        <div class="news-topics col-8">
+          <div class="news-topics__topic row">
+            <div class="news-topics__topic-image col-6">
+              <img src="http://via.placeholder.com/350x200" alt="" />
+            </div>
+            <div class="news-topics__topic-detail col-6">
+              <h3 class="news-topics__topic-type">SILICON VALLEY</h3>
+              <h4 class="news-topics__title">Silicon Valley Community Foundation Chief Ousted Over Harassment Allegations</h4>
+              <span class="news-topics__source">BY <strong>BRITTANY SHOOT</strong> , June 27, 2018</span>
+
+              <p class="news-topics__topic-brief">The CEO of Silicon Valley Community Foundation, the world’s largest community foundation, has been pushed out following investigations into allegations of bullying and harassment in the workplace.  <a href="#">read more</a></p>
+            </div>
+          </div>
+          <section class="news-topics__storys">
+            <h3 class="news-topics__story-title">TOP STORY</h3>
+            <ul>
+              <li class="news-topics__story">
+                <div class="media-top">
+                  <div class="news-topics__story-image"></div>
+                </div>
+                <div class="media-top">
+                  <label class="news-content__type">MIT NEWS. </label>
+                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
+                  <div class="news-content__summary">
+                    <span>MacRumors</span>
+                    <span>1 like</span>
+                  </div>
+                </div>
+              </li>
+              <li class="news-topics__story">
+                <div class="media-top">
+                  <div class="news-topics__story-image"></div>
+                </div>
+                <div class="media-top">
+                  <label class="news-content__type">MIT NEWS. </label>
+                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
+                  <div class="news-content__summary">
+                    <span>MacRumors</span>
+                    <span>1 like</span>
+                  </div>
+                </div>
+              </li>
+              <li class="news-topics__story">
+                <div class="media-top">
+                  <div class="news-topics__story-image"></div>
+                </div>
+                <div class="media-top">
+                  <label class="news-content__type">MIT NEWS. </label>
+                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
+                  <div class="news-content__summary">
+                    <span>MacRumors</span>
+                    <span>1 like</span>
+                  </div>
+                </div>
               </li>
             </ul>
+          </section>
+        </div>
+        <div class="news-ads col-4">
+          <h4 class="news-ads__title">SHARE ARTICLES WITH YOUR TEAM</h4>
+          <div class="news-ads__detail text-center">
+            <img src="http://via.placeholder.com/350x260" alt="" />
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
           </div>
-          <p>I spent a lot of time watching Westworld's second season thinking about William Gibson's </p>
+          <div class="news-ads__slider-container">
+            <h4>What i’m reading</h4>
+            <p class="news-ads__article">A collection of books that have been occupying my time.—Joshua Topolsky, Founder, The @Outline & Independent Media. Co-founder, Vox Media.</p>
+            <div class="news-ads__sliders">
+              <div>
+                <i class="prev-icon">
+                  <img src="./img/news-prev-icon.png" alt="">
+                </i>
+                <i class="next-icon">
+                  <img src="./img/news-next-icon.png" alt="">
+                </i>
+              </div>
+              <ul class="news-ads__slider">
+                <li>
+                  <img src="http://via.placeholder.com/350x200" alt="">
+                </li>
+              </ul>
+            </div>
+            <p>I spent a lot of time watching Westworld's second season thinking about William Gibson's </p>
+          </div>
         </div>
       </div>
     </div>
+    <!-- end of Add your site or application content here -->
   </div>
-  <!-- end of Add your site or application content here -->
+
+  <div class="dropdown-menu">
+    <ul class="dropdown-menu__list">
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Analytics</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Auto Exteriors</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Auto Inergy</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Competitor Landscape</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Local Data Store</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Plastic industry</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Plastic Omnium</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Scientific Publications</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Smart Mobility</span></a>
+      </li>
+      <li class="dropdown-menu__item arrow">
+        <a href="#"><span>Tech Trends</span></a>
+      </li>
+    </ul>
+  </div>
 
   <!-- Patents Modal -->
   <div id="patents-modal" class="patents-modal modal__container modal">
