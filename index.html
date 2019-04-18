@@ -47,10 +47,13 @@
             <h4 class="login__welcome">Welcome to Taxila,</h4>
             <form class="sign-form" action="">
               <div class="sign-form__group">
+                <img src="./img/sign-email.png" alt="">
                 <input type="text" placeholder="Your E-Mail"/>
               </div>
               <div class="sign-form__group">
+                <img src="./img/sign-password.png" alt="">
                 <input type="password" placeholder="Password"/>
+                <img class="sign-form__see-password img" src="./img/sign-seen.png" alt="">
               </div>
               <!-- <div class="sign-form__group">
                 <div class="checkbox text-middle">
@@ -100,6 +103,19 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    (function(){
+      $('.sign-form__see-password').on('click', function() {
+        console.log(111);
+
+        if ($(this).parents('.sign-form__group').find('input').attr('type') === 'password') {
+          $(this).parents('.sign-form__group').find('input').attr('type', 'text');
+        } else {
+          $(this).parents('.sign-form__group').find('input').attr('type', 'password');
+        }
+      });
+    })();
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

@@ -56,13 +56,19 @@ body,
 
 .sign-form input[type="text"],
 .sign-form input[type="password"] {
-  padding: 6px 12px;
-  width: 100%;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  bottom: 1px;
+  width: 88%;
+  padding: 6px 0 6px 42px;
   min-height: 30px;
   line-height: 20px;
   font-size: 12px;
   color: #dadada;
-  border: 0; }
+  background-color: transparent;
+  border: 0;
+  outline: none; }
 .sign-form ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #dadada; }
@@ -76,13 +82,30 @@ body,
   /* Internet Explorer 10+ */
   color: #dadada; }
 .sign-form__group {
+  position: relative;
   margin-top: 30px;
   border: 1px solid #dadada;
   max-width: 270px;
+  font-size: 0;
   background-color: #fff;
   border-radius: 20px;
   outline: none;
   overflow: hidden; }
+  .sign-form__group img {
+    margin: 8px;
+    margin-left: 14px;
+    width: 20px; }
+.sign-form__see-password.img {
+  display: block;
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  right: 0;
+  padding: 8px;
+  margin: 0;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer; }
 .sign-form__button-group {
   max-width: 270px;
   margin: 30px 0; }

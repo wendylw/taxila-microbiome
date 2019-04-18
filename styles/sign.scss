@@ -81,13 +81,19 @@ body,
 .sign-form {
   input[type="text"],
   input[type="password"] {
-    padding: 6px 12px;
-    width: 100%;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    bottom: 1px;
+    width: 88%;
+    padding: 6px 0 6px 42px;
     min-height: 30px;
     line-height: 20px;
     font-size: $small-font;
     color: $form-input-border;
+    background-color: transparent;
     border: 0;
+    outline: none;
   }
 
   ::-webkit-input-placeholder { /* WebKit browsers */
@@ -107,13 +113,34 @@ body,
   }
 
   &__group {
+    position: relative;
     margin-top: 30px;
     border: 1px solid $form-input-border;
     max-width: 270px;
+    font-size: 0;
     background-color: $white;
     border-radius: 20px;
     outline: none;
     overflow: hidden;
+
+    img {
+      margin: 8px;
+      margin-left: 14px;
+      width: 20px;
+    }
+  }
+
+  &__see-password.img {
+    display: block;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    right: 0;
+    padding: 8px;
+    margin: 0;
+    width: 36px;
+    z-index: 1;
+    cursor: pointer;
   }
 
   &__button-group {
