@@ -3,7 +3,6 @@
 
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  background-color: $lightest-gray;
 
   &.classic {
     background-color: transparent;
@@ -24,20 +23,62 @@ body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
+  .checkbox {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #979797;
+    border-radius: 50%;
+  }
+
+  .checkbox:before {
+    content: "";
+    background-image: url(../img/checked-g.png);
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: center center;
+  }
+
+  &__tag {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    font-size: $smaller-font;
+    color: $theme-color-2;
+  }
+
+  &__remove {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/remove-article.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
   &__title {
     margin: 0 0 15px;
-    font-size: $big-font;
+    font-size: $bigest-font;
+    line-height: 1.4em;
     color: $theme-color-2;
     font-weight: bold;
   }
 
+  &__image-container {
+    position: relative;
+  }
+
   &__image {
+    margin-bottom: 15px;
     width: 100%;
+    min-height: 50px;
     border-radius: 10px;
   }
 
   &__detail {
-    padding: 10px 0;
+    padding: 0 0 10px;
     font-size: $small-font;
     color: $light-gray;
 
@@ -47,9 +88,8 @@ body {
   }
 
   &__type {
-    font-size: $main-font;
+    font-size: $small-font;
     color: $theme-color-1;
-    font-weight: bold;
   }
 
   &__time,
@@ -94,16 +134,8 @@ body {
   &__comments {
     padding: 10px 0;
 
-    h4 {
-      display: inline;
-      margin: 0;
-      font-weight: normal;
-      color: $lightter-gray;
-    }
-
-    img {
-      margin: 0 2px;
-      max-width: 8px;
+    span {
+      margin-left: 5px;
     }
   }
 
@@ -111,6 +143,8 @@ body {
     padding: 0;
     border: 0;
     background-color: transparent;
+    font-size: $small-font;
+    color: $lightter-gray;
   }
 
   &__recent-update-title {
