@@ -50,33 +50,6 @@
         </li>
         <li class="header__catalog header__nav-item text-middle">
           <a class="header__nav-link"><span>CATALOG</span></a>
-          <div class="dropdown-menu has-title">
-            <ul class="dropdown-menu__list">
-              <li class="dropdown-menu__item">
-                <div class="dropdown-menu__title">
-                  <h4>SUBSCRIBED</h4>
-                  <span class="dropdown-menu__hint">Unsubscribe</span>
-                </div>
-              </li>
-              <li class="dropdown-menu__item">
-                <a href="#patents-modal" rel="modal:open"><span>Patents & Publications</span></a>
-              </li>
-              <li class="dropdown-menu__item">
-                <a><span> Local File Browser</span></a>
-              </li>
-              <li class="dropdown-menu__item">
-                <a><span>E-Reputation</span></a>
-              </li>
-              <li class="dropdown-menu__item">
-                <div class="dropdown-menu__title">
-                  <h4>AVAILABLE</h4>
-                </div>
-              </li>
-              <li class="dropdown-menu__item">
-                <a><span>No Catalog available</span></a>
-              </li>
-            </ul>
-          </div>
         </li>
         <li class="header__trends header__nav-item text-middle">
           <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
@@ -605,34 +578,34 @@
     <!-- end of Add your site or application content here -->
 
     <div class="side">
-      <div>
+      <div class="side__nav">
         <div class="side__item">
           <h3 class="side__title">SUBSCRIBED</h3>
           <ul>
-            <li>
-              <label>
+            <li class="side__nav-item" data-item="pharma">
+              <label class="side__nav-title">
                 <i class="side__title-triangle text-middle"></i>
                 <span class="text-middle">Pharma Corporate Press Release</span>
               </label>
-              <div>
+              <div class="side__button-container">
                 <button>Unsubscribe</button>
               </div>
             </li>
-            <li>
-              <label>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
                   <i class="side__title-triangle text-middle"></i>
                   <span class="text-middle">Microbiome</span>
               </label>
-              <div>
+              <div class="side__button-container">
                 <button>Unsubscribe</button>
               </div>
             </li>
-            <li>
-              <label>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
                 <i class="side__title-triangle text-middle"></i>
                 <span class="text-middle">Microbiome Scientific literature</span>
               </label>
-              <div>
+              <div class="side__button-container">
                 <button>Unsubscribe</button>
               </div>
             </li>
@@ -643,8 +616,12 @@
           <h3 class="side__title">AVALIABLE</h3>
           <ul>
             <li>
-              <span>Healthcare News</span>
-              <div>
+              <label>
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Healthcare News</span>
+              </label>
+
+              <div class="side__button-container">
                 <button class="text-middle">view</button>
                 <span class="side__divider text-middle"></span>
                 <button class="text-middle">Unsubscribe</button>
@@ -654,11 +631,14 @@
         </div>
       </div>
 
-      <div>
+      <div class="side__subnav" id="pharma">
         <div class="side__item">
-          <h3 class="side__title">ASSOCIATED SOURCE </h3>
-          <ul>
-            <li>
+          <h3 class="side__title">
+            <i class="side__title-triangle text-middle"></i>
+            <span class="text-middle">ASSOCIATED SOURCE</span>
+          </h3>
+          <ul class="side__sublist">
+            <li class="active">
               <label>Pfizer</label>
             </li>
             <li>
@@ -737,8 +717,10 @@
         </div>
 
         <div class="side__item">
-          <h3 class="side__title">ASSOCIATED CHANNELS </h3>
-          <ul>
+          <h3 class="side__title">
+              <span class="text-middle">ASSOCIATED CHANNELS</span>
+          </h3>
+          <ul class="side__sublist">
             <li>
               <label>Analytics</label>
             </li>

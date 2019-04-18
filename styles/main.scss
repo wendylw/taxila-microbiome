@@ -686,19 +686,56 @@ body.open-toggle-side {
   min-width: 330px;
   overflow-y: auto;
 
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+
+  transition: transform 0.4s;
+  -webkit-transition: transform 0.4s;
+  -moz-transition: transform 0.4s;
+  -ms-transition: transform 0.4s;
+
+  &.active {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+  }
+
   label {
     display: inline-block;
     padding: 5px 0;
     color: $lightter-gray;
+
+    span {
+      font-size: $big-font;
+    }
+  }
+
+  li.active > label {
+    color: $theme-color-2;
   }
 
   button {
-    padding: 5px 0;
+    padding: 5px 12px;
+    margin: 0;
     border: 0;
     font-size: $small-font;
     color: $theme-color-1;
     background: transparent;
     cursor: pointer;
+    outline: none;
+  }
+
+  &__nav,
+  &__subnav {
+    float: left;
+    padding: 0 8px;
+  }
+
+  &__subnav {
+    display: none;
   }
 
   &__item {
@@ -710,28 +747,59 @@ body.open-toggle-side {
     border-top: 0;
   }
 
+  &__nav-item.active label {
+    color: $theme-color-2;
+  }
+
   &__divider {
     display: inline-block;
-    margin: 0 5px;
     width: 1px;
     height: 10px;
     background-color: $theme-color-1;
   }
 
   &__title {
-    margin: 0 0 15px;
+    margin: 0 20px 15px;
     font-size: $big-font;
     color: $theme-color-2;
     font-weight: normal;
+    cursor: pointer;
   }
 
   &__title-triangle {
-    width: 16px;
-    height: 16px;
+    opacity: 0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
     background-repeat: no-repeat;
     background-image: url(../img/side-triangle.png);
     background-size: 100% auto;
     background-position: center center;
+  }
+
+  &__nav-item.active &__title-triangle,
+  &__subnav &__title-triangle {
+    opacity: 1;
+  }
+
+  &__title &__title-triangle {
+    margin-left: -20px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+
+  &__title-triangle ~ span {
+    margin: 0 5px 15px;
+  }
+
+  &__button-container {
+    margin: 0 8px;
+  }
+
+  &__sublist {
+    padding: 0 20px;
   }
 }
 

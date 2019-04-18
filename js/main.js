@@ -58,4 +58,16 @@
     $(this).toggleClass('active');
     $('body').toggleClass('open-toggle-side');
   });
+
+  $('.header__catalog .header__nav-link').on('click', function() {
+    $(this).toggleClass('active');
+    $('.side').toggleClass('active');
+  });
+
+  $('.side__nav-item').on('click', function() {
+    const id = $(this).data('item');
+
+    $(this).toggleClass('active');
+    $('#' + id).slideToggle();
+  });
 })();
