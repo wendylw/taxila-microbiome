@@ -22,212 +22,572 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-  <header class="header">
-    <img class="header__logo" src="./img/logo-white.png" alt="">
-    <ul class="header__navs">
-      <li class="header__mode header__nav-item text-middle">
-        <span class="header__mode-text text-middle" data-value="masonry">Masonry Layout</span>
-        <div class="switch-button text-middle">
-          <i class="switch-button__icon"></i>
-        </div>
-      </li>
-      <li class="header__channel header__nav-item text-middle">
-        <a class="header__nav-link"><span>CHANNEL</span></a>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Analytics</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Auto Exteriors</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Auto Inergy</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Competitor Landscape</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Local Data Store</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Plastic industry</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Plastic Omnium</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Scientific Publications</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Smart Mobility</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Tech Trends</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__article header__nav-item text-middle">
-        <a class="header__nav-link"><span>ARTICLES</span></a>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a class="filter-popular"><span>Filter by POPULAR</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__trends header__nav-item text-middle">
-        <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
-      </li>
-      <li class="header__catalog header__nav-item text-middle">
-        <a class="header__nav-link"><span>CATALOG</span></a>
-        <div class="dropdown-menu has-title">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <div class="dropdown-menu__title">
-                <h4>SUBSCRIBED</h4>
-                <span class="dropdown-menu__hint">Unsubscribe</span>
-              </div>
-            </li>
-            <li class="dropdown-menu__item">
-              <a href="#patents-modal" rel="modal:open"><span>Patents & Publications</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span> Local File Browser</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>E-Reputation</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <div class="dropdown-menu__title">
-                <h4>AVAILABLE</h4>
-              </div>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>No Catalog available</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__welcome header__nav-item text-middle">
-        <a class="header__nav-link" href="#"><span>WELCOME</span></a>
-      </li>
-      <li class="header__search header__nav-item text-middle">
-        <input type="text" placeholder="Type your search item here and explore"/>
-      </li>
-    </ul>
-  </header>
 
-  <div class="news-content">
-    <div class="article">
-      <div class="article__header">
-        <h3 class="article__title">New AI model can detect atomic structures  in imperfect metals</h3>
-        <ul class="article__time-container">
-          <li>Apr 18, 2018</li>
-          <li class="article__create-hint">I  materials today, publication</li>
-        </ul>
-      </div>
-      <div class="article__image-container">
-        <img class="news-content__image"src="http://via.placeholder.com/500x200" alt="">
-        <ul class="news-content__operation-list">
-          <li>
-            <img src="./img/like-white.png" alt="">
-          </li>
-          <li>
-            <img src="./img/wishlist-white.png" alt="">
-          </li>
-          <li>
-            <img src="./img/news-info-download-white.png" alt="">
-          </li>
-          <li>
-            <img src="./img/news-info-mail-white.png" alt="">
-          </li>
-        </ul>
-      </div>
-      <div class="news-content__detail">
-        <p>Researchers at the University of Waterloo in Canada have found a better way to identify atomic structures, an essential step in improving materials selection in the aviation, construction and automotive industries. Their findings should allow the integrity of metals to be determined with greater confidence.</p>
-        <p>Devinder Kumar, a PhD candidate in systems design engineering at Waterloo, collaborated with researchers at the Fritz Haber Institute (FHI) in Berlin, Germany, to develop a powerful artificial intelligence (AI) model that can accurately detect different atomic structures in metallic materials. This model, which is described in a paper in Nature Communications, can find imperfections in the metal that were previously undetectable.</p>
-      </div>
-      <div class="article-comment">
-        <div class="article-comment__title-container">
-          <h4 class="article-comment__title">Leave a Comments</h4>
-          <label class="article-comment__subtitle">Community</label>
+  <div class="wrapper">
+    <header class="header">
+      <img class="header__logo" src="./img/logo-white.png" alt="">
+      <ul class="header__navs">
+        <li class="header__channel header__nav-item text-middle">
+          <a class="header__nav-link"><span>CHANNEL</span></a>
+        </li>
+        <li class="header__article header__nav-item text-middle">
+          <a class="header__nav-link"><span>ARTICLES</span></a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="filter-popular"><span>Filter by POPULARITY</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__catalog header__nav-item text-middle">
+          <a class="header__nav-link"><span>CATALOG</span></a>
+        </li>
+        <li class="header__trends header__nav-item text-middle">
+          <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
+        </li>
+      </ul>
+      <div class="header__operator">
+        <div class="header__search text-middle">
+          <input type="text" placeholder="Type your search item here and explore"/>
         </div>
-        <form class="form" action="">
-            <div>
-              <textarea class="form__input"></textarea>
-            </div>
-            <div class="article-comment__operation text-right">
-              <div class="article-comment__socials-container">
-                <label class="article-comment__socials-title text-middle">Login with: </label>
-                <ul class="article-comment__socials text-middle">
-                  <li class="article-comment__social">
-                    <button>
-                      <img src="./img/login-facebook.png" alt="">
-                    </button>
-                  </li>
-                  <li class="article-comment__social">
-                    <button>
-                      <img src="./img/login-twitter.png" alt="">
-                    </button>
-                  </li>
-                  <li class="article-comment__social">
-                    <button>
-                      <img src="./img/login-google.png" alt="">
-                    </button>
-                  </li>
-                  <li class="article-comment__social">
-                    <button>
-                      <img src="./img/login-D.png" alt="">
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <button class="button-fill">Post</button>
-            </div>
-        </form>
+        <i class="header__user text-middle"></i>
       </div>
-      <div class="article-comment__list-container">
-        <h4 class="article-comment__title">1 Comments</h4>
-        <ul class="article-comment__list">
-          <li class="article-comment__item">
-            <h5 class="article-comment__item-title">Brian Shaw</h5>
-            <div class="article-comment__content">
-              <p>Thank you for this post!</p>
-            </div>
-            <ul class="article-comment__time-container">
-              <li class="text-middle">
-                <span>2 months ago</span>
-              </li>
-              <li class="article-comment__replay text-middle">
-                <img class="text-middle" src="./img/side-edit.png" alt="">
-                <span class="text-middle">reply</span>
-              </li>
-            </ul>
-          </li>
-          <li class="article-comment__item">
-            <h5 class="article-comment__item-title">Brian Shaw</h5>
-            <div class="article-comment__content">
-              <p>Thank you for this post!</p>
-            </div>
-            <ul class="article-comment__time-container">
-              <li class="text-middle">
-                <span>2 months ago</span>
-              </li>
-              <li class="article-comment__replay text-middle">
-                <img class="text-middle" src="./img/side-edit.png" alt="">
-                <span class="text-middle">reply</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
+    </header>
+
+    <div class="news-content">
+      <div class="article">
+        <div class="article__header">
+          <h3 class="article__title">New AI model can detect atomic structures  in imperfect metals</h3>
+          <ul class="article__time-container">
+            <li>Apr 18, 2018</li>
+            <li class="article__create-hint">I  materials today, publication</li>
+          </ul>
+        </div>
+        <div class="article__image-container">
+          <img class="news-content__image"src="http://via.placeholder.com/500x200" alt="">
+          <ul class="news-content__operation-list">
+            <li>
+              <img src="./img/like-white.png" alt="">
+            </li>
+            <li>
+              <img src="./img/wishlist-white.png" alt="">
+            </li>
+            <li>
+              <img src="./img/news-info-download-white.png" alt="">
+            </li>
+            <li>
+              <img src="./img/news-info-mail-white.png" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="news-content__detail">
+          <p>Researchers at the University of Waterloo in Canada have found a better way to identify atomic structures, an essential step in improving materials selection in the aviation, construction and automotive industries. Their findings should allow the integrity of metals to be determined with greater confidence.</p>
+          <p>Devinder Kumar, a PhD candidate in systems design engineering at Waterloo, collaborated with researchers at the Fritz Haber Institute (FHI) in Berlin, Germany, to develop a powerful artificial intelligence (AI) model that can accurately detect different atomic structures in metallic materials. This model, which is described in a paper in Nature Communications, can find imperfections in the metal that were previously undetectable.</p>
+        </div>
+        <div class="article-comment">
+          <div class="article-comment__title-container">
+            <h4 class="article-comment__title">Leave a Comments</h4>
+            <label class="article-comment__subtitle">Community</label>
+          </div>
+          <form class="form" action="">
+              <div>
+                <textarea class="form__input"></textarea>
+              </div>
+              <div class="article-comment__operation text-right">
+                <div class="article-comment__socials-container">
+                  <label class="article-comment__socials-title text-middle">Login with: </label>
+                  <ul class="article-comment__socials text-middle">
+                    <li class="article-comment__social">
+                      <button>
+                        <img src="./img/login-facebook.png" alt="">
+                      </button>
+                    </li>
+                    <li class="article-comment__social">
+                      <button>
+                        <img src="./img/login-twitter.png" alt="">
+                      </button>
+                    </li>
+                    <li class="article-comment__social">
+                      <button>
+                        <img src="./img/login-google.png" alt="">
+                      </button>
+                    </li>
+                    <li class="article-comment__social">
+                      <button>
+                        <img src="./img/login-D.png" alt="">
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <button class="button-fill">Post</button>
+              </div>
+          </form>
+        </div>
+        <div class="article-comment__list-container">
+          <h4 class="article-comment__title">1 Comments</h4>
+          <ul class="article-comment__list">
+            <li class="article-comment__item">
+              <h5 class="article-comment__item-title">Brian Shaw</h5>
+              <div class="article-comment__content">
+                <p>Thank you for this post!</p>
+              </div>
+              <ul class="article-comment__time-container">
+                <li class="text-middle">
+                  <span>2 months ago</span>
+                </li>
+                <li class="article-comment__replay text-middle">
+                  <img class="text-middle" src="./img/side-edit.png" alt="">
+                  <span class="text-middle">reply</span>
+                </li>
+              </ul>
+            </li>
+            <li class="article-comment__item">
+              <h5 class="article-comment__item-title">Brian Shaw</h5>
+              <div class="article-comment__content">
+                <p>Thank you for this post!</p>
+              </div>
+              <ul class="article-comment__time-container">
+                <li class="text-middle">
+                  <span>2 months ago</span>
+                </li>
+                <li class="article-comment__replay text-middle">
+                  <img class="text-middle" src="./img/side-edit.png" alt="">
+                  <span class="text-middle">reply</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+
+    <div class="side">
+      <div class="side__nav">
+        <div class="side__item">
+          <h3 class="side__title">SUBSCRIBED</h3>
+          <ul>
+            <li class="side__nav-item" data-item="pharma">
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Pharma Corporate Press Release</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+            </li>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
+                  <i class="side__title-triangle text-middle"></i>
+                  <span class="text-middle">Microbiome</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+            </li>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Microbiome Scientific literature</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side__item">
+          <h3 class="side__title">AVALIABLE</h3>
+          <ul>
+            <li>
+              <label>
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Healthcare News</span>
+              </label>
+
+              <div class="side__button-container">
+                <button class="text-middle">view</button>
+                <span class="side__divider text-middle"></span>
+                <button class="text-middle">Unsubscribe</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="side__subnav" id="pharma">
+        <div class="side__item">
+          <h3 class="side__title">
+            <i class="side__title-triangle text-middle"></i>
+            <span class="text-middle">ASSOCIATED SOURCE</span>
+          </h3>
+          <ul class="side__sublist">
+            <li class="active">
+              <label>Pfizer</label>
+            </li>
+            <li>
+              <label>Abbvie</label>
+            </li>
+            <li>
+              <label>Otsuka</label>
+            </li>
+            <li>
+              <label>Merck</label>
+            </li>
+            <li>
+              <label>Roche</label>
+            </li>
+            <li>
+              <label>Teijin</label>
+            </li>
+            <li>
+              <label>Eli Lilly and Company</label>
+            </li>
+            <li>
+              <label>Chugai</label>
+            </li>
+            <li>
+              <label>Boehringer Ingelheim</label>
+            </li>
+            <li>
+              <label>Meiji</label>
+            </li>
+            <li>
+              <label>Mitsubishi Tanabe Pharma</label>
+            </li>
+            <li>
+              <label>Bayer</label>
+            </li>
+            <li>
+              <label>Teva Pharma</label>
+            </li>
+            <li>
+              <label>Galaxy</label>
+            </li>
+            <li>
+              <label>Biogen</label>
+            </li>
+            <li>
+              <label>Eisai</label>
+            </li>
+            <li>
+              <label>Amgen</label>
+            </li>
+            <li>
+              <label>Johnson and Johnson</label>
+            </li>
+            <li>
+              <label>Sanofi</label>
+            </li>
+            <li>
+              <label>Astellas</label>
+            </li>
+            <li>
+              <label>Daiichi Sankyo</label>
+            </li>
+            <li>
+              <label>Bristol Myers Squibb</label>
+            </li>
+            <li>
+              <label>Baxter</label>
+            </li>
+            <li>
+              <label>Novartis</label>
+            </li>
+            <li>
+              <label>Takeda</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side__item">
+          <h3 class="side__title">
+              <span class="text-middle">ASSOCIATED CHANNELS</span>
+          </h3>
+          <ul class="side__sublist">
+            <li>
+              <label>Analytics</label>
+            </li>
+            <li>
+              <label>Pharma Press Releases</label>
+            </li>
+            <li>
+              <label>Microbiome</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toggle-side channel">
+    <h3 class="toggle-side__header-title">CHANNEL</h3>
+    <ul class="toggle-side__list">
+      <li class="toggle-side__item">
+        <label class="toggle-side__title">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">All</span>
+        </label>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Analytics</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Animal Health</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Clinical trials</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Events</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Finance</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Healthcare & Medicine</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Media coverage</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Microbiome</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Microbiome Science and Tec…</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Patents</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Pharma Press Release</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Phytobiome</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Social Media</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Startups investors</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
 
   <!-- Patents Modal -->

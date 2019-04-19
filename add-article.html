@@ -21,317 +21,676 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-  <header class="header">
-    <img class="header__logo" src="./img/logo-white.png" alt="">
-    <ul class="header__navs">
-      <li class="header__mode header__nav-item text-middle">
-        <span class="header__mode-text text-middle" data-value="masonry">Masonry Layout</span>
-        <div class="switch-button text-middle">
-          <i class="switch-button__icon"></i>
-        </div>
-      </li>
-      <li class="header__channel header__nav-item text-middle">
-        <a class="header__nav-link"><span>CHANNEL</span></a>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Analytics</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Auto Exteriors</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Auto Inergy</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Competitor Landscape</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Local Data Store</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Plastic industry</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Plastic Omnium</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Scientific Publications</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Smart Mobility</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Tech Trends</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__article header__nav-item text-middle">
-        <a class="header__nav-link"><span>ARTICLES</span></a>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <a><span>Filter by TIME LINE</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>Filter by POPULAR</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__trends header__nav-item text-middle">
-        <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
-      </li>
-      <li class="header__catalog header__nav-item text-middle">
-        <a class="header__nav-link"><span>CATALOG</span></a>
-        <div class="dropdown-menu has-title">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <div class="dropdown-menu__title">
-                <h4>SUBSCRIBED</h4>
-                <span class="dropdown-menu__hint">Unsubscribe</span>
-              </div>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>Patents & Publications</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span> Local File Browser</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>E-Reputation</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <div class="dropdown-menu__title">
-                <h4>AVAILABLE</h4>
-              </div>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>No Catalog available</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__welcome header__nav-item text-middle">
-        <a class="header__nav-link" href="#"><span>WELCOME</span></a>
-      </li>
-      <li class="header__search header__nav-item text-middle">
-        <input type="text" placeholder="Type your search item here and explore"/>
-      </li>
-    </ul>
-  </header>
-
-  <!-- Add Article -->
-  <div class="news-content">
-    <div class="add-article">
-      <div class="container">
-        <section class="add-article-person text-center">
-          <div class="add-article__avatar"></div>
-          <h3 class="add-article-person__name">Sucheendra</h3>
-          <span class="add-article-person__description">Say something about yourself</span>
-          <ul class="add-article-person__list">
-            <li class="add-article__item">
-              <a href="">My favorite articles</a>
-            </li>
-            <li class="add-article__item">
-              <a href="">My archive</a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="add-article-operation text-center">
-          <div class="add-article-operation__item">
-            <h3 class="add-article-operation__title">Download</h3>
-            <div class="add-article-operation__item-form">
-              <div class="checkbox text-middle">
-                <input type="checkbox" />
-              </div>
-              <span class="checkbox__text text-middle">With Annotation</span>
-            </div>
-            <div class="add-article-operation__list row">
-              <div class="add-article-operation__selector col-6">
-                <div class="add-article-operation__card">
-                  <label>Today’s Articles</label>
-
-                  <div class="add-article-operation__card-list-container">
-                    <ul class="add-article-operation__card-list">
-                      <li>Download</li>
-                      <li>Clear</li>
-                      <li>Show all</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="add-article-operation__selector col-6">
-                <div class="add-article-operation__card">
-                  <label>Selected Articles</label>
-
-                  <div class="add-article-operation__card-list-container">
-                    <ul class="add-article-operation__card-list">
-                      <li>Download</li>
-                      <li>Clear</li>
-                      <li>Show all</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="wrapper">
+    <header class="header">
+      <img class="header__logo" src="./img/logo-white.png" alt="">
+      <ul class="header__navs">
+        <li class="header__channel header__nav-item text-middle">
+          <a class="header__nav-link"><span>CHANNEL</span></a>
+        </li>
+        <li class="header__article header__nav-item text-middle">
+          <a class="header__nav-link"><span>ARTICLES</span></a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="filter-popular"><span>Filter by POPULARITY</span></a>
+              </li>
+            </ul>
           </div>
-          <div class="add-article-operation__item">
-            <h3 class="add-article-operation__title">Mail</h3>
-            <div class="add-article-operation__list row">
-              <div class="add-article-operation__selector col-6">
-                <div class="add-article-operation__card">
-                  <label>Today’s Articles</label>
-
-                  <div class="add-article-operation__card-list-container">
-                    <ul class="add-article-operation__card-list">
-                      <li>Download</li>
-                      <li>Clear</li>
-                      <li>Show all</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="add-article-operation__selector col-6">
-                <div class="add-article-operation__card">
-                  <label>Selected Articles</label>
-
-                  <div class="add-article-operation__card-list-container">
-                    <ul class="add-article-operation__card-list">
-                      <li>Download</li>
-                      <li>Clear</li>
-                      <li>Show all</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="add-article-operation__item new-resource">
-            <h3 class="add-article-operation__title">Add new resource</h3>
-            <p class="add-article-operation__subtitle">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</p>
-            <button class="add-article-operation__button-fill">Upload Batch</button>
-          </div>
-        </section>
-
-        <div class="add-article__divider text-center">
-          <strong>Or</strong>
+        </li>
+        <li class="header__catalog header__nav-item text-middle">
+          <a class="header__nav-link"><span>CATALOG</span></a>
+        </li>
+        <li class="header__trends header__nav-item text-middle">
+          <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
+        </li>
+      </ul>
+      <div class="header__operator">
+        <div class="header__search text-middle">
+          <input type="text" placeholder="Type your search item here and explore"/>
         </div>
+        <i class="header__user text-middle"></i>
+      </div>
+    </header>
 
-        <section class="add-article__form-container">
-          <h3 class="add-article-form__title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
-          <form class="form" action="">
-            <div class="form__group">
-              <label class="form__label" for="">Name:</label>
-              <input class="form__input" type="text">
+    <!-- Add Article -->
+    <div class="news-content">
+      <div class="add-article">
+        <div class="container">
+          <section class="add-article-person text-center">
+            <div class="add-article__avatar"></div>
+            <h3 class="add-article-person__name">Sucheendra</h3>
+            <span class="add-article-person__description">Say something about yourself</span>
+            <ul class="add-article-person__list">
+              <li class="add-article__item">
+                <a href="">My favorite articles</a>
+              </li>
+              <li class="add-article__item">
+                <a href="">My archive</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="add-article-operation text-center">
+            <div class="add-article-operation__item">
+              <h3 class="add-article-operation__title">Download</h3>
+              <div class="add-article-operation__item-form">
+                <div class="checkbox text-middle">
+                  <input type="checkbox" />
+                </div>
+                <span class="checkbox__text text-middle">With Annotation</span>
+              </div>
+              <div class="add-article-operation__list row">
+                <div class="add-article-operation__selector col-6">
+                  <div class="add-article-operation__card">
+                    <label>Today’s Articles</label>
+
+                    <div class="add-article-operation__card-list-container">
+                      <ul class="add-article-operation__card-list">
+                        <li>Download</li>
+                        <li>Clear</li>
+                        <li>Show all</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-article-operation__selector col-6">
+                  <div class="add-article-operation__card">
+                    <label>Selected Articles</label>
+
+                    <div class="add-article-operation__card-list-container">
+                      <ul class="add-article-operation__card-list">
+                        <li>Download</li>
+                        <li>Clear</li>
+                        <li>Show all</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form__group">
-              <label class="form__label" for="">Description:</label>
-              <textarea class="form__input"></textarea>
+            <div class="add-article-operation__item">
+              <h3 class="add-article-operation__title">Mail</h3>
+              <div class="add-article-operation__list row">
+                <div class="add-article-operation__selector col-6">
+                  <div class="add-article-operation__card">
+                    <label>Today’s Articles</label>
+
+                    <div class="add-article-operation__card-list-container">
+                      <ul class="add-article-operation__card-list">
+                        <li>Download</li>
+                        <li>Clear</li>
+                        <li>Show all</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-article-operation__selector col-6">
+                  <div class="add-article-operation__card">
+                    <label>Selected Articles</label>
+
+                    <div class="add-article-operation__card-list-container">
+                      <ul class="add-article-operation__card-list">
+                        <li>Download</li>
+                        <li>Clear</li>
+                        <li>Show all</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form__group">
-              <label class="form__label" for="">URL:</label>
-              <input class="form__input" type="text">
+            <div class="add-article-operation__item new-resource">
+              <h3 class="add-article-operation__title">Add new resource</h3>
+              <p class="add-article-operation__subtitle">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</p>
+              <button class="add-article-operation__button-fill">Upload Batch</button>
             </div>
-            <div class="form__group">
-              <label class="form__label" for="">Tags:</label>
-              <input class="form__input" type="text">
-            </div>
-            <div class="side-dropup">
-              <label class="form__label" for="">Channels:</label>
+          </section>
+
+          <div class="add-article__divider text-center">
+            <strong>Or</strong>
+          </div>
+
+          <section class="add-article__form-container">
+            <h3 class="add-article-form__title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
+            <form class="form" action="">
+              <div class="form__group">
+                <label class="form__label" for="">Name:</label>
+                <input class="form__input" type="text">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="">Description:</label>
+                <textarea class="form__input"></textarea>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="">URL:</label>
+                <input class="form__input" type="text">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="">Tags:</label>
+                <input class="form__input" type="text">
+              </div>
               <div class="side-dropup">
-                <div class="side-dropup__menu">
-                  <ul class="side-dropup__list">
-                    <li class="side-dropup__item">
-                      <span>Analytics</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Auto Exteriors</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Auto Inergy</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Competitor Landscape</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Local Data Store</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Plastic industry</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Plastic Omnium</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Scientific Publications</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Smart Mobility</span>
-                    </li>
-                    <li class="side-dropup__item">
-                      <span>Tech Trends</span>
-                    </li>
-                  </ul>
+                <label class="form__label" for="">Channels:</label>
+                <div class="side-dropup">
+                  <div class="side-dropup__menu">
+                    <ul class="side-dropup__list">
+                      <li class="side-dropup__item">
+                        <span>Analytics</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Auto Exteriors</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Auto Inergy</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Competitor Landscape</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Local Data Store</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Plastic industry</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Plastic Omnium</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Scientific Publications</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Smart Mobility</span>
+                      </li>
+                      <li class="side-dropup__item">
+                        <span>Tech Trends</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="side-dropup__button">
+                    <span class="text-middle">Analytics</span>
+                    <img class="text-middle" src="./img/side-plus-white.png" alt="">
+                  </button>
                 </div>
-                <button class="side-dropup__button">
-                  <span class="text-middle">Analytics</span>
-                  <img class="text-middle" src="./img/side-plus-white.png" alt="">
-                </button>
+                <ul class="tag__list">
+                </ul>
               </div>
-              <ul class="tag__list">
-              </ul>
-            </div>
-            <div class="add-article__form-buttons row">
-              <div class="col-6">
-                <button class="button-outline cnacel">Cancel</button>
+              <div class="add-article__form-buttons row">
+                <div class="col-6">
+                  <button class="button-outline cnacel">Cancel</button>
+                </div>
+                <div class="col-6 text-right">
+                  <button class="button-outline">Reset</button>
+                  <button class="button-fill">Add</button>
+                </div>
               </div>
-              <div class="col-6 text-right">
-                <button class="button-outline">Reset</button>
-                <button class="button-fill">Add</button>
-              </div>
-            </div>
-          </form>
-        </section>
+            </form>
+          </section>
 
-        <section class="add-article__info">
-          <div class="add-article__info-total">
-            <label>Total uploaded: </label>
-            <span>0</span>
-          </div>
-          <div class="add-article__info-uploads">
-            <label>Remaining Uploads: </label>
-            <span>Unlimited</span>
-          </div>
-        </section>
+          <section class="add-article__info">
+            <div class="add-article__info-total">
+              <label>Total uploaded: </label>
+              <span>0</span>
+            </div>
+            <div class="add-article__info-uploads">
+              <label>Remaining Uploads: </label>
+              <span>Unlimited</span>
+            </div>
+          </section>
 
-        <section class="add-article__other-links text-center">
+          <section class="add-article__other-links text-center">
+            <ul>
+              <li class="add-article__item">
+                <a href="">Tour</a>
+              </li>
+              <li class="add-article__item">
+                <a href="">Term of Use</a>
+              </li>
+              <li class="add-article__item">
+                <a href="">Change your password</a>
+              </li>
+              <li class="add-article__item">
+                <a href="">Feedback</a>
+              </li>
+            </ul>
+          </section>
+
+          <div class="add-article__sign-off text-center">
+            <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
+            <span class="text-middle">Sign off</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of Add Article -->
+
+    <div class="side">
+      <div class="side__nav">
+        <div class="side__item">
+          <h3 class="side__title">SUBSCRIBED</h3>
           <ul>
-            <li class="add-article__item">
-              <a href="">Tour</a>
+            <li class="side__nav-item" data-item="pharma">
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Pharma Corporate Press Release</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
             </li>
-            <li class="add-article__item">
-              <a href="">Term of Use</a>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
+                  <i class="side__title-triangle text-middle"></i>
+                  <span class="text-middle">Microbiome</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
             </li>
-            <li class="add-article__item">
-              <a href="">Change your password</a>
-            </li>
-            <li class="add-article__item">
-              <a href="">Feedback</a>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Microbiome Scientific literature</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
             </li>
           </ul>
-        </section>
+        </div>
 
-        <div class="add-article__sign-off text-center">
-          <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
-          <span class="text-middle">Sign off</span>
+        <div class="side__item">
+          <h3 class="side__title">AVALIABLE</h3>
+          <ul>
+            <li>
+              <label>
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Healthcare News</span>
+              </label>
+
+              <div class="side__button-container">
+                <button class="text-middle">view</button>
+                <span class="side__divider text-middle"></span>
+                <button class="text-middle">Unsubscribe</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="side__subnav" id="pharma">
+        <div class="side__item">
+          <h3 class="side__title">
+            <i class="side__title-triangle text-middle"></i>
+            <span class="text-middle">ASSOCIATED SOURCE</span>
+          </h3>
+          <ul class="side__sublist">
+            <li class="active">
+              <label>Pfizer</label>
+            </li>
+            <li>
+              <label>Abbvie</label>
+            </li>
+            <li>
+              <label>Otsuka</label>
+            </li>
+            <li>
+              <label>Merck</label>
+            </li>
+            <li>
+              <label>Roche</label>
+            </li>
+            <li>
+              <label>Teijin</label>
+            </li>
+            <li>
+              <label>Eli Lilly and Company</label>
+            </li>
+            <li>
+              <label>Chugai</label>
+            </li>
+            <li>
+              <label>Boehringer Ingelheim</label>
+            </li>
+            <li>
+              <label>Meiji</label>
+            </li>
+            <li>
+              <label>Mitsubishi Tanabe Pharma</label>
+            </li>
+            <li>
+              <label>Bayer</label>
+            </li>
+            <li>
+              <label>Teva Pharma</label>
+            </li>
+            <li>
+              <label>Galaxy</label>
+            </li>
+            <li>
+              <label>Biogen</label>
+            </li>
+            <li>
+              <label>Eisai</label>
+            </li>
+            <li>
+              <label>Amgen</label>
+            </li>
+            <li>
+              <label>Johnson and Johnson</label>
+            </li>
+            <li>
+              <label>Sanofi</label>
+            </li>
+            <li>
+              <label>Astellas</label>
+            </li>
+            <li>
+              <label>Daiichi Sankyo</label>
+            </li>
+            <li>
+              <label>Bristol Myers Squibb</label>
+            </li>
+            <li>
+              <label>Baxter</label>
+            </li>
+            <li>
+              <label>Novartis</label>
+            </li>
+            <li>
+              <label>Takeda</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side__item">
+          <h3 class="side__title">
+              <span class="text-middle">ASSOCIATED CHANNELS</span>
+          </h3>
+          <ul class="side__sublist">
+            <li>
+              <label>Analytics</label>
+            </li>
+            <li>
+              <label>Pharma Press Releases</label>
+            </li>
+            <li>
+              <label>Microbiome</label>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-  <!-- end of Add Article -->
+
+  <div class="toggle-side channel">
+    <h3 class="toggle-side__header-title">CHANNEL</h3>
+    <ul class="toggle-side__list">
+      <li class="toggle-side__item">
+        <label class="toggle-side__title">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">All</span>
+        </label>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Analytics</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Animal Health</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Clinical trials</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Events</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Finance</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Healthcare & Medicine</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Media coverage</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Microbiome</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Microbiome Science and Tec…</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Patents</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Pharma Press Release</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Phytobiome</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Social Media</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Startups investors</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

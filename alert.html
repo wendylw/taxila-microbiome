@@ -21,240 +21,599 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-  <header class="header">
-    <img class="header__logo" src="./img/logo-white.png" alt="">
-    <ul class="header__navs">
-      <li class="header__mode header__nav-item text-middle">
-        <span class="header__mode-text text-middle" data-value="masonry">Masonry Layout</span>
-        <div class="switch-button text-middle">
-          <i class="switch-button__icon"></i>
+  <div class="wrapper">
+    <header class="header">
+      <img class="header__logo" src="./img/logo-white.png" alt="">
+      <ul class="header__navs">
+        <li class="header__channel header__nav-item text-middle">
+          <a class="header__nav-link"><span>CHANNEL</span></a>
+        </li>
+        <li class="header__article header__nav-item text-middle">
+          <a class="header__nav-link"><span>ARTICLES</span></a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item">
+                <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="filter-popular"><span>Filter by POPULARITY</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__catalog header__nav-item text-middle">
+          <a class="header__nav-link"><span>CATALOG</span></a>
+        </li>
+        <li class="header__trends header__nav-item text-middle">
+          <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
+        </li>
+      </ul>
+      <div class="header__operator">
+        <div class="header__search text-middle">
+          <input type="text" placeholder="Type your search item here and explore"/>
         </div>
-      </li>
-      <li class="header__channel header__nav-item text-middle">
-        <a class="header__nav-link"><span>CHANNEL</span></a>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Analytics</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Auto Exteriors</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Auto Inergy</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Competitor Landscape</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Local Data Store</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Plastic industry</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Plastic Omnium</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Scientific Publications</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Smart Mobility</span></a>
-            </li>
-            <li class="dropdown-menu__item arrow">
-              <a href="#"><span>Tech Trends</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__article header__nav-item text-middle">
-        <a class="header__nav-link"><span>ARTICLES</span></a>
-        <div class="dropdown-menu">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <a><span>Filter by TIME LINE</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>Filter by POPULAR</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__trends header__nav-item text-middle">
-        <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
-      </li>
-      <li class="header__catalog header__nav-item text-middle">
-        <a class="header__nav-link"><span>CATALOG</span></a>
-        <div class="dropdown-menu has-title">
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item">
-              <div class="dropdown-menu__title">
-                <h4>SUBSCRIBED</h4>
-                <span class="dropdown-menu__hint">Unsubscribe</span>
-              </div>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>Patents & Publications</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span> Local File Browser</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>E-Reputation</span></a>
-            </li>
-            <li class="dropdown-menu__item">
-              <div class="dropdown-menu__title">
-                <h4>AVAILABLE</h4>
-              </div>
-            </li>
-            <li class="dropdown-menu__item">
-              <a><span>No Catalog available</span></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="header__welcome header__nav-item text-middle">
-        <a class="header__nav-link" href="#"><span>WELCOME</span></a>
-      </li>
-      <li class="header__search header__nav-item text-middle">
-        <input type="text" placeholder="Type your search item here and explore"/>
-      </li>
-    </ul>
-  </header>
+        <i class="header__user text-middle"></i>
+      </div>
+    </header>
 
-  <!-- Side Menu -->
-  <div class="news-info side-menu">
-    <h4 class="news-info__title text-right">Sucheendra</h4>
-    <div class="news-info__content">
-      <ul class="news-info__myself-list">
-        <li class="news-info__myself-item">
-          <a href="#">
-            <img class="text-middle" src="./img/news-info-favorite.png" alt="">
-            <span class="text-middle">My favorite articles</span>
-          </a>
-        </li>
-        <li class="news-info__myself-item">
-          <a href="#">
-            <img class="text-middle" src="./img/news-info-archive.png" alt="">
-            <span class="text-middle">My archive</span>
-          </a>
-        </li>
-      </ul>
-      <div class="news-info__list-container">
-        <h4 class="news-info__list-title">
-          <img class="text-middle" src="./img/news-info-download-white.png" alt="">
-          <span class="text-middle">Download</span>
-        </h4>
-        <ul class="news-info__list">
+    <!-- Side Menu -->
+    <div class="news-info side-menu">
+      <h4 class="news-info__title text-right">Sucheendra</h4>
+      <div class="news-info__content">
+        <ul class="news-info__myself-list">
+          <li class="news-info__myself-item">
+            <a href="#">
+              <img class="text-middle" src="./img/news-info-favorite.png" alt="">
+              <span class="text-middle">My favorite articles</span>
+            </a>
+          </li>
+          <li class="news-info__myself-item">
+            <a href="#">
+              <img class="text-middle" src="./img/news-info-archive.png" alt="">
+              <span class="text-middle">My archive</span>
+            </a>
+          </li>
+        </ul>
+        <div class="news-info__list-container">
+          <h4 class="news-info__list-title">
+            <img class="text-middle" src="./img/news-info-download-white.png" alt="">
+            <span class="text-middle">Download</span>
+          </h4>
+          <ul class="news-info__list">
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-trash.png" alt="">
+                <span class="text-middle">Clear Select Articles</span>
+              </button>
+            </li>
+            <li>
+              <button class="news-info__dropdown-button">
+                <img class="text-middle" src="./img/news-info-download.png" alt="">
+                <span class="text-middle">Download Today's Articles </span>
+                <img class="news-info__down-icon text-middle" src="./img/news-down.png" alt="">
+              </button>
+              <ul class="news-info__sub-list">
+                <li>
+                  <a href="">With Annotation</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="news-info__dropdown-button">
+                <img class="text-middle" src="./img/news-info-download.png" alt="">
+                <span class="text-middle">Download Selected Articles</span>
+                <img class="news-info__down-icon text-middle" src="./img/news-down.png" alt="">
+              </button>
+              <ul class="news-info__sub-list">
+                <li>
+                  <a href="">With Annotation</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-show.png" alt="">
+                <span class="text-middle">Show Selected Articles</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="news-info__list-container">
+          <h4 class="news-info__list-title">
+            <img class="text-middle" src="./img/news-info-mail-white.png" alt="">
+            <span class="text-middle">Mail</span>
+          </h4>
+          <ul class="news-info__list">
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-trash.png" alt="">
+                <span class="text-middle">Clear Select Articles</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-send.png" alt="">
+                <span class="text-middle">Send Today's Articles </span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-send.png" alt="">
+                <span class="text-middle">Send Selected Articles</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-show.png" alt="">
+                <span class="text-middle">Show Selected Articles</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <ul class="news-info__link-list">
           <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-trash.png" alt="">
-              <span class="text-middle">Clear Select Articles</span>
-            </button>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-plus.png" alt="">
+              <span class="text-middle">Add new resource</span>
+            </a>
           </li>
           <li>
-            <button class="news-info__dropdown-button">
-              <img class="text-middle" src="./img/news-info-download.png" alt="">
-              <span class="text-middle">Download Today's Articles </span>
-              <img class="news-info__down-icon text-middle" src="./img/news-down.png" alt="">
-            </button>
-            <ul class="news-info__sub-list">
-              <li>
-                <a href="">With Annotation</a>
-              </li>
-            </ul>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-video.png" alt="">
+              <span class="text-middle">Tour</span>
+            </a>
           </li>
           <li>
-            <button class="news-info__dropdown-button">
-              <img class="text-middle" src="./img/news-info-download.png" alt="">
-              <span class="text-middle">Download Selected Articles</span>
-              <img class="news-info__down-icon text-middle" src="./img/news-down.png" alt="">
-            </button>
-            <ul class="news-info__sub-list">
-              <li>
-                <a href="">With Annotation</a>
-              </li>
-            </ul>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-term.png" alt="">
+              <span class="text-middle">Term of Use</span>
+            </a>
           </li>
           <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-show.png" alt="">
-              <span class="text-middle">Show Selected Articles</span>
-            </button>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-setting.png" alt="">
+              <span class="text-middle">Change your password</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-feedback.png" alt="">
+              <span class="text-middle">Write feedback</span>
+            </a>
           </li>
         </ul>
       </div>
-      <div class="news-info__list-container">
-        <h4 class="news-info__list-title">
-          <img class="text-middle" src="./img/news-info-mail-white.png" alt="">
-          <span class="text-middle">Mail</span>
-        </h4>
-        <ul class="news-info__list">
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-trash.png" alt="">
-              <span class="text-middle">Clear Select Articles</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-send.png" alt="">
-              <span class="text-middle">Send Today's Articles </span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-send.png" alt="">
-              <span class="text-middle">Send Selected Articles</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <img class="text-middle" src="./img/news-info-show.png" alt="">
-              <span class="text-middle">Show Selected Articles</span>
-            </button>
-          </li>
-        </ul>
+      <div class="news-info__sign text-right">
+        <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
+        <span class="text-middle">Sign off</span>
       </div>
-      <ul class="news-info__link-list">
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-plus.png" alt="">
-            <span class="text-middle">Add new resource</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-video.png" alt="">
-            <span class="text-middle">Tour</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-term.png" alt="">
-            <span class="text-middle">Term of Use</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-setting.png" alt="">
-            <span class="text-middle">Change your password</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="text-middle" src="./img/news-info-feedback.png" alt="">
-            <span class="text-middle">Write feedback</span>
-          </a>
-        </li>
-      </ul>
     </div>
-    <div class="news-info__sign text-right">
-      <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
-      <span class="text-middle">Sign off</span>
+    <!-- end of Side Menu -->
+
+    <div class="side">
+      <div class="side__nav">
+        <div class="side__item">
+          <h3 class="side__title">SUBSCRIBED</h3>
+          <ul>
+            <li class="side__nav-item" data-item="pharma">
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Pharma Corporate Press Release</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+            </li>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
+                  <i class="side__title-triangle text-middle"></i>
+                  <span class="text-middle">Microbiome</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+            </li>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Microbiome Scientific literature</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side__item">
+          <h3 class="side__title">AVALIABLE</h3>
+          <ul>
+            <li>
+              <label>
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Healthcare News</span>
+              </label>
+
+              <div class="side__button-container">
+                <button class="text-middle">view</button>
+                <span class="side__divider text-middle"></span>
+                <button class="text-middle">Unsubscribe</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="side__subnav" id="pharma">
+        <div class="side__item">
+          <h3 class="side__title">
+            <i class="side__title-triangle text-middle"></i>
+            <span class="text-middle">ASSOCIATED SOURCE</span>
+          </h3>
+          <ul class="side__sublist">
+            <li class="active">
+              <label>Pfizer</label>
+            </li>
+            <li>
+              <label>Abbvie</label>
+            </li>
+            <li>
+              <label>Otsuka</label>
+            </li>
+            <li>
+              <label>Merck</label>
+            </li>
+            <li>
+              <label>Roche</label>
+            </li>
+            <li>
+              <label>Teijin</label>
+            </li>
+            <li>
+              <label>Eli Lilly and Company</label>
+            </li>
+            <li>
+              <label>Chugai</label>
+            </li>
+            <li>
+              <label>Boehringer Ingelheim</label>
+            </li>
+            <li>
+              <label>Meiji</label>
+            </li>
+            <li>
+              <label>Mitsubishi Tanabe Pharma</label>
+            </li>
+            <li>
+              <label>Bayer</label>
+            </li>
+            <li>
+              <label>Teva Pharma</label>
+            </li>
+            <li>
+              <label>Galaxy</label>
+            </li>
+            <li>
+              <label>Biogen</label>
+            </li>
+            <li>
+              <label>Eisai</label>
+            </li>
+            <li>
+              <label>Amgen</label>
+            </li>
+            <li>
+              <label>Johnson and Johnson</label>
+            </li>
+            <li>
+              <label>Sanofi</label>
+            </li>
+            <li>
+              <label>Astellas</label>
+            </li>
+            <li>
+              <label>Daiichi Sankyo</label>
+            </li>
+            <li>
+              <label>Bristol Myers Squibb</label>
+            </li>
+            <li>
+              <label>Baxter</label>
+            </li>
+            <li>
+              <label>Novartis</label>
+            </li>
+            <li>
+              <label>Takeda</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side__item">
+          <h3 class="side__title">
+              <span class="text-middle">ASSOCIATED CHANNELS</span>
+          </h3>
+          <ul class="side__sublist">
+            <li>
+              <label>Analytics</label>
+            </li>
+            <li>
+              <label>Pharma Press Releases</label>
+            </li>
+            <li>
+              <label>Microbiome</label>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- end of Side Menu -->
+
+  <div class="toggle-side channel">
+    <h3 class="toggle-side__header-title">CHANNEL</h3>
+    <ul class="toggle-side__list">
+      <li class="toggle-side__item">
+        <label class="toggle-side__title">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">All</span>
+        </label>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Analytics</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Animal Health</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Clinical trials</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Events</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Finance</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Healthcare & Medicine</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Media coverage</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Microbiome</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Microbiome Science and Tec…</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Patents</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Pharma Press Release</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Phytobiome</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Social Media</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Startups investors</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
   <!-- Alert -->
   <div class="alert__container text-center">
