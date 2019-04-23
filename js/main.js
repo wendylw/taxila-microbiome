@@ -57,11 +57,28 @@
   $('.header__channel .header__nav-link').on('click', function() {
     $(this).toggleClass('active');
     $('body').toggleClass('open-toggle-side');
+    $('.side-backdrop').toggleClass('toggle-side__backdrop');
   });
 
   $('.header__catalog .header__nav-link').on('click', function() {
     $(this).toggleClass('active');
     $('.side').toggleClass('active');
+    $('.side-backdrop').toggleClass('side__backdrop');
+  });
+
+  $('.side-backdrop').on('click', function() {
+    if ($('.side-backdrop').hasClass('toggle-side__backdrop')) {
+      $('.header__channel .header__nav-link').removeClass('active');
+      $('.side-backdrop').removeClass('toggle-side__backdrop');
+      $('body').removeClass('open-toggle-side');
+    } else if ($('.side-backdrop').hasClass('side__backdrop')) {
+      $('.header__catalog .header__nav-link').removeClass('active');
+      $('.side').removeClass('active');
+      $('.side-backdrop').removeClass('side__backdrop side-backdrop__subnav');
+    } else if ($('.side-backdrop').hasClass('user-side__backdrop')) {
+      $('.user-side').removeClass('active');
+      $('.side-backdrop').removeClass('user-side__backdrop');
+    }
   });
 
   $('.side__nav-item').on('click', function() {
@@ -75,8 +92,10 @@
       $sideItems.each(function(index) {
         $(this).delay((index + 1) * 600).slideDown('fase');
       });
+      $('.side-backdrop').addClass('side-backdrop__subnav');
     } else {
       $sideItems.fadeOut('fast');
+      $('.side-backdrop').removeClass('side-backdrop__subnav');
     }
   });
 
@@ -84,15 +103,19 @@
     const id = $(this).parents('.side__subnav').attr('id');
     const $sideItems = $('#' + id).find('.side__item');
 
-    console.log(id);
-
     $('.side__nav-item[data-item="' + id + '"]').removeClass('active');
     $('#' + id).removeClass('show');
 
     $sideItems.fadeOut('fast');
+    $('.side-backdrop').removeClass('side-backdrop__subnav');
   });
 
   $('.back-to-top').on('click', function() {
     $(".news-content").stop().animate({scrollTop: 0}, 500);
+  });
+
+  $('.header__user').on('click', function() {
+    $('.user-side').toggleClass('active');
+    $('.side-backdrop').toggleClass('user-side__backdrop');
   });
 })();

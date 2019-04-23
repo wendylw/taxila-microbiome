@@ -17,20 +17,6 @@ body {
   padding: 15px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
-  .news-content .checkbox {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 24px;
-    height: 24px;
-    border: 2px solid #979797;
-    border-radius: 50%; }
-  .news-content .checkbox:before {
-    content: "";
-    background-image: url(../img/checked-g.png);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    background-position: center center; }
   .news-content__tag {
     display: inline-block;
     margin: 10px 10px 10px 0;
@@ -52,6 +38,20 @@ body {
     font-weight: bold; }
   .news-content__image-container {
     position: relative; }
+    .news-content__image-container .checkbox {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #979797;
+      border-radius: 50%; }
+    .news-content__image-container .checkbox:before {
+      content: "";
+      background-image: url(../img/checked-g.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center center; }
   .news-content__image {
     margin-bottom: 15px;
     width: 100%;

@@ -13,8 +13,8 @@
   }
 
   &__avatar {
-    width: 90px;
-    height: 90px;
+    width: 66px;
+    height: 66px;
     background-color: $lightter-gray;
     border-radius: 50%;
     margin: auto;
@@ -94,13 +94,13 @@
 
   &__item {
     display: inline-block;
-    padding: 0 20px;
-    border-left: 5px solid $theme-color-1;
+    padding: 0 10px;
+    border-left: 1px solid $theme-color-2;
 
     a {
-      font-size: $bigger-font;
-      color: $light-gray;
-      font-weight: bold;
+      color: $theme-color-1;
+      font-size: $small-font;
+      line-height: 1em;
     }
   }
 
@@ -116,8 +116,8 @@
   }
 
   &__sign-off {
-    margin: 50px 0 0;
-    color: $theme-color-1;
+    margin: 14px 0 0;
+    color: $theme-color-2;
 
     img {
       max-height: 18px;
@@ -125,7 +125,6 @@
 
     span {
       margin-left: 5px;
-      font-size: $bigger-font;
       font-weight: bold;
     }
   }
@@ -135,15 +134,19 @@
   color: $theme-color-2;
 
   &__name {
-    margin: 20px 0 5px;
+    margin: 12px 0 5px;
+    font-size: $big-font;
   }
 
   &__description {
-    font-size: $small-font;
+    margin: 4px 0;
+    color: $lightter-gray;
+    font-weight: normal;
   }
 
   &__list {
-    padding: 40px 0;
+    font-size: 0;
+    padding: 20px 0;
     margin: 0;
   }
 }
@@ -167,11 +170,8 @@
   }
 
   &__item-form {
-    position: absolute;
-    top: 0;
-    right: 15%;
-    padding: 24px 0;
-    color: $light-gray;
+    text-align: left;
+    color: $lightter-gray;
 
     .checkbox {
       border-color: $lightter-gray;
@@ -339,5 +339,55 @@
         color: $theme-color-1;
       }
     }
+  }
+}
+
+.article-operation {
+  &__title {
+    margin: 15px 0;
+    font-size: $big-font;
+    color: $theme-color-2;
+    font-weight: normal;
+  }
+
+  &__nav-list {
+    text-align: left;
+
+    li {
+      display: inline-block;
+    }
+
+    li:last-child {
+      float: right;
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    font-size: $small-font;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin: 20px 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 14px 0;
+    border-top: 1px solid $lightest-gray;
+    font-size: $small-font;
+    color: $lightter-gray;
+  }
+
+  &__button {
+    display: block;
+    margin: 14px 0;
+    padding: 12px;
+    border: 0;
+    width: 100%;
+    color: $white;
+    background-color: $theme-color-1;
+    border-radius: 2px;
   }
 }

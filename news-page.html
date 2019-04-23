@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/news.css">
 </head>
@@ -22,6 +23,7 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  <div class="side-backdrop"></div>
   <div class="wrapper">
     <header class="header">
       <img class="header__logo" src="./img/logo-white.png" alt="">
@@ -1003,10 +1005,100 @@
     </ul>
   </div>
 
+  <div class="user-side">
+    <section class="add-article-person text-center">
+      <div class="add-article__avatar"></div>
+      <h3 class="add-article-person__name">Sucheendra</h3>
+      <h4 class="add-article-person__description">Say something about yourself</h4>
+      <ul class="add-article-person__list">
+        <li class="add-article__item">
+          <a href="">Favorite articles</a>
+        </li>
+        <li class="add-article__item">
+          <a href="">Archive</a>
+        </li>
+        <li class="add-article__item">
+          <a href="">Feedback</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="text-center">
+      <h3 class="article-operation__title">TODAY’S ARTICLES</h3>
+      <ul class="article-operation__nav-list">
+        <li>
+          <a class="article-operation__nav-link">Download Today's Articles</a>
+        </li>
+        <li>
+          <a class="article-operation__nav-link">Send Today's Articles</a>
+        </li>
+      </ul>
+      <div class="add-article-operation__item-form">
+        <div class="checkbox text-middle">
+          <input type="checkbox">
+        </div>
+        <span class="checkbox__text text-middle">With Annotation</span>
+      </div>
+      <ul class="article-operation__list">
+        <li>
+          <a class="article-operation__link">SELECTED ARTICLES</a>
+        </li>
+        <li>
+          <a class="article-operation__link">ADD NEW RESOURCE</a>
+        </li>
+        <li>
+          <a class="article-operation__link">CREATE GALAXY</a>
+        </li>
+        <li>
+          <a class="article-operation__link">ANALYSE TERMS</a>
+        </li>
+        <li>
+          <a class="article-operation__link">ANALYSE SENTIMENT</a>
+        </li>
+        <li>
+          <button class="article-operation__button">VIEW STATISTICS</button>
+        </li>
+        <li>
+          <button class="article-operation__button">VIEW TRENDS</button>
+        </li>
+        <li>
+          <button class="article-operation__button">VIEW WORLD CLOUD</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="text-center">
+      <ul class="add-article-person__list">
+        <li class="add-article__item">
+          <a href="">Tour</a>
+        </li>
+        <li class="add-article__item">
+          <a href="">Term of Use</a>
+        </li>
+        <li class="add-article__item">
+          <a href="">Change your password</a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="add-article__sign-off text-center">
+      <span class="text-middle">Sign off</span>
+    </div>
+  </div>
+
   <div class="back-to-top">
     <img src="./img/up-arrow-g.png" alt="">
     <span>TOP</span>
   </div>
+
+  <!-- Article Operation Link -->
+  <div id="operation-link" class="modal__container modal">
+    <div class="modal__header">
+      <h4 class="modal__header-title text-middle">CREATE GALAXY</h4>
+      <img class="text-middle" src="./img/close.png" alt="">
+    </div>
+  </div>
+  <!-- end Article Operation Link -->
 
   <!-- Patents Modal -->
   <div id="patents-modal" class="patents-modal modal__container modal">
@@ -1039,6 +1131,7 @@
   <script src="js/plugins.js"></script>
   <script src="./js/vendor/masonry.pkgd.min.js"></script>
   <script src="./js/jquery.modal.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/main.js"></script>
   <script src="js/news-masonry.js"></script>
 

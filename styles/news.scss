@@ -23,24 +23,6 @@ body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  .checkbox {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 24px;
-    height: 24px;
-    border: 2px solid #979797;
-    border-radius: 50%;
-  }
-
-  .checkbox:before {
-    content: "";
-    background-image: url(../img/checked-g.png);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    background-position: center center;
-  }
-
   &__tag {
     display: inline-block;
     margin: 10px 10px 10px 0;
@@ -68,6 +50,24 @@ body {
 
   &__image-container {
     position: relative;
+
+    .checkbox {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #979797;
+      border-radius: 50%;
+    }
+
+    .checkbox:before {
+      content: "";
+      background-image: url(../img/checked-g.png);
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      background-position: center center;
+    }
   }
 
   &__image {
