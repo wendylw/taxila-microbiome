@@ -1419,150 +1419,40 @@
 
   <!-- Article Operation button -->
   <div id="operation-analyse-sentiment" class="home-modal__container modal">
-      <div class="home-modal__header">
-        <h3 class="home-modal__title text-middle">ANALYSE SENTIMENT</h3>
-      </div>
-      <div class="home-modal__body">
-        <section class="home-modal__tab-section">
-          <ul class="tab">
-            <li class="tab__item active" name="tab-channel">Multi-Channel / Single Channel</li>
-            <li class="tab__item" name="tab-articles">Seletec Articles</li>
+    <div class="home-modal__header">
+      <h3 class="home-modal__title text-middle">ANALYSE SENTIMENT</h3>
+    </div>
+    <div class="home-modal__body">
+      <section class="home-modal__tab-section">
+        <ul class="tab">
+          <li class="tab__item active" name="tab-channel">Multi-Channel / Single Channel</li>
+          <li class="tab__item" name="tab-articles">Seletec Articles</li>
+        </ul>
+      </section>
+      <section class="home-modal__section tab-pane active" id="tab-channel">
+        <div class="home-modal__subheader">
+          <label class="home-modal__label">Channel Selection</label>
+          <button class="home-modal__select-all">Select All</button>
+        </div>
+        <div>
+          <div class="home-modal__select-all-container">
+          </div>
+          <ul class="tags">
+            <li class="tags__item">Analytics</li>
+            <li class="tags__item">Animal Health</li>
+            <li class="tags__item">Clinical trials</li>
+            <li class="tags__item">Events</li>
+            <li class="tags__item">Finance</li>
+            <li class="tags__item">Healthcare & Medicine</li>
+            <li class="tags__item active">Media coverage</li>
+            <li class="tags__item">Microbiome</li>
           </ul>
-        </section>
-        <section class="home-modal__section tab-pane active" id="tab-channel">
-          <div class="home-modal__subheader">
-            <label class="home-modal__label">Channel Selection</label>
-            <button class="home-modal__select-all">Select All</button>
-          </div>
-          <div>
-            <div class="home-modal__select-all-container">
-            </div>
-            <ul class="tags">
-              <li class="tags__item">Analytics</li>
-              <li class="tags__item">Animal Health</li>
-              <li class="tags__item">Clinical trials</li>
-              <li class="tags__item">Events</li>
-              <li class="tags__item">Finance</li>
-              <li class="tags__item">Healthcare & Medicine</li>
-              <li class="tags__item active">Media coverage</li>
-              <li class="tags__item">Microbiome</li>
-            </ul>
-          </div>
-          <div class="home-modal__subheader">
-            <label class="home-modal__label">Algorithm & Time Selection</label>
-          </div>
-          <div class="row">
-            <div class="col-8">
-              <h5 class="home-modal__subtitle">Select Algorithm:</h5>
-              <div class="home-modal__dropdown">
-                <button class="home-modal__dropdown-button">
-                  <span>Vader Sentiment</span>
-                  <img class="home-modal__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
-                </button>
-                <div class="dropdown-menu">
-                  <ul class="dropdown-menu__list">
-                    <li class="dropdown-menu__item">
-                      <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
-                    </li>
-                    <li class="dropdown-menu__item">
-                      <a class="filter-popular"><span>Filter by POPULARITY</span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="home-modal__text-container">
-                <p><a class="home-modal__link">VADER (Valence Aware Dictionary and sEntiment Reasoner)</a> is a lexicon and rule-based sentiment analysis</p>
-                <p>*If you don't select date, then last seven(7) day data will</p>
-              </div>
-            </div>
-            <div class="col-4">
-              <div>
-                <label class="home-modal__label">Start Date</label>
-                <div class="date-picker">
-                  <span class="date-picker__text text-middle">dd/mm/yyyy</span>
-                  <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
-                </div>
-              </div>
-              <div>
-                <label class="home-modal__label">End Date</label>
-                <div class="date-picker">
-                  <span class="date-picker__text text-middle">dd/mm/yyyy</span>
-                  <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="home-modal__section tab-pane" id="tab-articles">
-          <div class="home-modal__subheader">
-            <label class="home-modal__label">Selected Article List</label>
-            <button class="home-modal__select-all">Delete</button>
-          </div>
-          <div class="home-modal__article-list-container">
-            <ul class="home-modal__article-list">
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Researchers find, correct a cause of rhino infertility. Gut microbes in the female southern white rhino metabolize phytoestrogens…</p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div>
+        </div>
+        <div class="home-modal__subheader">
+          <label class="home-modal__label">Algorithm & Time Selection</label>
+        </div>
+        <div class="row">
+          <div class="col-8">
             <h5 class="home-modal__subtitle">Select Algorithm:</h5>
             <div class="home-modal__dropdown">
               <button class="home-modal__dropdown-button">
@@ -1582,16 +1472,126 @@
             </div>
             <div class="home-modal__text-container">
               <p><a class="home-modal__link">VADER (Valence Aware Dictionary and sEntiment Reasoner)</a> is a lexicon and rule-based sentiment analysis</p>
+              <p>*If you don't select date, then last seven(7) day data will</p>
             </div>
           </div>
-        </section>
-      </div>
-      <div class="home-modal__footer text-right">
-        <button class="home-modal__button cancel">RESET</button>
-        <button class="home-modal__button">ANALYSE SENTIMENT</button>
-      </div>
+          <div class="col-4">
+            <div>
+              <label class="home-modal__label">Start Date</label>
+              <div class="date-picker">
+                <span class="date-picker__text text-middle">dd/mm/yyyy</span>
+                <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
+              </div>
+            </div>
+            <div>
+              <label class="home-modal__label">End Date</label>
+              <div class="date-picker">
+                <span class="date-picker__text text-middle">dd/mm/yyyy</span>
+                <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-modal__section tab-pane" id="tab-articles">
+        <div class="home-modal__subheader">
+          <label class="home-modal__label">Selected Article List</label>
+          <button class="home-modal__select-all">Delete</button>
+        </div>
+        <div class="home-modal__article-list-container">
+          <ul class="home-modal__article-list">
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Researchers find, correct a cause of rhino infertility. Gut microbes in the female southern white rhino metabolize phytoestrogens…</p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="home-modal__subtitle">Select Algorithm:</h5>
+          <div class="home-modal__dropdown">
+            <button class="home-modal__dropdown-button">
+              <span>Vader Sentiment</span>
+              <img class="home-modal__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
+            </button>
+            <div class="dropdown-menu">
+              <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__item">
+                  <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="filter-popular"><span>Filter by POPULARITY</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="home-modal__text-container">
+            <p><a class="home-modal__link">VADER (Valence Aware Dictionary and sEntiment Reasoner)</a> is a lexicon and rule-based sentiment analysis</p>
+          </div>
+        </div>
+      </section>
     </div>
-    <!-- end of Article Operation button -->
+    <div class="home-modal__footer text-right">
+      <button class="home-modal__button cancel">RESET</button>
+      <button class="home-modal__button">ANALYSE SENTIMENT</button>
+    </div>
+  </div>
+  <!-- end of Article Operation button -->
 
   <!-- Patents Modal -->
   <div id="patents-modal" class="patents-modal modal__container modal">
