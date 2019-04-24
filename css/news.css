@@ -55,8 +55,7 @@ body {
   .news-content__image {
     margin-bottom: 15px;
     width: 100%;
-    min-height: 50px;
-    border-radius: 10px; }
+    min-height: 50px; }
   .news-content__detail {
     padding: 0 0 10px;
     font-size: 12px;

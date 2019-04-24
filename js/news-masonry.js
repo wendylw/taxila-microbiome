@@ -27,6 +27,10 @@ function resetGridLayout() {
   });
 
   $('.switch-button').on('click', function() {
+    $(this).toggleClass('active');
+  });
+
+  $('.mode-button').on('click', function() {
     var mode = $('.switch-button__mode-text').data('value');
 
     if (mode === MODES.MASONRY) {

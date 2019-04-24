@@ -118,4 +118,19 @@
     $('.user-side').toggleClass('active');
     $('.side-backdrop').toggleClass('user-side__backdrop');
   });
+
+  $('.article-operation__link').on('click', function() {
+    const id = $(this).attr('name').replace('-link', '');
+
+    $('#' + id).modal();
+  });
+
+  $('.tab__item').on('click', function() {
+    const id = $(this).attr('name');
+
+    $('.tab__item').removeClass('active');
+    $('#operation-analyse-sentiment .tab-pane').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active');
+  });
 })();
