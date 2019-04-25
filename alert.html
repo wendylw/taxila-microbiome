@@ -13,7 +13,6 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/jquery.modal.min.css" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/news.css">
 </head>
@@ -58,526 +57,139 @@
       </div>
     </header>
 
-    <!-- Add your site or application content here -->
-    <div class="news-content__popular-bg">
-      <img src="./img/popular-bg.png" alt="">
-
-      <div class="news-content__popular-operation">
-        <div class="dropdown">
-          <div class="dropdown__button">
-            <span>Filtered by the country or continent</span>
-            <img src="./img/news-down.png" alt="">
-          </div>
-          <div class="dropdown-menu">
-            <ul class="dropdown-menu__list">
-              <li class="dropdown-menu__item">
-                <a><span>test</span></a>
-              </li>
-              <li class="dropdown-menu__item">
-                <a><span>test</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="news-content__popular-today">
-          <label>Add today: </label><span>0</span>
-        </div>
-        <div class="news-content__popular-total">
-          <label>Total articles: </label><span>7</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="news-content">
-      <div class="switch-button__container mode-button">
-        <div class="switch-button text-middle">
-          <i class="switch-button__icon"></i>
-        </div>
-        <span class="switch-button__mode-text text-middle" data-value="masonry">Masonry Layout</span>
-      </div>
-      <h3 class="news-content__recent-update-title classic-block">Recent Update</h3>
-      <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
-        <div class="grid-sizer grid-item col-3">
-          <a href="./article.html">
-            <div>
-              <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
-              <i class="news-content__remove text-middle"></i>
-            </div>
-            <div class="news-content__image-container">
-              <i class="checkbox classic-none">
-                <input type="checkbox">
-              </i>
-              <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
-            </div>
-            <label class="news-content__type classic-block">MIT NEWS. </label>
-            <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
-            <div class="news-content__summary classic-block">
-              <span>4 Likes</span>
-              <span>3 Comments</span>
-            </div>
-            <div class="news-content__detail classic-none">
-              <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
-            </div>
-            <div class="news-content__operations classic-none">
-              <span class="news-content__time">Apr 18, 2018</span>
-              <label class="news-content__type">MIT NEWS. </label>
-              <!-- <ul class="news-content__operation-list">
-                <li>
-                  <img src="./img/news-item-like.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-save.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-download.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-email.png" alt="">
-                </li>
-              </ul> -->
-            </div>
-            <div class="news-content__comments text-right classic-none">
-              <button class="news-content__comments-button">
-                <span class="text-middle">4 Likes</span>
-                <span class="text-middle">3 Comments</span>
-                <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
+    <!-- Side Menu -->
+    <div class="news-info side-menu">
+      <h4 class="news-info__title text-right">Sucheendra</h4>
+      <div class="news-info__content">
+        <ul class="news-info__myself-list">
+          <li class="news-info__myself-item">
+            <a href="#">
+              <img class="text-middle" src="./img/news-info-favorite.png" alt="">
+              <span class="text-middle">My favorite articles</span>
+            </a>
+          </li>
+          <li class="news-info__myself-item">
+            <a href="#">
+              <img class="text-middle" src="./img/news-info-archive.png" alt="">
+              <span class="text-middle">My archive</span>
+            </a>
+          </li>
+        </ul>
+        <div class="news-info__list-container">
+          <h4 class="news-info__list-title">
+            <img class="text-middle" src="./img/news-info-download-white.png" alt="">
+            <span class="text-middle">Download</span>
+          </h4>
+          <ul class="news-info__list">
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-trash.png" alt="">
+                <span class="text-middle">Clear Select Articles</span>
               </button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-sizer grid-item col-3">
-          <a href="./article.html">
-            <div>
-              <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
-              <i class="news-content__remove text-middle"></i>
-            </div>
-            <div class="news-content__image-container">
-              <i class="checkbox classic-none">
-                <input type="checkbox">
-              </i>
-              <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
-            </div>
-            <label class="news-content__type classic-block">MIT NEWS. </label>
-            <h3 class="news-content__title">9to5Mac Happy Hour 179: iOS 12 public beta, AirPlay 2 speakers, and MacBook keyboard repair program</h3>
-            <div class="news-content__summary classic-block">
-              <span>4 Likes</span>
-              <span>3 Comments</span>
-            </div>
-            <div class="news-content__detail classic-none">
-              <p>This week Benjamin and Zac talk about the risks and benefits of iOS 12 and macOS Mojave public betas, 9to5Mac’s Sonos Beam smart soundbar review, AirPlay 2 speakers, Apple’s surprise MacBook and MacBook Pro keyboard repair program, rumors about new AirPods and over-ear headphones from Apple, a possible explanation for AirPower not launching yet, Ming-Chi Kuo’s latest predictions, and the end of the Apple Watch Modern Buckle.</p>
-              <p>9to5Mac Happy Hour is available on iTunes and Apple’s Podcasts app, Stitcher, TuneIn, Google Play Music, or through our dedicated RSS feed for Overcast and other podcast players.</p>
-            </div>
-            <div class="news-content__operations classic-none">
-              <span class="news-content__time">Apr 18, 2018</span>
-              <label class="news-content__type">MIT NEWS. </label>
-              <!-- <ul class="news-content__operation-list">
-                <li>
-                  <img src="./img/news-item-like.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-save.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-download.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-email.png" alt="">
-                </li>
-              </ul> -->
-            </div>
-            <div class="news-content__comments text-right classic-none">
-              <button class="news-content__comments-button">
-                <span class="text-middle">4 Likes</span>
-                <span class="text-middle">3 Comments</span>
-                <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
+            </li>
+            <li>
+              <button class="news-info__dropdown-button">
+                <img class="text-middle" src="./img/news-info-download.png" alt="">
+                <span class="text-middle">Download Today's Articles </span>
+                <img class="news-info__down-icon text-middle" src="./img/news-down.png" alt="">
               </button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-sizer grid-item col-3">
-          <a href="./article.html">
-            <div>
-              <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
-              <i class="news-content__remove text-middle"></i>
-            </div>
-            <div class="news-content__image-container">
-              <i class="checkbox classic-none">
-                <input type="checkbox">
-              </i>
-              <img class="news-content__image classic-none" src="http://via.placeholder.com/350x160" alt="">
-            </div>
-            <label class="news-content__type classic-block">MIT NEWS. </label>
-            <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-            <div class="news-content__summary classic-block">
-              <span>4 Likes</span>
-              <span>3 Comments</span>
-            </div>
-            <div class="news-content__detail classic-none">
-              <p>In what amounted to little more than a toss-away line during Apple's WWDC keynote, Craig Federighi off handedly mentioned that in tvOS 12, Apple was working to bring more Apple TV functionality, including Siri, to third-party remote platforms. This is a big deal, and AppleInsider discusses why.</p>
-            </div>
-            <div class="news-content__operations classic-none">
-              <span class="news-content__time">Apr 18, 2018</span>
-              <label class="news-content__type">MIT NEWS. </label>
-              <!-- <ul class="news-content__operation-list">
+              <ul class="news-info__sub-list">
                 <li>
-                  <img src="./img/news-item-like.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-save.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-download.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-email.png" alt="">
-                </li>
-              </ul> -->
-            </div>
-            <div class="news-content__comments text-right classic-none">
-              <button class="news-content__comments-button">
-                <span class="text-middle">4 Likes</span>
-                <span class="text-middle">3 Comments</span>
-                <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-sizer grid-item col-3">
-          <a href="./article.html">
-            <div>
-              <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
-              <i class="news-content__remove text-middle"></i>
-            </div>
-            <div class="news-content__image-container">
-              <i class="checkbox classic-none">
-                <input type="checkbox">
-              </i>
-              <img class="news-content__image classic-none" src="http://via.placeholder.com/350x150" alt="">
-            </div>
-            <label class="news-content__type classic-block">MIT NEWS. </label>
-            <h3 class="news-content__title">Microsoft releases preview of its 'Gen2' Azure Data Lake Storage service</h3>
-            <div class="news-content__summary classic-block">
-              <span>4 Likes</span>
-              <span>3 Comments</span>
-            </div>
-            <div class="news-content__detail classic-none">
-              <p>Microsoft announced its initial plans for its Azure Data Lake Service in 2015. The first-generation Azure Data Lake was designed to work with HDInsight, Microsoft's Hadoop-onAzure service for Windows and Linux. The original underpinnings for Azure Data Lake came from Microsoft's internal "Cosmos" big-data storage and analytics service.</p>
-              <p>Microsoft also announced today general availability of several new features for Azure Data Factory V2. Among those new features are support for control-flow data pipeline constructs; code-free data movement and orchestration designing; and flexible scheduling.</p>
-            </div>
-            <div class="news-content__operations classic-none">
-              <span class="news-content__time">Apr 18, 2018</span>
-              <label class="news-content__type">MIT NEWS. </label>
-              <!-- <ul class="news-content__operation-list">
-                <li>
-                  <img src="./img/news-item-like.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-save.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-download.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-email.png" alt="">
-                </li>
-              </ul> -->
-            </div>
-            <div class="news-content__comments text-right classic-none">
-              <button class="news-content__comments-button">
-                <span class="text-middle">4 Likes</span>
-                <span class="text-middle">3 Comments</span>
-                <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-sizer grid-item col-3">
-          <a href="./article.html">
-            <div>
-              <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
-              <i class="news-content__remove text-middle"></i>
-            </div>
-            <div class="news-content__image-container">
-              <i class="checkbox classic-none">
-                <input type="checkbox">
-              </i>
-              <img class="news-content__image classic-none" src="http://via.placeholder.com/350x150" alt="">
-            </div>
-            <label class="news-content__type classic-block">MIT NEWS. </label>
-            <h3 class="news-content__title">Microsoft releases preview of its 'Gen2' Azure Data Lake Storage service</h3>
-            <div class="news-content__summary classic-block">
-              <span>4 Likes</span>
-              <span>3 Comments</span>
-            </div>
-            <div class="news-content__detail classic-none">
-                <p>Microsoft announced its initial plans for its Azure Data Lake Service in 2015. The first-generation Azure Data Lake was designed to work with HDInsight, Microsoft's Hadoop-onAzure service for Windows and Linux. The original underpinnings for Azure Data Lake came from Microsoft's internal "Cosmos" big-data storage and analytics service.</p>
-                <p>Microsoft also announced today general availability of several new features for Azure Data Factory V2. Among those new features are support for control-flow data pipeline constructs; code-free data movement and orchestration designing; and flexible scheduling.</p>
-            </div>
-            <div class="news-content__operations classic-none">
-              <span class="news-content__time">Apr 18, 2018</span>
-              <label class="news-content__type">MIT NEWS. </label>
-              <!-- <ul class="news-content__operation-list">
-                <li>
-                  <img src="./img/news-item-like.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-save.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-download.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-email.png" alt="">
-                </li>
-              </ul> -->
-            </div>
-            <div class="news-content__comments text-right classic-none">
-              <button class="news-content__comments-button">
-                <span class="text-middle">4 Likes</span>
-                <span class="text-middle">3 Comments</span>
-                <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-sizer grid-item col-3">
-          <a href="./article.html">
-            <div>
-              <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
-              <i class="news-content__remove text-middle"></i>
-            </div>
-            <div class="news-content__image-container">
-              <i class="checkbox classic-none">
-                <input type="checkbox">
-              </i>
-              <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
-            </div>
-            <label class="news-content__type classic-block">MIT NEWS. </label>
-            <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
-            <div class="news-content__summary classic-block">
-              <span>4 Likes</span>
-              <span>3 Comments</span>
-            </div>
-            <div class="news-content__detail classic-none">
-              <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
-            </div>
-            <div class="news-content__operations classic-none">
-              <span class="news-content__time">Apr 18, 2018</span>
-              <label class="news-content__type">MIT NEWS. </label>
-              <!-- <ul class="news-content__operation-list">
-                <li>
-                  <img src="./img/news-item-like.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-save.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-download.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-email.png" alt="">
-                </li>
-              </ul> -->
-            </div>
-            <div class="news-content__comments text-right classic-none">
-              <button class="news-content__comments-button">
-                <span class="text-middle">4 Likes</span>
-                <span class="text-middle">3 Comments</span>
-                <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-sizer grid-item col-3">
-          <a href="./article.html">
-            <div>
-              <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
-              <i class="news-content__remove text-middle"></i>
-            </div>
-            <div class="news-content__image-container">
-              <i class="checkbox classic-none">
-                <input type="checkbox">
-              </i>
-              <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
-            </div>
-            <label class="news-content__type classic-block">MIT NEWS. </label>
-            <h3 class="news-content__title">9to5Mac Happy Hour 179: iOS 12 public beta, AirPlay 2 speakers, and MacBook keyboard repair program</h3>
-            <div class="news-content__summary classic-block">
-              <span>4 Likes</span>
-              <span>3 Comments</span>
-            </div>
-            <div class="news-content__detail classic-none">
-              <p>This week Benjamin and Zac talk about the risks and benefits of iOS 12 and macOS Mojave public betas, 9to5Mac’s Sonos Beam smart soundbar review, AirPlay 2 speakers, Apple’s surprise MacBook and MacBook Pro keyboard repair program, rumors about new AirPods and over-ear headphones from Apple, a possible explanation for AirPower not launching yet, Ming-Chi Kuo’s latest predictions, and the end of the Apple Watch Modern Buckle.</p>
-              <p>9to5Mac Happy Hour is available on iTunes and Apple’s Podcasts app, Stitcher, TuneIn, Google Play Music, or through our dedicated RSS feed for Overcast and other podcast players.</p>
-            </div>
-            <div class="news-content__operations classic-none">
-              <span class="news-content__time">Apr 18, 2018</span>
-              <label class="news-content__type">MIT NEWS. </label>
-              <!-- <ul class="news-content__operation-list">
-                <li>
-                  <img src="./img/news-item-like.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-save.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-download.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-email.png" alt="">
-                </li>
-              </ul> -->
-            </div>
-            <div class="news-content__comments text-right classic-none">
-              <button class="news-content__comments-button">
-                <span class="text-middle">4 Likes</span>
-                <span class="text-middle">3 Comments</span>
-                <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-sizer grid-item col-3">
-          <a href="./article.html">
-            <div>
-              <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
-              <i class="news-content__remove text-middle"></i>
-            </div>
-            <div class="news-content__image-container">
-              <i class="checkbox classic-none">
-                <input type="checkbox">
-              </i>
-              <img class="news-content__image classic-none" src="http://via.placeholder.com/350x160" alt="">
-            </div>
-            <label class="news-content__type classic-block">MIT NEWS. </label>
-            <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-            <div class="news-content__summary classic-block">
-              <span>4 Likes</span>
-              <span>3 Comments</span>
-            </div>
-            <div class="news-content__detail classic-none">
-              <p>In what amounted to little more than a toss-away line during Apple's WWDC keynote, Craig Federighi off handedly mentioned that in tvOS 12, Apple was working to bring more Apple TV functionality, including Siri, to third-party remote platforms. This is a big deal, and AppleInsider discusses why.</p>
-            </div>
-            <div class="news-content__operations classic-none">
-              <span class="news-content__time">Apr 18, 2018</span>
-              <label class="news-content__type">MIT NEWS. </label>
-              <!-- <ul class="news-content__operation-list">
-                <li>
-                  <img src="./img/news-item-like.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-save.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-download.png" alt="">
-                </li>
-                <li>
-                  <img src="./img/news-item-email.png" alt="">
-                </li>
-              </ul> -->
-            </div>
-            <div class="news-content__comments text-right classic-none">
-              <button class="news-content__comments-button">
-                <span class="text-middle">4 Likes</span>
-                <span class="text-middle">3 Comments</span>
-                <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
-              </button>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="news-topics__container row">
-        <div class="news-topics col-8">
-          <div class="news-topics__topic row">
-            <div class="news-topics__topic-image col-6">
-              <img src="http://via.placeholder.com/350x200" alt="" />
-            </div>
-            <div class="news-topics__topic-detail col-6">
-              <h3 class="news-topics__topic-type">SILICON VALLEY</h3>
-              <h4 class="news-topics__title">Silicon Valley Community Foundation Chief Ousted Over Harassment Allegations</h4>
-              <span class="news-topics__source">BY <strong>BRITTANY SHOOT</strong> , June 27, 2018</span>
-
-              <p class="news-topics__topic-brief">The CEO of Silicon Valley Community Foundation, the world’s largest community foundation, has been pushed out following investigations into allegations of bullying and harassment in the workplace.  <a href="#">read more</a></p>
-            </div>
-          </div>
-          <section class="news-topics__storys">
-            <h3 class="news-topics__story-title">TOP STORY</h3>
-            <ul>
-              <li class="news-topics__story">
-                <div class="media-top">
-                  <div class="news-topics__story-image"></div>
-                </div>
-                <div class="media-top">
-                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                  <label class="news-content__type">MIT NEWS. </label>
-                  <div class="news-content__summary">
-                    <span>MacRumors</span>
-                    <span>1 like</span>
-                  </div>
-                </div>
-              </li>
-              <li class="news-topics__story">
-                <div class="media-top">
-                  <div class="news-topics__story-image"></div>
-                </div>
-                <div class="media-top">
-                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                  <label class="news-content__type">MIT NEWS. </label>
-                  <div class="news-content__summary">
-                    <span>MacRumors</span>
-                    <span>1 like</span>
-                  </div>
-                </div>
-              </li>
-              <li class="news-topics__story">
-                <div class="media-top">
-                  <div class="news-topics__story-image"></div>
-                </div>
-                <div class="media-top">
-                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                  <label class="news-content__type">MIT NEWS. </label>
-                  <div class="news-content__summary">
-                    <span>MacRumors</span>
-                    <span>1 like</span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </div>
-        <div class="news-ads col-4">
-          <h4 class="news-ads__title">SHARE ARTICLES WITH YOUR TEAM</h4>
-          <div class="news-ads__detail text-center">
-            <img src="http://via.placeholder.com/350x260" alt="" />
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-          </div>
-          <div class="news-ads__slider-container">
-            <h4>What i’m reading</h4>
-            <p class="news-ads__article">A collection of books that have been occupying my time.—Joshua Topolsky, Founder, The @Outline & Independent Media. Co-founder, Vox Media.</p>
-            <div class="news-ads__sliders">
-              <div>
-                <i class="prev-icon">
-                  <img src="./img/news-prev-icon.png" alt="">
-                </i>
-                <i class="next-icon">
-                  <img src="./img/news-next-icon.png" alt="">
-                </i>
-              </div>
-              <ul class="news-ads__slider">
-                <li>
-                  <img src="http://via.placeholder.com/350x200" alt="">
+                  <a href="">With Annotation</a>
                 </li>
               </ul>
-            </div>
-            <p>I spent a lot of time watching Westworld's second season thinking about William Gibson's </p>
-          </div>
+            </li>
+            <li>
+              <button class="news-info__dropdown-button">
+                <img class="text-middle" src="./img/news-info-download.png" alt="">
+                <span class="text-middle">Download Selected Articles</span>
+                <img class="news-info__down-icon text-middle" src="./img/news-down.png" alt="">
+              </button>
+              <ul class="news-info__sub-list">
+                <li>
+                  <a href="">With Annotation</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-show.png" alt="">
+                <span class="text-middle">Show Selected Articles</span>
+              </button>
+            </li>
+          </ul>
         </div>
+        <div class="news-info__list-container">
+          <h4 class="news-info__list-title">
+            <img class="text-middle" src="./img/news-info-mail-white.png" alt="">
+            <span class="text-middle">Mail</span>
+          </h4>
+          <ul class="news-info__list">
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-trash.png" alt="">
+                <span class="text-middle">Clear Select Articles</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-send.png" alt="">
+                <span class="text-middle">Send Today's Articles </span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-send.png" alt="">
+                <span class="text-middle">Send Selected Articles</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img class="text-middle" src="./img/news-info-show.png" alt="">
+                <span class="text-middle">Show Selected Articles</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <ul class="news-info__link-list">
+          <li>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-plus.png" alt="">
+              <span class="text-middle">Add new resource</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-video.png" alt="">
+              <span class="text-middle">Tour</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-term.png" alt="">
+              <span class="text-middle">Term of Use</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-setting.png" alt="">
+              <span class="text-middle">Change your password</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="text-middle" src="./img/news-info-feedback.png" alt="">
+              <span class="text-middle">Write feedback</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="news-info__sign text-right">
+        <img class="text-middle" src="./img/news-info-sign-off.png" alt="">
+        <span class="text-middle">Sign off</span>
       </div>
     </div>
-    <!-- end of Add your site or application content here -->
-
+    <!-- end of Side Menu -->
   </div>
 
   <div class="toggle-side channel">
@@ -1040,10 +652,10 @@
       </div>
       <ul class="article-operation__list">
         <li>
-          <a class="article-operation__link" name="selected-articles-link">SELECTED ARTICLES</a>
+          <a class="article-operation__link">SELECTED ARTICLES</a>
         </li>
         <li>
-          <a class="article-operation__link" name="add-new-resource-link">ADD NEW RESOURCE</a>
+          <a class="article-operation__link">ADD NEW RESOURCE</a>
         </li>
         <li>
           <a class="article-operation__link" name="operation-galaxy-link">CREATE GALAXY</a>
@@ -1376,7 +988,7 @@
                 <h5 class="home-modal__subtitle">Or</h5>
               </div>
               <div class="media-middle home-modal__input">
-                <input type="text" placeholder="Enter Terms">
+                <input type="text"  placeholder="Enter Terms">
               </div>
             </div>
           </div>
@@ -1433,7 +1045,7 @@
         <div>
           <div class="home-modal__select-all-container">
           </div>
-          <ul class="tags" name="channel-tags-3">
+          <ul class="tags" id="channel-tags-3">
             <li class="tags__item">Analytics</li>
             <li class="tags__item">Animal Health</li>
             <li class="tags__item">Clinical trials</li>
@@ -1451,14 +1063,10 @@
           <div class="col-8">
             <h5 class="home-modal__subtitle">Select Algorithm:</h5>
             <div class="home-modal__dropdown">
-              <div class="home-modal__dropdown-button">
-                <select>
-                  <option value="">Vader Sentiment</option>
-                  <option value="">Filter by TIME LINE</option>
-                  <option value="">Filter by POPULARITY</option>
-                </select>
+              <button class="home-modal__dropdown-button">
+                <span>Vader Sentiment</span>
                 <img class="home-modal__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
-              </div>
+              </button>
             </div>
             <div class="home-modal__text-container">
               <p><a class="home-modal__link">VADER (Valence Aware Dictionary and sEntiment Reasoner)</a> is a lexicon and rule-based sentiment analysis</p>
@@ -1583,188 +1191,34 @@
   </div>
   <!-- end of Article Operation button -->
 
-  <!-- Article Operation button -->
-  <div id="selected-articles" class="home-modal__container modal">
-    <div class="home-modal__header">
-      <h3 class="home-modal__title text-middle">SELECTED ARTICLES</h3>
-      <button class="home-modal__delete">Clear All</button>
+  <!-- Alert -->
+  <div class="alert__container text-center">
+    <div class="alert">
+      <div class="alert__content">
+        <h3 class="alert__title">TAXILA ALERT</h3>
+        <p class="alert__text">No articles have been shortlisted for download. Please select the articles before using this feature.</p>
+      </div>
     </div>
-    <div class="home-modal__body">
-      <section class="home-modal__section tab-pane" id="tab-articles">
-        <div class="home-modal__article-list-container">
-          <ul class="home-modal__article-list">
-            <li>
-              <div class="media-top home-modal__article-label">
-                <i class="text-middle checkbox">
-                  <input type="checkbox">
-                </i>
-              </div>
-              <div class="media-top home-modal__article-content">
-                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
-              </div>
-            </li>
-            <li>
-              <div class="media-top home-modal__article-label">
-                <i class="text-middle checkbox">
-                  <input type="checkbox">
-                </i>
-              </div>
-              <div class="media-top home-modal__article-content">
-                <p>Researchers find, correct a cause of rhino infertility. Gut microbes in the female southern white rhino metabolize phytoestrogens…</p>
-              </div>
-            </li>
-            <li>
-              <div class="media-top home-modal__article-label">
-                <i class="text-middle checkbox">
-                  <input type="checkbox">
-                </i>
-              </div>
-              <div class="media-top home-modal__article-content">
-                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
-              </div>
-            </li>
-            <li>
-              <div class="media-top home-modal__article-label">
-                <i class="text-middle checkbox">
-                  <input type="checkbox">
-                </i>
-              </div>
-              <div class="media-top home-modal__article-content">
-                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-              </div>
-            </li>
-            <li>
-              <div class="media-top home-modal__article-label">
-                <i class="text-middle checkbox">
-                  <input type="checkbox">
-                </i>
-              </div>
-              <div class="media-top home-modal__article-content">
-                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-              </div>
-            </li>
-            <li>
-              <div class="media-top home-modal__article-label">
-                <i class="text-middle checkbox">
-                  <input type="checkbox">
-                </i>
-              </div>
-              <div class="media-top home-modal__article-content">
-                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
-    <div class="home-modal__footer text-right">
-      <button class="home-modal__button-link">Delete</button>
-      <button class="home-modal__button cancel">Send Email</button>
-      <button class="home-modal__button">Download Articles</button>
+    <div class="alert__status-icon">
+      <img src="./img/ok.png" alt="">
     </div>
   </div>
-  <!-- end of Article Operation button -->
-
-  <!-- Article Operation button -->
-  <div id="add-new-resource" class="home-modal__container modal">
-    <div class="home-modal__header">
-      <h3 class="home-modal__title text-middle">ADD NEW RESOURCE</h3>
-    </div>
-    <div class="home-modal__body">
-      <section>
-        <h3 class="home-modal__section-title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
-        <div class="home-modal__batch-upload-button text-center">
-          <span>Batch Upload</span>
-          <input type="file">
-        </div>
-        <i class="home-modal__divider text-center">
-          <span>Or</span>
-        </i>
-        <div>
-          <h3 class="text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
-          <form>
-            <div>
-              <input type="text" placeholder="Enter Name">
-            </div>
-            <div>
-              <textarea placeholder="Enter Description"></textarea>
-            </div>
-            <div>
-              <input type="text" placeholder="Enter URL">
-            </div>
-            <div>
-              <input type="text" placeholder="Enter Tag">
-            </div>
-          </form>
-          <div>
-            <label>Channels</label>
-            <ul>
-              <li class="tags__item">Analytics</li>
-              <li class="tags__item">Animal Health</li>
-              <li class="tags__item">Clinical trials</li>
-              <li class="tags__item">Events</li>
-              <li class="tags__item">Finance</li>
-              <li class="tags__item">Healthcare & Medicine</li>
-              <li class="tags__item active">Media coverage</li>
-              <li class="tags__item">Microbiome</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="home-modal__footer text-right">
-      <button class="home-modal__button-link">CANCEL</button>
-      <button class="home-modal__button cancel">RESET</button>
-      <button class="home-modal__button">ADD</button>
-    </div>
-    <div>
-      <span>Total Uploaded: 28</span>
-      <span>Remaining Uploads: Unlimited</span>
-      <p>Resources uploaded here will appear in the “User Resource” sub-channel of the corresponding channels</p>
-    </div>
-  </div>
-  <!-- end of Article Operation button -->
-
-  <!-- Patents Modal -->
-  <div id="patents-modal" class="patents-modal modal__container modal">
-    <div class="modal__header">
-      <h4 class="modal__header-title text-middle">Associated Sources For Catalog 'Patents & Publications'</h4>
-      <img class="text-middle" src="./img/news-down-white.png" alt="">
-    </div>
-    <div class="modal__list-container">
-      <ul class="modal__list">
-        <li class="modal__item">Car Body Painting</li>
-        <li class="modal__item active">Auto Process Finishing</li>
-        <li class="modal__item">Analytics for AutoInergy Channel</li>
-        <li class="modal__item">Progress in Polymer Science</li>
-        <li class="modal__item">Car Body Painting</li>
-        <li class="modal__item">Auto Process Finishing</li>
-        <li class="modal__item">Analytics for AutoInergy Channel</li>
-        <li class="modal__item">Progress in Polymer Science</li>
-        <li class="modal__item">Plastic Fuel Tanks</li>
-        <li class="modal__item">Analytics for Plastic Industry Channel</li>
-        <li class="modal__item">Plastics News Europe</li>
-      </ul>
-    </div>
-  </div>
-  <!-- end of Patents Modal -->
+  <!-- end of Alert -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
-  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="./js/vendor/masonry.pkgd.min.js"></script>
-  <script src="./js/jquery.modal.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/news-masonry.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <!-- <script>
+  <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>

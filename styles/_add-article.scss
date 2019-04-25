@@ -1,0 +1,394 @@
+.add-article {
+  padding: 60px 0 100px;
+
+  .side-dropup__button {
+    background-color: $theme-color-1;
+  }
+
+  .side-dropup__button:active,
+  .side-dropup__button:focus {
+    border-color: $theme-color-1;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &__avatar {
+    width: 66px;
+    height: 66px;
+    background-color: $lightter-gray;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  &__title {
+    font-size: $big-font;
+  }
+
+  &__form-container {
+    margin: auto;
+    max-width: 65%;
+    padding: 20px 0 0;
+
+    .button-outline {
+      background-color: transparent;
+      width: 120px;
+    }
+
+    .button-outline.cnacel {
+      border-color: $add-article-divider;
+    }
+
+    .button-fill {
+      width: 120px;
+    }
+
+    .add-article__title {
+      padding: 30px 0;
+      margin: 0;
+    }
+  }
+
+  &__form-buttons {
+    margin: 30px -25px;
+
+    > div {
+      padding: 0 15px;
+    }
+
+    button {
+      margin: 0 10px;
+    }
+  }
+
+  &__info {
+    padding-bottom: 50px;
+    border-bottom: 1px solid $add-article-divider;
+    margin: auto;
+    max-width: 65%;
+    color: $theme-color-1;
+
+    > div {
+      display: inline-block;
+    }
+  }
+
+  &__info-total {
+    span {
+      color: $theme-color-2;
+    }
+  }
+
+  &__info-uploads {
+    float: right;
+  }
+
+  &__divider {
+    padding: 10px 0;
+    border-top: 1px solid $add-article-divider;
+    border-bottom: 1px solid $add-article-divider;
+    margin: auto;
+    font-size: $bigest-font;
+    width: 65%;
+    color: $theme-color-1;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 10px;
+    border-left: 1px solid $theme-color-2;
+
+    a {
+      color: $theme-color-1;
+      font-size: $small-font;
+      line-height: 1em;
+    }
+  }
+
+  &__item:first-child {
+    border-left: 0;
+  }
+
+  &__other-links {
+    padding: 20px 0;
+    a {
+      font-size: $bigest-font;
+    }
+  }
+
+  &__sign-off {
+    margin: 14px 0 0;
+    color: $theme-color-2;
+
+    img {
+      max-height: 18px;
+    }
+
+    span {
+      margin-left: 5px;
+      font-weight: bold;
+    }
+  }
+}
+
+.add-article-person {
+  color: $theme-color-2;
+
+  &__name {
+    margin: 12px 0 5px;
+    font-size: $big-font;
+  }
+
+  &__description {
+    margin: 4px 0;
+    color: $lightter-gray;
+    font-weight: normal;
+  }
+
+  &__list {
+    font-size: 0;
+    padding: 20px 0;
+    margin: 0;
+  }
+}
+
+.add-article-operation {
+  &__item {
+    position: relative;
+
+    &.new-resource {
+      padding: 0 0 24px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      margin: auto;
+      height: 1px;
+      width: 65%;
+      background-color: $add-article-divider;
+    }
+  }
+
+  &__item-form {
+    text-align: left;
+    color: $lightter-gray;
+
+    .checkbox {
+      border-color: $lightter-gray;
+
+      &:before {
+        content: url(../img/page-check.png);
+      }
+    }
+
+    .checkbox__text {
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    color: $theme-color-1;
+  }
+
+  &__list {
+    margin: 10px auto 40px;
+  }
+
+  &__selector {
+    padding: 0 30px;
+  }
+
+  &__selector:first-child {
+    text-align: right;
+
+    .add-article-operation__card-list-container {
+      right: 0;
+
+      transform: translate(100%, -50%);
+      -webkit-transform: translate(100%, -50%);
+      -moz-transform: translate(100%, -50%);
+      -ms-transform: translate(100%, -50%);
+    }
+  }
+
+  &__selector:last-child {
+    text-align: left;
+
+    .add-article-operation__card-list-container {
+      left: 0;
+
+      transform: translate(-100%, -50%);
+      -webkit-transform: translate(-100%, -50%);
+      -moz-transform: translate(-100%, -50%);
+      -ms-transform: translate(-100%, -50%);
+    }
+  }
+
+  &__card {
+    position: relative;
+    padding: 30px 20px;
+    display: inline-block;
+    border: 1px solid $light-gray;
+    font-size: $bigger-font;
+    color: $light-gray;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  &__card:hover {
+    color: $theme-color-1;
+    border-color: $theme-color-1;
+  }
+
+  &__card-list-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    padding: 0 10px;
+    min-width: 331px;
+    z-index: 1;
+  }
+
+  &__card-list {
+    padding: 5px 10px;
+    margin: 0;
+    border: 1px solid $light-gray;
+    background-color: $lightest-gray;
+    border-radius: 6px;
+
+    li {
+      vertical-align: middle;
+      display: inline-block;
+      margin: 10px;
+      padding: 5px;
+      font-size: $big-font;
+      color: $light-gray;
+      font-weight: bold;
+      cursor: default;
+    }
+
+    li:hover {
+      color: $theme-color-1;
+    }
+  }
+
+  &__card:hover &__card-list-container {
+    display: block;
+  }
+
+  &__subtitle {
+    margin: 50px auto 20px;
+    font-size: $bigger-font;
+    color: $lightter-gray;
+  }
+
+  &__button-fill {
+    padding: 6px 12px;
+    border: 0;
+    color: $theme-color-1;
+    background-color: $add-article-divider;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+}
+
+.add-article-form {
+  &__title {
+    color: $lightter-gray;
+    font-weight: normal;
+  }
+}
+
+.classic {
+  .add-article {
+    &__divider,
+    &__info {
+      border-color: $add-article-text;
+    }
+
+    &__item a {
+      color: $add-article-text;
+    }
+  }
+
+  .add-article-operation {
+    &__item:before {
+      background-color: $add-article-text;
+    }
+
+    &__card {
+      color: $add-article-text;
+      border-color: $add-article-text;
+    }
+
+    &__card:hover {
+      color: $theme-color-1;
+      border-color: $theme-color-1;
+    }
+
+    &__card-list {
+      background-color: $white;
+      border-color: $add-article-text;
+
+      li {
+        color: $add-article-text;
+      }
+
+      li:hover {
+        color: $theme-color-1;
+      }
+    }
+  }
+}
+
+.article-operation {
+  &__title {
+    margin: 15px 0;
+    font-size: $big-font;
+    color: $theme-color-2;
+    font-weight: normal;
+  }
+
+  &__nav-list {
+    text-align: left;
+
+    li {
+      display: inline-block;
+    }
+
+    li:last-child {
+      float: right;
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    font-size: $small-font;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin: 20px 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 14px 0;
+    border-top: 1px solid $lightest-gray;
+    font-size: $small-font;
+    color: $lightter-gray;
+    cursor: pointer;
+  }
+
+  &__button {
+    display: block;
+    margin: 14px 0;
+    padding: 12px;
+    border: 0;
+    width: 100%;
+    color: $white;
+    background-color: $theme-color-1;
+    border-radius: 2px;
+  }
+}

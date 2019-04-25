@@ -31,7 +31,7 @@
             <img src="./img/logo.png" alt="taxila-logo">
           </div>
 
-          <div class="login__sign-links text-right">
+          <!-- <div class="login__sign-links text-right">
             <ul class="login__sign-list">
               <li>
                 <a class="text-middle" href="">Register</a>
@@ -40,24 +40,27 @@
                 <a class="text-middle" href="">Take a tour</a>
               </li>
             </ul>
-          </div>
+          </div> -->
 
 
-          <div>
+          <div class="login__form-container">
             <h4 class="login__welcome">Welcome to Taxila,</h4>
             <form class="sign-form" action="">
               <div class="sign-form__group">
-                <input type="text" placeholder="Username"/>
+                <img src="./img/sign-email.png" alt="">
+                <input type="text" placeholder="Your E-Mail"/>
               </div>
               <div class="sign-form__group">
+                <img src="./img/sign-password.png" alt="">
                 <input type="password" placeholder="Password"/>
+                <img class="sign-form__see-password img" src="./img/sign-seen.png" alt="">
               </div>
-              <div class="sign-form__group">
+              <!-- <div class="sign-form__group">
                 <div class="checkbox text-middle">
                   <input type="checkbox" />
                 </div>
                 <span class="checkbox__text text-middle">Remember me</span>
-              </div>
+              </div> -->
               <div class="sign-form__button-group text-right">
                 <button class="sign-form__login-button">Login</button>
               </div>
@@ -66,7 +69,7 @@
               <a href="">Forgot your password?</a>
             </div>
 
-            <div class="sign-social__container text-right">
+            <!-- <div class="sign-social__container text-right">
               <label class="text-middle">Sign in with : </label>
               <ul class="sign-social text-middle">
                 <li>
@@ -76,9 +79,20 @@
                   <a href=""><img src="./img/login-twitter.png" alt=""></a>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
+      </div>
+      <div class="col-6">
+        <div class="circle-1 rotate animated infinite slower"></div>
+        <div class="circle-2 rotate-reverse animated infinite slow"></div>
+        <i class="gear gear-1 down-up animated infinite fast"></i>
+        <i class="gear gear-2 up-down animated infinite fast"></i>
+        <i class="gear gear-3 rotate animated infinite fast"></i>
+        <i class="gear gear-4 rotate animated infinite fast"></i>
+        <i class="gear gear-5 rotate animated infinite fast"></i>
+        <i class="gear gear-6 rotate animated infinite fast"></i>
+        <i class="gear gear-7 rotate animated infinite fast"></i>
       </div>
     </div>
   </div>
@@ -89,6 +103,17 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    (function(){
+      $('.sign-form__see-password').on('click', function() {
+        if ($(this).parents('.sign-form__group').find('input').attr('type') === 'password') {
+          $(this).parents('.sign-form__group').find('input').attr('type', 'text');
+        } else {
+          $(this).parents('.sign-form__group').find('input').attr('type', 'password');
+        }
+      });
+    })();
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
