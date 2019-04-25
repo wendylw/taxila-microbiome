@@ -1068,12 +1068,13 @@ body{
 .user-side {
   position: absolute;
   top: 64px;
+  bottom: 0;
   right: 0;
   width: 360px;
-  height: 100%;
   padding: 30px 20px;
   background: rgba(250, 250, 250, 0.96);
   z-index: 12;
+  overflow-y: auto;
 
   transform: translateX(100%);
   -webkit-transform: translateX(100%);

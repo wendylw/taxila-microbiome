@@ -116,7 +116,7 @@
   }
 
   &__sign-off {
-    margin: 14px 0 0;
+    margin: 10px 0 0;
     color: $theme-color-2;
 
     img {
@@ -146,7 +146,7 @@
 
   &__list {
     font-size: 0;
-    padding: 20px 0;
+    padding: 15px 0;
     margin: 0;
   }
 }
@@ -369,12 +369,12 @@
   }
 
   &__list {
-    margin: 20px 0;
+    margin: 15px 0;
   }
 
   &__link {
     display: block;
-    padding: 14px 0;
+    padding: 12px 0;
     border-top: 1px solid $lightest-gray;
     font-size: $small-font;
     color: $lightter-gray;
@@ -383,7 +383,7 @@
 
   &__button {
     display: block;
-    margin: 14px 0;
+    margin: 10px 0;
     padding: 12px;
     border: 0;
     width: 100%;
