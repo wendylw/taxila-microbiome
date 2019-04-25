@@ -37,12 +37,6 @@
     $('.tag__list').append($channelEL);
   });
 
-  $('.filter-popular').on('click', function() {
-
-    $('.news-content').addClass('popular');
-    $('.news-content__popular-bg').show();
-  });
-
   $('.filter-timeline').on('click', function() {
     $('.news-content').removeClass('popular');
     $('.news-content__popular-bg').hide();
@@ -148,8 +142,9 @@
   $('.tab__item').on('click', function() {
     const id = $(this).attr('name');
 
-    $('.tab__item').removeClass('active');
-    $('#operation-analyse-sentiment .tab-pane').removeClass('active');
+    $(this).parent('.tab').find('.tab__item').removeClass('active');
+    $('#' + id).siblings('.tab-pane').removeClass('active');
+
     $(this).addClass('active');
     $('#' + id).addClass('active');
   });

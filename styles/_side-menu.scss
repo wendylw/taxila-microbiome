@@ -1,35 +1,3 @@
-.side-menu {
-  position: fixed;
-  top: 64px;
-  bottom: 0;
-  right: 0;
-  border-left: 6px solid $theme-color-1;
-  width: 45%;
-  background-color: $white;
-  z-index: 2;
-
-  &.news-info {
-    max-width: 320px;
-  }
-
-  button {
-    border: 0;
-    background-color: transparent;
-    outline: none;
-    box-shadow: none;
-  }
-
-  &__backdrop {
-    content: "";
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .side-dropup {
   position: relative;
 

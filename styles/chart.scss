@@ -1,0 +1,114 @@
+@import '../fonts/font.css';
+@import './var';
+
+.chart {
+
+  &__container {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F4F5F8;
+  }
+
+  &__banner {
+    padding: 30px;
+  }
+
+  &__page-title {
+    display: table-cell;
+    vertical-align: top;
+    min-width: 230px;
+    color: $theme-color-1;
+    line-height: 2em;
+  }
+
+  &__summary-list {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+
+    li {
+      padding: 0 20px;
+    }
+  }
+
+  &__summary-select {
+    position: relative;
+    padding: 5px 12px;
+
+    select {
+      border: 0;
+      color: $lightter-gray;
+      background-color: transparent;
+      font-size: $big-font;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    img {
+      margin-left: 5px;
+      max-height: 10px;
+    }
+  }
+
+  &__summary-result {
+    vertical-align: bottom;
+    display: inline-block;
+    padding: 15px 5px 5px 12px;
+    font-size: 2.5rem;
+    line-height: 1em;
+  }
+
+  &__summary-unit {
+    vertical-align: bottom;
+    display: inline-block;
+    padding: 20px 5px 5px 5px;
+    font-size: $bigger-font;
+  }
+
+  &__tab {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 187px;
+    margin: 0 auto;
+
+    .tab {
+      border-bottom: 1px solid $lightest-gray;
+    }
+
+    .tab-pane {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 30px;
+      bottom: 70px;
+      width: 100%;
+      background-color: $white;
+      margin: auto;
+      max-width: 1360px;
+      border-radius: 15px;
+    }
+
+    li {
+      padding: 10px 0;
+      border-bottom-width: 4px;
+      font-weight: normal;
+    }
+
+    li.active {
+      border-bottom-color: $theme-color-1;
+    }
+  }
+
+  &__pannes {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
