@@ -62,8 +62,17 @@
 
   $('.header__catalog .header__nav-link').on('click', function() {
     $(this).toggleClass('active');
+    $('body').toggleClass('open-side');
     $('.side').toggleClass('active');
     $('.side-backdrop').toggleClass('side__backdrop');
+
+    console.log(!$('.side').hasClass('active'));
+
+    if (!$('.side').hasClass('active')) {
+      $('.side__subnav').removeClass('show');
+      $('.side__nav-item').removeClass('active');
+      $('.side__subnav .side__item').fadeOut('fast');
+    }
   });
 
   $('.side-backdrop').on('click', function() {
@@ -71,11 +80,21 @@
       $('.header__channel .header__nav-link').removeClass('active');
       $('.side-backdrop').removeClass('toggle-side__backdrop');
       $('body').removeClass('open-toggle-side');
-    } else if ($('.side-backdrop').hasClass('side__backdrop')) {
+      $('.side__subnav').removeClass('show');
+      $('.side__nav-item').removeClass('active');
+      $('.side__subnav .side__item').fadeOut('fast');
+    }
+
+    if ($('.side-backdrop').hasClass('side__backdrop')) {
       $('.header__catalog .header__nav-link').removeClass('active');
       $('.side').removeClass('active');
       $('.side-backdrop').removeClass('side__backdrop side-backdrop__subnav');
-    } else if ($('.side-backdrop').hasClass('user-side__backdrop')) {
+      $('.side__subnav').removeClass('show');
+      $('.side__nav-item').removeClass('active');
+      $('.side__subnav .side__item').fadeOut('fast');
+    }
+
+    if ($('.side-backdrop').hasClass('user-side__backdrop')) {
       $('.user-side').removeClass('active');
       $('.side-backdrop').removeClass('user-side__backdrop');
     }
