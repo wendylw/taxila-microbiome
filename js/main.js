@@ -85,6 +85,7 @@
     const id = $(this).data('item');
     const $sideItems = $('#' + id).find('.side__item');
 
+    $('.side__nav-item').removeClass('active');
     $(this).toggleClass('active');
     $('#' + id).toggleClass('show');
 
@@ -132,5 +133,28 @@
     $('#operation-analyse-sentiment .tab-pane').removeClass('active');
     $(this).addClass('active');
     $('#' + id).addClass('active');
+  });
+
+  $('.tags__item').on('click', function() {
+    $(this).toggleClass('active');
+  });
+
+  $('.home-modal__select-all').on('click', function() {
+    const id = $(this).attr('name');
+
+    $('#' + id).find('.tags__item').addClass('active');
+  });
+
+  $('.home-modal__add-item').on('click', function() {
+    const addItemText = $(this).text();
+
+    $(this).toggleClass('active');
+
+    if ($(this).hasClass('active')) {
+      $(this).text('+ ' + addItemText);
+    } else {
+      $(this).text(addItemText.replace('+ ', ''));
+    }
+
   });
 })();

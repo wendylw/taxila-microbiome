@@ -63,6 +63,22 @@ input[type="text"] {
   border-radius: 4px;
 }
 
+input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $lightter-gray;
+}
+
+input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color: $lightter-gray;
+}
+
+input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  color: $lightter-gray;
+}
+
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: $lightter-gray;
+}
+
 .text-center {
   text-align: center;
 }
@@ -242,6 +258,7 @@ input[type="text"] {
     font-size: $small-font;
     color: $lightter-gray;
     background-color: $lightest-gray;
+    cursor: pointer;
   }
 
   &__item.active {
@@ -375,12 +392,12 @@ input[type="text"] {
   &__item a {
     display: inline-block;
     padding: 12px 0;
-    border-bottom: 1px solid $theme-color-2;
+    border-bottom: 1px solid transparent;
     cursor: pointer;
   }
 
-  &__item:last-child a {
-    border-bottom: 0;
+  &__item:hover a {
+    border-bottom-color: $theme-color-2;
   }
 
   &__item.arrow a:after {
@@ -500,10 +517,6 @@ input[type="text"] {
   width: 100%;
   height: 100%;
   z-index: 10;
-
-  &.side-backdrop__subnav {
-    left: 662px;
-  }
 }
 
 .toggle-side {
@@ -528,7 +541,6 @@ input[type="text"] {
 
   &__backdrop {
     display: block;
-    top: 64px;
     left: 360px;
   }
 
@@ -929,8 +941,9 @@ body.open-toggle-side {
 
   &__backdrop {
     display: block;
-    top: 64px;
-    left: 348px;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 
   &__nav,
@@ -1046,6 +1059,7 @@ body.open-toggle-side {
   height: 100%;
   padding: 30px 20px;
   background: rgba(250, 250, 250, 0.96);
+  z-index: 12;
 
   transform: translateX(100%);
   -webkit-transform: translateX(100%);
@@ -1066,9 +1080,8 @@ body.open-toggle-side {
 
   &__backdrop {
     display: block;
-    top: 64px;
-    right: 360px;
-    width: auto;
+    top: 0;
+    width: 100%;
   }
 }
 

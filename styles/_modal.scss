@@ -1,5 +1,9 @@
 .jquery-modal {
   z-index: 12;
+
+  a.close-modal {
+    display: none;
+  }
 }
 
 .modal {
@@ -57,7 +61,7 @@
     border-radius: 0;
 
     input[type="text"] {
-      border-color: $lightter-gray;
+      border-color: $lightest-gray;
       width: 100%;
     }
 
@@ -70,7 +74,7 @@
     }
 
     textarea {
-      border: 1px solid $lightter-gray;
+      border: 1px solid $lightest-gray;
       width: 100%;
       height: 214px;
     }
@@ -132,7 +136,8 @@
     display: inline-block;
     padding: 0 20px;
     max-width: 270px;
-    color: $light-gray;
+    font-size: $small-font;
+    color: #5c5c5c;
   }
 
   &__block-text {
@@ -154,6 +159,7 @@
   }
 
   &__select-all,
+  &__delete,
   &__form-button {
     float: right;
     padding: 2px 0;
@@ -172,12 +178,17 @@
 
   &__add-list {
     margin: 0;
-    color: $theme-color-2;
+    color: $light-gray;
     font-size: $small-font;
   }
 
   &__add-item {
     margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  &__add-item.active {
+    color: $theme-color-2;
   }
 
   &__progress-list {
@@ -202,6 +213,13 @@
 
   &__footer {
     padding: 20px 30px;
+  }
+
+  &__button-link {
+    border: 0;
+    height: 40px;
+    color: $theme-color-2;
+    background-color: transparent;
   }
 
   &__button {
@@ -318,13 +336,24 @@
   &__dropdown-button {
     position: relative;
     text-align: left;
-    padding: 6px 12px;
+    padding: 0 12px;
     width: 270px;
     background-color: transparent;
     border: 1px solid $lightter-gray;
     outline: none;
     box-shadow: none;
     border-radius: 5px;
+
+    select {
+      background-color: transparent;
+      border: 0;
+      width: 100%;
+      height: 30px;
+      outline: none;
+      box-shadow: none;
+      appearance: none;
+      -webkit-appearance: none;
+    }
   }
 
   &__dropdown-icon {
@@ -390,6 +419,22 @@
 
   .home-modal__section.active {
     display: block;
+  }
+}
+
+#selected-articles {
+  padding: 15px;
+
+  .home-modal__header {
+    border-bottom: 0;
+  }
+
+  .home-modal__delete {
+    margin: 5px 0;
+  }
+
+  .home-modal__title {
+    display: inline-block;
   }
 }
 
