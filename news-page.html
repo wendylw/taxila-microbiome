@@ -1043,7 +1043,7 @@
           <a class="article-operation__link" name="selected-articles-link">SELECTED ARTICLES</a>
         </li>
         <li>
-          <a class="article-operation__link">ADD NEW RESOURCE</a>
+          <a class="article-operation__link" name="add-new-resource-link">ADD NEW RESOURCE</a>
         </li>
         <li>
           <a class="article-operation__link" name="operation-galaxy-link">CREATE GALAXY</a>
@@ -1585,85 +1585,145 @@
 
   <!-- Article Operation button -->
   <div id="selected-articles" class="home-modal__container modal">
-      <div class="home-modal__header">
-        <h3 class="home-modal__title text-middle">SELECTED ARTICLES</h3>
-        <button class="home-modal__delete">Clear All</button>
-      </div>
-      <div class="home-modal__body">
-        <section class="home-modal__section tab-pane" id="tab-articles">
-          <div class="home-modal__article-list-container">
-            <ul class="home-modal__article-list">
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Researchers find, correct a cause of rhino infertility. Gut microbes in the female southern white rhino metabolize phytoestrogens…</p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-                </div>
-              </li>
-              <li>
-                <div class="media-top home-modal__article-label">
-                  <i class="text-middle checkbox">
-                    <input type="checkbox">
-                  </i>
-                </div>
-                <div class="media-top home-modal__article-content">
-                  <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
-                </div>
-              </li>
+    <div class="home-modal__header">
+      <h3 class="home-modal__title text-middle">SELECTED ARTICLES</h3>
+      <button class="home-modal__delete">Clear All</button>
+    </div>
+    <div class="home-modal__body">
+      <section class="home-modal__section tab-pane" id="tab-articles">
+        <div class="home-modal__article-list-container">
+          <ul class="home-modal__article-list">
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Researchers find, correct a cause of rhino infertility. Gut microbes in the female southern white rhino metabolize phytoestrogens…</p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="home-modal__footer text-right">
+      <button class="home-modal__button-link">Delete</button>
+      <button class="home-modal__button cancel">Send Email</button>
+      <button class="home-modal__button">Download Articles</button>
+    </div>
+  </div>
+  <!-- end of Article Operation button -->
+
+  <!-- Article Operation button -->
+  <div id="add-new-resource" class="home-modal__container modal">
+    <div class="home-modal__header">
+      <h3 class="home-modal__title text-middle">ADD NEW RESOURCE</h3>
+    </div>
+    <div class="home-modal__body">
+      <section>
+        <h3 class="home-modal__section-title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
+        <div class="home-modal__batch-upload-button text-center">
+          <span>Batch Upload</span>
+          <input type="file">
+        </div>
+        <i class="home-modal__divider text-center">
+          <span>Or</span>
+        </i>
+        <div>
+          <h3 class="text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
+          <form>
+            <div>
+              <input type="text" placeholder="Enter Name">
+            </div>
+            <div>
+              <textarea placeholder="Enter Description"></textarea>
+            </div>
+            <div>
+              <input type="text" placeholder="Enter URL">
+            </div>
+            <div>
+              <input type="text" placeholder="Enter Tag">
+            </div>
+          </form>
+          <div>
+            <label>Channels</label>
+            <ul>
+              <li class="tags__item">Analytics</li>
+              <li class="tags__item">Animal Health</li>
+              <li class="tags__item">Clinical trials</li>
+              <li class="tags__item">Events</li>
+              <li class="tags__item">Finance</li>
+              <li class="tags__item">Healthcare & Medicine</li>
+              <li class="tags__item active">Media coverage</li>
+              <li class="tags__item">Microbiome</li>
             </ul>
           </div>
-        </section>
-      </div>
-      <div class="home-modal__footer text-right">
-        <button class="home-modal__button-link">Delete</button>
-        <button class="home-modal__button cancel">Send Email</button>
-        <button class="home-modal__button">Download Articles</button>
-      </div>
+        </div>
+      </section>
     </div>
-    <!-- end of Article Operation button -->
+    <div class="home-modal__footer text-right">
+      <button class="home-modal__button-link">CANCEL</button>
+      <button class="home-modal__button cancel">RESET</button>
+      <button class="home-modal__button">ADD</button>
+    </div>
+    <div>
+      <span>Total Uploaded: 28</span>
+      <span>Remaining Uploads: Unlimited</span>
+      <p>Resources uploaded here will appear in the “User Resource” sub-channel of the corresponding channels</p>
+    </div>
+  </div>
+  <!-- end of Article Operation button -->
 
   <!-- Patents Modal -->
   <div id="patents-modal" class="patents-modal modal__container modal">

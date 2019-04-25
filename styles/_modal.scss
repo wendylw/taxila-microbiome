@@ -66,11 +66,14 @@
     }
 
     input[type="file"] {
-      width: 100%;
-      height: 168px;
       outline: none;
       box-shadow: none;
       opacity: 0;
+    }
+
+    .file-container input[type="file"] {
+      width: 100%;
+      height: 168px;
     }
 
     textarea {
@@ -394,6 +397,43 @@
 
   &__tab-section {
     padding: 30px 30px 0;
+  }
+
+  &__section-title {
+    font-size: $big-font;
+    font-weight: normal;
+  }
+
+  &__batch-upload-button {
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    width: 90px;
+
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    span {
+      position: absolute;
+      display: block;
+      padding: 2px 0;
+    }
+
+    input {
+      max-width: 100%;
+    }
+  }
+
+  &__divider {
+    display: block;
+    padding: 7px;
+    color: $theme-color-2;
+    background-color: $add-article-text;
+    font-style: normal;
+    font-weight: bold;
   }
 }
 
