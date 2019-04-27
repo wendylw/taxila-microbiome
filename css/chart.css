@@ -22,6 +22,8 @@
   width: 100%; }
   .chart__summary-list li {
     padding: 0 20px; }
+  .chart__summary-list li ~ li {
+    border-left: 1px solid #e9eaea; }
 .chart__summary-select {
   position: relative;
   padding: 5px 12px; }
