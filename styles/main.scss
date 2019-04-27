@@ -223,7 +223,7 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 .date-picker {
   padding: 6px 12px;
   margin: 12px 0;
-  border: 1px solid $lightter-gray;
+  border: 1px solid #979797;
   color: $light-gray;
   border-radius: 4px;
 
@@ -612,7 +612,7 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
     display: none;
   }
 
-  &__subitem {
+  .toggle-side &__subitem {
     padding: 12px 52px;
     color: $white;
     background-color: $theme-color-1;
@@ -728,6 +728,7 @@ body{
 
   .dropdown-menu {
     padding-top: 3px;
+    z-index: 100;
   }
 
   &:after {
@@ -771,7 +772,7 @@ body{
     }
   }
 
-  body:not(.open-toggle-side):not(.open-side) &__nav-item:hover .dropdown-menu {
+  &__nav-item:hover .dropdown-menu {
     display:  block;
   }
 

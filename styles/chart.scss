@@ -14,6 +14,8 @@
 
   &__banner {
     padding: 30px;
+    margin: auto;
+    max-width: 1440px;
   }
 
   &__page-title {
@@ -42,7 +44,7 @@
       border: 0;
       color: $lightter-gray;
       background-color: transparent;
-      font-size: $big-font;
+      font-size: $main-font;
       -webkit-appearance: none;
       appearance: none;
       outline: none;
@@ -98,6 +100,7 @@
     li {
       padding: 10px 0;
       border-bottom-width: 4px;
+      font-size: $big-font;
       font-weight: normal;
     }
 
@@ -110,5 +113,69 @@
     position: relative;
     height: 100%;
     overflow-y: auto;
+  }
+}
+
+.detail-pane {
+  &__header {
+    text-align: right;
+    padding: 5px 30px;
+    border-bottom: 1px solid $lightest-gray;
+
+    h2 {
+      float: left;
+      display: inline-block;
+      font-size: $bigger-font;
+      font-weight: normal;
+    }
+  }
+
+  &__filter-list {
+    display: inline-block;
+    margin: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    select {
+      border: 0;
+      font-size: $main-font;
+      height: 40px;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .user-type select {
+      width: 90px;
+    }
+
+    .date-range select {
+      width: 100px;
+    }
+
+    .sub-channel select {
+      width: 114px;
+    }
+  }
+
+  &__select {
+    position: relative;
+    margin-right: 46px;
+  }
+
+  &__select-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 12px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
   }
 }

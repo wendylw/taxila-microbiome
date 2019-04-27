@@ -7,7 +7,9 @@
   bottom: 0;
   background-color: #F4F5F8; }
 .chart__banner {
-  padding: 30px; }
+  padding: 30px;
+  margin: auto;
+  max-width: 1440px; }
 .chart__page-title {
   display: table-cell;
   vertical-align: top;
@@ -27,7 +29,7 @@
     border: 0;
     color: #8a8a8a;
     background-color: transparent;
-    font-size: 16px;
+    font-size: 14px;
     -webkit-appearance: none;
     appearance: none;
     outline: none;
@@ -69,6 +71,7 @@
   .chart__tab li {
     padding: 10px 0;
     border-bottom-width: 4px;
+    font-size: 16px;
     font-weight: normal; }
   .chart__tab li.active {
     border-bottom-color: #84c0ca; }
@@ -76,5 +79,48 @@
   position: relative;
   height: 100%;
   overflow-y: auto; }
+
+.detail-pane__header {
+  text-align: right;
+  padding: 5px 30px;
+  border-bottom: 1px solid #e9eaea; }
+  .detail-pane__header h2 {
+    float: left;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal; }
+.detail-pane__filter-list {
+  display: inline-block;
+  margin: 0; }
+  .detail-pane__filter-list li {
+    display: inline-block; }
+  .detail-pane__filter-list select {
+    border: 0;
+    font-size: 14px;
+    height: 40px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none; }
+  .detail-pane__filter-list .user-type select {
+    width: 90px; }
+  .detail-pane__filter-list .date-range select {
+    width: 100px; }
+  .detail-pane__filter-list .sub-channel select {
+    width: 114px; }
+.detail-pane__select {
+  position: relative;
+  margin-right: 46px; }
+.detail-pane__select-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 12px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); }
 
 /*# sourceMappingURL=chart.css.map */

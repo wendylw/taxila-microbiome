@@ -73,7 +73,7 @@
           <div class="detail-pane__header">
             <ul class="detail-pane__filter-list">
               <li>
-                <div class="detail-pane__select">
+                <div class="detail-pane__select keyword">
                   <select name="" id="">
                     <option value="">Keyword</option>
                     <option value="">Keyword</option>
@@ -82,7 +82,7 @@
                 </div>
               </li>
               <li>
-                <div class="detail-pane__select">
+                <div class="detail-pane__select channel">
                   <select name="" id="">
                     <option value="">Channel</option>
                     <option value="">Channel</option>
@@ -91,7 +91,7 @@
                 </div>
               </li>
               <li>
-                <div class="detail-pane__select">
+                <div class="detail-pane__select sub-channel">
                   <select name="" id="">
                     <option value="">Sub-Channel</option>
                     <option value="">Sub-Channel</option>
@@ -114,7 +114,7 @@
           <div class="detail-body"></div>
 
           <div class="detail-footer text-right">
-            <span>*Click and drag in the plot area to zoom in</span>
+            <span class="detail-footer__hint">*Click and drag in the plot area to zoom in</span>
             <ul class="detail-footer__list">
               <li class="detail-footer__animal">Animal</li>
               <li class="detail-footer__microbiome">Microbiome</li>
@@ -1097,19 +1097,13 @@
         <div>
           <h5 class="home-modal__subtitle">Select Algorithm:</h5>
           <div class="home-modal__dropdown">
-            <button class="home-modal__dropdown-button">
-              <span>Vader Sentiment</span>
+            <div class="home-modal__dropdown-button">
+              <select>
+                <option value="">Vader Sentiment</option>
+                <option value="">Filter by TIME LINE</option>
+                <option value="">Filter by POPULARITY</option>
+              </select>
               <img class="home-modal__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
-            </button>
-            <div class="dropdown-menu">
-              <ul class="dropdown-menu__list">
-                <li class="dropdown-menu__item">
-                  <a class="filter-timeline"><span>Filter by TIME LINE</span></a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a class="filter-popular"><span>Filter by POPULARITY</span></a>
-                </li>
-              </ul>
             </div>
           </div>
           <div class="home-modal__text-container">
