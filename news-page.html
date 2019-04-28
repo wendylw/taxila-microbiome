@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/jquery.modal.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/news.css">
 </head>
@@ -59,35 +61,54 @@
     </header>
 
     <!-- Add your site or application content here -->
-    <div class="news-content__popular-bg">
-      <img src="./img/popular-bg.png" alt="">
+    <div class="geo-trend">
+      <div class="container row">
+        <div class="col-4">
+          <label class="home-modal__subtitle">Article Selected</label>
+          <span class="geo-trend__number">716</span>
 
-      <div class="news-content__popular-operation">
-        <div class="dropdown">
-          <div class="dropdown__button">
-            <span>Filtered by the country or continent</span>
-            <img src="./img/news-down.png" alt="">
-          </div>
-          <div class="dropdown-menu">
-            <ul class="dropdown-menu__list">
-              <li class="dropdown-menu__item">
-                <a><span>test</span></a>
-              </li>
-              <li class="dropdown-menu__item">
-                <a><span>test</span></a>
-              </li>
-            </ul>
-          </div>
+          <button class="button-outline">Tag World Cloud</button>
+          <button class="button-outline">Feed World Cloud</button>
         </div>
+        <div class="col-8">
+          <h5 class="home-modal__block-text text-right">* Click And Drag on the graph to select specified time range</h5>
+          <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+          </div>
+          <div class="text-right">
+            <div class="home-modal__dropdown">
+              <div class="home-modal__dropdown-button">
+                <select>
+                  <option value="">Last Day</option>
+                  <option value="">Last Day</option>
+                </select>
+                <img class="home-modal__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
+              </div>
+            </div>
 
-        <div class="news-content__popular-today">
-          <label>Add today: </label><span>0</span>
-        </div>
-        <div class="news-content__popular-total">
-          <label>Total articles: </label><span>7</span>
+            <div class="date-range">
+                <div class="date-range__item">
+                  <div class="date-picker">
+                    <span class="date-picker__text text-middle">dd/mm/yyyy</span>
+                    <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
+                  </div>
+                </div>
+                <div class="date-range__item">
+                  <span>--</span>
+                </div>
+                <div class="date-range__item">
+                  <div class="date-picker">
+                    <span class="date-picker__text text-middle">dd/mm/yyyy</span>
+                    <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
+		</div>
 
     <div class="news-content">
       <div class="switch-button__container mode-button">
@@ -1772,9 +1793,23 @@
   <script src="js/vendor/jquery-3.3.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="./js/vendor/masonry.pkgd.min.js"></script>
-  <script src="./js/jquery.modal.min.js"></script>
+  <script src="./js/vendor/jquery.modal.min.js"></script>
+  <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/news-masonry.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots: false,
+      responsive:{
+        0:{
+          items:1
+        }
+      }
+    });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- <script>

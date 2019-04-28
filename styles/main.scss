@@ -120,7 +120,7 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -278,9 +278,10 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 .button-outline {
   padding: 10px 12px;
   min-height: 30px;
-  border: 1px solid $theme-color-1;
-  color: $theme-color-1;
+  border: 2px solid $theme-color-2;
+  color: $theme-color-2;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 .form {
@@ -1181,6 +1182,125 @@ body{
     &__user {
       background-image: url(../img/header-welcome-blue.png);
     }
+  }
+}
+
+.geo-trend {
+  padding: 0 30px;
+  margin: auto;
+  max-width: 1440px;
+
+  & ~ .news-content {
+    top: 290px;
+  }
+
+  .container {
+    padding: 30px 0;
+    border-bottom: 1px solid $add-article-text;
+  }
+
+  .home-modal__block-text {
+    margin: 0 40px;
+    font-weight: normal;
+  }
+
+  .row {
+    margin: 0 -15px;
+  }
+
+  .col-4,
+  .col-8 {
+    padding: 0 15px;
+  }
+
+  .owl-carousel {
+    position: relative;
+    float: right;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 765px;
+  }
+
+  .owl-item {
+    height: 100px;
+  }
+
+  .owl-nav {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin: 0;
+    width: 100%;
+
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+
+  .owl-nav button.owl-prev,
+  .owl-nav button.owl-next {
+    position: absolute;
+    margin-top: -20px;
+    font-size: 30px;
+  }
+
+  .owl-nav button.owl-prev {
+    left: 0;
+  }
+
+  .owl-nav button.owl-next {
+    right: 0;
+  }
+
+  .home-modal__dropdown {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .home-modal__dropdown-button {
+    max-width: 150px;
+  }
+
+  .date-range {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  .date-picker{
+    margin: 0;
+    border-color: #F4F5F8;
+    background-color: #F4F5F8;
+  }
+
+  &__number {
+    display: block;
+    margin: 5px 0 20px;
+    font-size: 60px;
+  }
+}
+
+.geo-trend-content {
+  position: absolute;
+  top: 253px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  .map-container {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 75px;
+    bottom: 30px;
+  }
+
+  .map {
+    height: 100%;
+    background-color: $lightest-gray;
   }
 }
 

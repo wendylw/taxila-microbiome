@@ -14,8 +14,10 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/jquery.modal.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="css/news.css">
 </head>
 
 <body>
@@ -59,69 +61,56 @@
     </header>
 
     <!-- Add your site or application content here -->
-    <div class="detail__container">
-      <div class="detail__operation">
-        <div class="detail__search">
-          <input type="text" placeholder="Add New Keyword (Comma Separated)">
+    <div class="geo-trend">
+      <div class="container row">
+        <div class="col-4">
+          <label class="home-modal__subtitle">Article Selected</label>
+          <span class="geo-trend__number">716</span>
         </div>
-        <button class="detail__operation-button">ADD</button>
-        <button class="detail__operation-button">ADD NEW PANEL</button>
+        <div class="col-8">
+          <h5 class="home-modal__block-text text-right">* Click And Drag on the graph to select specified time range</h5>
+          <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+          </div>
+        </div>
+      </div>
+		</div>
+
+    <div class="geo-trend-content">
+      <div class="geo-trend text-right container">
+        <div class="home-modal__dropdown">
+          <div class="home-modal__dropdown-button">
+            <select>
+              <option value="">Last Day</option>
+              <option value="">Last Day</option>
+            </select>
+            <img class="home-modal__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
+          </div>
+        </div>
+
+        <div class="date-range">
+            <div class="date-range__item">
+              <div class="date-picker">
+                <span class="date-picker__text text-middle">dd/mm/yyyy</span>
+                <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
+              </div>
+            </div>
+            <div class="date-range__item">
+              <span>--</span>
+            </div>
+            <div class="date-range__item">
+              <div class="date-picker">
+                <span class="date-picker__text text-middle">dd/mm/yyyy</span>
+                <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
+              </div>
+            </div>
+          </div>
       </div>
 
-      <div class="detail-pane__container">
-        <section class="detail-pane">
-          <div class="detail-pane__header">
-            <ul class="detail-pane__filter-list">
-              <li>
-                <div class="detail-pane__select keyword">
-                  <select name="" id="">
-                    <option value="">Keyword</option>
-                    <option value="">Keyword</option>
-                  </select>
-                  <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
-                </div>
-              </li>
-              <li>
-                <div class="detail-pane__select channel">
-                  <select name="" id="">
-                    <option value="">Channel</option>
-                    <option value="">Channel</option>
-                  </select>
-                  <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
-                </div>
-              </li>
-              <li>
-                <div class="detail-pane__select sub-channel">
-                  <select name="" id="">
-                    <option value="">Sub-Channel</option>
-                    <option value="">Sub-Channel</option>
-                  </select>
-                  <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
-                </div>
-              </li>
-            </ul>
-            <div class="detail-pane__date-picker">
-              <img class="detail-pane__date-picker-pre text-middle" src="./img/header-right-arrow-blue.png" alt="">
-              <span class="text-middle">10 Mar 2019 - 19 April 2019</span>
-              <img class="detail-pane__date-picker-next text-middle" src="./img/header-right-arrow-blue.png" alt="">
-            </div>
-            <div class="detail-pane__header-button-container">
-              <button class="detail-pane__header-button fill">LINE</button>
-              <button class="detail-pane__header-button">BAR</button>
-            </div>
-          </div>
-
-          <div class="detail-body"></div>
-
-          <div class="detail-footer text-right">
-            <span class="detail-footer__hint">*Click and drag in the plot area to zoom in</span>
-            <ul class="detail-footer__list">
-              <li class="detail-footer__animal">Animal</li>
-              <li class="detail-footer__microbiome">Microbiome</li>
-              <li class="detail-footer__news">News</li>
-            </ul>
-          </div>
-        </section>
+      <div class="map-container container">
+        <div class="map"></div>
       </div>
     </div>
     <!-- end of Add your site or application content here -->
@@ -676,6 +665,12 @@
             <li class="tags__item">Healthcare & Medicine</li>
             <li class="tags__item active">Media coverage</li>
             <li class="tags__item">Microbiome</li>
+            <li class="tags__item">Microbiome Science and Technology News</li>
+            <li class="tags__item">Patents</li>
+            <li class="tags__item">Pharma Press Release</li>
+            <li class="tags__item">Phytobiome</li>
+            <li class="tags__item">Social Media</li>
+            <li class="tags__item">Startups investors</li>
           </ul>
           <p class="home-modal__block-text">*Separate galaxies will be created for each of the selected channels and will appear in the respective channels.</p>
         </div>
@@ -833,6 +828,12 @@
             <li class="tags__item">Healthcare & Medicine</li>
             <li class="tags__item active">Media coverage</li>
             <li class="tags__item">Microbiome</li>
+            <li class="tags__item">Microbiome Science and Technology News</li>
+            <li class="tags__item">Patents</li>
+            <li class="tags__item">Pharma Press Release</li>
+            <li class="tags__item">Phytobiome</li>
+            <li class="tags__item">Social Media</li>
+            <li class="tags__item">Startups investors</li>
           </ul>
         </div>
         <div class="home-modal__subcontainer">
@@ -984,6 +985,12 @@
             <li class="tags__item">Healthcare & Medicine</li>
             <li class="tags__item active">Media coverage</li>
             <li class="tags__item">Microbiome</li>
+            <li class="tags__item">Microbiome Science and Technology News</li>
+            <li class="tags__item">Patents</li>
+            <li class="tags__item">Pharma Press Release</li>
+            <li class="tags__item">Phytobiome</li>
+            <li class="tags__item">Social Media</li>
+            <li class="tags__item">Startups investors</li>
           </ul>
         </div>
         <div class="home-modal__subheader">
@@ -1243,6 +1250,12 @@
               <li class="tags__item">Healthcare & Medicine</li>
               <li class="tags__item active">Media coverage</li>
               <li class="tags__item">Microbiome</li>
+              <li class="tags__item">Microbiome Science and Technology News</li>
+              <li class="tags__item">Patents</li>
+              <li class="tags__item">Pharma Press Release</li>
+              <li class="tags__item">Phytobiome</li>
+              <li class="tags__item">Social Media</li>
+              <li class="tags__item">Startups investors</li>
             </ul>
           </div>
         </div>
@@ -1285,21 +1298,32 @@
   </div>
   <!-- end of Patents Modal -->
 
+  <div class="back-to-top">
+    <img src="./img/up-arrow-g.png" alt="">
+    <span>TOP</span>
+  </div>
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
   <script src="js/vendor/jquery-3.3.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="./js/vendor/masonry.pkgd.min.js"></script>
-  <script src="./js/jquery.modal.min.js"></script>
+  <script src="./js/vendor/jquery.modal.min.js"></script>
+  <script src="./js/vendor/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/news-masonry.js"></script>
   <script>
-    $(function() {
-      $('.detail-pane__header-button').on('click', function() {
-        $('.detail-pane__header-button').removeClass('fill');
-        $(this).addClass('fill');
-      });
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots: false,
+      responsive:{
+        0:{
+          items:1
+        }
+      }
     });
   </script>
 
