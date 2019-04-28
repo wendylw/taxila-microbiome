@@ -103,6 +103,11 @@ function showDropback() {
       $('.user-side').removeClass('active');
       $('.side-backdrop').removeClass('user-side__backdrop');
     }
+
+    if ($('.side-backdrop').hasClass('article-side__backdrop')) {
+      $('.article-side').removeClass('active');
+      $('.side-backdrop').removeClass('article-side__backdrop');
+    }
   });
 
   $('.side__nav-item').on('click', function() {
@@ -142,6 +147,11 @@ function showDropback() {
   $('.header__user').on('click', function() {
     $('.user-side').toggleClass('active');
     $('.side-backdrop').toggleClass('user-side__backdrop');
+  });
+
+  $('.grid__article-button').on('click', function() {
+    $('.article-side').toggleClass('active');
+    $('.side-backdrop').toggleClass('article-side__backdrop');
   });
 
   $('.article-operation__link').on('click', function() {
