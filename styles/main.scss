@@ -777,9 +777,9 @@ body{
     display: none;
 
     img {
-      padding: 10px;
+      padding: 6px 16px;
       margin: 10px 0;
-      width: 36px;
+      width: 48px;
     }
   }
 
@@ -846,6 +846,10 @@ body{
   &__channel > a:hover:before,
   &__catalog > a:hover:before {
     background-image: url(../img/menu-g.png);
+  }
+
+  &__user-m {
+    display: none;
   }
 
   &__search {
@@ -1538,6 +1542,10 @@ body{
       display: none;
     }
 
+    &__user-m {
+      display: block;
+    }
+
     &__menu-m {
       display: inline-block;
       margin: 0 5px;
@@ -1568,7 +1576,8 @@ body{
   .user-side,
   .article-side {
     position: fixed;
-    top: 48px;
+    top: 51px;
+    max-width: 100%;
   }
 }
 

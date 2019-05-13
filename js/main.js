@@ -144,7 +144,7 @@ function showDropback() {
     $(".news-content").stop().animate({scrollTop: 0}, 500);
   });
 
-  $('.header__user').on('click', function() {
+  $('.header__user, .header__user-m').on('click', function() {
     $('.user-side').toggleClass('active');
     $('.side-backdrop').toggleClass('user-side__backdrop');
   });
@@ -199,5 +199,9 @@ function showDropback() {
 
   $('.header__article').on('mouseout', function() {
     showDropback();
+  });
+
+  $('.header__menu-m, .header__close-button img, .header__user-m').on('click', function() {
+    $('.header__navs').slideToggle();
   });
 })();
