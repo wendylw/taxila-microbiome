@@ -233,7 +233,10 @@ body {
     width: 33.333333%; } }
 @media (max-width: 1024px) {
   .grid-item {
-    width: 50%; } }
+    width: 50%; }
+
+  .news-content {
+    top: 48px; } }
 @media (max-width: 767px) {
   .grid-item {
     width: 100%; } }

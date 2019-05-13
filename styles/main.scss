@@ -773,6 +773,16 @@ body{
     }
   }
 
+  &__close-button {
+    display: none;
+
+    img {
+      padding: 10px;
+      margin: 10px 0;
+      width: 36px;
+    }
+  }
+
   &__nav-item:hover .dropdown-menu {
     display:  block;
   }
@@ -902,6 +912,10 @@ body{
     img {
       max-height: 30px;
     }
+  }
+
+  &__menu-m {
+    display: none;
   }
 }
 
@@ -1441,8 +1455,12 @@ body{
   }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1280px) {
   .header {
+    &__logo {
+      max-width: 100px;
+    }
+
     &__nav-item {
       span {
         font-size: 14px;
@@ -1450,14 +1468,42 @@ body{
     }
 
     &__search input {
-      width: 250px;
+      width: 260px;
+    }
+
+    &__user {
+      margin: 0 20px;
+      width: 24px;
+      height: 28px;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .header {
+    &__nav-item {
+      margin: 0 10px;
+
+      span {
+        font-size: 13px;
+      }
+    }
+
+    &__search input {
+      width: 200px;
     }
   }
 }
 
 @media (max-width: 1024px) {
   .header {
+    &__logo,
+    &__operator {
+      margin: 10px 0;
+    }
+
     &__navs {
+      display: none;
       position: fixed;
       left: 0;
       top: 0;
@@ -1465,11 +1511,64 @@ body{
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 400;
+      overflow-y: auto;
     }
 
     &__nav-item {
       display: block;
+
+      >  a {
+        padding: 20px 10px;
+      }
     }
+
+    &__close-button {
+      display: block;
+    }
+
+    &__search {
+      padding: 5px 10px;
+      min-width: 37px;
+      min-height: 30px;
+    }
+
+    &__search input,
+    &__search:after,
+    &__user {
+      display: none;
+    }
+
+    &__menu-m {
+      display: inline-block;
+      margin: 0 5px;
+      max-width: 28px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .dropdown-menu,
+    .dropdown-menu__list {
+      display: block;
+      position: relative;
+      padding: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+      color: $white;
+      background-color: transparent;
+
+      a {
+        padding: 12px 24px;
+        display: block;
+      }
+    }
+  }
+
+  .user-side,
+  .article-side {
+    position: fixed;
+    top: 48px;
   }
 }
 
