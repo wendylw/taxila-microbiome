@@ -182,4 +182,12 @@ function showDropback() {
   $('.change-password__button').on('click', function() {
     $('.change-password__content').toggle();
   });
+
+  $('body').on('click', '.change-password__content', function(e) {
+    e.stopPropagation();
+
+    if (!$(e.target).parents('.change-password__form-container').length || $(e.target).hasClass('change-password__form-container')) {
+      $('.change-password__content').toggle();
+    }
+  });
 })();
