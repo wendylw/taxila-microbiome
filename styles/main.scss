@@ -1289,6 +1289,17 @@ body{
   }
 }
 
+
+.change-password {
+  &__button {
+    padding: 10px 0;
+    border: 0;
+    font-size: $small-font;
+    color: $lightter-gray;
+    background-color: transparent;
+  }
+}
+
 .classic {
   .header {
     position: relative;
@@ -1598,5 +1609,4 @@ body{
 @import './modal';
 @import './add-article';
 @import './article';
-@import './feedback';
 @import './animation';

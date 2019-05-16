@@ -1,17 +1,6 @@
 .add-article {
   padding: 60px 0 100px;
 
-  .side-dropup__button {
-    background-color: $theme-color-1;
-  }
-
-  .side-dropup__button:active,
-  .side-dropup__button:focus {
-    border-color: $theme-color-1;
-    outline: none;
-    box-shadow: none;
-  }
-
   &__avatar {
     width: 66px;
     height: 66px;
@@ -116,7 +105,11 @@
   }
 
   &__sign-off {
-    margin: 10px 0 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 20px;
     color: $theme-color-2;
 
     img {
@@ -375,7 +368,9 @@
   &__link {
     display: block;
     padding: 12px 0;
+    margin-bottom: -1px;
     border-top: 1px solid $lightest-gray;
+    border-bottom: 1px solid $lightest-gray;
     font-size: $small-font;
     color: $lightter-gray;
     cursor: pointer;
