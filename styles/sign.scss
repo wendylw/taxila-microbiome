@@ -244,18 +244,38 @@ body,
 }
 
 .reset-password {
-  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/reset-password-bg.jpg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: 100%;
+    background-image: url(../img/reset-password-content.png);
+    background-size: 100% auto;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 3;
+  }
 
   &__form-container {
     position: absolute;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 24%;
+    bottom: 24%;
     margin: auto;
     width: 270px;
-
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
   }
 }
 
