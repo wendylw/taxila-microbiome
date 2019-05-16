@@ -178,4 +178,8 @@ function showDropback() {
   $('.header__menu-m, .header__close-button img, .header__user-m').on('click', function() {
     $('.header__navs').slideToggle();
   });
+
+  $('.change-password__button').on('click', function() {
+    $('.change-password__content').toggle();
+  });
 })();

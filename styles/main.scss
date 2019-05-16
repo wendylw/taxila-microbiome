@@ -1297,6 +1297,8 @@ body{
     font-size: $small-font;
     color: $lightter-gray;
     background-color: transparent;
+    outline: none;
+    box-shadow: none;
   }
 }
 
@@ -1479,6 +1481,144 @@ body{
   .map {
     height: 100%;
     background-color: $lightest-gray;
+  }
+}
+
+.sign-form {
+  input[type="text"],
+  input[type="password"] {
+    padding: 6px 15px;
+    width: 100%;
+    min-height: 30px;
+    line-height: 20px;
+    font-size: $small-font;
+    color: $form-input-border;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+  }
+
+  input::-webkit-input-placeholder { /* WebKit browsers */
+    color: $form-input-border;
+  }
+
+  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $form-input-border;
+  }
+
+  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $form-input-border;
+  }
+
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $form-input-border;
+  }
+
+  &__group {
+    position: relative;
+    margin-top: 24px;
+    border: 1px solid $form-input-border;
+    max-width: 270px;
+    font-size: 0;
+    background-color: $white;
+    border-radius: 20px;
+    outline: none;
+    overflow: hidden;
+
+    img {
+      margin: 8px;
+      margin-left: 14px;
+      width: 20px;
+    }
+  }
+
+  &__see-password.img {
+    display: block;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    right: 0;
+    padding: 8px;
+    margin: 0;
+    width: 36px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  &__button-group {
+    max-width: 270px;
+    margin: 24px 0 14px;
+
+    .forgot-password__button {
+      font-size: $smaller-font;
+      border: 0;
+      color: $light-gray;
+      background-color: transparent;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &.forget {
+      margin-top: 14px;
+    }
+  }
+
+  &__login-button,
+  &__forgot-button,
+  &__outline-button {
+    padding: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $theme-color-2;
+    min-height: 32px;
+    line-height: 20px;
+    width: 100%;
+    color: $white;
+    font-size: $main-font;
+    border-radius: 20px;
+    background-color: $theme-color-2;
+    box-shadow: 0 6px 8px 0 rgba(9, 53, 83, 0.31);
+  }
+
+  &__forgot-button {
+    border-color: $theme-color-1;
+    background-color: $theme-color-1;
+    box-shadow: 0 6px 8px 0 rgba(132, 192, 202, 0.31);
+  }
+
+  &__outline-button {
+    color: $theme-color-2;
+    background-color: $white;
+    box-shadow: none;
+  }
+}
+
+.reset-password,
+.change-password {
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 3;
+  }
+
+  &__form-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24%;
+    bottom: 24%;
+    margin: auto;
+    width: 270px;
+  }
+}
+
+.change-password {
+  &__content {
+    display: none;
+    position: absolute;
+    z-index: 300;
   }
 }
 
