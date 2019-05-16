@@ -820,20 +820,28 @@ body{
     }
   }
 
-  &__time > a:before {
+  &__time > a::before {
     background-image: url(../img/header-timeline.png);
   }
 
-  &__article > a:before {
+  &__article > a::before {
     content: none;
   }
 
-  &__trends > a:before {
+  &__trends > a::before {
     background-image: url(../img/header-geo-trend.png);
   }
 
-  &__trends > a:hover:before {
+  &__trends > a:hover::before {
     background-image: url(../img/header-geo-trend-g.png);
+  }
+
+  &__analysis a::before {
+    background-image: url(../img/header-analysis.png);
+  }
+
+  &__analysis a:hover::before {
+    background-image: url(../img/header-analysis-g.png);
   }
 
   &__channel > a:before,
@@ -1309,12 +1317,16 @@ body{
       color: $theme-color-1;
     }
 
-    &__time a:before {
+    &__time a::before {
       background-image: url(../img/header-timeline-blue.png);
     }
 
-    &__trends a:before {
-      background-image: url(../img/header-geo-trend-blue.png);
+    &__trends a::before {
+      background-image: url(../img/header-geo-trend-g.png);
+    }
+
+    &__analysis a::before {
+      background-image: url(../img/header-analysis-g.png);
     }
 
     &__channel a:before,

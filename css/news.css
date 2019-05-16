@@ -23,10 +23,12 @@ body {
     font-size: 11px;
     color: #093553; }
   .news-content__remove {
+    float: right;
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-image: url(../img/remove-article.png);
+    margin: 8px 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/delete.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center; }
