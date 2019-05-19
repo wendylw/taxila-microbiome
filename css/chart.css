@@ -10,16 +10,32 @@
   padding: 30px;
   margin: auto;
   max-width: 1440px; }
+.chart__back-button {
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  width: 30px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); }
+  .chart__back-button img {
+    vertical-align: top;
+    max-width: 100%; }
 .chart__page-title {
   display: table-cell;
   vertical-align: top;
+  padding: 20px 0;
   min-width: 230px;
   color: #84c0ca;
   line-height: 2em; }
+  .chart__page-title h3 {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 18px; }
 .chart__summary-list {
   display: table-cell;
   vertical-align: top;
-  width: 100%; }
+  width: 90%; }
   .chart__summary-list li {
     padding: 0 20px; }
   .chart__summary-list li ~ li {

@@ -1,5 +1,6 @@
 @import url(../fonts/font.css);
 .detail__operation {
+  text-align: right;
   position: absolute;
   top: 64px;
   padding: 12px 30px;
@@ -7,6 +8,24 @@
   background: #fff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
   z-index: 1; }
+.detail__back-button {
+  float: left;
+  display: inline-block;
+  margin: 10px 0;
+  border: 0;
+  background-color: transparent; }
+  .detail__back-button img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 16px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); }
+  .detail__back-button h3 {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+    color: #84c0ca; }
 .detail__search {
   position: relative;
   display: inline-block;

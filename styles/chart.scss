@@ -18,18 +18,41 @@
     max-width: 1440px;
   }
 
+  &__back-button {
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    width: 30px;
+
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    img {
+      vertical-align: top;
+      max-width: 100%;
+    }
+  }
+
   &__page-title {
     display: table-cell;
     vertical-align: top;
+    padding: 20px 0;
     min-width: 230px;
     color: $theme-color-1;
     line-height: 2em;
+
+    h3 {
+      vertical-align: top;
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 18px;
+    }
   }
 
   &__summary-list {
     display: table-cell;
     vertical-align: top;
-    width: 100%;
+    width: 90%;
 
     li {
       padding: 0 20px;

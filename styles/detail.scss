@@ -3,6 +3,7 @@
 
 .detail {
   &__operation {
+    text-align: right;
     position: absolute;
     top: 64px;
     padding: 12px 30px;
@@ -10,6 +11,31 @@
     background: $white;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
     z-index: 1;
+  }
+
+  &__back-button {
+    float: left;
+    display: inline-block;
+    margin: 10px 0;
+    border: 0;
+    background-color: transparent;
+
+    img {
+      vertical-align: middle;
+      display: inline-block;
+      width: 16px;
+
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+    }
+
+    h3 {
+      vertical-align: middle;
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 18px;
+      color: $theme-color-1;
+    }
   }
 
   &__search {
