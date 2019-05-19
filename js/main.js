@@ -209,4 +209,28 @@ function showDropback() {
       $('#' + id).removeClass('active');
     });
   });
+
+  $('.article-side__tag-add').on('click', function() {
+    $('.article-side__tag-input').show();
+    $('.article-side__tag-add').hide();
+    $('.article-side__tag-input-delete').show();
+  });
+
+  $('.article-side__tag-input-delete').on('click', function() {
+    $('.article-side__tag-input').hide();
+    $('.article-side__tag-add').show();
+    $('.article-side__tag-input-delete').hide();
+  });
+
+  $('.filter__item.taxila').on('click', function() {
+   const top = 180 + $('.filter-detail').height();
+
+   $('.filter-detail').toggle();
+
+   if ($('.filter-detail').is(':visible')) {
+    $('.filter ~ .news-content').css('top', top + 'px');
+   } else {
+    $('.filter ~ .news-content').css('top', '180px');
+   }
+  });
 })();

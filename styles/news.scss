@@ -365,6 +365,80 @@ body {
   }
 }
 
+.filter {
+  & ~ .news-content {
+    top: 180px;
+  }
+
+  .container {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid $lightest-gray;
+  }
+
+  &__list {
+    margin: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    font-size: $main-font;
+    color: $theme-color-2;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &__item.figures {
+    color: #efad4d;
+  }
+
+  &__item.presentation {
+    color: #9aa0ce;
+  }
+
+  &__item.publications {
+    color: #dd9392;
+  }
+
+  &__item.taxila {
+    color: $theme-color-1;
+  }
+
+  &__icon {
+    margin-left: 5px;
+    max-width: 8px;
+  }
+
+  &__divider {
+    display: inline-block;
+    margin: 15px 0;
+    width: 100px;
+    height: 2px;
+    background-color: $theme-color-1;
+  }
+}
+
+.filter-detail {
+  display: none;
+  margin: auto;
+  max-width: 1000px;
+
+  &__item {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  &__text {
+    color: $lightter-gray;
+  }
+
+  &__icon {
+    max-width: 10px;
+  }
+}
+
 @media (max-width: 1199px) {
   .grid-item {
     width: 33.333333%;
