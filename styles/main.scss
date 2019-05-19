@@ -1182,6 +1182,7 @@ body{
       box-shadow: none;
 
       img {
+        margin: 7px 0;
         max-width: 100%;
       }
     }
@@ -1259,14 +1260,20 @@ body{
   }
 
   &__operation-text {
+    display: inline-block;
     font-size: $smaller-font;
+    max-width: 150px;
+    min-height: 24px;
+  }
+
+  &__pre-button {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
   }
 
   &__operation-button {
     margin-left: 20px;
     max-width: 16px;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
   }
 }
 
