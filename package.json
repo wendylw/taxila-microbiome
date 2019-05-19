@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "http-server .",
-    "scss": "scss --watch styles/main.scss:css/main.css styles/sign.scss:css/sign.css styles/news.scss:css/news.css styles/chart.scss:css/chart.css styles/detail.scss:css/detail.css",
+    "scss": "scss --watch styles/main.scss:css/main.css styles/sign.scss:css/sign.css styles/news.scss:css/news.css styles/chart.scss:css/chart.css styles/detail.scss:css/detail.css styles/analysis.scss:css/analysis.css",
     "release": "tar zcvf news-website-$(date +%Y%m%dT%H%M).tar.gz ./*.html ./css/*.css ./js ./img ./fonts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

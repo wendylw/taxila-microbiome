@@ -46,7 +46,7 @@
           <a class="header__nav-link" href="#"><span>GEO TRENDS</span></a>
         </li>
         <li class="header__analysis header__nav-item text-middle">
-          <a class="header__nav-link" href="#"><span>ANALYSIS</span></a>
+          <a class="header__nav-link" href="./analysis.html"><span>ANALYSIS</span></a>
         </li>
         <li class="header__user-m header__nav-item text-middle">
           <a class="header__nav-link" href="#"><span>USER</span></a>
@@ -1063,41 +1063,18 @@
           <a class="article-operation__link" name="add-new-resource-link">ADD NEW RESOURCE</a>
         </li>
         <li>
-          <a class="article-operation__link" name="operation-galaxy-link">CREATE GALAXY</a>
+          <a class="article-operation__link">TOUR</a>
         </li>
         <li>
-          <a class="article-operation__link" name="operation-analyse-terms-link">ANALYSE TERMS</a>
-        </li>
-        <li>
-          <a class="article-operation__link" name="operation-analyse-sentiment-link">ANALYSE SENTIMENT</a>
-        </li>
-        <li>
-          <button class="article-operation__button">VIEW STATISTICS</button>
-        </li>
-        <li>
-          <button class="article-operation__button">VIEW TRENDS</button>
-        </li>
-        <li>
-          <button class="article-operation__button">VIEW WORLD CLOUD</button>
+          <a class="article-operation__link">TERM OF USE</a>
         </li>
       </ul>
     </section>
 
-    <section class="text-center">
-      <ul class="add-article-person__list">
-        <li class="add-article__item">
-          <a href="">Tour</a>
-        </li>
-        <li class="add-article__item">
-          <a href="">Term of Use</a>
-        </li>
-        <li class="add-article__item">
-          <a href="">Change your password</a>
-        </li>
-      </ul>
-    </section>
-
-    <div class="add-article__sign-off text-center">
+    <div class="add-article__sign-off text-right">
+      <div>
+        <button class="change-password__button">Change your password</button>
+      </div>
       <span class="text-middle">Sign off</span>
     </div>
   </div>
@@ -1153,152 +1130,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Article Operation Link -->
-  <div id="operation-galaxy" class="home-modal__container modal">
-    <div class="home-modal__header">
-      <h3 class="home-modal__title text-middle">CREATE GALAXY</h3>
-    </div>
-    <div class="home-modal__body">
-      <section class="home-modal__section">
-        <div class="home-modal__subcontainer">
-          <div class="date-range">
-            <div class="date-range__item">
-              <label class="home-modal__label">Start Date</label>
-              <div class="date-picker">
-                <span class="date-picker__text text-middle">dd/mm/yyyy</span>
-                <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
-              </div>
-            </div>
-            <div class="date-range__item">
-              <span>--</span>
-            </div>
-            <div class="date-range__item">
-              <label class="home-modal__label">End Date</label>
-              <div class="date-picker">
-                <span class="date-picker__text text-middle">dd/mm/yyyy</span>
-                <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
-              </div>
-            </div>
-          </div>
-          <p class="home-modal__inline-text">* If you don't select date, then the complete date will be used</p>
-        </div>
-
-        <div class="home-modal__subheader">
-          <label class="home-modal__label">Channel Selection</label>
-          <button class="home-modal__select-all" name="channel-tags-1">Select All</button>
-        </div>
-        <div>
-          <ul class="tags" id="channel-tags-1">
-            <li class="tags__item">Analytics</li>
-            <li class="tags__item">Animal Health</li>
-            <li class="tags__item">Clinical trials</li>
-            <li class="tags__item">Events</li>
-            <li class="tags__item">Finance</li>
-            <li class="tags__item">Healthcare & Medicine</li>
-            <li class="tags__item active">Media coverage</li>
-            <li class="tags__item">Microbiome</li>
-            <li class="tags__item">Microbiome Science and Technology News</li>
-            <li class="tags__item">Patents</li>
-            <li class="tags__item">Pharma Press Release</li>
-            <li class="tags__item">Phytobiome</li>
-            <li class="tags__item">Social Media</li>
-            <li class="tags__item">Startups investors</li>
-          </ul>
-          <p class="home-modal__block-text">*Separate galaxies will be created for each of the selected channels and will appear in the respective channels.</p>
-        </div>
-      </section>
-
-      <section class="home-modal__section">
-        <div class="home-modal__subcontainer">
-          <label class="home-modal__label">Article Details</label>
-          <div class="row">
-            <div class="col-6">
-              <div class="home-modal__subheader">
-                <h5 class="home-modal__subtitle">Article Title</h5>
-              </div>
-              <div>
-                <input type="text">
-              </div>
-              <div class="file-container">
-                <input type="file">
-                <div class="file-container__icon-container text-center">
-                  <img class="file-container__icon" src="./img/image-placeholder.png" alt="">
-                  <span class="file-container__hint">Upload Articles Cover</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="home-modal__subheader">
-                <h5 class="home-modal__subtitle">Article Description</h5>
-              </div>
-              <textarea class="home-modal__textarea"></textarea>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="home-modal__section">
-        <div class="home-modal__subcontainer row">
-          <div class="col-6">
-            <label class="home-modal__label">Galaxy Attributes</label>
-            <div class="home-modal__subheader">
-              <h5 class="home-modal__subtitle">Following items will used in Galaxy page</h5>
-            </div>
-            <ul class="home-modal__add-list">
-              <li class="home-modal__add-item active">+ Article Source</li>
-              <li class="home-modal__add-item active">+ Publication Year</li>
-              <li class="home-modal__add-item active">+ Month & Year</li>
-              <li class="home-modal__add-item">Title</li>
-              <li class="home-modal__add-item active">+ Country</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <label class="home-modal__label">Galaxy Configuration</label>
-            <div class="home-modal__subheader">
-              <h5 class="home-modal__subtitle">TSNE</h5>
-            </div>
-            <ul class="home-modal__progress-list">
-              <li class="home-modal__progress-item">
-                <label class="home-modal__progress-label">Perplexity:</label>
-                <div class="progress">
-                  <i class="progress__icon"></i>
-                </div>
-              </li>
-              <li class="home-modal__progress-item">
-                <label class="home-modal__progress-label">Learning rate:</label>
-                <div class="progress">
-                  <i class="progress__icon"></i>
-                </div>
-              </li>
-              <li class="home-modal__progress-item">
-                <label class="home-modal__progress-label">Iterations:</label>
-                <div class="progress">
-                  <i class="progress__icon"></i>
-                </div>
-              </li>
-            </ul>
-            <div class="home-modal__subheader">
-              <h5 class="home-modal__subtitle">PCA</h5>
-            </div>
-            <ul class="home-modal__progress-list">
-              <li class="home-modal__progress-item">
-                <label class="home-modal__progress-label">Components:</label>
-                <div class="progress">
-                  <i class="progress__icon"></i>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="home-modal__footer text-right">
-      <button class="home-modal__button cancel">RESET</button>
-      <button class="home-modal__button">CREATE GALAXY</button>
-    </div>
-  </div>
-  <!-- end of Article Operation Link -->
 
   <!-- Article Operation button -->
   <div id="operation-analyse-terms" class="home-modal__container modal">
