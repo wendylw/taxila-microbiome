@@ -70,17 +70,17 @@
 				<h1 class="analysis__title">Analysis</h1>
 				<ul class="row">
 					<li class="col-4">
-						<div class="analysis__item">
+						<div class="analysis__item" name="operation-galaxy">
 							<span>Create Galaxy</span>
 						</div>
 					</li>
 					<li class="col-4">
-						<div class="analysis__item">
+						<div class="analysis__item" name="operation-analyse-terms">
 							<span>Analyse Term</span>
 						</div>
 					</li>
 					<li class="col-4">
-						<div class="analysis__item">
+						<div class="analysis__item" name="operation-analyse-sentiment">
 							<span>Analyse Sentiment</span>
 						</div>
 					</li>
@@ -661,16 +661,16 @@
   </div>
 
   <!-- Article Operation Link -->
-  <div id="operation-galaxy" class="home-modal__container">
-    <div class="home-modal__header">
-      <h3 class="home-modal__title text-middle">CREATE GALAXY</h3>
+  <div id="operation-galaxy" class="analysis-side__container">
+    <div class="analysis-side__header">
+      <h3 class="analysis-side__title text-middle">CREATE GALAXY</h3>
     </div>
-    <div class="home-modal__body">
-      <section class="home-modal__section">
-        <div class="home-modal__subcontainer">
+    <div class="analysis-side__body">
+      <section class="analysis-side__section">
+        <div class="analysis-side__subcontainer">
           <div class="date-range">
             <div class="date-range__item">
-              <label class="home-modal__label">Start Date</label>
+              <label class="analysis-side__label">Start Date</label>
               <div class="date-picker">
                 <span class="date-picker__text text-middle">dd/mm/yyyy</span>
                 <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
@@ -680,19 +680,19 @@
               <span>--</span>
             </div>
             <div class="date-range__item">
-              <label class="home-modal__label">End Date</label>
+              <label class="analysis-side__label">End Date</label>
               <div class="date-picker">
                 <span class="date-picker__text text-middle">dd/mm/yyyy</span>
                 <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
               </div>
             </div>
           </div>
-          <p class="home-modal__inline-text">* If you don't select date, then the complete date will be used</p>
+          <p class="analysis-side__inline-text">* If you don't select date, then the complete date will be used</p>
         </div>
 
-        <div class="home-modal__subheader">
-          <label class="home-modal__label">Channel Selection</label>
-          <button class="home-modal__select-all" name="channel-tags-1">Select All</button>
+        <div class="analysis-side__subheader">
+          <label class="analysis-side__label">Channel Selection</label>
+          <button class="analysis-side__select-all" name="channel-tags-1">Select All</button>
         </div>
         <div>
           <ul class="tags" id="channel-tags-1">
@@ -711,17 +711,17 @@
             <li class="tags__item">Social Media</li>
             <li class="tags__item">Startups investors</li>
           </ul>
-          <p class="home-modal__block-text">*Separate galaxies will be created for each of the selected channels and will appear in the respective channels.</p>
+          <p class="analysis-side__block-text">*Separate galaxies will be created for each of the selected channels and will appear in the respective channels.</p>
         </div>
       </section>
 
-      <section class="home-modal__section">
-        <div class="home-modal__subcontainer">
-          <label class="home-modal__label">Article Details</label>
+      <section class="analysis-side__section">
+        <div class="analysis-side__subcontainer">
+          <label class="analysis-side__label">Article Details</label>
           <div class="row">
             <div class="col-6">
-              <div class="home-modal__subheader">
-                <h5 class="home-modal__subtitle">Article Title</h5>
+              <div class="analysis-side__subheader">
+                <h5 class="analysis-side__subtitle">Article Title</h5>
               </div>
               <div>
                 <input type="text">
@@ -735,61 +735,61 @@
               </div>
             </div>
             <div class="col-6">
-              <div class="home-modal__subheader">
-                <h5 class="home-modal__subtitle">Article Description</h5>
+              <div class="analysis-side__subheader">
+                <h5 class="analysis-side__subtitle">Article Description</h5>
               </div>
-              <textarea class="home-modal__textarea"></textarea>
+              <textarea class="analysis-side__textarea"></textarea>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="home-modal__section">
-        <div class="home-modal__subcontainer row">
+      <section class="analysis-side__section">
+        <div class="analysis-side__subcontainer row">
           <div class="col-6">
-            <label class="home-modal__label">Galaxy Attributes</label>
-            <div class="home-modal__subheader">
-              <h5 class="home-modal__subtitle">Following items will used in Galaxy page</h5>
+            <label class="analysis-side__label">Galaxy Attributes</label>
+            <div class="analysis-side__subheader">
+              <h5 class="analysis-side__subtitle">Following items will used in Galaxy page</h5>
             </div>
-            <ul class="home-modal__add-list">
-              <li class="home-modal__add-item active">+ Article Source</li>
-              <li class="home-modal__add-item active">+ Publication Year</li>
-              <li class="home-modal__add-item active">+ Month & Year</li>
-              <li class="home-modal__add-item">Title</li>
-              <li class="home-modal__add-item active">+ Country</li>
+            <ul class="analysis-side__add-list">
+              <li class="analysis-side__add-item active">+ Article Source</li>
+              <li class="analysis-side__add-item active">+ Publication Year</li>
+              <li class="analysis-side__add-item active">+ Month & Year</li>
+              <li class="analysis-side__add-item">Title</li>
+              <li class="analysis-side__add-item active">+ Country</li>
             </ul>
           </div>
           <div class="col-6">
-            <label class="home-modal__label">Galaxy Configuration</label>
-            <div class="home-modal__subheader">
-              <h5 class="home-modal__subtitle">TSNE</h5>
+            <label class="analysis-side__label">Galaxy Configuration</label>
+            <div class="analysis-side__subheader">
+              <h5 class="analysis-side__subtitle">TSNE</h5>
             </div>
-            <ul class="home-modal__progress-list">
-              <li class="home-modal__progress-item">
-                <label class="home-modal__progress-label">Perplexity:</label>
+            <ul class="analysis-side__progress-list">
+              <li class="analysis-side__progress-item">
+                <label class="analysis-side__progress-label">Perplexity:</label>
                 <div class="progress">
                   <i class="progress__icon"></i>
                 </div>
               </li>
-              <li class="home-modal__progress-item">
-                <label class="home-modal__progress-label">Learning rate:</label>
+              <li class="analysis-side__progress-item">
+                <label class="analysis-side__progress-label">Learning rate:</label>
                 <div class="progress">
                   <i class="progress__icon"></i>
                 </div>
               </li>
-              <li class="home-modal__progress-item">
-                <label class="home-modal__progress-label">Iterations:</label>
+              <li class="analysis-side__progress-item">
+                <label class="analysis-side__progress-label">Iterations:</label>
                 <div class="progress">
                   <i class="progress__icon"></i>
                 </div>
               </li>
             </ul>
-            <div class="home-modal__subheader">
-              <h5 class="home-modal__subtitle">PCA</h5>
+            <div class="analysis-side__subheader">
+              <h5 class="analysis-side__subtitle">PCA</h5>
             </div>
-            <ul class="home-modal__progress-list">
-              <li class="home-modal__progress-item">
-                <label class="home-modal__progress-label">Components:</label>
+            <ul class="analysis-side__progress-list">
+              <li class="analysis-side__progress-item">
+                <label class="analysis-side__progress-label">Components:</label>
                 <div class="progress">
                   <i class="progress__icon"></i>
                 </div>
@@ -799,64 +799,64 @@
         </div>
       </section>
     </div>
-    <div class="home-modal__footer text-right">
-      <button class="home-modal__button cancel">RESET</button>
-      <button class="home-modal__button">CREATE GALAXY</button>
+    <div class="analysis-side__footer text-right">
+      <button class="analysis-side__button cancel">RESET</button>
+      <button class="analysis-side__button">CREATE GALAXY</button>
     </div>
   </div>
   <!-- end of Article Operation Link -->
 
   <!-- Article Operation button -->
-  <div id="operation-analyse-terms" class="home-modal__container modal">
-    <div class="home-modal__header">
-      <h3 class="home-modal__title text-middle">ANALYSE TERMS</h3>
+  <div id="operation-analyse-terms" class="analysis-side__container">
+    <div class="analysis-side__header">
+      <h3 class="analysis-side__title text-middle">ANALYSE TERMS</h3>
     </div>
-    <div class="home-modal__body">
-      <section class="home-modal__section">
-        <div class="home-modal__subheader">
-          <label class="home-modal__label">Channel Selection</label>
+    <div class="analysis-side__body">
+      <section class="analysis-side__section">
+        <div class="analysis-side__subheader">
+          <label class="analysis-side__label">Channel Selection</label>
         </div>
-        <div class="home-modal__form">
+        <div class="analysis-side__form">
           <div class="row">
             <div class="col-6">
               <div class="media-middle">
-                <label class="home-modal__form-label">X-Axis Name:</label>
+                <label class="analysis-side__form-label">X-Axis Name:</label>
               </div>
-              <div class="home-modal__form-input media-middle">
+              <div class="analysis-side__form-input media-middle">
                 <input type="text">
               </div>
             </div>
             <div class="col-6">
               <div class="media-middle">
-                <label class="home-modal__form-label">Y-Axis Name:</label>
+                <label class="analysis-side__form-label">Y-Axis Name:</label>
               </div>
-              <div class="home-modal__form-input media-middle">
+              <div class="analysis-side__form-input media-middle">
                 <input type="text">
               </div>
             </div>
           </div>
-          <div class="home-modal__form-item">
+          <div class="analysis-side__form-item">
             <div class="media-top">
-              <label class="home-modal__form-label">Select X-Axis Channels</label>
+              <label class="analysis-side__form-label">Select X-Axis Channels</label>
             </div>
             <div class="media-top">
-              <p class="home-modal__form-content">Animal Health, Media coverage, Microbiome</p>
+              <p class="analysis-side__form-content">Animal Health, Media coverage, Microbiome</p>
             </div>
           </div>
-          <div class="home-modal__form-item">
+          <div class="analysis-side__form-item">
             <div class="media-top">
-              <label class="home-modal__form-label">Select Y-Axis Channels</label>
+              <label class="analysis-side__form-label">Select Y-Axis Channels</label>
             </div>
             <div class="media-top">
-              <ul class="home-modal__add-list">
-                <li class="home-modal__add-item">+ Add Channels</li>
+              <ul class="analysis-side__add-list">
+                <li class="analysis-side__add-item">+ Add Channels</li>
               </ul>
             </div>
           </div>
         </div>
         <div>
-          <div class="home-modal__select-all-container">
-            <button class="home-modal__select-all" name="channel-tags-2">Select All</button>
+          <div class="analysis-side__select-all-container">
+            <button class="analysis-side__select-all" name="channel-tags-2">Select All</button>
           </div>
           <ul class="tags" id="channel-tags-2">
             <li class="tags__item">Analytics</li>
@@ -875,11 +875,11 @@
             <li class="tags__item">Startups investors</li>
           </ul>
         </div>
-        <div class="home-modal__subcontainer">
+        <div class="analysis-side__subcontainer">
           <div class="flex flex-middle flex-space-between">
-            <div class="home-modal__range-detail">
-              <label class="home-modal__label">Time Range Details</label>
-              <h5 class="home-modal__subtitle">Common (Both for X-Axis & Y-Axis):</h5>
+            <div class="analysis-side__range-detail">
+              <label class="analysis-side__label">Time Range Details</label>
+              <h5 class="analysis-side__subtitle">Common (Both for X-Axis & Y-Axis):</h5>
             </div>
             <div class="switch-button text-middle">
               <i class="switch-button__icon"></i>
@@ -888,7 +888,7 @@
 
           <div class="date-range">
             <div class="date-range__item">
-              <label class="home-modal__label">Start Date</label>
+              <label class="analysis-side__label">Start Date</label>
               <div class="date-picker">
                 <span class="date-picker__text text-middle">dd/mm/yyyy</span>
                 <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
@@ -898,24 +898,24 @@
               <span>--</span>
             </div>
             <div class="date-range__item">
-              <label class="home-modal__label">End Date</label>
+              <label class="analysis-side__label">End Date</label>
               <div class="date-picker">
                 <span class="date-picker__text text-middle">dd/mm/yyyy</span>
                 <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
               </div>
             </div>
           </div>
-          <p class="home-modal__inline-text">* If you don't select date, then the complete date will be used</p>
+          <p class="analysis-side__inline-text">* If you don't select date, then the complete date will be used</p>
         </div>
       </section>
 
-      <section class="home-modal__section">
-        <div class="home-modal__subcontainer">
-          <label class="home-modal__label">Article Details</label>
+      <section class="analysis-side__section">
+        <div class="analysis-side__subcontainer">
+          <label class="analysis-side__label">Article Details</label>
           <div class="row">
             <div class="col-6">
-              <div class="home-modal__subheader">
-                <h5 class="home-modal__subtitle">Article Title</h5>
+              <div class="analysis-side__subheader">
+                <h5 class="analysis-side__subtitle">Article Title</h5>
               </div>
               <div>
                 <input type="text">
@@ -929,91 +929,91 @@
               </div>
             </div>
             <div class="col-6">
-              <div class="home-modal__subheader">
-                <h5 class="home-modal__subtitle">Article Description</h5>
+              <div class="analysis-side__subheader">
+                <h5 class="analysis-side__subtitle">Article Description</h5>
               </div>
-              <textarea class="home-modal__textarea"></textarea>
+              <textarea class="analysis-side__textarea"></textarea>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="home-modal__section">
-        <div class="home-modal__subcontainer">
-          <label class="home-modal__label">Terms Inclusion / Exclusion</label>
-          <div class="home-modal__term-clude">
-            <div class="home-modal__form-item">
-              <h5 class="home-modal__subtitle">Terms to Include:</h5>
-              <ul class="home-modal__form-button-list">
-                <li class="home-modal__form-button-item">
-                  <button class="home-modal__form-button active">Choose Files</button>
+      <section class="analysis-side__section">
+        <div class="analysis-side__subcontainer">
+          <label class="analysis-side__label">Terms Inclusion / Exclusion</label>
+          <div class="analysis-side__term-clude">
+            <div class="analysis-side__form-item">
+              <h5 class="analysis-side__subtitle">Terms to Include:</h5>
+              <ul class="analysis-side__form-button-list">
+                <li class="analysis-side__form-button-item">
+                  <button class="analysis-side__form-button active">Choose Files</button>
                 </li>
-                <li class="home-modal__form-button-item">
-                  <button class="home-modal__form-button">No file chosen</button>
+                <li class="analysis-side__form-button-item">
+                  <button class="analysis-side__form-button">No file chosen</button>
                 </li>
               </ul>
             </div>
-            <div class="home-modal__term-clude">
+            <div class="analysis-side__term-clude">
               <div class="media-middle text-right">
-                <h5 class="home-modal__subtitle">Or</h5>
+                <h5 class="analysis-side__subtitle">Or</h5>
               </div>
-              <div class="media-middle home-modal__input">
+              <div class="media-middle analysis-side__input">
                 <input type="text" placeholder="Enter Terms">
               </div>
             </div>
           </div>
 
-          <div class="home-modal__term-clude">
-            <div class="home-modal__form-item">
-              <h5 class="home-modal__subtitle">Terms to exclude:</h5>
-              <ul class="home-modal__form-button-list">
-                <li class="home-modal__form-button-item">
-                  <button class="home-modal__form-button active">Choose Files</button>
+          <div class="analysis-side__term-clude">
+            <div class="analysis-side__form-item">
+              <h5 class="analysis-side__subtitle">Terms to exclude:</h5>
+              <ul class="analysis-side__form-button-list">
+                <li class="analysis-side__form-button-item">
+                  <button class="analysis-side__form-button active">Choose Files</button>
                 </li>
-                <li class="home-modal__form-button-item">
-                  <button class="home-modal__form-button">No file chosen</button>
+                <li class="analysis-side__form-button-item">
+                  <button class="analysis-side__form-button">No file chosen</button>
                 </li>
               </ul>
             </div>
-            <div class="home-modal__term-clude">
+            <div class="analysis-side__term-clude">
               <div class="media-middle text-right">
-                <h5 class="home-modal__subtitle">Or</h5>
+                <h5 class="analysis-side__subtitle">Or</h5>
               </div>
-              <div class="media-middle home-modal__input">
+              <div class="media-middle analysis-side__input">
                 <input type="text"  placeholder="Enter Terms">
               </div>
             </div>
           </div>
         </div>
-        <p class="home-modal__block-text term-clude">*File and text-input should contain the terms separated by newline(\n) / Return</p>
+        <p class="analysis-side__block-text term-clude">*File and text-input should contain the terms separated by newline(\n) / Return</p>
       </section>
     </div>
-    <div class="home-modal__footer text-right">
-      <button class="home-modal__button cancel">RESET</button>
-      <button class="home-modal__button">ANALYSE TERMS</button>
+    <div class="analysis-side__footer text-right">
+      <button class="analysis-side__button cancel">RESET</button>
+      <button class="analysis-side__button">ANALYSE TERMS</button>
     </div>
   </div>
   <!-- end of Article Operation button -->
 
   <!-- Article Operation button -->
-  <div id="operation-analyse-sentiment" class="home-modal__container modal">
-    <div class="home-modal__header">
-      <h3 class="home-modal__title text-middle">ANALYSE SENTIMENT</h3>
+  <div id="operation-analyse-sentiment" class="analysis-side__container modal">
+    <div class="analysis-side__header">
+      <h3 class="analysis-side__title text-middle">ANALYSE SENTIMENT</h3>
     </div>
-    <div class="home-modal__body">
-      <section class="home-modal__tab-section">
+    <div class="analysis-side__body">
+      <section class="analysis-side__tab-section">
         <ul class="tab">
           <li class="tab__item active" name="tab-channel">Multi-Channel / Single Channel</li>
           <li class="tab__item" name="tab-articles">Seletec Articles</li>
         </ul>
       </section>
-      <section class="home-modal__section tab-pane active" id="tab-channel">
-        <div class="home-modal__subheader">
-          <label class="home-modal__label">Channel Selection</label>
-          <button class="home-modal__select-all" name="channel-tags-3">Select All</button>
+      <section class="analysis-side__section tab-pane active" id="tab-channel">
+        <div class="analysis-side__subheader">
+          <label class="analysis-side__label">Channel Selection</label>
+          <button class="analysis-side__select-all" name="channel-tags-3">Select All</button>
         </div>
         <div>
-          <div class="home-modal__select-all-container">
+          <div class="analysis-side__select-all-container">
           </div>
           <ul class="tags" name="channel-tags-3">
             <li class="tags__item">Analytics</li>
@@ -1032,37 +1032,37 @@
             <li class="tags__item">Startups investors</li>
           </ul>
         </div>
-        <div class="home-modal__subheader">
-          <label class="home-modal__label">Algorithm & Time Selection</label>
+        <div class="analysis-side__subheader">
+          <label class="analysis-side__label">Algorithm & Time Selection</label>
         </div>
         <div class="row">
           <div class="col-8">
-            <h5 class="home-modal__subtitle">Select Algorithm:</h5>
-            <div class="home-modal__dropdown">
-              <div class="home-modal__dropdown-button">
+            <h5 class="analysis-side__subtitle">Select Algorithm:</h5>
+            <div class="analysis-side__dropdown">
+              <div class="analysis-side__dropdown-button">
                 <select>
                   <option value="">Vader Sentiment</option>
                   <option value="">Filter by TIME LINE</option>
                   <option value="">Filter by POPULARITY</option>
                 </select>
-                <img class="home-modal__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
+                <img class="analysis-side__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
               </div>
             </div>
-            <div class="home-modal__text-container">
-              <p><a class="home-modal__link">VADER (Valence Aware Dictionary and sEntiment Reasoner)</a> is a lexicon and rule-based sentiment analysis</p>
+            <div class="analysis-side__text-container">
+              <p><a class="analysis-side__link">VADER (Valence Aware Dictionary and sEntiment Reasoner)</a> is a lexicon and rule-based sentiment analysis</p>
               <p>*If you don't select date, then last seven(7) day data will</p>
             </div>
           </div>
           <div class="col-4">
             <div>
-              <label class="home-modal__label">Start Date</label>
+              <label class="analysis-side__label">Start Date</label>
               <div class="date-picker">
                 <span class="date-picker__text text-middle">dd/mm/yyyy</span>
                 <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
               </div>
             </div>
             <div>
-              <label class="home-modal__label">End Date</label>
+              <label class="analysis-side__label">End Date</label>
               <div class="date-picker">
                 <span class="date-picker__text text-middle">dd/mm/yyyy</span>
                 <img class="date-picker__calendar text-middle" src="./img/calendar.png" alt="">
@@ -1071,96 +1071,96 @@
           </div>
         </div>
       </section>
-      <section class="home-modal__section tab-pane" id="tab-articles">
-        <div class="home-modal__subheader">
-          <label class="home-modal__label">Selected Article List</label>
-          <button class="home-modal__delete">Delete</button>
+      <section class="analysis-side__section tab-pane" id="tab-articles">
+        <div class="analysis-side__subheader">
+          <label class="analysis-side__label">Selected Article List</label>
+          <button class="analysis-side__delete">Delete</button>
         </div>
-        <div class="home-modal__article-list-container">
-          <ul class="home-modal__article-list">
+        <div class="analysis-side__article-list-container">
+          <ul class="analysis-side__article-list">
             <li>
-              <div class="media-top home-modal__article-label">
+              <div class="media-top analysis-side__article-label">
                 <i class="text-middle checkbox">
                   <input type="checkbox">
                 </i>
               </div>
-              <div class="media-top home-modal__article-content">
+              <div class="media-top analysis-side__article-content">
                 <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
               </div>
             </li>
             <li>
-              <div class="media-top home-modal__article-label">
+              <div class="media-top analysis-side__article-label">
                 <i class="text-middle checkbox">
                   <input type="checkbox">
                 </i>
               </div>
-              <div class="media-top home-modal__article-content">
+              <div class="media-top analysis-side__article-content">
                 <p>Researchers find, correct a cause of rhino infertility. Gut microbes in the female southern white rhino metabolize phytoestrogens…</p>
               </div>
             </li>
             <li>
-              <div class="media-top home-modal__article-label">
+              <div class="media-top analysis-side__article-label">
                 <i class="text-middle checkbox">
                   <input type="checkbox">
                 </i>
               </div>
-              <div class="media-top home-modal__article-content">
+              <div class="media-top analysis-side__article-content">
                 <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
               </div>
             </li>
             <li>
-              <div class="media-top home-modal__article-label">
+              <div class="media-top analysis-side__article-label">
                 <i class="text-middle checkbox">
                   <input type="checkbox">
                 </i>
               </div>
-              <div class="media-top home-modal__article-content">
+              <div class="media-top analysis-side__article-content">
                 <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
               </div>
             </li>
             <li>
-              <div class="media-top home-modal__article-label">
+              <div class="media-top analysis-side__article-label">
                 <i class="text-middle checkbox">
                   <input type="checkbox">
                 </i>
               </div>
-              <div class="media-top home-modal__article-content">
+              <div class="media-top analysis-side__article-content">
                 <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
               </div>
             </li>
             <li>
-              <div class="media-top home-modal__article-label">
+              <div class="media-top analysis-side__article-label">
                 <i class="text-middle checkbox">
                   <input type="checkbox">
                 </i>
               </div>
-              <div class="media-top home-modal__article-content">
+              <div class="media-top analysis-side__article-content">
                 <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
               </div>
             </li>
           </ul>
         </div>
         <div>
-          <h5 class="home-modal__subtitle">Select Algorithm:</h5>
-          <div class="home-modal__dropdown">
-            <div class="home-modal__dropdown-button">
+          <h5 class="analysis-side__subtitle">Select Algorithm:</h5>
+          <div class="analysis-side__dropdown">
+            <div class="analysis-side__dropdown-button">
               <select>
                 <option value="">Vader Sentiment</option>
                 <option value="">Filter by TIME LINE</option>
                 <option value="">Filter by POPULARITY</option>
               </select>
-              <img class="home-modal__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
+              <img class="analysis-side__dropdown-icon" src="./img/header-right-arrow-blue.png" alt="">
             </div>
           </div>
-          <div class="home-modal__text-container">
-            <p><a class="home-modal__link">VADER (Valence Aware Dictionary and sEntiment Reasoner)</a> is a lexicon and rule-based sentiment analysis</p>
+          <div class="analysis-side__text-container">
+            <p><a class="analysis-side__link">VADER (Valence Aware Dictionary and sEntiment Reasoner)</a> is a lexicon and rule-based sentiment analysis</p>
           </div>
         </div>
       </section>
     </div>
-    <div class="home-modal__footer text-right">
-      <button class="home-modal__button cancel">RESET</button>
-      <button class="home-modal__button">ANALYSE SENTIMENT</button>
+    <div class="analysis-side__footer text-right">
+      <button class="analysis-side__button cancel">RESET</button>
+      <button class="analysis-side__button">ANALYSE SENTIMENT</button>
     </div>
   </div>
   <!-- end of Article Operation button -->

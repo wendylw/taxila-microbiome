@@ -190,4 +190,11 @@ function showDropback() {
       $('.change-password__content').toggle();
     }
   });
+
+  $('.analysis__item').on('click', function() {
+    const id = $(this).attr('name');
+
+    $('#' + id).toggleClass('active');
+    $('side-backdrop').toggleClass('analysis-backdrop');
+  });
 })();

@@ -40,6 +40,7 @@
 
 	&__title {
 		padding: 15px;
+		margin: 10px 0;
 		font-size: 48px;
 		color: $theme-color-4;
 	}
@@ -71,7 +72,7 @@
 	}
 }
 
-.home-modal {
+.analysis-side {
   &__container {
 		position: absolute;
 		top: 64px;
