@@ -522,6 +522,11 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
   &.side-backdrop__subnav {
     left: 662px;
   }
+
+  &.analysis-backdrop {
+    display: block;
+    top: 64px;
+  }
 }
 
 .toggle-side {

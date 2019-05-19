@@ -195,6 +195,18 @@ function showDropback() {
     const id = $(this).attr('name');
 
     $('#' + id).toggleClass('active');
-    $('side-backdrop').toggleClass('analysis-backdrop');
+    $('.side-backdrop').toggleClass('analysis-backdrop');
+  });
+
+  $('body').on('click', '.analysis-backdrop', function() {
+    const $analysisItem = $('.analysis__item');
+
+    $('.side-backdrop').toggleClass('analysis-backdrop');
+
+    $analysisItem.each(function() {
+      const id = $(this).attr('name');
+
+      $('#' + id).removeClass('active');
+    });
   });
 })();

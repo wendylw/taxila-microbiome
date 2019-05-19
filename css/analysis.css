@@ -12,6 +12,7 @@
   .analysis .col-4 {
     padding: 15px; }
   .analysis__item {
+    display: block;
     position: relative;
     padding: 12%;
     height: 170px;
