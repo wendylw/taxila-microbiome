@@ -113,6 +113,7 @@
     }
 
     .tab-pane {
+      display: none;
       position: absolute;
       left: 0;
       right: 0;
@@ -123,6 +124,10 @@
       margin: auto;
       max-width: 1360px;
       border-radius: 15px;
+
+      &.active {
+        display: block;
+      }
     }
 
     li {
@@ -205,5 +210,16 @@
     width: 12px;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
+  }
+
+  &__content {
+    position: absolute;
+    top: 72px;
+    bottom: 0;
+    width: 100%;
+
+    img {
+      max-width: 100%;
+    }
   }
 }

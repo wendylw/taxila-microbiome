@@ -439,6 +439,41 @@ body {
   }
 }
 
+.chart {
+  &__back-button {
+    display: inline-block;
+    border: 0;
+    padding: 0 6px;
+    background-color: transparent;
+    width: 26px;
+
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    img {
+      vertical-align: top;
+      max-width: 100%;
+    }
+  }
+
+  &__page-title {
+    display: table-cell;
+    vertical-align: top;
+    min-width: 230px;
+    color: $theme-color-1;
+    line-height: 2em;
+    transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+
+    h3 {
+      vertical-align: top;
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 18px;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .grid-item {
     width: 33.333333%;
