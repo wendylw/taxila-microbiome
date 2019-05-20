@@ -58,7 +58,7 @@
   border-radius: 6px; }
 
 .detail-pane {
-  margin: auto;
+  margin: auto auto 20px;
   background-color: #fff;
   max-width: 1300px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13); }
@@ -68,7 +68,18 @@
     bottom: 0;
     padding: 104px 40px 40px;
     width: 100%;
-    background-color: #F4F5F8; }
+    background-color: #F4F5F8;
+    overflow-y: auto; }
+  .detail-pane__remove {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 8px 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/delete.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center; }
   .detail-pane__header {
     padding: 20px 30px 12px;
     border-bottom: 1px solid #e9eaea; }

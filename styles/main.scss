@@ -344,21 +344,16 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 
 .dropdown {
   display: inline-block;
-  width: 50%;
   max-width: 420px;
 
   &__button {
     display: inline-block;
-    padding: 10px;
-    border: 1px solid $theme-color-2;
-    width: 100%;
+    border: 0;
     border-radius: 4px;
+  }
 
-    img {
-      float: right;
-      margin: 4px 0;
-      max-width: 14px;
-    }
+  &:hover .dropdown-menu {
+    display: block;
   }
 }
 
@@ -1307,6 +1302,7 @@ body{
     color: $light-gray;
 
     p {
+      font-size: $small-font;
       line-height: 1.5em;
     }
   }
@@ -1356,6 +1352,10 @@ body{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  &__operation-top {
+    margin: 20px 0;
   }
 }
 
@@ -1490,7 +1490,7 @@ body{
   .owl-carousel {
     position: relative;
     float: right;
-    margin: 24px auto;
+    margin: 20px auto;
     padding: 0 40px;
     max-width: 765px;
   }
@@ -1561,7 +1561,7 @@ body{
 
 .geo-trend-content {
   position: absolute;
-  top: 253px;
+  top: 290px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1615,12 +1615,6 @@ body{
       margin-left: 5px;
       font-size: $small-font;
     }
-  }
-}
-
-.time-line {
-  &__number {
-    margin: 40px 0;
   }
 }
 

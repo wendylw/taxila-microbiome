@@ -80,8 +80,23 @@
 						<span>EspaceNet Patent Search</span>
 					</li>
 					<li class="filter__item figures">
-						<span class="filter__text">Figures</span>
-						<img class="filter__icon" src="./img/news-comment-expand-y.png">
+            <div class="dropdown">
+              <div class="dropdown__button">
+                <span class="filter__text">Figures</span>
+                <img class="filter__icon" src="./img/news-comment-expand-y.png">
+              </div>
+
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__item">
+                    <a>Download</a>
+                  </li>
+                  <li class="dropdown-menu__item">
+                    <a>Download with Annotations</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 					</li>
 					<li class="filter__item presentation">
 						<span class="filter__text">Presentation</span>
@@ -1130,7 +1145,7 @@
 
   <div class="article-side">
     <div class="article-side__operation-bar flex flex-middle flex-space-between">
-      <div>
+      <div class="article-side__operation-top">
         <button>
           <img src="./img/ok.png">
         </button>
