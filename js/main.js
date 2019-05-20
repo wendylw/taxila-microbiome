@@ -233,4 +233,22 @@ function showDropback() {
     $('.filter ~ .news-content').css('top', '180px');
    }
   });
+
+  $('.news-content__remove').on('click', function(e) {
+    e.stopPropagation();
+
+    $('.article-delete').show();
+  });
+
+  $('.article-delete__undo').on('click', function(e) {
+    e.stopPropagation();
+
+    $('.article-delete').hide();
+  });
+
+  $('.message__close-button').on('click', function(e) {
+    e.stopPropagation();
+
+    $('.message').hide();
+  });
 })();
