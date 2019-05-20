@@ -1465,7 +1465,7 @@ body{
   max-width: 1440px;
 
   & ~ .news-content {
-    top: 290px;
+    top: 330px;
   }
 
   .container {
@@ -1490,7 +1490,7 @@ body{
   .owl-carousel {
     position: relative;
     float: right;
-    margin: 0 auto;
+    margin: 24px auto;
     padding: 0 40px;
     max-width: 765px;
   }
@@ -1549,9 +1549,13 @@ body{
 
   &__number {
     display: block;
-    margin: 5px 0 20px;
+    margin: 24px 0 20px;
     font-size: 60px;
     font-weight: 600;
+  }
+
+  &__time-setting {
+    margin: 10px 0;
   }
 }
 
@@ -1611,6 +1615,12 @@ body{
       margin-left: 5px;
       font-size: $small-font;
     }
+  }
+}
+
+.time-line {
+  &__number {
+    margin: 40px 0;
   }
 }
 
