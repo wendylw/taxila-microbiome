@@ -142,6 +142,14 @@
     .file-container {
       margin-top: 16px;
     }
+
+    .tab-pane {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
   }
 
   &__section {
@@ -198,8 +206,11 @@
   }
 
   &__body {
+    position: absolute;
+    width: 100%;
+    top: 54px;
+    bottom: 80px;
     padding-bottom: 80px;
-    max-height: 600px;
     overflow-y: auto;
   }
 
@@ -326,14 +337,14 @@
     width: 66%;
   }
 
-  &__term-clude .home-modal__subtitle,
+  &__term-clude .analysis-side__subtitle,
   &__form-button-list,
   &__form-button-item {
     display: inline-block;
     margin: 0 5px;
   }
 
-  &__term-clude .home-modal__subtitle {
+  &__term-clude .analysis-side__subtitle {
     min-width: 100px;
   }
 
@@ -362,7 +373,7 @@
     margin-bottom: 14px;
   }
 
-  &__term-clude .home-modal__input {
+  &__term-clude .analysis-side__input {
     padding-left: 10px;
     width: 100%;
   }
