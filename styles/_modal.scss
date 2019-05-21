@@ -354,9 +354,12 @@
     position: relative;
     left: 50%;
     display: inline-block;
+    border: 0;
     border-bottom: 1px solid $theme-color-2;
     margin: 0 auto 20px;
-    width: 90px;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
 
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -364,9 +367,9 @@
     -ms-transform: translateX(-50%);
 
     span {
-      position: absolute;
       display: block;
       padding: 2px 0;
+      cursor: pointer;
     }
 
     input {
@@ -418,6 +421,24 @@
     color: $theme-color-2;
     font-weight: bold;
   }
+
+  &__hint {
+    display: none;
+    margin: 25px 0;
+    font-weight: bold;
+    color: $theme-color-2;
+
+    img {
+      margin-left: -24px;
+      max-width: 14px;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+    }
+
+    span {
+      margin: 0 10px;
+    }
+  }
 }
 
 #operation-galaxy {
@@ -460,10 +481,34 @@
   }
 }
 
-#add-new-resource .home-modal__body {
-  padding-bottom: 250px;
-  max-height: 700px;
-  overflow-y: auto;
+#add-new-resource {
+  .home-modal__body {
+    padding-bottom: 250px;
+    max-height: 700px;
+    overflow-y: auto;
+  }
+
+  .home-modal__button.finish {
+    display: none;
+  }
+
+  &.home-modal__container.batch-upload {
+    .home-modal__section-title,
+    .home-modal__batch-upload-button,
+    .home-modal__button.add,
+    .home-modal__divider {
+      display: none;
+    }
+
+    .add-new-resource__hint {
+      display: block;
+      cursor: pointer;
+    }
+
+    .home-modal__button.finish {
+      display: inline-block;
+    }
+  }
 }
 
 .patents-modal {

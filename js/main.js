@@ -78,6 +78,11 @@ function showDropback() {
       $('.side-backdrop').removeClass('user-side__backdrop');
     }
 
+    if ($('.side-backdrop').hasClass('geo-articles__backdrop')) {
+      $('.geo-articles').removeClass('active');
+      $('.side-backdrop').removeClass('geo-articles__backdrop');
+    }
+
     if ($('.side-backdrop').hasClass('article-side__backdrop')) {
       $('.article-side').removeClass('active');
       $('.side-backdrop').removeClass('article-side__backdrop');
@@ -265,5 +270,14 @@ function showDropback() {
 
     $('#' + id).remove();
     $(this).remove();
+  });
+
+  $('.map').on('click', function() {
+    $('.geo-articles').addClass('active');
+    $('.side-backdrop').addClass('geo-articles__backdrop');
+  });
+
+  $('.home-modal__batch-upload-button').on('click', function() {
+    $('#add-new-resource').addClass('batch-upload');
   });
 })();

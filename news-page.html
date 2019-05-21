@@ -1220,16 +1220,19 @@
     <div class="home-modal__body">
       <section>
         <h3 class="home-modal__section-title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
-        <div class="home-modal__batch-upload-button text-center">
+        <button class="home-modal__batch-upload-button text-center">
           <span>Batch Upload</span>
-          <input type="file">
-        </div>
+        </button>
         <i class="home-modal__divider text-center">
           <span>Or</span>
         </i>
         <div>
           <h3 class="home-modal__section-title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
           <form class="add-new-resource__container">
+            <div class="add-new-resource__hint">
+              <img class="text-middle" src="./img/side-triangle.png" alt="">
+              <span class="text-middle">Please map column names with respective fields</span>
+            </div>
             <div class="add-new-resource__form-group">
               <input type="text" placeholder="Enter Name">
             </div>
@@ -1268,7 +1271,7 @@
     <div class="home-modal__footer text-right">
       <button class="home-modal__button-link">CANCEL</button>
       <button class="home-modal__button cancel">RESET</button>
-      <button class="home-modal__button">ADD</button>
+      <button class="home-modal__button add">ADD</button>
       <div class="home-modal__footer-hint-container">
         <span class="home-modal__footer-hint">Total Uploaded: 28</span>
         <span class="home-modal__footer-hint">Remaining Uploads: Unlimited</span>

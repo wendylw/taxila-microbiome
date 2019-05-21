@@ -714,16 +714,19 @@
     <div class="home-modal__body">
       <section>
         <h3 class="home-modal__section-title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
-        <div class="home-modal__batch-upload-button text-center">
+        <button class="home-modal__batch-upload-button text-center">
           <span>Batch Upload</span>
-          <input type="file">
-        </div>
+        </button>
         <i class="home-modal__divider text-center">
           <span>Or</span>
         </i>
         <div>
           <h3 class="home-modal__section-title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
           <form class="add-new-resource__container">
+            <div class="add-new-resource__hint">
+              <img class="text-middle" src="./img/side-triangle.png" alt="">
+              <span class="text-middle">Please map column names with respective fields</span>
+            </div>
             <div class="add-new-resource__form-group">
               <input type="text" placeholder="Enter Name">
             </div>
@@ -762,7 +765,8 @@
     <div class="home-modal__footer text-right">
       <button class="home-modal__button-link">CANCEL</button>
       <button class="home-modal__button cancel">RESET</button>
-      <button class="home-modal__button">ADD</button>
+      <button class="home-modal__button add">ADD</button>
+      <button class="home-modal__button finish">FINISH</button>
       <div class="home-modal__footer-hint-container">
         <span class="home-modal__footer-hint">Total Uploaded: 28</span>
         <span class="home-modal__footer-hint">Remaining Uploads: Unlimited</span>
@@ -772,29 +776,73 @@
   </div>
   <!-- end of Article Operation button -->
 
-  <!-- Patents Modal -->
-  <div id="patents-modal" class="patents-modal modal__container modal">
-    <div class="modal__header">
-      <h4 class="modal__header-title text-middle">Associated Sources For Catalog 'Patents & Publications'</h4>
-      <img class="text-middle" src="./img/news-down-white.png" alt="">
-    </div>
-    <div class="modal__list-container">
-      <ul class="modal__list">
-        <li class="modal__item">Car Body Painting</li>
-        <li class="modal__item active">Auto Process Finishing</li>
-        <li class="modal__item">Analytics for AutoInergy Channel</li>
-        <li class="modal__item">Progress in Polymer Science</li>
-        <li class="modal__item">Car Body Painting</li>
-        <li class="modal__item">Auto Process Finishing</li>
-        <li class="modal__item">Analytics for AutoInergy Channel</li>
-        <li class="modal__item">Progress in Polymer Science</li>
-        <li class="modal__item">Plastic Fuel Tanks</li>
-        <li class="modal__item">Analytics for Plastic Industry Channel</li>
-        <li class="modal__item">Plastics News Europe</li>
-      </ul>
-    </div>
+  <!-- Article list -->
+  <div class="geo-articles">
+    <h3 class="geo-articles__title">212 ARTICLES FROM JAPAN</h3>
+    <ul>
+      <li class="geo-articles__item">
+        <div>
+          <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
+          <i class="news-content__remove text-middle"></i>
+        </div>
+        <label class="news-content__type classic-block">MIT NEWS. </label>
+        <div class="news-content__summary classic-block">
+          <span>4 Likes</span>
+          <span>3 Saves</span>
+        </div>
+        <div class="news-content__detail classic-none">
+          <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
+        </div>
+        <div class="classic-none">
+          <span class="news-content__time">Apr 18, 2018</span>
+        </div>
+        <div class="news-content__comments classic-none">
+          <label class="geo-articles__comments">Daiichi Sankyo</label>
+        </div>
+      </li>
+      <li class="geo-articles__item">
+        <div>
+          <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
+          <i class="news-content__remove text-middle"></i>
+        </div>
+        <label class="news-content__type classic-block">MIT NEWS. </label>
+        <div class="news-content__summary classic-block">
+          <span>4 Likes</span>
+          <span>3 Saves</span>
+        </div>
+        <div class="news-content__detail classic-none">
+          <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
+        </div>
+        <div class="classic-none">
+          <span class="news-content__time">Apr 18, 2018</span>
+        </div>
+        <div class="news-content__comments classic-none">
+          <label class="geo-articles__comments">Daiichi Sankyo</label>
+        </div>
+      </li>
+      <li class="geo-articles__item">
+        <div>
+          <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
+          <i class="news-content__remove text-middle"></i>
+        </div>
+        <label class="news-content__type classic-block">MIT NEWS. </label>
+        <div class="news-content__summary classic-block">
+          <span>4 Likes</span>
+          <span>3 Saves</span>
+        </div>
+        <div class="news-content__detail classic-none">
+          <p>Organizations are now mixing and matching on-premise and cloud-based big data-processing and data storage. In may cases, they are using multiple cloud vendors as well. Once again, data and intelligence from these various repositories must be blended together at some point, as the business requires.</p>
+        </div>
+        <div class="classic-none">
+          <span class="news-content__time">Apr 18, 2018</span>
+        </div>
+        <div class="news-content__comments classic-none">
+          <label class="geo-articles__comments">Daiichi Sankyo</label>
+        </div>
+      </li>
+    </ul>
   </div>
-  <!-- end of Patents Modal -->
+  <!-- end of Article list -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

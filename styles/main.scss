@@ -1093,7 +1093,8 @@ body{
   }
 }
 
-.user-side {
+.user-side,
+.geo-articles {
   position: absolute;
   top: 64px;
   bottom: 0;
@@ -1125,6 +1126,43 @@ body{
     display: block;
     top: 0;
     width: 100%;
+  }
+}
+
+.geo-articles {
+  .news-content__tag,
+  .news-content__remove {
+    margin: 0;
+    color: $theme-color-1;
+  }
+
+  .news-content__detail p {
+    margin: 10px 0 0;
+  }
+
+  &__item {
+    padding: 12px 0;
+
+    &::after {
+      content: "";
+      display: block;
+      margin: 20px 0 0;
+      height: 1px;
+      width: 100%;
+      max-width: 200px;
+      background-color: $lightter-gray;
+      opacity: 0.3;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $main-font;
+    color: $theme-color-2;
+  }
+
+  &__comments {
+    color: $light-gray;
   }
 }
 

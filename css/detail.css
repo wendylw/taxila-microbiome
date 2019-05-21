@@ -62,6 +62,9 @@
   background-color: #fff;
   max-width: 1300px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13); }
+  .detail-pane__remove-container {
+    margin: auto;
+    max-width: 1300px; }
   .detail-pane__container {
     position: absolute;
     top: 64px;

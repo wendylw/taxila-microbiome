@@ -1273,16 +1273,19 @@
     <div class="home-modal__body">
       <section>
         <h3 class="home-modal__section-title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
-        <div class="home-modal__batch-upload-button text-center">
+        <button class="home-modal__batch-upload-button text-center">
           <span>Batch Upload</span>
-          <input type="file">
-        </div>
+        </button>
         <i class="home-modal__divider text-center">
           <span>Or</span>
         </i>
         <div>
           <h3 class="home-modal__section-title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
           <form class="add-new-resource__container">
+            <div class="add-new-resource__hint">
+              <img class="text-middle" src="./img/side-triangle.png" alt="">
+              <span class="text-middle">Please map column names with respective fields</span>
+            </div>
             <div class="add-new-resource__form-group">
               <input type="text" placeholder="Enter Name">
             </div>
@@ -1321,7 +1324,7 @@
     <div class="home-modal__footer text-right">
       <button class="home-modal__button-link">CANCEL</button>
       <button class="home-modal__button cancel">RESET</button>
-      <button class="home-modal__button">ADD</button>
+      <button class="home-modal__button add">ADD</button>
       <div class="home-modal__footer-hint-container">
         <span class="home-modal__footer-hint">Total Uploaded: 28</span>
         <span class="home-modal__footer-hint">Remaining Uploads: Unlimited</span>
@@ -1330,30 +1333,6 @@
     </div>
   </div>
   <!-- end of Article Operation button -->
-
-  <!-- Patents Modal -->
-  <div id="patents-modal" class="patents-modal modal__container modal">
-    <div class="modal__header">
-      <h4 class="modal__header-title text-middle">Associated Sources For Catalog 'Patents & Publications'</h4>
-      <img class="text-middle" src="./img/news-down-white.png" alt="">
-    </div>
-    <div class="modal__list-container">
-      <ul class="modal__list">
-        <li class="modal__item">Car Body Painting</li>
-        <li class="modal__item active">Auto Process Finishing</li>
-        <li class="modal__item">Analytics for AutoInergy Channel</li>
-        <li class="modal__item">Progress in Polymer Science</li>
-        <li class="modal__item">Car Body Painting</li>
-        <li class="modal__item">Auto Process Finishing</li>
-        <li class="modal__item">Analytics for AutoInergy Channel</li>
-        <li class="modal__item">Progress in Polymer Science</li>
-        <li class="modal__item">Plastic Fuel Tanks</li>
-        <li class="modal__item">Analytics for Plastic Industry Channel</li>
-        <li class="modal__item">Plastics News Europe</li>
-      </ul>
-    </div>
-  </div>
-  <!-- end of Patents Modal -->
 
   <!-- remove success message -->
   <div class="article-delete message">
