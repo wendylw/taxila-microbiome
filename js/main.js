@@ -280,4 +280,8 @@ function showDropback() {
   $('.home-modal__batch-upload-button').on('click', function() {
     $('#add-new-resource').addClass('batch-upload');
   });
+
+  $('.article-operation__title').on('click', function() {
+    $('.article-operation__nav-container').slideToggle();
+  });
 })();

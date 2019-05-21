@@ -341,9 +341,16 @@
     font-size: $small-font;
     color: $theme-color-2;
     font-weight: normal;
+    cursor: pointer;
+  }
+
+  &__nav-container {
+    display: none;
   }
 
   &__nav-list {
+    padding: 14px 0;
+    margin: 0;
     text-align: left;
 
     li {
