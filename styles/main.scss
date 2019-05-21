@@ -2002,12 +2002,27 @@ body{
     }
   }
 
-  .toggle-side,
   .user-side,
   .article-side {
     position: fixed;
     top: 51px;
-    max-width: 100%;
+    max-width: 80%;
+  }
+
+  .toggle-side {
+    position: fixed;
+    max-width: 80%;
+  }
+
+  .side-backdrop {
+    display: none;
+  }
+
+  body.open-toggle-side .wrapper {
+    transform: translateX(80%);
+    -webkit-transform: translateX(80%);
+    -moz-transform: translateX(80%);
+    -ms-transform: translateX(80%);
   }
 }
 
