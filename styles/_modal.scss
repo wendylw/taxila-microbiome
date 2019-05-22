@@ -517,3 +517,32 @@
     overflow-y: auto;
   }
 }
+
+@media (max-width: 1240px) {
+  .jquery-modal {
+    padding: 0;
+  }
+
+  .home-modal {
+    &__container {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__header {
+      padding: 0;
+    }
+  }
+
+  #selected-articles {
+    padding: 0;
+
+    .home-modal__title {
+      text-align: center;
+      padding: 20px;
+      display: block;
+      font-size: $big-font;
+      border-bottom: 1px solid $lightest-gray;
+    }
+  }
+}

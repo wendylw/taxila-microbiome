@@ -34,7 +34,7 @@ function showDropback() {
     $(this).siblings('.toggle-side__sublist').slideToggle();
   });
 
-  $('.header__channel .header__nav-link').on('click', function() {
+  $('.header__channel .header__nav-link, .toggle-side__header-title img').on('click', function() {
     $(this).toggleClass('active');
     $('body').toggleClass('open-toggle-side');
     $('.side-backdrop').toggleClass('toggle-side__backdrop');
@@ -180,8 +180,16 @@ function showDropback() {
     showDropback();
   });
 
-  $('.header__menu-m, .header__close-button img, .header__user-m').on('click', function() {
-    $('.header__navs').slideToggle();
+  $('.header__menu-m, .header__nav-link').on('click', function() {
+    $('.header__navs').toggleClass('active');
+    $('.side-backdrop').toggleClass('header-menu-dropback');
+    $('body').toggleClass('open-side');
+  });
+
+  $('body').on('click', '.header-menu-dropback', function() {
+    $('.header__navs').removeClass('active');
+    $('.side-backdrop').removeClass('header-menu-dropback');
+    $('body').removeClass('open-side');
   });
 
   $('.change-password__button').on('click', function() {
