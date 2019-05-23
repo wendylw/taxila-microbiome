@@ -101,6 +101,10 @@
     }
   }
 
+  &__close-button-m {
+    display: none;
+  }
+
   &__section {
     padding: 20px 30px;
     border-bottom: 1px solid $lightest-gray;
@@ -348,6 +352,10 @@
   &__section-title {
     font-size: $big-font;
     font-weight: normal;
+
+    br {
+      display: none;
+    }
   }
 
   &__batch-upload-button {
@@ -518,7 +526,7 @@
   }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
   .jquery-modal {
     padding: 0;
   }
@@ -527,10 +535,88 @@
     &__container {
       width: 100%;
       height: 100%;
+      max-height: none;
+    }
+
+    &__button {
+      min-width: 90px;
     }
 
     &__header {
+      position: relative;
       padding: 0;
+    }
+
+    &__title {
+      text-align: center;
+      padding: 20px;
+      display: block;
+      font-size: $big-font;
+      border-bottom: 1px solid $lightest-gray;
+    }
+
+    &__close-button-m {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      padding: 18px;
+      border: 0;
+      font-size: 0;
+      outline: none;
+      box-shadow: none;
+
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      background-color: transparent;
+    }
+
+    #add-new-resource &__body,
+    &__body {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 60px;
+      bottom: 0;
+      width: 100%;
+      max-height: none;
+      padding: 0;
+    }
+
+    &__section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 70px;
+      padding: 0 15px;
+    }
+
+    &__section-title {
+      br {
+        display: block;
+      }
+    }
+
+    &__article-list-container {
+      max-height: 100%;
+    }
+
+    &__article-list {
+      margin: 0;
+    }
+
+    &__footer {
+      padding: 15px;
+    }
+
+    &__footer-hint-container {
+      padding-bottom: 0;
+      margin: 15px 0;
+    }
+
+    &__footer-hint {
+      margin: 0 2px;
     }
   }
 
@@ -538,11 +624,36 @@
     padding: 0;
 
     .home-modal__title {
-      text-align: center;
-      padding: 20px;
       display: block;
-      font-size: $big-font;
-      border-bottom: 1px solid $lightest-gray;
+    }
+
+    .home-modal__body {
+      top: 100px;
+    }
+
+    .home-modal__delete {
+      padding: 10px;
+      margin: 5px;
+      border-bottom: 0;
+    }
+  }
+
+  #add-new-resource {
+    .home-modal__body {
+      padding: 15px;
+      bottom: 172px;
+    }
+  }
+
+  .add-new-resource {
+    &__hint {
+      margin-top: 0;
+      font-size: $small-font;
+      font-weight: normal;
+
+      img {
+        margin-left: 0;
+      }
     }
   }
 }

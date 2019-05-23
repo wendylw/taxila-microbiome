@@ -2148,6 +2148,13 @@ body{
     width: 80%;
   }
 
+  .user-side__backdrop,
+  .geo-articles__backdrop {
+    display: block;
+    top: 0;
+    width: 100%;
+  }
+
   .user-side {
     padding: 0;
     background-color: $white;

@@ -153,7 +153,7 @@ function showDropback() {
     $(this).toggleClass('active');
   });
 
-  $('.home-modal__select-all').on('click', function() {
+  $('.home-modal__select-all, .analysis-side__select-all').on('click', function() {
     const id = $(this).attr('name');
 
     $('#' + id).find('.tags__item').addClass('active');
@@ -209,6 +209,11 @@ function showDropback() {
 
     $('#' + id).toggleClass('active');
     $('.side-backdrop').toggleClass('analysis-backdrop');
+  });
+
+  $('.analysis-side__container .home-modal__close-button-m').on('click', function() {
+    $('.analysis-side__container').removeClass('active');
+    $('.side-backdrop').removeClass('analysis-backdrop');
   });
 
   $('body').on('click', '.analysis-backdrop', function() {
