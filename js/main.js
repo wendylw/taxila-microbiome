@@ -332,6 +332,20 @@ function showDropback() {
   $('.article-operation__title').on('click', function() {
     $('.article-operation__nav-container').slideToggle();
   });
+
+  if ($(window).width() <= 1024) {
+    $('.header__search').on('touch click', function() {
+      $('.header__search input').show();
+      $('.header__search').addClass('show');
+      $('.side-backdrop').addClass('search-backdrop');
+    });
+
+    $('body').on('touch click', '.search-backdrop', function() {
+      $('.header__search input').hide();
+      $('.header__search').removeClass('show');
+      $('.side-backdrop').removeClass('search-backdrop');
+    });
+  }
 })();
 
 $(window).on('load', function() {

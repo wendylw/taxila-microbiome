@@ -548,6 +548,11 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
     display: block;
     top: 64px;
   }
+
+  &.search-backdrop {
+    display: block;
+    top: 50px;
+  }
 }
 
 .toggle-side {
@@ -1984,6 +1989,10 @@ body{
 }
 
 @media (max-width: 1024px) {
+  .switch-button__container {
+    display: inline-block;
+  }
+
   .header {
     text-align: center;
     padding: 0;
@@ -2079,6 +2088,16 @@ body{
     &__search input,
     &__search:after {
       display: none;
+    }
+
+    &__search.show::before {
+      z-index: 2;
+    }
+
+    &__search.show input {
+      position: absolute;
+      margin: 10px 0;
+      width: 280px;
     }
 
     &__user {
