@@ -79,6 +79,32 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
   color: $lightter-gray;
 }
 
+.loader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: $white;
+
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+  }
+
+  &.loading {
+    display: block;
+  }
+}
+
 .text-center {
   text-align: center;
 }
@@ -999,6 +1025,10 @@ body{
     left: 348px;
   }
 
+  &__header-title {
+    display: none;
+  }
+
   &__nav,
   &__subnav {
     float: left;
@@ -1010,6 +1040,14 @@ body{
   &__nav {
     padding: 24px 8px 24px 24px;
     min-width: 330px;
+  }
+
+  &__subnav-m {
+    display: none;
+
+    .side__title {
+      font-size: 13px;
+    }
   }
 
   &__subnav {
@@ -1089,6 +1127,12 @@ body{
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
+  }
+
+  &__subnav-m &__title-triangle {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
   }
 
   &__title-triangle ~ span {
@@ -2116,16 +2160,52 @@ body{
 
   .side {
     top: 0;
-    max-width: 80%;
+    width: 80%;
 
     label span {
       font-size: 13px;
+    }
+
+    &__header-title {
+      display: block;
+      position: relative;
+      padding: 20px;
+      font-size: $big-font;
+      margin: 0;
+      text-align: center;
+      font-weight: normal;
+      color: #093553;
+      border-bottom: 1px solid $add-article-divider;
+
+      img {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 10px;
+        bottom: 10px;
+        padding: 12px;
+        width: 40px;
+        height: 40px;
+
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+      }
     }
 
     &__nav {
       padding: 24px 8px;
       min-width: 80%;
       max-width: 100%;
+    }
+
+    &__nav-item.active {
+      > .side__nav-title .side__title-triangle {
+        opacity: 0;
+      }
+
+      > .side__nav-title span {
+        color: $lightter-gray;
+      }
     }
 
     &__backdrop {
