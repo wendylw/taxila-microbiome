@@ -329,6 +329,10 @@ function showDropback() {
     $('#add-new-resource').addClass('batch-upload');
   });
 
+  $('.add-new-resource__hint').on('click', function() {
+    $('#add-new-resource').removeClass('batch-upload');
+  });
+
   $('.article-operation__title').on('click', function() {
     $('.article-operation__nav-container').slideToggle();
   });
