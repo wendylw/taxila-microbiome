@@ -231,7 +231,7 @@ body {
     display: block; }
 
 .filter ~ .news-content {
-  top: 180px; }
+  top: 220px; }
 .filter .container {
   text-align: center;
   padding: 30px 0;
@@ -312,7 +312,14 @@ body {
     top: 51px; } }
 @media (max-width: 767px) {
   .grid-item {
-    width: 100%; } }
+    width: 100%; }
+
+  .filter__item {
+    margin: 3px;
+    font-size: 12px; }
+
+  .filter-detail__item {
+    font-size: 12px; } }
 .classic .classic-none {
   display: none !important; }
 .classic .classic-block {

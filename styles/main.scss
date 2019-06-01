@@ -101,7 +101,7 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
   }
 
   &.loading {
-    display: block;
+    display: none;
   }
 }
 
@@ -358,6 +358,11 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
   width: 33.333333%;
 }
 
+.col-push-4 {
+  position: relative;
+  left: 33.333333%;
+}
+
 .col-6 {
   float: left;
   width: 50%;
@@ -366,6 +371,11 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 .col-8 {
   float: left;
   width: 66.666666%;
+}
+
+.col-pull-8 {
+  position: relative;
+  left: -66.666666%;
 }
 
 .dropdown {
@@ -1952,6 +1962,12 @@ body{
   }
 }
 
+@import './side-menu';
+@import './modal';
+@import './add-article';
+@import './article';
+@import './animation';
+
 @media (max-width: 1280px) {
   .header {
     &__logo {
@@ -1993,6 +2009,11 @@ body{
 }
 
 @media (max-width: 1024px) {
+  .col-push-4,
+  .col-pull-8 {
+    left: 0%;
+  }
+
   .switch-button__container {
     display: inline-block;
   }
@@ -2240,12 +2261,153 @@ body{
     }
   }
 
+  .filter,
+  .geo-trend {
+    &__container {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    ~ div.news-content {
+      position: relative;
+      top: 0;
+      padding: 0;
+    }
+  }
+
+  .geo-trend {
+    padding: 0 15px;
+
+    .col-4,
+    .col-8 {
+      padding: 0;
+      margin: 5px 0;
+      width: 100%;
+    }
+
+    .col-4 {
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px 0;
+      margin: 0;
+    }
+
+    .button-outline {
+      font-size: $small-font;
+      width: 49%;
+    }
+
+    .chart__back-button {
+      width: 20px;
+    }
+
+    .chart__page-title {
+      display: block;
+      margin: auto;
+      transform: translateX(-14px);
+      -webkit-transform: translateX(-14px);
+
+      h3 {
+        font-size: 14px;
+      }
+    }
+
+    .home-modal__block-text {
+      text-align: left;
+      margin: 0;
+      font-size: $smaller-font;
+    }
+
+    .owl-carousel {
+      float: none;
+      padding: 0 15px;
+    }
+
+    .owl-item {
+      height: auto;
+    }
+
+    .home-modal__dropdown {
+      margin: 5px 0;
+      width: 100%;
+    }
+
+    .home-modal__dropdown-button {
+      max-width: none;
+      width: 100%;
+    }
+
+    .date-range,
+    .date-range__item {
+      text-align: left;
+      display: block;
+      margin: 0;
+    }
+
+    .date-range__item {
+      margin: 5px 0;
+    }
+
+    .date-range__item:nth-child(2) > span {
+      display: inherit;
+      text-align: center;
+    }
+
+    &__number {
+      font-size: 40px;
+    }
+
+    &__container {
+      .geo-trend-content {
+        top: 0;
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+      }
+    }
+
+    &-content {
+      .container {
+        padding: 0 0 10px;
+        margin: 10px 15px;
+        border-bottom: 1px solid $add-article-text;
+      }
+
+      .map-container {
+        position: static;
+        top: 0;
+        overflow: hidden;
+      }
+
+      .map {
+        margin: 20px 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__page {
+      >.geo-trend .container {
+        padding: 20px 0 0;
+        border-bottom: 0;
+      }
+    }
+  }
+
   .wrapper {
     overflow: hidden;
   }
 
   .user-side,
-  .article-side {
+  .article-side,
+  .geo-articles {
     position: fixed;
     top: 0;
     width: 80%;
@@ -2269,10 +2431,69 @@ body{
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
   }
-}
 
-@import './side-menu';
-@import './modal';
-@import './add-article';
-@import './article';
-@import './animation';
+  .add-article {
+    &__avatar {
+      display: none;
+    }
+
+    &__item {
+      display: block;
+      padding: 5px 0;
+      border-left: 0;
+    }
+  }
+
+  .add-article-person {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $add-article-text;
+    background-color: $form-input-bg;
+
+    &__description {
+      font-size: $small-font;
+    }
+  }
+
+  .article-operation {
+    &__title,
+    &__list {
+      margin: 0;
+      text-align: left;
+    }
+
+    &__title {
+      padding: 15px 20px;
+      color: $lightter-gray;
+    }
+
+    &__nav-list {
+      padding: 0;
+    }
+
+    &__nav-list li {
+      display: block;
+      color: $lightter-gray;
+    }
+
+    &__nav-list li:last-child {
+      float: none;
+    }
+
+    &__nav-link {
+      padding: 10px 30px;
+    }
+
+    &__link {
+      border: 0;
+      padding: 15px 20px;
+    }
+  }
+
+  .add-article-operation {
+    &__item-form {
+      padding: 10px 30px;
+    }
+  }
+}

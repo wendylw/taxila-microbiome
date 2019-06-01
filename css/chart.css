@@ -76,6 +76,8 @@
   margin: 0 auto; }
   .chart__tab .tab {
     border-bottom: 1px solid #e9eaea; }
+  .chart__tab .tab-mobile {
+    display: none; }
   .chart__tab .tab-pane {
     display: none;
     position: absolute;
@@ -153,5 +155,112 @@
   border-radius: 0 0 15px 15px; }
   .detail-pane__content img {
     max-width: 100%; }
+
+@media (max-width: 1426px) {
+  .chart__summary-list li {
+    padding: 0 10px; } }
+@media (max-width: 1330px) {
+  .chart__summary-select select {
+    font-size: 12px; } }
+@media (max-width: 1230px) {
+  .chart__page-title {
+    min-width: 190px; }
+    .chart__page-title h3 {
+      font-size: 16px; } }
+@media (max-width: 1190px) {
+  .chart__banner {
+    padding: 15px; }
+  .chart__summary-select select {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .chart__tab li {
+    font-size: 12px; } }
+@media (max-width: 1024px) {
+  .chart__container {
+    top: 50px;
+    overflow-y: auto; }
+    .chart__container .col-3 {
+      float: none;
+      display: block;
+      width: auto; }
+  .chart__page-title {
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    transform: translateX(-14px);
+    -webkit-transform: translateX(-14px); }
+    .chart__page-title a {
+      display: inherit; }
+    .chart__page-title h3 {
+      font-size: inherit; }
+    .chart__page-title br {
+      display: none; }
+  .chart__back-button {
+    width: 22px; }
+  .chart__summary-list {
+    display: block;
+    width: auto; }
+    .chart__summary-list li {
+      padding: 15px 0;
+      margin: 0 20px;
+      border-bottom: 1px solid #ccc; }
+    .chart__summary-list li ~ li {
+      border-left: 0; }
+  .chart__summary-select {
+    padding: 0; }
+    .chart__summary-select select {
+      max-width: none;
+      height: 24px; }
+  .chart__summary-result {
+    padding-left: 0; }
+  .chart__tab {
+    position: static;
+    padding: 15px; }
+    .chart__tab .tab {
+      display: none; }
+    .chart__tab .tab-mobile {
+      position: relative;
+      display: block;
+      color: #093553;
+      padding: 0 6px;
+      border: 1px solid #e9eaea;
+      border-radius: 4px; }
+      .chart__tab .tab-mobile select {
+        width: 100%;
+        height: 30px;
+        color: #093553;
+        font-weight: bold; }
+      .chart__tab .tab-mobile .detail-pane__select-icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 6px;
+        margin: auto;
+        width: 12px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg); }
+    .chart__tab .tab-pane,
+    .chart__tab .detail-pane__content {
+      position: static; }
+    .chart__tab .tab-pane {
+      margin: 20px 0; }
+  .chart__pannes {
+    position: static; }
+    .chart__pannes .detail-pane__header {
+      text-align: left;
+      padding: 15px; }
+      .chart__pannes .detail-pane__header h2 {
+        float: none;
+        margin: 0;
+        font-size: 14px; }
+    .chart__pannes .detail-pane__filter-list {
+      display: block; }
+    .chart__pannes .detail-pane__select {
+      margin-right: 0;
+      font-size: 12px; }
+      .chart__pannes .detail-pane__select select {
+        font-size: inherit;
+        height: 30px; } }
 
 /*# sourceMappingURL=chart.css.map */

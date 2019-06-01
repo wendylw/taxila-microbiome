@@ -173,4 +173,86 @@
   .detail-footer__hint {
     float: left; }
 
+@media (max-width: 1024px) {
+  .detail__operation {
+    text-align: left;
+    top: 50px;
+    padding: 20px 15px; }
+  .detail__back-button {
+    float: none;
+    margin: 0;
+    font-size: 14px; }
+    .detail__back-button img {
+      width: 12px; }
+    .detail__back-button h3 {
+      margin: 0 4px;
+      font-size: inherit; }
+  .detail__search {
+    position: relative;
+    display: block;
+    margin: 10px 0;
+    margin-left: 16px;
+    min-width: 0;
+    font-size: 12px; }
+    .detail__search::before {
+      margin: auto 5px;
+      width: 14px;
+      height: 14px; }
+    .detail__search input {
+      padding: 12px 14px 12px 24px; }
+  .detail__operation-button {
+    padding: 6px 10px;
+    margin: 0;
+    min-width: 49%;
+    font-size: 14px; }
+
+  .detail-pane__container {
+    padding: 154px 15px 0; }
+  .detail-pane__header {
+    padding: 15px; }
+    .detail-pane__header::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .detail-pane__select {
+    margin-right: 0; }
+  .detail-pane__filter-list {
+    display: block; }
+    .detail-pane__filter-list li {
+      display: inherit; }
+    .detail-pane__filter-list .keyword select,
+    .detail-pane__filter-list .channel select,
+    .detail-pane__filter-list .sub-channel select {
+      width: 100%;
+      height: 30px;
+      font-size: 12px; }
+  .detail-pane__date-picker {
+    text-align: center;
+    display: block;
+    margin: 0;
+    font-size: 12px; }
+  .detail-pane__header-button {
+    width: 68px;
+    height: 30px;
+    font-size: 12px; }
+
+  .detail-body {
+    min-height: 0; }
+
+  .detail-footer {
+    position: relative;
+    padding: 15px;
+    font-size: 12px; }
+    .detail-footer__hint {
+      display: block;
+      float: none;
+      margin: 20px 0 0; }
+    .detail-footer__list {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: block; }
+      .detail-footer__list li {
+        margin: 0 5px; } }
+
 /*# sourceMappingURL=detail.css.map */

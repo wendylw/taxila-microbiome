@@ -276,15 +276,19 @@ function showDropback() {
   });
 
   $('.filter__item.taxila').on('click', function() {
-   const top = 180 + $('.filter-detail').height();
+    const top = 180 + $('.filter-detail').height();
 
-   if (!$('.filter-detail').is(':visible')) {
-    $('.filter-detail').slideDown();
-    $('.filter ~ .news-content').animate({top: top + 'px'}, 400);
-   } else {
-    $('.filter-detail').slideUp();
-    $('.filter ~ .news-content').animate({top: '180px'}, 400);
-   }
+    if (!$('.filter-detail').is(':visible')) {
+      $('.filter-detail').slideDown();
+      if ($(window).width() > 1024) {
+        $('.filter ~ .news-content').animate({top: top + 'px'}, 400);
+      }
+    } else {
+      $('.filter-detail').slideUp();
+      if ($(window).width() > 1024) {
+        $('.filter ~ .news-content').animate({top: '180px'}, 400);
+      }
+    }
   });
 
   let setTimeoutObject = null;

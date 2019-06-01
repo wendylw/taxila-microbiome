@@ -367,7 +367,7 @@ body {
 
 .filter {
   & ~ .news-content {
-    top: 180px;
+    top: 220px;
   }
 
   .container {
@@ -493,6 +493,19 @@ body {
 @media (max-width: 767px) {
   .grid-item {
     width: 100%;
+  }
+
+  .filter {
+    &__item {
+      margin: 3px;
+      font-size: $small-font;
+    }
+  }
+
+  .filter-detail {
+    &__item {
+      font-size: $small-font;
+    }
   }
 }
 
