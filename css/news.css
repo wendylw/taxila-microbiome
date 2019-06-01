@@ -368,6 +368,24 @@ body {
     .news-topics__topic-brief {
       font-size: 12px; }
     .news-topics__storys .news-content__title {
-      font-size: 12px; } }
+      font-size: 12px; }
+
+  .news-content__recent-update-title {
+    padding: 0;
+    border-right: 0;
+    margin: 0;
+    max-width: none; }
+
+  .classic .news-topics__topic-image {
+    margin: 0 -15px;
+    width: auto; }
+  .classic .news-content__grid-mobile-container {
+    padding: 15px 0;
+    border-top: 1px solid #84c0ca; }
+  .classic .grid {
+    border-right: 0;
+    max-width: none; }
+  .classic .grid-item {
+    padding: 10px 0; } }
 
 /*# sourceMappingURL=news.css.map */

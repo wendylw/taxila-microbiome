@@ -594,8 +594,36 @@ body {
       .news-content__title {
         font-size: $small-font;
       }
+    }
+  }
 
-      .news-content__type {}
+  .news-content {
+    &__recent-update-title {
+      padding: 0;
+      border-right: 0;
+      margin: 0;
+      max-width: none;
+    }
+  }
+
+  .classic {
+    .news-topics__topic-image{
+      margin: 0 -15px;
+      width: auto;
+    }
+
+    .news-content__grid-mobile-container {
+      padding: 15px 0;
+      border-top: 1px solid $theme-color-1;
+    }
+
+    .grid  {
+      border-right: 0;
+      max-width: none;
+    }
+
+    .grid-item {
+      padding: 10px 0;
     }
   }
 }
