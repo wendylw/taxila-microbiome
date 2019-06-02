@@ -1,0 +1,372 @@
+@import '../fonts/font.css';
+@import './var';
+
+.detail {
+  &__operation {
+    text-align: right;
+    position: absolute;
+    top: 64px;
+    padding: 12px 30px;
+    width: 100%;
+    background: $white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+    z-index: 1;
+  }
+
+  &__back-button {
+    float: left;
+    display: inline-block;
+    margin: 10px 0;
+    border: 0;
+    background-color: transparent;
+
+    img {
+      vertical-align: middle;
+      display: inline-block;
+      width: 16px;
+
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+    }
+
+    h3 {
+      vertical-align: middle;
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 18px;
+      color: $theme-color-1;
+    }
+  }
+
+  &__search {
+    position: relative;
+    display: inline-block;
+    min-width: 380px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto 12px;
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/header-search-grey.png);
+      background-size: 100% auto;
+    }
+
+    input {
+      padding: 12px 44px;
+      border: 0;
+      width: 100%;
+    }
+  }
+
+  &__operation-button {
+    padding: 6px 30px;
+    margin: 0 8px;
+    border: 0;
+    min-width: 150px;
+    height: 40px;
+    font-size: $big-font;
+    color: $theme-color-1;
+    background-color: $lightest-gray;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+}
+
+.detail-pane {
+  margin: auto auto 20px;
+  background-color: $white;
+  max-width: 1300px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+
+  &__remove-container {
+    margin: auto;
+    max-width: 1300px;
+  }
+
+  &__container {
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    padding: 104px 40px 40px;
+    width: 100%;
+    background-color: #F4F5F8;
+    overflow-y: auto;
+  }
+
+  &__remove {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 8px 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/delete.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  &__header {
+    padding: 20px 30px 12px;
+    border-bottom: 1px solid $lightest-gray;
+  }
+
+  &__filter-list {
+    display: inline-block;
+    margin: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    select {
+      border: 0;
+      font-size: $main-font;
+      height: 40px;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .keyword select,
+    .channel select {
+      width: 86px;
+    }
+
+    .sub-channel select {
+      width: 114px;
+    }
+  }
+
+  &__select {
+    position: relative;
+    margin-right: 30px;
+  }
+
+  &__select-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 12px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+
+  &__date-picker {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 30px;
+
+    img {
+      margin: 0 5px;
+      max-width: 12px;
+    }
+  }
+
+  &__date-picker-pre {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+  }
+
+  &__header-button-container {
+    float: right;
+    display: inline-block;
+    font-size: 0;
+  }
+
+  &__header-button {
+    width: 92px;
+    height: 40px;
+    border: 1px solid $lightter-gray;
+    font-size: $main-font;
+    color: $light-gray;
+    background-color: $white;
+    font-weight: bold;
+  }
+
+  &__header-button.fill {
+    border-color: $theme-color-2;
+    color: $white;
+    background-color: $theme-color-2;
+  }
+}
+
+.detail-body {
+  min-height: 400px;
+}
+
+.detail-footer {
+  padding: 20px 30px;
+  border-top: 1px solid $lightest-gray;
+
+  &__list {
+    display: inline-block;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    li::before {
+      content: "";
+      display: inline-block;
+      margin-right: 14px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+  }
+
+  &__animal::before {
+    background-color: #FF455B;
+  }
+
+  &__microbiome::before {
+    background-color: #BD10E0;
+  }
+
+  &__news::before {
+    background-color: #4A90E2;
+  }
+
+  &__hint {
+    float: left;
+  }
+}
+
+@media (max-width: 1024px) {
+  .detail {
+    &__operation {
+      text-align: left;
+      top: 50px;
+      padding: 20px 15px;
+    }
+
+    &__back-button {
+      float: none;
+      margin: 0;
+      font-size: $main-font;
+
+      img {
+        width: 12px;
+      }
+
+      h3 {
+        margin: 0 4px;
+        font-size: inherit;
+      }
+    }
+
+    &__search {
+      position: relative;
+      display: block;
+      margin: 10px 0;
+      margin-left: 16px;
+      min-width: 0;
+      font-size: $small-font;
+
+      &::before {
+        margin: auto 5px;
+        width: 14px;
+        height: 14px;
+      }
+
+      input {
+        padding: 12px 14px 12px 24px;
+      }
+    }
+
+    &__operation-button {
+      padding: 6px 10px;
+      margin: 0;
+      min-width: 49%;
+      font-size: $main-font;
+    }
+  }
+
+  .detail-pane {
+    &__container {
+      padding: 154px 15px 0;
+    }
+
+    &__header {
+      padding: 15px;
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+
+    &__select {
+      margin-right: 0;
+    }
+
+    &__filter-list {
+      display: block;
+
+      li {
+        display: inherit;
+      }
+
+      .keyword select,
+      .channel select,
+      .sub-channel select {
+        width: 100%;
+        height: 30px;
+        font-size: $small-font;
+      }
+    }
+
+    &__date-picker {
+      text-align: center;
+      display: block;
+      margin: 0;
+      font-size: $small-font;
+    }
+
+    &__header-button {
+      width: 68px;
+      height: 30px;
+      font-size: $small-font;
+    }
+  }
+
+  .detail-body {
+    min-height: 0;
+  }
+
+  .detail-footer{
+    position: relative;
+    padding: 15px;
+    font-size: $small-font;
+
+    &__hint {
+      display: block;
+      float: none;
+      margin: 20px 0 0;
+    }
+
+    &__list {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: block;
+
+      li {
+        margin: 0 5px;
+      }
+    }
+  }
+}

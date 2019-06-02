@@ -1,17 +1,6 @@
 .add-article {
   padding: 60px 0 100px;
 
-  .side-dropup__button {
-    background-color: $theme-color-1;
-  }
-
-  .side-dropup__button:active,
-  .side-dropup__button:focus {
-    border-color: $theme-color-1;
-    outline: none;
-    box-shadow: none;
-  }
-
   &__avatar {
     width: 66px;
     height: 66px;
@@ -116,7 +105,11 @@
   }
 
   &__sign-off {
-    margin: 14px 0 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 20px;
     color: $theme-color-2;
 
     img {
@@ -146,7 +139,7 @@
 
   &__list {
     font-size: 0;
-    padding: 20px 0;
+    padding: 15px 0;
     margin: 0;
   }
 }
@@ -345,12 +338,19 @@
 .article-operation {
   &__title {
     margin: 15px 0;
-    font-size: $big-font;
+    font-size: $small-font;
     color: $theme-color-2;
     font-weight: normal;
+    cursor: pointer;
+  }
+
+  &__nav-container {
+    display: none;
   }
 
   &__nav-list {
+    padding: 14px 0;
+    margin: 0;
     text-align: left;
 
     li {
@@ -369,13 +369,15 @@
   }
 
   &__list {
-    margin: 20px 0;
+    margin: 15px 0;
   }
 
   &__link {
     display: block;
-    padding: 14px 0;
+    padding: 12px 0;
+    margin-bottom: -1px;
     border-top: 1px solid $lightest-gray;
+    border-bottom: 1px solid $lightest-gray;
     font-size: $small-font;
     color: $lightter-gray;
     cursor: pointer;
@@ -383,7 +385,7 @@
 
   &__button {
     display: block;
-    margin: 14px 0;
+    margin: 10px 0;
     padding: 12px;
     border: 0;
     width: 100%;

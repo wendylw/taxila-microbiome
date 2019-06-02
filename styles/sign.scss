@@ -7,15 +7,19 @@ body,
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.login {
+.login,
+.reset-password {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(../img/login-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   overflow: hidden;
+}
+
+.login {
+  background-image: url(../img/login-background.jpg);
 
   &__content {
     width: 100%;
@@ -32,7 +36,7 @@ body,
   }
 
   &__form-container {
-    margin: 10% auto;
+    margin: 2% auto;
     max-width: 270px;
   }
 
@@ -78,92 +82,28 @@ body,
   }
 }
 
-.sign-form {
+.login__container {
   input[type="text"],
   input[type="password"] {
     position: absolute;
     top: 1px;
     left: 0;
     bottom: 1px;
-    width: 88%;
     padding: 6px 0 6px 42px;
-    min-height: 30px;
-    line-height: 20px;
-    font-size: $small-font;
-    color: $form-input-border;
-    background-color: transparent;
-    border: 0;
-    outline: none;
+    width: 88%;
   }
+}
 
-  ::-webkit-input-placeholder { /* WebKit browsers */
-    color: $form-input-border;
-  }
+.forgot-password {
+  display: none;
+  border-top: 1px solid $add-article-divider;
+  margin: 24px 0;
 
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $form-input-border;
-  }
-
-  ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: $form-input-border;
-  }
-
-  :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: $form-input-border;
-  }
-
-  &__group {
-    position: relative;
-    margin-top: 30px;
-    border: 1px solid $form-input-border;
-    max-width: 270px;
-    font-size: 0;
-    background-color: $white;
-    border-radius: 20px;
-    outline: none;
-    overflow: hidden;
-
-    img {
-      margin: 8px;
-      margin-left: 14px;
-      width: 20px;
-    }
-  }
-
-  &__see-password.img {
-    display: block;
-    position: absolute;
-    top: 1px;
-    bottom: 1px;
-    right: 0;
-    padding: 8px;
-    margin: 0;
-    width: 36px;
-    z-index: 1;
-    cursor: pointer;
-  }
-
-  &__button-group {
-    max-width: 270px;
-    margin: 30px 0;
-
-    a {
-      font-size: $smaller-font;
-      color: $light-gray;
-    }
-  }
-
-  &__login-button {
-    padding: 6px;
-    border: 0;
-    min-height: 34px;
-    line-height: 24px;
-    width: 100%;
-    color: $white;
-    font-size: $main-font;
-    border-radius: 20px;
-    background-color: $theme-color-2;
-    box-shadow: 0 6px 8px 0 rgba(9, 53, 83, 0.31);
+  &__title {
+    text-align: center;
+    margin: 24px 0;
+    color: $lightter-gray;
+    font-weight: normal;
   }
 }
 
@@ -194,6 +134,24 @@ body,
   }
 }
 
+.reset-password {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/reset-password-bg.jpg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: 100%;
+    background-image: url(../img/reset-password-content.png);
+    background-size: 100% auto;
+  }
+}
+
 @media (max-width: 959px) {
   .login__content {
     margin-left: 20%;
@@ -205,6 +163,14 @@ body,
   .login {
     .col-6 {
       width: 100%;
+    }
+
+    &__logo {
+      padding: 40px 20px 40px 0;
+    }
+
+    &__form-container {
+      margin: 6vh auto;
     }
   }
 

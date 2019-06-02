@@ -1,0 +1,277 @@
+@import url(../fonts/font.css);
+.chart__container {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F4F5F8; }
+.chart__banner {
+  padding: 15px 30px;
+  margin: auto;
+  max-width: 1440px; }
+.chart__back-button {
+  display: inline-block;
+  border: 0;
+  padding: 0 6px;
+  background-color: transparent;
+  width: 26px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); }
+  .chart__back-button img {
+    vertical-align: top;
+    max-width: 100%; }
+.chart__page-title {
+  display: table-cell;
+  vertical-align: top;
+  padding: 20px 0;
+  min-width: 230px;
+  color: #84c0ca;
+  line-height: 2em; }
+  .chart__page-title h3 {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 18px; }
+.chart__summary-list {
+  display: table-cell;
+  vertical-align: top;
+  width: 90%; }
+  .chart__summary-list li {
+    padding: 0 20px; }
+  .chart__summary-list li ~ li {
+    border-left: 1px solid #e9eaea; }
+.chart__summary-select {
+  position: relative;
+  padding: 5px 12px; }
+  .chart__summary-select select {
+    border: 0;
+    color: #8a8a8a;
+    background-color: transparent;
+    font-size: 14px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none; }
+  .chart__summary-select img {
+    margin-left: 5px;
+    max-height: 10px; }
+.chart__summary-result {
+  vertical-align: bottom;
+  display: inline-block;
+  padding: 15px 5px 5px 12px;
+  font-size: 2rem;
+  line-height: 1em; }
+.chart__summary-unit {
+  vertical-align: bottom;
+  display: inline-block;
+  padding: 20px 5px 5px 5px;
+  font-size: 20px; }
+.chart__tab {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 144px;
+  margin: 0 auto; }
+  .chart__tab .tab {
+    border-bottom: 1px solid #e9eaea; }
+  .chart__tab .tab-mobile {
+    display: none; }
+  .chart__tab .tab-pane {
+    display: none;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    background-color: #fff;
+    margin: auto;
+    max-width: 1360px;
+    border-radius: 15px; }
+    .chart__tab .tab-pane.active {
+      display: block; }
+  .chart__tab li {
+    padding: 10px 0;
+    border-bottom-width: 4px;
+    font-size: 14px;
+    font-weight: normal; }
+  .chart__tab li.active {
+    border-bottom-color: #84c0ca; }
+.chart__pannes {
+  position: absolute;
+  width: 100%;
+  top: 42px;
+  bottom: 0; }
+
+.detail-pane__header {
+  text-align: right;
+  padding: 0 30px;
+  border-bottom: 1px solid #e9eaea; }
+  .detail-pane__header h2 {
+    float: left;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal; }
+.detail-pane__filter-list {
+  display: inline-block;
+  margin: 0; }
+  .detail-pane__filter-list li {
+    display: inline-block; }
+  .detail-pane__filter-list select {
+    border: 0;
+    font-size: 14px;
+    height: 40px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none; }
+  .detail-pane__filter-list .user-type select {
+    width: 90px; }
+  .detail-pane__filter-list .date-range select {
+    width: 100px; }
+  .detail-pane__filter-list .sub-channel select {
+    width: 114px; }
+.detail-pane__select {
+  position: relative;
+  margin-right: 46px; }
+.detail-pane__select-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 12px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); }
+.detail-pane__content {
+  position: absolute;
+  top: 62px;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0 0 15px 15px; }
+  .detail-pane__content img {
+    max-width: 100%; }
+.detail-pane__mobile {
+  display: none; }
+
+@media (max-width: 1426px) {
+  .chart__summary-list li {
+    padding: 0 10px; } }
+@media (max-width: 1330px) {
+  .chart__summary-select select {
+    font-size: 12px; } }
+@media (max-width: 1230px) {
+  .chart__page-title {
+    min-width: 190px; }
+    .chart__page-title h3 {
+      font-size: 16px; } }
+@media (max-width: 1190px) {
+  .chart__banner {
+    padding: 15px; }
+  .chart__summary-select select {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .chart__tab li {
+    font-size: 12px; } }
+@media (max-width: 1024px) {
+  .chart__container {
+    top: 50px;
+    overflow-y: auto; }
+    .chart__container .col-3 {
+      float: none;
+      display: block;
+      width: auto; }
+  .chart__page-title {
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    transform: translateX(-14px);
+    -webkit-transform: translateX(-14px); }
+    .chart__page-title a {
+      display: inherit; }
+    .chart__page-title h3 {
+      font-size: inherit; }
+    .chart__page-title br {
+      display: none; }
+  .chart__back-button {
+    width: 22px; }
+  .chart__summary-list {
+    display: block;
+    width: auto; }
+    .chart__summary-list li {
+      padding: 15px 0;
+      margin: 0 20px;
+      border-bottom: 1px solid #ccc; }
+    .chart__summary-list li ~ li {
+      border-left: 0; }
+  .chart__summary-select {
+    padding: 0; }
+    .chart__summary-select select {
+      max-width: none;
+      height: 24px; }
+  .chart__summary-result {
+    padding-left: 0; }
+  .chart__tab {
+    position: static;
+    padding: 15px; }
+    .chart__tab .tab {
+      display: none; }
+    .chart__tab .tab-mobile {
+      position: relative;
+      display: block;
+      color: #093553;
+      padding: 0 6px;
+      border: 1px solid #e9eaea;
+      border-radius: 4px; }
+      .chart__tab .tab-mobile select {
+        width: 100%;
+        height: 30px;
+        color: #093553;
+        font-weight: bold; }
+    .chart__tab .tab-pane,
+    .chart__tab .detail-pane__content {
+      position: static; }
+    .chart__tab .tab-pane {
+      margin: 20px 0; }
+  .chart__pannes {
+    position: static; }
+
+  .detail-pane__select-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 6px;
+    margin: auto;
+    width: 12px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); }
+  .detail-pane__header {
+    text-align: left;
+    padding: 15px 15px 0; }
+    .detail-pane__header h2 {
+      float: none;
+      margin: 0;
+      font-size: 14px; }
+  .detail-pane__filter-list {
+    display: block; }
+    .detail-pane__filter-list li {
+      padding: 5px 0; }
+  .detail-pane__select {
+    margin-right: 20px;
+    font-size: 12px; }
+    .detail-pane__select select {
+      font-size: inherit;
+      height: 30px; }
+  .detail-pane__content {
+    padding: 15px 12px; }
+  .detail-pane__desktop {
+    display: none; }
+  .detail-pane__mobile {
+    display: block; } }
+
+/*# sourceMappingURL=chart.css.map */

@@ -6,12 +6,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CHandlee&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/sign.css">
@@ -31,18 +32,6 @@
             <img src="./img/logo.png" alt="taxila-logo">
           </div>
 
-          <!-- <div class="login__sign-links text-right">
-            <ul class="login__sign-list">
-              <li>
-                <a class="text-middle" href="">Register</a>
-              </li>
-              <li>
-                <a class="text-middle" href="">Take a tour</a>
-              </li>
-            </ul>
-          </div> -->
-
-
           <div class="login__form-container">
             <h4 class="login__welcome">Welcome to Taxila,</h4>
             <form class="sign-form" action="">
@@ -55,31 +44,29 @@
                 <input type="password" placeholder="Password"/>
                 <img class="sign-form__see-password img" src="./img/sign-seen.png" alt="">
               </div>
-              <!-- <div class="sign-form__group">
-                <div class="checkbox text-middle">
-                  <input type="checkbox" />
-                </div>
-                <span class="checkbox__text text-middle">Remember me</span>
-              </div> -->
+
               <div class="sign-form__button-group text-right">
                 <button class="sign-form__login-button">Login</button>
               </div>
             </form>
-            <div class="sign-form__button-group text-right">
-              <a href="">Forgot your password?</a>
+            <div class="sign-form__button-group forget text-right">
+              <button class="forgot-password__button">Forgot your password?</button>
             </div>
 
-            <!-- <div class="sign-social__container text-right">
-              <label class="text-middle">Sign in with : </label>
-              <ul class="sign-social text-middle">
-                <li>
-                  <a href=""><img src="./img/login-facebook.png" alt=""></a>
-                </li>
-                <li>
-                  <a href=""><img src="./img/login-twitter.png" alt=""></a>
-                </li>
-              </ul>
-            </div> -->
+            <div class="forgot-password">
+              <h4 class="forgot-password__title">Reset Password</h4>
+              <form class="sign-form" action="">
+                <div class="sign-form__group">
+                  <img src="./img/sign-email.png" alt="">
+                  <input type="text" placeholder="Enter Your Email Address"/>
+                </div>
+
+                <div class="sign-form__button-group text-right">
+                  <button class="sign-form__forgot-button">Reset Password</button>
+                </div>
+              </form>
+            </div>
+
           </div>
         </div>
       </div>
@@ -102,7 +89,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
   <script>
     (function(){
       $('.sign-form__see-password').on('click', function() {
@@ -111,6 +97,10 @@
         } else {
           $(this).parents('.sign-form__group').find('input').attr('type', 'password');
         }
+      });
+
+      $('.forgot-password__button').on('click', function() {
+        $('.forgot-password').slideToggle();
       });
     })();
   </script>

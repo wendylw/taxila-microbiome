@@ -1,0 +1,1180 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CHandlee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery.modal.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/chart.css">
+</head>
+
+<body>
+  <div class="loader loading">
+    <img src="./img/loader.gif" alt="">
+  </div>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <div class="side-backdrop"></div>
+  <div class="wrapper">
+    <header class="header">
+      <i class="header__menu-m text-middle">
+        <img src="./img/menu-g.png"/>
+      </i>
+      <img class="header__logo" src="./img/logo-white.png" alt="">
+      <ul class="header__navs">
+        <li class="header__logo-m header__nav-item">
+          <img src="./img/logo.png">
+          <span class="text-right">Welcome to Taxila</span>
+        </li>
+        <li class="header__channel header__nav-item text-middle">
+          <a class="header__nav-link link-forward"><span>CHANNEL</span></a>
+        </li>
+        <li class="header__article header__nav-item text-middle">
+          <a href="./time-line.html" class="header__nav-link"><span>TIME LINE</span></a>
+
+        </li>
+        <li class="header__catalog header__nav-item text-middle">
+          <a class="header__nav-link link-forward"><span>CATALOG</span></a>
+        </li>
+        <li class="header__trends header__nav-item text-middle">
+          <a class="header__nav-link" href="./geo-trend.html"><span>GEO TRENDS</span></a>
+        </li>
+        <li class="header__analysis header__nav-item text-middle">
+          <a class="header__nav-link" href="./analysis.html"><span>ANALYSIS</span></a>
+        </li>
+
+      </ul>
+      <div class="header__operator">
+        <div class="header__search text-middle">
+          <input type="text" placeholder="Type your search item here and explore"/>
+        </div>
+        <i class="header__user text-middle"></i>
+      </div>
+    </header>
+
+    <!-- Add your site or application content here -->
+    <div class="chart__container">
+      <div class="chart__banner">
+        <div class="chart__page-title">
+          <a href="./analysis.html" >
+            <i class="chart__back-button"><img src="./img/news-comment-expand.png" alt=""></i>
+            <h3>TAXILA<br> ACCESS ANALYTICS</h3>
+          </a>
+        </div>
+        <div class="chart__summary-list">
+          <ul class="row">
+            <li class="col-3">
+              <div class="chart__summary-select">
+                <select name="" id="">
+                  <option value="">Last Week's Trending Search</option>
+                  <option value="">Last Week's Trending Search</option>
+                </select>
+                <img src="./img/news-comment-expand-r.png" alt="">
+              </div>
+
+              <span class="chart__summary-result">15</span>
+              <span class="chart__summary-unit">dna</span>
+            </li>
+            <li class="col-3">
+              <div class="chart__summary-select">
+                <select name="" id="">
+                  <option value="">Last Week's Trending Channel</option>
+                  <option value="">Last Week's Trending Channel</option>
+                </select>
+                <img src="./img/news-comment-expand-y.png" alt="">
+              </div>
+
+              <span class="chart__summary-result">44</span>
+              <span class="chart__summary-unit">Microbiome</span>
+            </li>
+            <li class="col-3">
+              <div class="chart__summary-select">
+                <select name="" id="">
+                  <option value="">Last Week's Trending Tag</option>
+                  <option value="">Last Week's Trending Tag</option>
+                </select>
+                <img src="./img/news-comment-expand-g.png" alt="">
+              </div>
+
+              <span class="chart__summary-result">73</span>
+              <span class="chart__summary-unit">Microbiome</span>
+            </li>
+            <li class="col-3">
+              <div class="chart__summary-select">
+                <select name="" id="">
+                  <option value="">Last Week's Trending Country</option>
+                  <option value="">Last Week's Trending Country</option>
+                </select>
+                <img src="./img/news-comment-expand-b.png" alt="">
+              </div>
+
+              <span class="chart__summary-result">100</span>
+              <span class="chart__summary-unit">India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chart__tab">
+        <ul class="tab">
+          <li class="tab__item active" name="chart-channel-statistics">Channel Statistics</li>
+          <li class="tab__item" name="chart-sub-channel-statistics">Sub-Channel Statistics</li>
+          <li class="tab__item" name="chart-search-statistics">Search Statistics</li>
+          <li class="tab__item" name="chart-page-statistics">Page Statistics</li>
+          <li class="tab__item" name="chart-tag-article-statistics">Tag & Article Statistics</li>
+          <li class="tab__item" name="chart-user-statistics">User Statistics</li>
+          <li class="tab__item" name="chart-country-statistics">Country Statistics</li>
+          <li class="tab__item" name="chart-session-statistics">Session Statistics</li>
+        </ul>
+
+        <div class="tab-mobile">
+          <select>
+            <option class="tab__item active" name="chart-channel-statistics">Channel Statistics</option>
+            <option class="tab__item" name="chart-sub-channel-statistics">Sub-Channel Statistics</option>
+            <option class="tab__item" name="chart-search-statistics">Search Statistics</option>
+            <option class="tab__item" name="chart-page-statistics">Page Statistics</option>
+            <option class="tab__item" name="chart-tag-article-statistics">Tag & Article Statistics</option>
+            <option class="tab__item" name="chart-user-statistics">User Statistics</option>
+            <option class="tab__item" name="chart-country-statistics">Country Statistics</option>
+            <option class="tab__item" name="chart-session-statistics">Session Statistics</option>
+          </select>
+          <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+        </div>
+
+        <div class="chart__pannes">
+          <section id="chart-channel-statistics" class="tab-pane active">
+            <div class="detail-pane__header">
+              <h2>Channel Statistics</h2>
+              <ul class="detail-pane__filter-list">
+                <li>
+                  <div class="detail-pane__select user-type">
+                    <select name="" id="">
+                      <option value="">User Type</option>
+                      <option value="">User Type</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-pane__select date-range">
+                    <select name="" id="">
+                      <option value="">Date Range</option>
+                      <option value="">Date Range</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="detail-pane__content">
+              <img class="detail-pane__desktop" src="./img/analysis-statistic-chart.jpg" alt="" />
+              <img class="detail-pane__mobile" src="./img/analysis-statistic-chart-mobile.png" alt="" />
+            </div>
+          </section>
+          <section id="chart-sub-channel-statistics" class="tab-pane">
+            <div class="detail-pane__header">
+              <h2>Channel Statistics</h2>
+              <ul class="detail-pane__filter-list">
+                <li>
+                  <div class="detail-pane__select user-type">
+                    <select name="" id="">
+                      <option value="">User Type</option>
+                      <option value="">User Type</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-pane__select date-range">
+                    <select name="" id="">
+                      <option value="">Date Range</option>
+                      <option value="">Date Range</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="detail-pane__content">
+              <img class="detail-pane__desktop" src="./img/analysis-statistic-chart.jpg" alt="" />
+              <img class="detail-pane__mobile" src="./img/analysis-statistic-chart-mobile.png" alt="" />
+            </div>
+          </section>
+          <section id="chart-search-statistics" class="tab-pane">
+            <div class="detail-pane__header">
+              <h2>Channel Statistics</h2>
+              <ul class="detail-pane__filter-list">
+                <li>
+                  <div class="detail-pane__select user-type">
+                    <select name="" id="">
+                      <option value="">User Type</option>
+                      <option value="">User Type</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-pane__select date-range">
+                    <select name="" id="">
+                      <option value="">Date Range</option>
+                      <option value="">Date Range</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="detail-pane__content">
+              <img class="detail-pane__desktop" src="./img/analysis-statistic-chart.jpg" alt="" />
+              <img class="detail-pane__mobile" src="./img/analysis-statistic-chart-mobile.png" alt="" />
+            </div>
+          </section>
+          <section id="chart-page-statistics" class="tab-pane">
+            <div class="detail-pane__header">
+              <h2>Channel Statistics</h2>
+              <ul class="detail-pane__filter-list">
+                <li>
+                  <div class="detail-pane__select user-type">
+                    <select name="" id="">
+                      <option value="">User Type</option>
+                      <option value="">User Type</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-pane__select date-range">
+                    <select name="" id="">
+                      <option value="">Date Range</option>
+                      <option value="">Date Range</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="detail-pane__content">
+              <img class="detail-pane__desktop" src="./img/analysis-statistic-chart.jpg" alt="" />
+              <img class="detail-pane__mobile" src="./img/analysis-statistic-chart-mobile.png" alt="" />
+            </div>
+          </section>
+          <section id="chart-tag-article-statistics" class="tab-pane">
+            <div class="detail-pane__header">
+              <h2>Channel Statistics</h2>
+              <ul class="detail-pane__filter-list">
+                <li>
+                  <div class="detail-pane__select user-type">
+                    <select name="" id="">
+                      <option value="">User Type</option>
+                      <option value="">User Type</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-pane__select date-range">
+                    <select name="" id="">
+                      <option value="">Date Range</option>
+                      <option value="">Date Range</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="detail-pane__content">
+              <img class="detail-pane__desktop" src="./img/analysis-statistic-chart.jpg" alt="" />
+              <img class="detail-pane__mobile" src="./img/analysis-statistic-chart-mobile.png" alt="" />
+            </div>
+          </section>
+          <section id="chart-user-statistics" class="tab-pane">
+            <div class="detail-pane__header">
+              <h2>Channel Statistics</h2>
+              <ul class="detail-pane__filter-list">
+                <li>
+                  <div class="detail-pane__select user-type">
+                    <select name="" id="">
+                      <option value="">User Type</option>
+                      <option value="">User Type</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-pane__select date-range">
+                    <select name="" id="">
+                      <option value="">Date Range</option>
+                      <option value="">Date Range</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="detail-pane__content">
+              <img class="detail-pane__desktop" src="./img/analysis-statistic-chart.jpg" alt="" />
+              <img class="detail-pane__mobile" src="./img/analysis-statistic-chart-mobile.png" alt="" />
+            </div>
+          </section>
+          <section id="chart-country-statistics" class="tab-pane">
+            <div class="detail-pane__header">
+              <h2>Channel Statistics</h2>
+              <ul class="detail-pane__filter-list">
+                <li>
+                  <div class="detail-pane__select user-type">
+                    <select name="" id="">
+                      <option value="">User Type</option>
+                      <option value="">User Type</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-pane__select date-range">
+                    <select name="" id="">
+                      <option value="">Date Range</option>
+                      <option value="">Date Range</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="detail-pane__content">
+              <img class="detail-pane__desktop" src="./img/analysis-statistic-chart.jpg" alt="" />
+              <img class="detail-pane__mobile" src="./img/analysis-statistic-chart-mobile.png" alt="" />
+            </div>
+          </section>
+          <section id="chart-session-statistics" class="tab-pane">
+            <div class="detail-pane__header">
+              <h2>Channel Statistics</h2>
+              <ul class="detail-pane__filter-list">
+                <li>
+                  <div class="detail-pane__select user-type">
+                    <select name="" id="">
+                      <option value="">User Type</option>
+                      <option value="">User Type</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-pane__select date-range">
+                    <select name="" id="">
+                      <option value="">Date Range</option>
+                      <option value="">Date Range</option>
+                    </select>
+                    <img class="detail-pane__select-icon" src="./img/header-right-arrow-blue.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="detail-pane__content">
+              <img class="detail-pane__desktop" src="./img/analysis-statistic-chart.jpg" alt="" />
+              <img class="detail-pane__mobile" src="./img/analysis-statistic-chart-mobile.png" alt="" />
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- end of Add your site or application content here -->
+
+    <div class="side">
+      <h3 class="side__header-title">
+        <img src="./img/header-right-arrow-blue.png">
+        <span>CATALOG</span>
+      </h3>
+      <div class="side__nav">
+        <div class="side__item">
+          <h3 class="side__title">SUBSCRIBED</h3>
+          <ul>
+            <li class="side__nav-item" data-item="pharma">
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Pharma Corporate Press Release</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+              <div class="side__subnav-m" id="pharma-m">
+                <div class="side__item">
+                  <h3 class="side__title side__main-title">
+                    <i class="side__title-triangle text-middle"></i>
+                    <span class="text-middle">ASSOCIATED SOURCE</span>
+                  </h3>
+                  <ul class="side__sublist">
+                    <li class="active">
+                      <label>Pfizer</label>
+                    </li>
+                    <li>
+                      <label>Abbvie</label>
+                    </li>
+                    <li>
+                      <label>Otsuka</label>
+                    </li>
+                    <li>
+                      <label>Merck</label>
+                    </li>
+                    <li>
+                      <label>Roche</label>
+                    </li>
+                    <li>
+                      <label>Teijin</label>
+                    </li>
+                    <li>
+                      <label>Eli Lilly and Company</label>
+                    </li>
+                    <li>
+                      <label>Chugai</label>
+                    </li>
+                    <li>
+                      <label>Boehringer Ingelheim</label>
+                    </li>
+                    <li>
+                      <label>Meiji</label>
+                    </li>
+                    <li>
+                      <label>Mitsubishi Tanabe Pharma</label>
+                    </li>
+                    <li>
+                      <label>Bayer</label>
+                    </li>
+                    <li>
+                      <label>Teva Pharma</label>
+                    </li>
+                    <li>
+                      <label>Galaxy</label>
+                    </li>
+                    <li>
+                      <label>Biogen</label>
+                    </li>
+                    <li>
+                      <label>Eisai</label>
+                    </li>
+                    <li>
+                      <label>Amgen</label>
+                    </li>
+                    <li>
+                      <label>Johnson and Johnson</label>
+                    </li>
+                    <li>
+                      <label>Sanofi</label>
+                    </li>
+                    <li>
+                      <label>Astellas</label>
+                    </li>
+                    <li>
+                      <label>Daiichi Sankyo</label>
+                    </li>
+                    <li>
+                      <label>Bristol Myers Squibb</label>
+                    </li>
+                    <li>
+                      <label>Baxter</label>
+                    </li>
+                    <li>
+                      <label>Novartis</label>
+                    </li>
+                    <li>
+                      <label>Takeda</label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="side__item">
+                  <h3 class="side__title">
+                      <span class="text-middle">ASSOCIATED CHANNELS</span>
+                  </h3>
+                  <ul class="side__sublist">
+                    <li>
+                      <label>Analytics</label>
+                    </li>
+                    <li>
+                      <label>Pharma Press Releases</label>
+                    </li>
+                    <li>
+                      <label>Microbiome</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
+                  <i class="side__title-triangle text-middle"></i>
+                  <span class="text-middle">Microbiome</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+            </li>
+            <li class="side__nav-item">
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Microbiome Scientific literature</span>
+              </label>
+              <div class="side__button-container">
+                <button>Unsubscribe</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side__item">
+          <h3 class="side__title">AVALIABLE</h3>
+          <ul>
+            <li>
+              <label class="side__nav-title">
+                <i class="side__title-triangle text-middle"></i>
+                <span class="text-middle">Healthcare News</span>
+              </label>
+
+              <div class="side__button-container">
+                <button class="text-middle">view</button>
+                <span class="side__divider text-middle"></span>
+                <button class="text-middle">Unsubscribe</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="side__subnav" id="pharma">
+        <div class="side__item">
+          <h3 class="side__title side__main-title">
+            <i class="side__title-triangle text-middle"></i>
+            <span class="text-middle">ASSOCIATED SOURCE</span>
+          </h3>
+          <ul class="side__sublist">
+            <li class="active">
+              <label>Pfizer</label>
+            </li>
+            <li>
+              <label>Abbvie</label>
+            </li>
+            <li>
+              <label>Otsuka</label>
+            </li>
+            <li>
+              <label>Merck</label>
+            </li>
+            <li>
+              <label>Roche</label>
+            </li>
+            <li>
+              <label>Teijin</label>
+            </li>
+            <li>
+              <label>Eli Lilly and Company</label>
+            </li>
+            <li>
+              <label>Chugai</label>
+            </li>
+            <li>
+              <label>Boehringer Ingelheim</label>
+            </li>
+            <li>
+              <label>Meiji</label>
+            </li>
+            <li>
+              <label>Mitsubishi Tanabe Pharma</label>
+            </li>
+            <li>
+              <label>Bayer</label>
+            </li>
+            <li>
+              <label>Teva Pharma</label>
+            </li>
+            <li>
+              <label>Galaxy</label>
+            </li>
+            <li>
+              <label>Biogen</label>
+            </li>
+            <li>
+              <label>Eisai</label>
+            </li>
+            <li>
+              <label>Amgen</label>
+            </li>
+            <li>
+              <label>Johnson and Johnson</label>
+            </li>
+            <li>
+              <label>Sanofi</label>
+            </li>
+            <li>
+              <label>Astellas</label>
+            </li>
+            <li>
+              <label>Daiichi Sankyo</label>
+            </li>
+            <li>
+              <label>Bristol Myers Squibb</label>
+            </li>
+            <li>
+              <label>Baxter</label>
+            </li>
+            <li>
+              <label>Novartis</label>
+            </li>
+            <li>
+              <label>Takeda</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="side__item">
+          <h3 class="side__title">
+              <span class="text-middle">ASSOCIATED CHANNELS</span>
+          </h3>
+          <ul class="side__sublist">
+            <li>
+              <label>Analytics</label>
+            </li>
+            <li>
+              <label>Pharma Press Releases</label>
+            </li>
+            <li>
+              <label>Microbiome</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toggle-side channel">
+    <h3 class="toggle-side__header-title">
+      <img src="./img/header-right-arrow-blue.png" />
+      <span>CHANNEL</span>
+    </h3>
+    <ul class="toggle-side__list">
+      <li class="toggle-side__item">
+        <label class="toggle-side__title">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">All</span>
+        </label>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Analytics</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Animal Health</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Clinical trials</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Events</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Finance</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Healthcare & Medicine</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Media coverage</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Microbiome</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Microbiome Science and Tec…</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Patents</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Pharma Press Release</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Phytobiome</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Social Media</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="toggle-side__item">
+        <label class="toggle-side__title arrow">
+          <i class="text-middle checkbox">
+            <input type="checkbox">
+          </i>
+          <span class="text-middle">Startups investors</span>
+        </label>
+        <ul class="toggle-side__sublist">
+          <li class="toggle-side__subitem">
+            <a href="">
+              <i class="text-middle checkbox">
+                <input type="checkbox">
+              </i>
+              <span class="text-middle">Galaxy</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="user-side">
+    <section class="add-article-person text-center">
+      <div class="add-article__avatar"></div>
+      <h3 class="add-article-person__name">Sucheendra</h3>
+      <h4 class="add-article-person__description">Say something about yourself</h4>
+      <ul class="add-article-person__list">
+        <li class="add-article__item">
+          <a href="./my-favorite.html">Favorite articles</a>
+        </li>
+        <li class="add-article__item">
+          <a href="./my-archive.html">Archive</a>
+        </li>
+        <li class="add-article__item">
+          <a href="">Feedback</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="text-center">
+      <h3 class="article-operation__title">TODAY’S ARTICLES</h3>
+      <div class="article-operation__nav-container">
+        <div class="article-operation__nav-container">
+          <ul class="article-operation__nav-list">
+            <li>
+              <a class="article-operation__nav-link">Download Today's Articles</a>
+            </li>
+            <li>
+              <a class="article-operation__nav-link">Send Today's Articles</a>
+            </li>
+          </ul>
+          <div class="add-article-operation__item-form">
+            <div class="checkbox text-middle">
+              <input type="checkbox">
+            </div>
+            <span class="checkbox__text text-middle">With Annotation</span>
+          </div>
+        </div>
+      <ul class="article-operation__list">
+        <li>
+          <a class="article-operation__link" name="selected-articles-link">SELECTED ARTICLES</a>
+        </li>
+        <li>
+          <a class="article-operation__link" name="add-new-resource-link">ADD NEW RESOURCE</a>
+        </li>
+        <li>
+          <a class="article-operation__link">TOUR</a>
+        </li>
+        <li>
+          <a class="article-operation__link">TERM OF USE</a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="add-article__sign-off text-right">
+      <div>
+        <button class="change-password__button">Change your password</button>
+      </div>
+      <span class="text-middle">Sign off</span>
+    </div>
+  </div>
+
+  <!-- Article Operation button -->
+  <div id="selected-articles" class="home-modal__container modal">
+    <div class="home-modal__header">
+      <a href="#close-modal" rel="modal:close" class="home-modal__close-button-m">
+        <img src="./img/header-right-arrow-blue.png" alt="">
+      </a>
+      <h3 class="home-modal__title text-middle">SELECTED ARTICLES</h3>
+      <button class="home-modal__delete">Clear All</button>
+    </div>
+    <div class="home-modal__body">
+      <section class="home-modal__section tab-pane">
+        <div class="home-modal__article-list-container">
+          <ul class="home-modal__article-list">
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Researchers find, correct a cause of rhino infertility. Gut microbes in the female southern white rhino metabolize phytoestrogens…</p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr 2019 podcast, 9:26) Guests: Dr. Jessica Allegretti, director of the FMT </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+            <li>
+              <div class="media-top home-modal__article-label">
+                <i class="text-middle checkbox">
+                  <input type="checkbox">
+                </i>
+              </div>
+              <div class="media-top home-modal__article-content">
+                <p>Human Feces Can Cure Some Infections. Is The FDA About To Restrict It? (Apr </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="home-modal__footer text-right">
+      <button class="home-modal__button-link">Delete</button>
+    </div>
+  </div>
+  <!-- end of Article Operation button -->
+
+  <!-- Article Operation button -->
+  <div id="add-new-resource" class="home-modal__container modal">
+    <div class="home-modal__header">
+      <a href="#close-modal" rel="modal:close" class="home-modal__close-button-m">
+        <img src="./img/header-right-arrow-blue.png" alt="">
+      </a>
+      <h3 class="home-modal__title text-middle">ADD NEW RESOURCE</h3>
+    </div>
+    <div class="home-modal__body">
+      <section>
+        <h3 class="home-modal__section-title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
+        <button class="home-modal__batch-upload-button text-center">
+          <span>Batch Upload</span>
+        </button>
+        <i class="home-modal__divider text-center">
+          <span>Or</span>
+        </i>
+        <div>
+          <h3 class="home-modal__section-title text-center">ADD A SINGLE ARTICLE TO TAXILA</h3>
+          <form class="add-new-resource__container">
+            <div class="add-new-resource__hint">
+              <img class="text-middle" src="./img/side-triangle.png" alt="">
+              <span class="text-middle">Please map column names with respective fields</span>
+            </div>
+            <div class="add-new-resource__form-group">
+              <input type="text" placeholder="Enter Name">
+            </div>
+            <div class="add-new-resource__form-group">
+              <textarea placeholder="Enter Description"></textarea>
+            </div>
+            <div class="add-new-resource__form-group">
+              <input type="text" placeholder="Enter URL">
+            </div>
+            <div class="add-new-resource__form-group">
+              <input type="text" placeholder="Enter Tag">
+            </div>
+          </form>
+          <div class="add-new-resource__container">
+            <label class="add-new-resource__label">Channels</label>
+            <ul>
+              <li class="tags__item">Analytics</li>
+              <li class="tags__item">Animal Health</li>
+              <li class="tags__item">Clinical trials</li>
+              <li class="tags__item">Events</li>
+              <li class="tags__item">Finance</li>
+              <li class="tags__item">Healthcare & Medicine</li>
+              <li class="tags__item active">Media coverage</li>
+              <li class="tags__item">Microbiome</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="home-modal__footer text-right">
+      <button class="home-modal__button-link">CANCEL</button>
+      <button class="home-modal__button cancel">RESET</button>
+      <button class="home-modal__button add">ADD</button>
+      <button class="home-modal__button finish">FINISH</button>
+      <div class="home-modal__footer-hint-container">
+        <span class="home-modal__footer-hint">Total Uploaded: 28</span>
+        <span class="home-modal__footer-hint">Remaining Uploads: Unlimited</span>
+        <p class="home-modal__footer-description">Resources uploaded here will appear in the “User Resource” sub-channel of the corresponding channels</p>
+      </div>
+    </div>
+  </div>
+  <!-- end of Article Operation button -->
+
+  <!-- Patents Modal -->
+  <div id="patents-modal" class="patents-modal modal__container modal">
+    <div class="modal__header">
+      <h4 class="modal__header-title text-middle">Associated Sources For Catalog 'Patents & Publications'</h4>
+      <img class="text-middle" src="./img/news-down-white.png" alt="">
+    </div>
+    <div class="modal__list-container">
+      <ul class="modal__list">
+        <li class="modal__item">Car Body Painting</li>
+        <li class="modal__item active">Auto Process Finishing</li>
+        <li class="modal__item">Analytics for AutoInergy Channel</li>
+        <li class="modal__item">Progress in Polymer Science</li>
+        <li class="modal__item">Car Body Painting</li>
+        <li class="modal__item">Auto Process Finishing</li>
+        <li class="modal__item">Analytics for AutoInergy Channel</li>
+        <li class="modal__item">Progress in Polymer Science</li>
+        <li class="modal__item">Plastic Fuel Tanks</li>
+        <li class="modal__item">Analytics for Plastic Industry Channel</li>
+        <li class="modal__item">Plastics News Europe</li>
+      </ul>
+    </div>
+  </div>
+  <!-- end of Patents Modal -->
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="./js/vendor/masonry.pkgd.min.js"></script>
+  <script src="./js/jquery.modal.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/news-masonry.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+</body>
+
+</html>

@@ -25,9 +25,6 @@
   <div class="loader loading">
     <img src="./img/loader.gif" alt="">
   </div>
-  <div class="loader loading">
-    <img src="./img/loader.gif" alt="">
-  </div>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -48,7 +45,6 @@
         </li>
         <li class="header__article header__nav-item text-middle">
           <a href="./time-line.html" class="header__nav-link"><span>TIME LINE</span></a>
-
         </li>
         <li class="header__catalog header__nav-item text-middle">
           <a class="header__nav-link link-forward"><span>CATALOG</span></a>
@@ -59,6 +55,7 @@
         <li class="header__analysis header__nav-item text-middle">
           <a class="header__nav-link" href="./analysis.html"><span>ANALYSIS</span></a>
         </li>
+
       </ul>
       <div class="header__operator">
         <div class="header__search text-middle">
@@ -69,100 +66,200 @@
     </header>
 
     <!-- Add your site or application content here -->
-    <div class="news-content">
-      <div class="switch-button__container mode-button">
-        <div class="switch-button text-middle">
-          <i class="switch-button__icon"></i>
-        </div>
-        <span class="switch-button__mode-text text-middle" data-value="masonry">Masonry Layout</span>
-      </div>
-      <div class="news-topics__container row">
-        <div class="news-topics col-8">
-          <div class="news-topics__topic row">
-            <div class="news-topics__topic-image col-6">
-              <img src="http://via.placeholder.com/350x200" alt="" />
-            </div>
-            <div class="news-topics__topic-detail col-6">
-              <h3 class="news-topics__topic-type">SILICON VALLEY</h3>
-              <h4 class="news-topics__title">Silicon Valley Community Foundation Chief Ousted Over Harassment Allegations</h4>
-              <span class="news-topics__source">BY <strong>BRITTANY SHOOT</strong> , June 27, 2018</span>
+    <div class="filter__container">
+      <div class="filter">
+        <div class="container">
+          <ul class="filter__list">
+            <li class="filter__item">
+              <span>Google Trends</span>
+            </li>
+            <li class="filter__item">
+              <span>Patents</span>
+            </li>
+            <li class="filter__item">
+              <span>Google Patent Search</span>
+            </li>
+            <li class="filter__item">
+              <span>EspaceNet Patent Search</span>
+            </li>
+            <li class="filter__item figures">
+              <div class="dropdown">
+                <div class="dropdown__button">
+                  <span class="filter__text">Figures</span>
+                  <img class="filter__icon" src="./img/news-comment-expand-y.png">
+                </div>
 
-              <p class="news-topics__topic-brief">The CEO of Silicon Valley Community Foundation, the world’s largest community foundation, has been pushed out following investigations into allegations of bullying and harassment in the workplace.  <a href="#">read more</a></p>
-            </div>
-          </div>
-          <section class="news-topics__storys">
-            <h3 class="news-topics__story-title">TOP STORY</h3>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li>
+                      <a>Download</a>
+                    </li>
+                    <li>
+                      <a>Download with Annotations</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="filter__item presentation">
+              <div class="dropdown">
+                <div class="dropdown__button">
+                  <span class="filter__text">Presentation</span>
+                  <img class="filter__icon" src="./img/news-comment-expand-p.png">
+                </div>
+
+                <div class="dropdown-menu">
+                  <ul>
+                    <li>
+                      <a>Download</a>
+                    </li>
+                    <li>
+                      <a>Download with Annotations</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="filter__item">
+              <span>Twitter</span>
+            </li>
+            <li class="filter__item">
+              <span>Google</span>
+            </li>
+            <li class="filter__item publications">
+              <div class="dropdown">
+                <div class="dropdown__button">
+                  <span class="filter__text">Publications</span>
+                  <img class="filter__icon" src="./img/news-comment-expand-pk.png">
+                </div>
+
+                <div class="dropdown-menu">
+                  <ul>
+                    <li>
+                      <a>Download</a>
+                    </li>
+                    <li>
+                      <a>Download with Annotations</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="filter__item">
+              <span>Search on CINII</span>
+            </li>
+            <li class="filter__item taxila">
+              <span class="filter__text">Taxila</span>
+              <img class="filter__icon" src="./img/news-comment-expand.png">
+            </li>
+          </ul>
+
+          <div class="filter-detail text-center">
+            <i class="filter__divider"></i>
             <ul>
-              <li class="news-topics__story">
-                <div class="media-top">
-                  <div class="news-topics__story-image"></div>
-                </div>
-                <div class="media-top">
-                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                  <div class="news-content__summary">
-                    <span>APRIL 08, 2019</span>
-                    <span>GENETICS,ANIMALS</span>
-                  </div>
-                </div>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Microbiome</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
               </li>
-              <li class="news-topics__story">
-                <div class="media-top">
-                  <div class="news-topics__story-image"></div>
-                </div>
-                <div class="media-top">
-                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                  <div class="news-content__summary">
-                    <span>APRIL 08, 2019</span>
-                    <span>GENETICS,ANIMALS</span>
-                  </div>
-                </div>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Pharma Press Release</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
               </li>
-              <li class="news-topics__story">
-                <div class="media-top">
-                  <div class="news-topics__story-image"></div>
-                </div>
-                <div class="media-top">
-                  <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
-                  <div class="news-content__summary">
-                    <span>APRIL 08, 2019</span>
-                    <span>GENETICS,ANIMALS</span>
-                  </div>
-                </div>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Expert Curation</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Media coverage</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Patents</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Finance</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Animal Health</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Clinical trials</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Key Opinion Leader</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Startups investors</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Events</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
+              </li>
+              <li class="filter-detail__item">
+                <span class="filter-detail__text">Microbiome Science and Technology News</span>
+                <img class="filter-detail__icon" src="./img/news-comment-expand.png" />
               </li>
             </ul>
-          </section>
-        </div>
-        <div class="news-ads col-4">
-          <h4 class="news-ads__title">SHARE ARTICLES WITH YOUR TEAM</h4>
-          <div class="news-ads__detail text-center">
-            <img src="http://via.placeholder.com/350x260" alt="" />
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-          </div>
-          <div class="news-ads__slider-container">
-            <h4>What i’m reading</h4>
-            <p class="news-ads__article">A collection of books that have been occupying my time.—Joshua Topolsky, Founder, The @Outline & Independent Media. Co-founder, Vox Media.</p>
-            <div class="news-ads__sliders">
-              <div>
-                <i class="prev-icon">
-                  <img src="./img/news-prev-icon.png" alt="">
-                </i>
-                <i class="next-icon">
-                  <img src="./img/news-next-icon.png" alt="">
-                </i>
-              </div>
-              <ul class="news-ads__slider">
-                <li>
-                  <img src="http://via.placeholder.com/350x200" alt="">
-                </li>
-              </ul>
-            </div>
-            <p>I spent a lot of time watching Westworld's second season thinking about William Gibson's </p>
           </div>
         </div>
       </div>
 
-      <div class="news-content__grid-mobile-container">
-        <h3 class="news-content__recent-update-title classic-block">RECENT UPDATE</h3>
+      <div class="news-content">
+        <h3 class="news-content__recent-update-title classic-block">Recent Update</h3>
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
+          <div class="grid-sizer grid-item col-6">
+            <a class="grid__article-button">
+              <div>
+                <h3 class="news-content__tag text-middle"># GOOGLE TRENDS</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-google-trend.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="grid-sizer grid-item col-6">
+            <a class="grid__article-button col-6">
+              <div>
+                <h3 class="news-content__tag text-middle"># PATENTS</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-lens.jpg" alt="">
+              </div>
+            </a>
+            <a class="grid__article-button col-6">
+              <div>
+                <h3 class="news-content__tag text-middle"># ESPACENET PATENT SEARCH</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-google.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="grid-sizer grid-item col-6">
+            <a class="grid__article-button col-6">
+              <div>
+                <h3 class="news-content__tag text-middle"># GOOGLE PATENT SEARCH</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-european.jpg" alt="">
+              </div>
+            </a>
+            <a class="grid__article-button col-6">
+              <div>
+                <h3 class="news-content__tag text-middle"># TWITTER</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-twitter.jpg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
         <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
           <div class="grid-sizer grid-item col-3">
             <a class="grid__article-button">
@@ -171,11 +268,12 @@
                 <i class="news-content__remove text-middle"></i>
               </div>
               <div class="news-content__image-container">
-                <i class="checkbox">
+                <i class="checkbox classic-none">
                   <input type="checkbox">
                 </i>
-                <img class="news-content__image" src="http://via.placeholder.com/350x200" alt="">
+                <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
               </div>
+
               <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
               <div class="news-content__summary classic-block">
                 <span>4 Likes</span>
@@ -218,11 +316,12 @@
                 <i class="news-content__remove text-middle"></i>
               </div>
               <div class="news-content__image-container">
-                <i class="checkbox">
+                <i class="checkbox classic-none">
                   <input type="checkbox">
                 </i>
-                <img class="news-content__image" src="http://via.placeholder.com/350x200" alt="">
+                <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
               </div>
+
               <h3 class="news-content__title">9to5Mac Happy Hour 179: iOS 12 public beta, AirPlay 2 speakers, and MacBook keyboard repair program</h3>
               <div class="news-content__summary classic-block">
                 <span>4 Likes</span>
@@ -262,15 +361,36 @@
           <div class="grid-sizer grid-item col-3">
             <a class="grid__article-button">
               <div>
+                <h3 class="news-content__tag text-middle"># GOOGLE</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-google-1.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="grid-sizer grid-item col-3">
+            <a class="grid__article-button">
+              <div>
+                <h3 class="news-content__tag text-middle"># SEARCH ON CINII</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-cinii.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="grid-sizer grid-item col-3">
+            <a class="grid__article-button">
+              <div>
                 <h3 class="news-content__tag text-middle"># THE TOXICOLOGIST</h3>
                 <i class="news-content__remove text-middle"></i>
               </div>
               <div class="news-content__image-container">
-                <i class="checkbox">
+                <i class="checkbox classic-none">
                   <input type="checkbox">
                 </i>
-                <img class="news-content__image" src="http://via.placeholder.com/350x160" alt="">
+                <img class="news-content__image classic-none" src="http://via.placeholder.com/350x160" alt="">
               </div>
+
               <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
               <div class="news-content__summary classic-block">
                 <span>4 Likes</span>
@@ -313,11 +433,12 @@
                 <i class="news-content__remove text-middle"></i>
               </div>
               <div class="news-content__image-container">
-                <i class="checkbox">
+                <i class="checkbox classic-none">
                   <input type="checkbox">
                 </i>
-                <img class="news-content__image" src="http://via.placeholder.com/350x150" alt="">
+                <img class="news-content__image classic-none" src="http://via.placeholder.com/350x150" alt="">
               </div>
+
               <h3 class="news-content__title">Microsoft releases preview of its 'Gen2' Azure Data Lake Storage service</h3>
               <div class="news-content__summary classic-block">
                 <span>4 Likes</span>
@@ -361,11 +482,12 @@
                 <i class="news-content__remove text-middle"></i>
               </div>
               <div class="news-content__image-container">
-                <i class="checkbox">
+                <i class="checkbox classic-none">
                   <input type="checkbox">
                 </i>
-                <img class="news-content__image" src="http://via.placeholder.com/350x150" alt="">
+                <img class="news-content__image classic-none" src="http://via.placeholder.com/350x150" alt="">
               </div>
+
               <h3 class="news-content__title">Microsoft releases preview of its 'Gen2' Azure Data Lake Storage service</h3>
               <div class="news-content__summary classic-block">
                 <span>4 Likes</span>
@@ -409,11 +531,12 @@
                 <i class="news-content__remove text-middle"></i>
               </div>
               <div class="news-content__image-container">
-                <i class="checkbox">
+                <i class="checkbox classic-none">
                   <input type="checkbox">
                 </i>
-                <img class="news-content__image" src="http://via.placeholder.com/350x200" alt="">
+                <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
               </div>
+
               <h3 class="news-content__title">Big data architecture: Navigating the complexity</h3>
               <div class="news-content__summary classic-block">
                 <span>4 Likes</span>
@@ -456,11 +579,12 @@
                 <i class="news-content__remove text-middle"></i>
               </div>
               <div class="news-content__image-container">
-                <i class="checkbox">
+                <i class="checkbox classic-none">
                   <input type="checkbox">
                 </i>
-                <img class="news-content__image" src="http://via.placeholder.com/350x200" alt="">
+                <img class="news-content__image classic-none" src="http://via.placeholder.com/350x200" alt="">
               </div>
+
               <h3 class="news-content__title">9to5Mac Happy Hour 179: iOS 12 public beta, AirPlay 2 speakers, and MacBook keyboard repair program</h3>
               <div class="news-content__summary classic-block">
                 <span>4 Likes</span>
@@ -504,11 +628,12 @@
                 <i class="news-content__remove text-middle"></i>
               </div>
               <div class="news-content__image-container">
-                <i class="checkbox">
+                <i class="checkbox classic-none">
                   <input type="checkbox">
                 </i>
-                <img class="news-content__image" src="http://via.placeholder.com/350x160" alt="">
+                <img class="news-content__image classic-none" src="http://via.placeholder.com/350x160" alt="">
               </div>
+
               <h3 class="news-content__title">Third-party remote platform support for Siri in iOS 12, tvOS 12 will be a game changer</h3>
               <div class="news-content__summary classic-block">
                 <span>4 Likes</span>
@@ -1156,7 +1281,7 @@
           <img src="./img/save.png">
         </button>
       </div>
-      <button class="article-side__pre-button">
+      <button>
         <img src="./img/news-info-sign-off.png" alt="">
       </button>
     </div>
@@ -1315,6 +1440,7 @@
     </div>
     <div class="home-modal__footer text-right">
       <button class="home-modal__button-link">Delete</button>
+
     </div>
   </div>
   <!-- end of Article Operation button -->
@@ -1329,7 +1455,7 @@
     </div>
     <div class="home-modal__body">
       <section>
-        <h3 class="home-modal__section-title text-center">ADD MULTIPLE ARTICLES <br>TO<br> TAXILA USING A CSV FILE</h3>
+        <h3 class="home-modal__section-title text-center">ADD MULTIPLE ARTICLES TO TAXILA USING A CSV FILE</h3>
         <button class="home-modal__batch-upload-button text-center">
           <span>Batch Upload</span>
         </button>
@@ -1415,28 +1541,6 @@
     </div>
   </div>
   <!-- end of Patents Modal -->
-
-  <!-- Change Password -->
-  <div class="change-password__content">
-    <div class="change-password__form-container">
-      <h4 class="change-password__welcome">Change Password</h4>
-      <form class="sign-form" action="">
-        <div class="sign-form__group">
-          <input type="password" placeholder="Old Password"/>
-        </div>
-        <div class="sign-form__group">
-          <input type="password" placeholder="New Password"/>
-        </div>
-        <div class="sign-form__group">
-          <input type="password" placeholder="Confirm Password"/>
-        </div>
-        <div class="sign-form__button-group text-right">
-          <button class="sign-form__outline-button">Change Password</button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- end of Change Password -->
 
   <!-- remove success message -->
   <div class="article-delete message">
