@@ -90,11 +90,11 @@
                 </div>
 
                 <div class="dropdown-menu">
-                  <ul class="dropdown-menu__list">
-                    <li class="dropdown-menu__item">
+                  <ul>
+                    <li>
                       <a>Download</a>
                     </li>
-                    <li class="dropdown-menu__item">
+                    <li>
                       <a>Download with Annotations</a>
                     </li>
                   </ul>
@@ -102,8 +102,23 @@
               </div>
             </li>
             <li class="filter__item presentation">
-              <span class="filter__text">Presentation</span>
-              <img class="filter__icon" src="./img/news-comment-expand-p.png">
+              <div class="dropdown">
+                <div class="dropdown__button">
+                  <span class="filter__text">Presentation</span>
+                  <img class="filter__icon" src="./img/news-comment-expand-p.png">
+                </div>
+
+                <div class="dropdown-menu">
+                  <ul>
+                    <li>
+                      <a>Download</a>
+                    </li>
+                    <li>
+                      <a>Download with Annotations</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="filter__item">
               <span>Twitter</span>
@@ -112,8 +127,23 @@
               <span>Google</span>
             </li>
             <li class="filter__item publications">
-              <span class="filter__text">Publications</span>
-              <img class="filter__icon" src="./img/news-comment-expand-pk.png">
+              <div class="dropdown">
+                <div class="dropdown__button">
+                  <span class="filter__text">Publications</span>
+                  <img class="filter__icon" src="./img/news-comment-expand-pk.png">
+                </div>
+
+                <div class="dropdown-menu">
+                  <ul>
+                    <li>
+                      <a>Download</a>
+                    </li>
+                    <li>
+                      <a>Download with Annotations</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="filter__item">
               <span>Search on CINII</span>
@@ -182,6 +212,54 @@
 
       <div class="news-content">
         <h3 class="news-content__recent-update-title classic-block">Recent Update</h3>
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
+          <div class="grid-sizer grid-item col-6">
+            <a class="grid__article-button">
+              <div>
+                <h3 class="news-content__tag text-middle"># GOOGLE TRENDS</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-google-trend.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="grid-sizer grid-item col-6">
+            <a class="grid__article-button col-6">
+              <div>
+                <h3 class="news-content__tag text-middle"># PATENTS</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-lens.jpg" alt="">
+              </div>
+            </a>
+            <a class="grid__article-button col-6">
+              <div>
+                <h3 class="news-content__tag text-middle"># ESPACENET PATENT SEARCH</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-google.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="grid-sizer grid-item col-6">
+            <a class="grid__article-button col-6">
+              <div>
+                <h3 class="news-content__tag text-middle"># GOOGLE PATENT SEARCH</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-european.jpg" alt="">
+              </div>
+            </a>
+            <a class="grid__article-button col-6">
+              <div>
+                <h3 class="news-content__tag text-middle"># TWITTER</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-twitter.jpg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
         <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
           <div class="grid-sizer grid-item col-3">
             <a class="grid__article-button">
@@ -277,6 +355,26 @@
                   <span class="text-middle">3 Saves</span>
                   <!-- <img class="text-middle" src="./img/news-comment-expand.png" alt=""> -->
                 </button>
+              </div>
+            </a>
+          </div>
+          <div class="grid-sizer grid-item col-3">
+            <a class="grid__article-button">
+              <div>
+                <h3 class="news-content__tag text-middle"># GOOGLE</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-google-1.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="grid-sizer grid-item col-3">
+            <a class="grid__article-button">
+              <div>
+                <h3 class="news-content__tag text-middle"># SEARCH ON CINII</h3>
+              </div>
+              <div class="news-content__image-container">
+                <img class="news-content__image classic-none" src="./img/search-cinii.jpg" alt="">
               </div>
             </a>
           </div>

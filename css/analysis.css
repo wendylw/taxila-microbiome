@@ -54,10 +54,12 @@
     border-bottom-color: #093553; }
 
 .analysis-side__container {
+  display: none;
   position: absolute;
   top: 64px;
   bottom: 0;
   right: 0;
+  border-left: 1px solid #e9eaea;
   width: 700px;
   max-width: 100%;
   padding: 0;

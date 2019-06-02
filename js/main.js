@@ -358,4 +358,5 @@ function showDropback() {
 
 $(window).on('load', function() {
   $('.loader').removeClass('loading');
+  $('.analysis-side__container, .analysis-side__container, .toggle-side, .side, .user-side, .geo-articles').show();
 });
