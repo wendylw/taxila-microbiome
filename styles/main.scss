@@ -794,6 +794,10 @@ body{
     clear: both;
   }
 
+  &__logo-container {
+    display: inline-block;
+  }
+
   &__logo {
     vertical-align: middle;
     margin: 0 15px;
