@@ -1,11 +1,11 @@
 {
-  "name": "news-website",
+  "name": "taxila-microbiome",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "http-server .",
     "scss": "scss --watch styles/main.scss:css/main.css styles/sign.scss:css/sign.css styles/news.scss:css/news.css styles/chart.scss:css/chart.css styles/detail.scss:css/detail.css styles/analysis.scss:css/analysis.css",
-    "release": "tar zcvf news-website-$(date +%Y%m%dT%H%M).tar.gz ./*.html ./css/*.css ./js ./img ./fonts",
+    "release": "tar zcvf taxila-microbiome-$(date +%Y%m%dT%H%M).tar.gz ./*.html ./css/*.css ./js ./img ./fonts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "directories": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/storehubnet/news-website.git"
+    "url": "git+https://github.com/storehubnet/taxila-microbiome.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/storehubnet/news-website/issues"
+    "url": "https://github.com/storehubnet/taxila-microbiome/issues"
   },
-  "homepage": "https://github.com/storehubnet/news-website#readme",
+  "homepage": "https://github.com/storehubnet/taxila-microbiome#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
   }

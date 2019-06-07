@@ -235,9 +235,13 @@
 }
 
 @media (max-width: 1426px) {
-  .chart__summary-list {
-    li {
+  .chart {
+    &__summary-list li {
       padding: 0 10px;
+    }
+
+    &__summary-select {
+      padding: 5px 10px;
     }
   }
 }

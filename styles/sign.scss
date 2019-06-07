@@ -20,6 +20,8 @@ body,
 
 .login {
   background-image: url(../img/login-background.jpg);
+  min-height: 700px;
+  overflow-y: auto;
 
   &__content {
     width: 100%;

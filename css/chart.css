@@ -160,7 +160,9 @@
 
 @media (max-width: 1426px) {
   .chart__summary-list li {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .chart__summary-select {
+    padding: 5px 10px; } }
 @media (max-width: 1330px) {
   .chart__summary-select select {
     font-size: 12px; } }

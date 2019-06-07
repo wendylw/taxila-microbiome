@@ -15,7 +15,9 @@ body,
   overflow: hidden; }
 
 .login {
-  background-image: url(../img/login-background.jpg); }
+  background-image: url(../img/login-background.jpg);
+  min-height: 700px;
+  overflow-y: auto; }
   .login__content {
     width: 100%; }
   .login__logo {
