@@ -15,9 +15,7 @@ body,
   overflow: hidden; }
 
 .login {
-  background-image: url(../img/login-background.jpg);
-  min-height: 700px;
-  overflow-y: auto; }
+  background-image: url(../img/login-background.jpg); }
   .login__content {
     width: 100%; }
   .login__logo {
@@ -59,6 +57,14 @@ body,
     color: #4a4a4a;
     font-weight: bold; }
 
+@media (max-height: 700px) {
+  .login.expand {
+    min-height: 700px;
+    overflow-y: auto; } }
+@media (max-height: 405px) {
+  .login {
+    min-height: 405px;
+    overflow-y: auto; } }
 .login__container input[type="text"],
 .login__container input[type="password"] {
   position: absolute;

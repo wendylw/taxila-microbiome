@@ -20,8 +20,6 @@ body,
 
 .login {
   background-image: url(../img/login-background.jpg);
-  min-height: 700px;
-  overflow-y: auto;
 
   &__content {
     width: 100%;
@@ -81,6 +79,22 @@ body,
     margin: 0 0 40px;
     color: $dark-gray-color;
     font-weight: bold;
+  }
+}
+
+@media (max-height: 700px) {
+  .login {
+    &.expand {
+      min-height: 700px;
+      overflow-y: auto;
+    }
+  }
+}
+
+@media (max-height: 405px) {
+  .login {
+    min-height: 405px;
+    overflow-y: auto;
   }
 }
 
